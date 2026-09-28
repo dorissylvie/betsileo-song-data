@@ -1,7 +1,7 @@
 [
   {
     "source": "translate Malagasy to Betsileo: nefa hampamoahin’Ilay efa vonona hitsara ny velona sy ny maty izy.",
-    "target": "                                kanefa hampamoahin’Ilay efa vognona hitsara ny velogna sy ny maty reo.",
+    "target": "    kanefa hampamoahin’Ilay efa vognona hitsara ny velogna sy ny maty reo.",
     "direction": "Malagasy->Betsileo",
     "ref": "1PE 4:5",
     "book": "1PE",
@@ -9,7 +9,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Ary soraty ho amin’ny anjelin’ny Fiangonana any Laodikia: Izao no lazain’ny Amena* , dia Ilay Vavolombelona mahatoky sy marina izay niandohan’izao zavatra noharin’Andriamanitra izao:",
-    "target": "                                Sorato ho an’ny anjelin’ny Fiangonana agny Laodikia. Izao ro lazain’Ilay Amena, Ilay Vavolombelogna mahatoky sy marina, Ilay fiandohan’ny raha aby noharian’Andriamagnitsa:",
+    "target": "    Sorato ho an’ny anjelin’ny Fiangonana agny Laodikia. Izao ro lazain’Ilay Amena, Ilay Vavolombelogna mahatoky sy marina, Ilay fiandohan’ny raha aby noharian’Andriamagnitsa:",
     "direction": "Malagasy->Betsileo",
     "ref": "REV 3:14",
     "book": "REV",
@@ -17,7 +17,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Lehe magnome vogninahitsa ny tegnako Aho dia tsa misy dikany ny vogninahitso; fa ny Raiko izay ataonareo ho Andriamagnitsareo, iy ro magnome vogninahitsa Anahy.",
-    "target": "                                Raha manome voninahitra ny tenako Aho dia tsinontsinona ny voninahitro; ny Raiko, izay ataonareo fa Andriamanitrareo, izy no mankalaza Ahy.",
+    "target": "    Raha manome voninahitra ny tenako Aho dia tsinontsinona ny voninahitro; ny Raiko, izay ataonareo fa Andriamanitrareo, izy no mankalaza Ahy.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 8:54",
     "book": "JHN",
@@ -25,7 +25,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Ny mpianatsa tsa mihoatsa ny mpampianatsa, fa izay rehetra soa ofagna dia sahala amin’ny mpampianatsa azy madina.",
-    "target": "                                Ny mpianatra tsy mihoatra noho ny mpampianatra ; fa izay rehetra tsara fiofanana dia ho tahaka ny mpampianatra azy ihany.",
+    "target": "    Ny mpianatra tsy mihoatra noho ny mpampianatra ; fa izay rehetra tsara fiofanana dia ho tahaka ny mpampianatra azy ihany.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 6:40",
     "book": "LUK",
@@ -33,7 +33,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Nipetraka andro maro teo ry zareo dia nambaran’i ny mpanjaka",
-    "target": "                                Nitoatsa andro maromaro tao iy ko notarognin’i ny mpanjaka",
+    "target": "    Nitoatsa andro maromaro tao iy ko notarognin’i ny mpanjaka",
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 25:14",
     "book": "ACT",
@@ -41,7 +41,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Magnajà ny ona rehetra, tiava ny rahalahy amin’ny finoana, matahora an’Andriamagnitra, magnajà ny mpanjaka.",
-    "target": "                                Manajà ny olona rehetra, tiava ny rahalahy, matahora an’Andriamanitra, manajà ny mpanjaka.",
+    "target": "    Manajà ny olona rehetra, tiava ny rahalahy, matahora an’Andriamanitra, manajà ny mpanjaka.",
     "direction": "Betsileo->Malagasy",
     "ref": "1PE 2:17",
     "book": "1PE",
@@ -49,7 +49,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: raha nandeha teny an-dalana aho ka efa nanakaiky an’i Fianarantsoa, tamin’ilay mitataovovonana iny, dia nisy mazava lehibe nanelatselatra tampoka avy tany an-danitra manodidina ahy",
-    "target": "                                Sỳ tegny an-dalagna ia ko efa narìny an’i Fianarantsoa, tamin’ilay atoandrobenanahary igny, dia nisy hazavana lihibe nagnelatselatsa tampoka hatagny an-dagnitsa nagnodidigna ahy;",
+    "target": "    Sỳ tegny an-dalagna ia ko efa narìny an’i Fianarantsoa, tamin’ilay atoandrobenanahary igny, dia nisy hazavana lihibe nagnelatselatsa tampoka hatagny an-dagnitsa nagnodidigna ahy;",
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 22:6",
     "book": "ACT",
@@ -57,7 +57,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Eko izay lehibe aminareo ro hanjary mpanomponareo.",
-    "target": "                                Fa izay lehibe aminareo no ho mpanompo anareo.",
+    "target": "    Fa izay lehibe aminareo no ho mpanompo anareo.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 23:11",
     "book": "MAT",
@@ -65,7 +65,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Agnao, satria Agnao ro nahary ny raha abiaby,",
-    "target": "                                Ianao, fa Ianao no nahary ny zavatra rehetra",
+    "target": "    Ianao, fa Ianao no nahary ny zavatra rehetra",
     "direction": "Betsileo->Malagasy",
     "ref": "REV 4:11",
     "book": "REV",
@@ -73,7 +73,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Eko sefa taigny an-dalagna niakatsa ho agny antendrombohitsa, dia nalainy mitokagna ny mpianatsa roambinifolo lahy",
-    "target": "                                Ary rehefa niakatra ho any antendrombohitra,                  dia nitondra nihataka ny mpianatra roa amby folo lahy ",
+    "target": "    Ary rehefa niakatra ho any antendrombohitra,  dia nitondra nihataka ny mpianatra roa amby folo lahy ",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 20:17",
     "book": "MAT",
@@ -81,7 +81,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Lehe mivavaka agnareo dia aza manao hoatsa ny mpihatsaravelatsihy,Ny marina ro ambarako aminareo fa efa azony ny valim-pitiany.",
-    "target": "                                Rehefa mivavaka ianareo dia aza mba ho tahaka ny mpihatsaravelatsihy,Ny marina no lazaiko aminareo fa efa azony ny valim-pitiany.",
+    "target": "    Rehefa mivavaka ianareo dia aza mba ho tahaka ny mpihatsaravelatsihy,Ny marina no lazaiko aminareo fa efa azony ny valim-pitiany.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 6:5",
     "book": "MAT",
@@ -89,7 +89,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Nahoana ianareo no mieritreritra ao am-ponareo toy izany?",
-    "target": "                                Nahoana agnareo ro mieritseritsa ao am-ponareo tahaka izay?",
+    "target": "    Nahoana agnareo ro mieritseritsa ao am-ponareo tahaka izay?",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 5:22",
     "book": "LUK",
@@ -97,7 +97,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Atsika izay matanjaka dia tokony hitondra ny fahalemen’ny osa fa tsa tokony hanao izay hahafaly ny taignantsika.",
-    "target": "                                Isika izay matanjaka dia tokony hitondra ny fahalemen’ny malemy ka tsy hitady izay hahafaly ny tenantsika ihany.",
+    "target": "    Isika izay matanjaka dia tokony hitondra ny fahalemen’ny malemy ka tsy hitady izay hahafaly ny tenantsika ihany.",
     "direction": "Betsileo->Malagasy",
     "ref": "ROM 15:1",
     "book": "ROM",
@@ -105,7 +105,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Mety ho diso amin-draha rehagna manko ny olo aby. Fa lehe misy olo tsa diso mihitsy amin’ny teny ataony, dia iy ro olo tonga lafatsa, ko mahafehy ny tegnany manontolo koa.",
-    "target": "                                Mety diso amin’ny zavatra maro mantsy ny olona rehetra. Raha misy olona tsy mba mety diso amin’ny teniny dia izy no lehilahy tonga lafatra ka mahafehy ny tenany manontolo koa.",
+    "target": "    Mety diso amin’ny zavatra maro mantsy ny olona rehetra. Raha misy olona tsy mba mety diso amin’ny teniny dia izy no lehilahy tonga lafatra ka mahafehy ny tenany manontolo koa.",
     "direction": "Betsileo->Malagasy",
     "ref": "JAS 3:2",
     "book": "JAS",
@@ -113,7 +113,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Eko namory ny mpianatsa aby ny roambinifolo lahy",
-    "target": "                                Ary nampiantso ny mpianatra rehetra ny roa amby folo lahy",
+    "target": "    Ary nampiantso ny mpianatra rehetra ny roa amby folo lahy",
     "direction": "Betsileo->Malagasy",
     "ref": "ACT 6:2",
     "book": "ACT",
@@ -121,7 +121,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Ny vehivavy manambady dia mifamatotra amin'ny vadiny raha mbola velona ny lahy; fa raha maty kosa ny lahy dia afaka hanambady izay tiany izy.",
-    "target": "                                Ny ampela manambady dia mifamatotsa amin’ny vadiny lehe vona velogna ny lihilahy; fa lehe maty ny lihilahy, dia mahazo manambady izay tiàny iy.",
+    "target": "    Ny ampela manambady dia mifamatotsa amin’ny vadiny lehe vona velogna ny lihilahy; fa lehe maty ny lihilahy, dia mahazo manambady izay tiàny iy.",
     "direction": "Malagasy->Betsileo",
     "ref": "1CO 7:39",
     "book": "1CO",
@@ -129,7 +129,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Ary niteny mafy izy sady nandrara azy mba tsy hilazalaza izany amin’olona",
-    "target": "                                Eko nitarogna mahery iy sady namepetsa azy aby mba tsa hitarontarogna an’izay amin’ny ona",
+    "target": "    Eko nitarogna mahery iy sady namepetsa azy aby mba tsa hitarontarogna an’izay amin’ny ona",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 9:21",
     "book": "LUK",
@@ -137,7 +137,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Niray saina isanandro izy ireo ka nazoto nankeo ary namaky mofo tao an-trano sady nihinan-kanina tamin’ny fifaliana sy ny fahatsoram-po;",
-    "target": "                                Niray saigna isanandro iy aby sady nazoto nihoegny eko nizara ny mofo tao andragno sy nihinan-kanina tamin’ny fifaliana sy ny fahatsoram-po.",
+    "target": "    Niray saigna isanandro iy aby sady nazoto nihoegny eko nizara ny mofo tao andragno sy nihinan-kanina tamin’ny fifaliana sy ny fahatsoram-po.",
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 2:46",
     "book": "ACT",
@@ -145,7 +145,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia nitsangagna niala teo am-pihinanan-kanina iy, nagnala ny akanjony ivelany eko nandray lamba famaohana ko nisikinany.",
-    "target": "                                Dia nitsangana niala teo am-pisakafoanana izy ka nametraka ny akanjony ivelany ary naka lamba famaohana ka nisikinany;",
+    "target": "    Dia nitsangana niala teo am-pisakafoanana izy ka nametraka ny akanjony ivelany ary naka lamba famaohana ka nisikinany;",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 13:4",
     "book": "JHN",
@@ -153,7 +153,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Efa tonga fahavalonareo va aho satria milaza ny marina aminareo?",
-    "target": "                                Eko nanjary fahavalonareo ve aho izao sỳ mitarogna ny marina aminareo?",
+    "target": "    Eko nanjary fahavalonareo ve aho izao sỳ mitarogna ny marina aminareo?",
     "direction": "Malagasy->Betsileo",
     "ref": "GAL 4:16",
     "book": "GAL",
@@ -161,7 +161,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia nifagnontany ny mpianatsa hoe: Nisy ona nitondra raha hohaniny ve?",
-    "target": "                                Dia niresaka ny mpianatra hoe: Nisy olona nitondra zavatra hohaniny va re?",
+    "target": "    Dia niresaka ny mpianatra hoe: Nisy olona nitondra zavatra hohaniny va re?",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 4:33",
     "book": "JHN",
@@ -169,7 +169,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Fa akory moa ro hahalalanao, rampela, na hahavonjy ny vadinao na tsa ? Eko akory koa ro hahalalanao, ralihilahy?",
-    "target": "                                Fa ahoana moa no ahafantaranao, Ravehivavy, na ho voavonjinao ny vadinao na tsia? Ary ahoana no ahafantaranao, Ralehilahy?",
+    "target": "    Fa ahoana moa no ahafantaranao, Ravehivavy, na ho voavonjinao ny vadinao na tsia? Ary ahoana no ahafantaranao, Ralehilahy?",
     "direction": "Betsileo->Malagasy",
     "ref": "1CO 7:16",
     "book": "1CO",
@@ -177,31 +177,23 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Raha namafy izy, dia voafafy teny amoron-dalana  ny sasany, dia avy ny vorona ka nandany.",
-    "target": "                                Sefa namafy iy, dia nifafy taigny amoron-dalagna ny ambeo sasagny , eko tonga ny vorogna nitsindroka .",
+    "target": "    Sefa namafy iy, dia nifafy taigny amoron-dalagna ny ambeo sasagny , eko tonga ny vorogna nitsindroka .",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 13:4",
     "book": "MAT",
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa toy ny niavian’ny vehivavy avy tamin’ny lehilahy dia toy izany koa no niavian’ny lehilahy avy tamin’ny vehivavy; fa Andriamanitra kosa no niavian’ny zavatra rehetra.",
-    "target": "                                Fa sahala amin’ny nagnalana ny ampela hatamin’ny lihilahy, dia sahala amin’izay koa ro itirahan’ny ampela ny lihilahy; Andriamagnitsa ro iboahan’ny raha aby",
+    "source": "translate Malagasy to Betsileo: Fa toy ny niavian’ny vehivavy avy tamin’ny lehilahy dia toy izany koa no niavian’ny lehilahy avy tamin’ny vehivavy; ",
+    "target": "    Fa sahala amin’ny nagnalana ny ampela hatamin’ny lihilahy, dia sahala amin’izay koa ro itirahan’ny ampela ny lihilahy;",
     "direction": "Malagasy->Betsileo",
     "ref": "1CO 11:12",
     "book": "1CO",
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Koa aoka hataon’ny olona ho mpanompon’i Kristy* sy mpitantana fananana ny amin’ny zavamiafina izay an’Andriamanitra izahay.",
-    "target": "Avilay agnay hataon’ny ona ho mpanompon’i Kristy sy mpiadidy ny tsiambaratelon’Andriamagnitsa.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "1CO 4:1",
-    "book": "1CO",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Nony afaka kelikely, nanatona ireo izay nijanona teo ka nilaza tamin’i Petera hoe: Marina tokoa fa naman’ireny ianao; fa ny fiteninao no miampanga anao.",
-    "target": "Se kelikely ahateo, dia nisy amindreo nitoetoetsa namonjy an’i Petera eko nanao hoe: Agnao dia tena naman’irony Galiliana irony satria ny fitarognanao tsa mivony.",
+    "source": "translate Malagasy to Betsileo: Afaka kelikely avieo, dia nisy tamin'ireo nijanona nanatona azy ka nilaza hoe: Ianao tokoa dia tena naman’ireny satria ny fiteninao no miampanga anao.",
+    "target": "    Se kelikely ahateo, dia nisy amindreo nitoetoetsa namonjy azy eko nanao hoe: Agnao dia tena naman’irony satria ny fitarognanao tsa mivony.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 26:73",
     "book": "MAT",
@@ -3104,7 +3096,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Ry sakaiza, ataovy izay nahatongavanao eto. Dia nanatona ny olona ka nisambotra an’i Jesosy ary nitana Azy.",
+    "source": "translate Malagasy to Betsileo:    Ry sakaiza, ataovy izay nahatongavanao eto. Dia nanatona ny olona ka nisambotra an’i Jesosy ary nitana Azy.",
     "target": "Dia hotsin’i Jesoa tagnaminy: Ry namako! Izay anton-dianao atỳ dia ataovo. Dia nirohotsa indray mandeha ny ona ko nisambotsa an’i Jesoa sady nitagna Azy.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 26:50",
@@ -3616,7 +3608,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Ny mpanjakan’ny Jentilisa* dia mampanompo azy ary izay manapaka azy no atao hoe mpanao soa.",
+    "source": "translate Malagasy to Betsileo:  Ny mpanjakan’ny Jentilisa* dia mampanompo azy ary izay manapaka azy no atao hoe mpanao soa.",
     "target": "Dia hoy i Jesoa tamindreo: Ny mpanjakan’ny hafa firenena dia mampiasa azy, eko atao hoe mpanao soa izay managna fahifana aminazy.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 22:25",
@@ -4481,14 +4473,14 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Feny hoy i Jesoa: Aho ihany ity! Aza matahotsa!",
-    "target": "Fa hoy Jesosy taminy: Izaho ihany ity; aza matahotra.",
+    "target": "   Izaho ihany ity; aza matahotra.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 6:20",
     "book": "JHN",
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Tsy lazaiko aminao hoe: Hatramin’ny impito, fa hatramin’ny impito amby fitopolo .",
+    "source": "translate Malagasy to Betsileo:    Tsy lazaiko aminao hoe: Hatramin’ny impito, fa hatramin’ny impito amby fitopolo .",
     "target": "Dia hotsin’i Jesoa tagnaminy: Tsa hitarogna hoe impito, fa na dia ho impito amby fitopolo aza.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 18:22",
@@ -4617,7 +4609,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa taminazy: Nahoana Aho ro lazainao hoe soa? Tsa misy soa afa tsy raika madina dia Andriamagnitsa.",
-    "target": "Fa hoy Jesosy taminy: Nahoana Aho no lazainao fa tsara? Tsy misy tsara afa-tsy iray ihany, dia Andriamanitra.",
+    "target": "   Nahoana Aho no lazainao fa tsara? Tsy misy tsara afa-tsy iray ihany, dia Andriamanitra.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 18:19",
     "book": "LUK",
@@ -4936,7 +4928,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Mandehana ianao, ry Satana: Fa voasoratra hoe: «NY TOMPO Andriamanitrao no hiankohofanao ary izy irery ihany no hotompoinao.» (Deo 6.13)",
+    "source": "translate Malagasy to Betsileo:    Mandehana ianao, ry Satana: Fa voasoratra hoe: «NY TOMPO Andriamanitrao no hiankohofanao ary izy irery ihany no hotompoinao.» (Deo 6.13)",
     "target": "Kanefa hotsin’i Jesoa tagnaminy: Satana! Rosoa agnao. Voasoratsa fa: “NY TOMPO Andriamagnitsao ro hiankohofanao, ary iy irery ro hotompoinao” (Deo 6.13).",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 4:10",
@@ -6353,7 +6345,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hotsin’i Jesoa tagnaminy: Tsa hitarogna hoe impito, fa na dia ho impito amby fitopolo aza.",
-    "target": "Fa hoy Jesosy taminy: Tsy lazaiko aminao hoe: Hatramin’ny impito, fa hatramin’ny impito amby fitopolo .",
+    "target": "   Tsy lazaiko aminao hoe: Hatramin’ny impito, fa hatramin’ny impito amby fitopolo .",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 18:22",
     "book": "MAT",
@@ -6977,7 +6969,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Dia hoy Jesosy: Avelao izy mba hotehiriziny ho amin’ny andro hanamboarany Ahy halevina.",
-    "target": "Dia hoy i Jesoa: Avilao iy fa ho amin’ny andro hagnamboarany Ahy sỳ halevigna ro nagnajariany an’io menaka io",
+    "target": " Avilao iy fa ho amin’ny andro hagnamboarany Ahy sỳ halevigna ro nagnajariany an’io menaka io",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 12:7",
     "book": "JHN",
@@ -9697,7 +9689,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Fa hoy i Jesoa taminazy: Avilay ny maty handevigna ny maty ao aminazy; fa agnao mandihàna, ko mitoria ny fanjakan’Andriamagnitsa.",
-    "target": "Fa hoy Jesosy taminy: Aoka ny maty handevina ny maty ao aminy; fa ianao kosa dia mandehana ka mitoria ny fanjakan’Andriamanitra.",
+    "target": "   Aoka ny maty handevina ny maty ao aminy; fa ianao kosa dia mandehana ka mitoria ny fanjakan’Andriamanitra.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 9:60",
     "book": "LUK",
@@ -12225,7 +12217,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Nisy roa lahy nananan’ny mpampindram-bola iray trosa: Ny iray dia nananany denaria* dimanjato, ary ny iray kosa dia dimampolo.",
-    "target": "Dia hoy i Jesoa: Nisy lihilahy raika nampindram-bola ona roalahy. Ny raika nampindraminy denaria dimanjato eko ny faharoa nampindraminy dimampolo.",
+    "target": " Nisy lihilahy raika nampindram-bola ona roalahy. Ny raika nampindraminy denaria dimanjato eko ny faharoa nampindraminy dimampolo.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 7:41",
     "book": "LUK",
@@ -13600,7 +13592,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Koa iza amin’izy mirahalahy moa no nanao ny sitrapon’ny rainy? Dia hoy ireo: Ny lahimatoa. Dia hoy Jesosy taminy: Lazaiko aminareo marina tokoa fa ny mpamory hetra sy ny vehivavy janga dia mialoha anareo ho any amin’ny fanjakan’Andriamanitra.",
+    "source": "translate Malagasy to Betsileo: Koa iza amin’izy mirahalahy moa no nanao ny sitrapon’ny rainy? Dia hoy ireo: Ny lahimatoa.  Lazaiko aminareo marina tokoa fa ny mpamory hetra sy ny vehivavy janga dia mialoha anareo ho any amin’ny fanjakan’Andriamanitra.",
     "target": "Ko ia amindreo mirahalahy ro nanao ny sitrapon’ny babany? Dia hotsindreo: Ilay tompomboho. Eko hotsin’i Jesoa tamindreo: Ny marina ro ambarako aminareo fa efa mialoha anareo agny amin’ny fanjakan’Andriamagnitsa ny mpitaky hetsa sy ny mpivarotaigna.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 21:31",
@@ -13856,7 +13848,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Avilao iy fa ho amin’ny andro hagnamboarany Ahy sỳ halevigna ro nagnajariany an’io menaka io",
+    "source": "translate Betsileo to Malagasy:  Avilao iy fa ho amin’ny andro hagnamboarany Ahy sỳ halevigna ro nagnajariany an’io menaka io",
     "target": "Dia hoy Jesosy: Avelao izy mba hotehiriziny ho amin’ny andro hanamboarany Ahy halevina.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 12:7",
@@ -16216,7 +16208,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Aho ro lalagna sy fahamarinana eko fiaignana; tsa misy ona mihoagny amin’ny Ray lehe tsa amin’ny alalako.",
+    "source": "translate Betsileo to Malagasy:  Aho ro lalagna sy fahamarinana eko fiaignana; tsa misy ona mihoagny amin’ny Ray lehe tsa amin’ny alalako.",
     "target": "Hoy Jesosy taminy: Izaho no lalana sy fahamarinana ary fiainana; tsy misy olona mankany amin’ny Ray, afa-tsy amin’ny alalako.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 14:6",
@@ -16272,7 +16264,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Baba ô! Avilao ny helony fa tsa fantany izay ataony. Eko nanaovan’ny miaramila akintsapaka ny lambany hizarany azy.",
+    "source": "translate Betsileo to Malagasy:  Baba ô! Avilao ny helony fa tsa fantany izay ataony. Eko nanaovan’ny miaramila akintsapaka ny lambany hizarany azy.",
     "target": "Ary hoy Jesosy: Raiko ô, mamelà ny helony fa tsy fantany izay ataony. Dia nanaovany antsapaka no fizara ny fitafiany.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 23:34",
@@ -18512,7 +18504,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy: Nisy olona nikasika Ahy; fantatro fa nisy hery niala avy tamiko.",
+    "source": "translate Malagasy to Betsileo:  Nisy olona nikasika Ahy; fantatro fa nisy hery niala avy tamiko.",
     "target": "Fa hoy i Jesoa: Nisy ona nikasika Ahy teo satria tsapako fa nisy hery niala Taminahy.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 8:46",
@@ -22400,7 +22392,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Raha te ho tanteraka ianao dia mandehana, amidio ny fanananao ka omeo ny mahantra, dia hanana rakitra any an-danitra ianao; ary avia hanaraka Ahy.",
+    "source": "translate Malagasy to Betsileo:  Raha te ho tanteraka ianao dia mandehana, amidio ny fanananao ka omeo ny mahantra, dia hanana rakitra any an-danitra ianao; ary avia hanaraka Ahy.",
     "target": "Dia hoy i Jesoa tagnaminy: Lehe te ho lavorary agnao dia ndeha amidio izay anagnanao eko omeo ny mahantra ny vidiny, dia hanagna harena agny an-dagnitsa agnao; se ahateo dia andao, hagnaraka Ahy.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 19:21",
@@ -23160,7 +23152,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Ny amboahaolo dia manan-davaka ary ny voromanidina dia manana akany; fa ny Zanak’Olona* tsy mba manana izay hampandriany ny lohany.",
+    "source": "translate Malagasy to Betsileo:    Ny amboahaolo dia manan-davaka ary ny voromanidina dia manana akany; fa ny Zanak’Olona* tsy mba manana izay hampandriany ny lohany.",
     "target": "Dia hoy i Jesoa taminazy: Ny bibidia manan-davaka, eko ny voromanidigna egny amin’ny habakabaka managna ny tragnony; Zanak’Ona nefa tsa mba managna izay hisitrihan’ny lohany.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 9:58",
@@ -23457,7 +23449,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Ary hoy Jesosy: Raiko ô, mamelà ny helony fa tsy fantany izay ataony. Dia nanaovany antsapaka no fizara ny fitafiany.",
-    "target": "Dia hoy i Jesoa: Baba ô! Avilao ny helony fa tsa fantany izay ataony. Eko nanaovan’ny miaramila akintsapaka ny lambany hizarany azy.",
+    "target": " Baba ô! Avilao ny helony fa tsa fantany izay ataony. Eko nanaovan’ny miaramila akintsapaka ny lambany hizarany azy.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 23:34",
     "book": "LUK",
@@ -23928,8 +23920,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy: Izay zavatra tsy hain’ny olona dia hain’Andriamanitra.",
-    "target": "Dia hoy i Jesoa: Izay raha tsa efan’ny ona dia efan’Andriamagnitsa.",
+    "source": "translate Malagasy to Betsileo:  Izay zavatra tsy hain’ny olona dia hain’Andriamanitra.",
+    "target": " Izay raha tsa efan’ny ona dia efan’Andriamagnitsa.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 18:27",
     "book": "LUK",
@@ -24200,32 +24192,32 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Se kelikely ahateo, dia nisy amindreo nitoetoetsa namonjy an’i Petera eko nanao hoe: Agnao dia tena naman’irony Galiliana irony satria ny fitarognanao tsa mivony.",
-    "target": "Nony afaka kelikely, nanatona ireo izay nijanona teo ka nilaza tamin’i Petera hoe: Marina tokoa fa naman’ireny ianao; fa ny fiteninao no miampanga anao.",
+    "source": "translate Betsileo to Malagasy: Se kelikely ahateo, dia nisy amindreo nitoetoetsa namonjy azy eko nanao hoe: Agnao dia tena naman’ irony satria ny fitarognanao tsa mivony.",
+    "target": "    Afaka kelikely avieo, dia nisy tamin'ireo nijanona nanatona azy ka nilaza hoe: Ianao tokoa dia tena naman’ireny satria ny fiteninao no miampanga anao.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 26:73",
     "book": "MAT",
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Ankehitriny kosa, mahalala an’Andriamanitra ianareo, kanefa tsy izany, fa izy no mahalala anareo. Koa nahoana ianareo no miverina indray amin’ny fanompoana ny abidim-pianarana malemy sady tsy misy dikany?",
-    "target": "amin’izao, mahilala Anazy agnareo, feny tsa tena izay ro iy fa Andriamagnitsa ro mahilala anareo. Ko magnina agnareo ro vona mipody amin’ny fanompoana ny abidim-pianaran’izao tontolo izao izay sady malemy ro tsa misy fotony?",
+    "source": "translate Malagasy to Betsileo:  Koa nahoana ianareo no miverina indray amin’ny fanompoana malemy sady tsy misy dikany?",
+    "target": " Ko magnina agnareo ro vona mipody amin’ny fanompoana sady malemy ro tsa misy fotony?",
     "direction": "Malagasy->Betsileo",
     "ref": "GAL 4:9",
     "book": "GAL",
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Rehe misy ona manao hoe: Miadana sy mandry fahizay, dia hahavoa azy tampoka ny fandringanana, sahala amin’ny fijalian’ny vaivavy sefa miteraka, saingy tsa ho afaka hilefa ho aia izy.",
-    "target": "Raha misy olona milaza hoe: Miadana sy mandry fehizay, dia hanjo azy tampoka ny fandringanana, toy ny fahararian’ny vehivavy raha miteraka ka tsy ho afa-mandositra mihitsy izy.",
+    "source": "translate Betsileo to Malagasy: Rehe misy ona mitarogna hoe: Miadana sy mandry fahizay, dia hahavoa azy tampoka ny fandringanana, sahala amin’ny fijalian’ny vaivavy sefa miteraka ka tsa ho afaka hilefa ho aia izy.",
+    "target": "    Raha misy olona milaza hoe: Miadana sy mandry fehizay, dia hanjo azy tampoka ny fandringanana, toy ny fahararian’ny vehivavy raha miteraka ka tsy ho afa-mandositra mihitsy izy.",
     "direction": "Betsileo->Malagasy",
     "ref": "1TH 5:3",
     "book": "1TH",
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Misy azom-pahoriana va eo aminareo? Aoka izy hivavaka. Misy faly va? Aoka izy hihira fiderana.",
-    "target": "Misy tra-pahoriana ve eo aminareo? Mivavaha. Misy faly ve? Mihirà fiderana.",
+    "source": "translate Malagasy to Betsileo: Misy azom-pahoriana va eo aminareo? Misy faly va?",
+    "target": "    Misy tra-pahoriana ve eo aminareo? Misy faly ve?",
     "direction": "Malagasy->Betsileo",
     "ref": "JAS 5:13",
     "book": "JAS",
@@ -25281,7 +25273,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Feny hoy Jesoa taminazy: Ho foanao noho ny Aminahy hoe ny ainao? Ambarako aminao ny marina fa vona tsa magneno aza ny akoho dia efa intelo agnao ro handà ho tsa mahilala Ahy.",
-    "target": "Fa hoy Jesosy: Ny ainao va hafoinao noho ny Amiko? Lazaiko aminao marina dia marina tokoa: Tsy mbola hisy akoho haneno dia handa Ahy intelo ianao.",
+    "target": " Ny ainao va hafoinao noho ny Amiko? Lazaiko aminao marina dia marina tokoa: Tsy mbola hisy akoho haneno dia handa Ahy intelo ianao.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 13:38",
     "book": "JHN",
@@ -25496,8 +25488,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Vona ho eo aminareo ny mazava, feny ho vetivety madina izay. Mandihàna dieny vona mazava, mba tsa ho tratsy ny maizigna agnareo. Izay mandeha amin’ny maizigna manko dia tsa mahita izay hombàny.",
-    "target": "Dia hoy Jesosy taminy: Mbola kely ihany no itoeran’ny mazava aminareo. Mandehana, raha mbola manana ny mazava ianareo, mba tsy hahatratra anareo ny maizina; fa izay mandeha amin’ny maizina dia tsy mahalala izay alehany.",
+    "source": "translate Betsileo to Malagasy:  Vona ho eo aminareo ny mazava, feny ho vetivety madina izay. Mandihàna dieny vona mazava, mba tsa ho tratsy ny maizigna agnareo. Izay mandeha amin’ny maizigna manko dia tsa mahita izay hombàny.",
+    "target": " Mbola kely ihany no itoeran’ny mazava aminareo. Mandehana, raha mbola manana ny mazava ianareo, mba tsy hahatratra anareo ny maizina; fa izay mandeha amin’ny maizina dia tsy mahalala izay alehany.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 12:35",
     "book": "JHN",
@@ -25841,7 +25833,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Feny hoy i Jesoa: Manan-kanina izay tsa fantatsareo Aho.",
-    "target": "Fa hoy Jesosy taminy: Izaho manan-kanina izay tsy fantatrareo.",
+    "target": "   Izaho manan-kanina izay tsy fantatrareo.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 4:32",
     "book": "JHN",
@@ -26497,7 +26489,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hotsin’i Jesoa tagnaminy: Ry namako! Izay anton-dianao atỳ dia ataovo. Dia nirohotsa indray mandeha ny ona ko nisambotsa an’i Jesoa sady nitagna Azy.",
-    "target": "Fa hoy Jesosy taminy: Ry sakaiza, ataovy izay nahatongavanao eto. Dia nanatona ny olona ka nisambotra an’i Jesosy ary nitana Azy.",
+    "target": "   Ry sakaiza, ataovy izay nahatongavanao eto. Dia nanatona ny olona ka nisambotra an’i Jesosy ary nitana Azy.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 26:50",
     "book": "MAT",
@@ -26656,8 +26648,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Aloavy ho an’i Kaisara ary izay an’i Kaisara ary ho an’Andriamanitra izay an’Andriamanitra.",
-    "target": "Dia hoy i Jesoa: Aloavo ho an’i Kaisara ary izay an’i Kaisara eko ho an’Andriamagnitsa izay an’Andriamagnitsa.",
+    "source": "translate Malagasy to Betsileo:  Aloavy ho an’i Kaisara ary izay an’i Kaisara ary ho an’Andriamanitra izay an’Andriamanitra.",
+    "target": " Aloavo ho an’i Kaisara ary izay an’i Kaisara eko ho an’Andriamagnitsa izay an’Andriamagnitsa.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 20:25",
     "book": "LUK",
@@ -26697,7 +26689,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa tamindreo: Ny mpanjakan’ny hafa firenena dia mampiasa azy, eko atao hoe mpanao soa izay managna fahifana aminazy.",
-    "target": "Dia hoy Jesosy taminy: Ny mpanjakan’ny Jentilisa* dia mampanompo azy ary izay manapaka azy no atao hoe mpanao soa.",
+    "target": " Ny mpanjakan’ny Jentilisa* dia mampanompo azy ary izay manapaka azy no atao hoe mpanao soa.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 22:25",
     "book": "LUK",
@@ -27025,7 +27017,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Namaly Azy Ravehivavy hoe: Tsy manambady aho. Hoy Jesosy taminy: Marina ihany izay nolazainao hoe: Tsy manambady aho;",
-    "target": "Feny hoy rampela: Tsa manambady aho. Dia hoy i Jesoa: Marina ny tarognao hoe tsa manambady agnao;",
+    "target": "Feny hoy rampela: Tsa manambady aho.  Marina ny tarognao hoe tsa manambady agnao;",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 4:17",
     "book": "JHN",
@@ -27560,7 +27552,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Mpanamarin-tena eo anatrehan’ny olona ianareo, nefa Andriamanitra mahafantatra ny fonareo; fa izay zavatra heverin’ny olona ho ambony dia fahavetavetana eo anatrehan’Andriamanitra.",
+    "source": "translate Malagasy to Betsileo:  Mpanamarin-tena eo anatrehan’ny olona ianareo, nefa Andriamanitra mahafantatra ny fonareo; fa izay zavatra heverin’ny olona ho ambony dia fahavetavetana eo anatrehan’Andriamanitra.",
     "target": "Eko hoy i Jesoa tamin’iy aby: Mpagnamarin-tegna eo agnatrehan’ny ona agnareo, feny Andriamagnitsa mahilala ny ao am-ponareo. Fa izay raha eritseretin’ny ona ho ambony dia fahavetavetana amin’Andriamagnitsa.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 16:15",
@@ -28161,7 +28153,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Ary hoy Jesosy taminy: Ny zanak’izao fiainana izao dia mampaka-bady sady avoaka hampakarina;",
-    "target": "Dia hoy i Jesoa: Amin’izao fiaignana izao ro misy mampaka-bady sy ampakarina.",
+    "target": " Amin’izao fiaignana izao ro misy mampaka-bady sy ampakarina.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 20:34",
     "book": "LUK",
@@ -28864,7 +28856,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy: Ampidiro amin’ny tranony ny sabatrao; fa izay rehetra mandray sabatra dia ho fatin’ny sabatra.",
+    "source": "translate Malagasy to Betsileo:  Ampidiro amin’ny tranony ny sabatrao; fa izay rehetra mandray sabatra dia ho fatin’ny sabatra.",
     "target": "Dia hotsin’i Jesoa tagnaminy: Ampidiro amin’ny tragnony ny sabatsao! Izay re mamely amin’ny sabatsa dia hovonoana amin’ny sabatsa.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 26:52",
@@ -29929,7 +29921,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Eko hoy i Jesoa tamin’ny mpiasa: Fenò rano aby ny bobòka, dia nofenoan’iy aby hategny am-bavany izany.",
-    "target": "Dia hoy Jesosy taminy: Fenoy rano ny siny. Dia nofenoiny hatramin’ny molony.",
+    "target": " Fenoy rano ny siny. Dia nofenoiny hatramin’ny molony.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 2:7",
     "book": "JHN",
@@ -30121,7 +30113,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa tamin’ilay Fariseo: Simona a! Misy raha tiàko hotarognina aminao. Hoy iy namaly: Fero ary ny resakao Ramose!",
-    "target": "Fa hoy Jesosy taminy: Ry Simona, manan-kolazaina aminao Aho. Dia hoy izy: Mpampianatra ô, lazao ary.",
+    "target": "   Ry Simona, manan-kolazaina aminao Aho. Dia hoy izy: Mpampianatra ô, lazao ary.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 7:40",
     "book": "LUK",
@@ -31273,7 +31265,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hotsin’i Jesoa tamindreo: Tsa tokony ho roso ireo fa omeonareo hanina.",
-    "target": "Fa hoy Jesosy taminy: Tsy tokony handeha ireo; fa omeonareo hanina.",
+    "target": "   Tsy tokony handeha ireo; fa omeonareo hanina.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 14:16",
     "book": "MAT",
@@ -31624,7 +31616,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Ary tafintohina Taminy izy ireo. Fa hoy Jesosy taminy: Tsy misy mpaminany tsy homen-kaja, afa-tsy eo amin’ny taniny sy ny mpianakaviny ihany.",
+    "source": "translate Malagasy to Betsileo: Ary tafintohina Taminy izy ireo.    Tsy misy mpaminany tsy homen-kaja, afa-tsy eo amin’ny taniny sy ny mpianakaviny ihany.",
     "target": "Vokats’izay dia tafitohigna Taminazy reo. Fa hotsin’i Jesoa tamin’iy aby: Hajaina agny amin’ny tany aby izay ombany ny mpaminany, afa tsy eo amin’ny taniny sy ny fianakaviany ihany.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 13:57",
@@ -32280,8 +32272,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Mbola kely ihany no itoeran’ny mazava aminareo. Mandehana, raha mbola manana ny mazava ianareo, mba tsy hahatratra anareo ny maizina; fa izay mandeha amin’ny maizina dia tsy mahalala izay alehany.",
-    "target": "Dia hoy i Jesoa: Vona ho eo aminareo ny mazava, feny ho vetivety madina izay. Mandihàna dieny vona mazava, mba tsa ho tratsy ny maizigna agnareo. Izay mandeha amin’ny maizigna manko dia tsa mahita izay hombàny.",
+    "source": "translate Malagasy to Betsileo:  Mbola kely ihany no itoeran’ny mazava aminareo. Mandehana, raha mbola manana ny mazava ianareo, mba tsy hahatratra anareo ny maizina; fa izay mandeha amin’ny maizina dia tsy mahalala izay alehany.",
+    "target": " Vona ho eo aminareo ny mazava, feny ho vetivety madina izay. Mandihàna dieny vona mazava, mba tsa ho tratsy ny maizigna agnareo. Izay mandeha amin’ny maizigna manko dia tsa mahita izay hombàny.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 12:35",
     "book": "JHN",
@@ -32377,7 +32369,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Hoy Jesosy taminy: Tsy voalazako va fa raha hino ianao dia ho hitanao ny voninahitr’Andriamanitra?",
-    "target": "Dia hoy i Jesoa: Tsa efa notarogniko taminao ve fa lehe mino agnao dia ho hitanao ny vogninahits’Andriamagnitsa?",
+    "target": " Tsa efa notarogniko taminao ve fa lehe mino agnao dia ho hitanao ny vogninahits’Andriamagnitsa?",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 11:40",
     "book": "JHN",
@@ -32672,7 +32664,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Tsa fantatsao izay ataoko izao fa ho fantatsao sỳ afara agny.",
+    "source": "translate Betsileo to Malagasy:  Tsa fantatsao izay ataoko izao fa ho fantatsao sỳ afara agny.",
     "target": "Dia hoy Jesosy: Izay ataoko dia tsy fantatrao ankehitriny fa ho fantatrao aorianan’izao.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 13:7",
@@ -33872,7 +33864,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Sahala amin’ina kay ny Fanjakan’Andriamagnitsa? Eko hohariko amin’ina iy?",
+    "source": "translate Betsileo to Malagasy:  Sahala amin’ina kay ny Fanjakan’Andriamagnitsa? Eko hohariko amin’ina iy?",
     "target": "Dia hoy Jesosy: Tahaka ny inona ny fanjakan’Andriamanitra? Ary inona no hanoharako azy?",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 13:18",
@@ -34136,7 +34128,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: An’iza ity sary sy soratra ity?",
+    "source": "translate Malagasy to Betsileo:  An’iza ity sary sy soratra ity?",
     "target": "Dia hotsin’i Jesoa: Sary sy sorats’ia ity?",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 22:20",
@@ -34881,7 +34873,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: I Jesoa namaly azy hoe: Magnina Aho ro agnontanianao ny amin’izay soa? Raika madina ro soa. Lehe te hiditsa agny amin’ny fiaignana agnao, dia ankatoavo ny didy.",
-    "target": "Fa hoy Jesosy taminy: Nahoana Aho no anontanianao ny amin’izay tsara? Iray no tsara; fa raha te hiditra any amin’ny fiainana ianao, tandremo ny didy.",
+    "target": "   Nahoana Aho no anontanianao ny amin’izay tsara? Iray no tsara; fa raha te hiditra any amin’ny fiainana ianao, tandremo ny didy.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 19:17",
     "book": "MAT",
@@ -34993,7 +34985,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Ary hoy Jesosy: Ry taranaka sady tsy mino no efa nivadika, mandra-pahoviana no hitoerako aminareo sy handeferako aminareo? Ento atỳ ny zanakao.",
-    "target": "Dia hoy i Jesoa: Ry taranaka sady tsa mino ro efa nivadika, mandra-pahavin’ny amin’ny viana ro hitoerako eto aminareo sy handiferako aminareo? Feiro atoy ny zanakao!",
+    "target": " Ry taranaka sady tsa mino ro efa nivadika, mandra-pahavin’ny amin’ny viana ro hitoerako eto aminareo sy handiferako aminareo? Feiro atoy ny zanakao!",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 9:41",
     "book": "LUK",
@@ -35256,8 +35248,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fantatro ny asanao, fa tsy mangatsiaka na mafana ianao. Aleo mangatsiaka na mafana ianao!",
-    "target": "Fantatso ny asanao, fa sady tsa manara ro tsa mafana agnao; aleo agnao manara na mafana.",
+    "source": "translate Malagasy to Betsileo: Fa tsy mangatsiaka na mafana ianao; aleo mangatsiaka na mafana ianao.",
+    "target": "    Fa tsa manara ro tsa mafana agnao; aleo manara na mafana agnao.",
     "direction": "Malagasy->Betsileo",
     "ref": "REV 3:15",
     "book": "REV",
@@ -35600,7 +35592,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Tsy manana fahefana Amiko akory ianao raha tsy nomena anao avy any ambony; koa izay nanolotra Ahy taminao no manan-keloka bebe kokoa.",
+    "source": "translate Malagasy to Betsileo:  Tsy manana fahefana Amiko akory ianao raha tsy nomena anao avy any ambony; koa izay nanolotra Ahy taminao no manan-keloka bebe kokoa.",
     "target": "Eko hoy Jesoa: Tsa managna fahifana Aminahy agnao lehe tsa nomena anao hatagny ambony izay; ko manan-keloka bebe kokoa izay nanolotsa Ahy taminao.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 19:11",
@@ -35848,8 +35840,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Izay raha tsa efan’ny ona dia efan’Andriamagnitsa.",
-    "target": "Fa hoy Jesosy: Izay zavatra tsy hain’ny olona dia hain’Andriamanitra.",
+    "source": "translate Betsileo to Malagasy: Izay raha tsa efan’ny ona dia efan’Andriamagnitsa.",
+    "target": " Izay zavatra tsy hain’ny olona dia hain’Andriamanitra.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 18:27",
     "book": "LUK",
@@ -35871,25 +35863,10 @@
     "book": "ACT",
     "identical": false
   },
-  {
-    "source": "translate Malagasy to Betsileo: Teo no nanomboana Azy tamin’ny hazofijaliana, ary nisy roa lahy koa niaraka Taminy, iray avy teo an-daniny roa, fa Jesosy no teo afovoany.",
-    "target": "Teo ro namantsihana Azy tamin’ny hazofijaliana; nisy roalahy koa niaraka Taminazy teo, ny raika teo an-dagniny, ny raika teo an-kilany eko i Jesoa ro teo agnivo.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "JHN 19:18",
-    "book": "JHN",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Fa fanahin’ny demonia ireo ka manao famantarana sady mankany amin’ny mpanjakan’ny tany rehetra manerana izao tontolo izao, mba hamory azy ho amin’ny adin’ilay andro lehiben’Andriamanitra Tsitoha!",
-    "target": "Fagnahin’ny demonia manao fahagagana ireo eko dia mihoagny amin’ireo mpanjaka magneragna an’izao tontolo izao, mba hamory andreo ho amin’ny ady hatao amin’ny andro lihibe hitsaran’Andriamagnitsa Tsitoha.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "REV 16:14",
-    "book": "REV",
-    "identical": false
-  },
+
   {
     "source": "translate Betsileo to Malagasy: Eko tsa iy koa ve ro mitaron-dratsy ny agnarana soa izay nikehana anareo?",
-    "target": "Tsy izy ireny koa va no miteny ratsy ny anarana tsara izay niantsoana anareo?",
+    "target": "    Tsy izy ireny koa va no miteny ratsy ny anarana tsara izay niantsoana anareo?",
     "direction": "Betsileo->Malagasy",
     "ref": "JAS 2:7",
     "book": "JAS",
@@ -36056,7 +36033,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Feny hoy rampela: Tsa manambady aho. Dia hoy i Jesoa: Marina ny tarognao hoe tsa manambady agnao;",
+    "source": "translate Betsileo to Malagasy: Feny hoy rampela: Tsa manambady aho.  Marina ny tarognao hoe tsa manambady agnao;",
     "target": "Namaly Azy Ravehivavy hoe: Tsy manambady aho. Hoy Jesosy taminy: Marina ihany izay nolazainao hoe: Tsy manambady aho;",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 4:17",
@@ -38720,16 +38697,16 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Aloavo ho an’i Kaisara ary izay an’i Kaisara eko ho an’Andriamagnitsa izay an’Andriamagnitsa.",
-    "target": "Dia hoy Jesosy taminy: Aloavy ho an’i Kaisara ary izay an’i Kaisara ary ho an’Andriamanitra izay an’Andriamanitra.",
+    "source": "translate Betsileo to Malagasy:  Aloavo ho an’i Kaisara ary izay an’i Kaisara eko ho an’Andriamagnitsa izay an’Andriamagnitsa.",
+    "target": " Aloavy ho an’i Kaisara ary izay an’i Kaisara ary ho an’Andriamanitra izay an’Andriamanitra.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 20:25",
     "book": "LUK",
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Aza rarana, fa izay tsy manohitra anareo dia momba anareo.",
-    "target": "Eko hoy i Jesoa taminazy: Aza mandrara azy, fa izay tsa manohitsa anareo dia momba anareo.",
+    "source": "translate Malagasy to Betsileo: Aza rarana, fa izay tsy manohitra anareo dia momba anareo.",
+    "target": " Aza mandrara azy, fa izay tsa manohitsa anareo dia momba anareo.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 9:50",
     "book": "LUK",
@@ -38976,8 +38953,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Eko hoy i Jesoa taminazy: Ambarako aminao ny marina fa niany noho niany dia hiaraka Aminahy agny am-paradisa agnao.",
-    "target": "Dia hoy Jesosy taminy: Lazaiko aminao marina tokoa: Anio no hiarahanao Amiko any Paradisa* .",
+    "source": "translate Betsileo to Malagasy: Ambarako aminao ny marina fa niany noho niany dia hiaraka Aminahy agny am-paradisa agnao.",
+    "target": " Lazaiko aminao marina tokoa: Anio no hiarahanao Amiko any Paradisa* .",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 23:43",
     "book": "LUK",
@@ -39937,7 +39914,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Dia hoy ny navalin’i Jesosy hoe: Tsy roa amby folo va ny ora amin’ny indray andro? Raha misy mandeha amin’ny antoandro dia tsy mba tafintohina izy, fa mahita ny fahazavan’izao tontolo izao.",
-    "target": "Dia hoy i Jesoa: Tsa roambinifolo ve ny ora amin’ny andro raika? Izay mandeha amin’ny atoandro dia tsa mba ho totoitsa satria mahita ny fahazavan’izao tontolo izao.",
+    "target": " Tsa roambinifolo ve ny ora amin’ny andro raika? Izay mandeha amin’ny atoandro dia tsa mba ho totoitsa satria mahita ny fahazavan’izao tontolo izao.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 11:9",
     "book": "JHN",
@@ -40656,7 +40633,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Raha tsy mahita famantarana sy fahagagana ianareo dia tsy mba hety hino mihitsy.",
+    "source": "translate Malagasy to Betsileo:  Raha tsy mahita famantarana sy fahagagana ianareo dia tsy mba hety hino mihitsy.",
     "target": "Dia hoy i Jesoa taminazy: Lehe tsa mahita famantarana sy fahagagana agnareo, dia tsa mba hety hino mihitsy.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 4:48",
@@ -41960,7 +41937,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Aoka ny maty handevina ny maty ao aminy; fa ianao kosa dia mandehana ka mitoria ny fanjakan’Andriamanitra.",
+    "source": "translate Malagasy to Betsileo:    Aoka ny maty handevina ny maty ao aminy; fa ianao kosa dia mandehana ka mitoria ny fanjakan’Andriamanitra.",
     "target": "Fa hoy i Jesoa taminazy: Avilay ny maty handevigna ny maty ao aminazy; fa agnao mandihàna, ko mitoria ny fanjakan’Andriamagnitsa.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 9:60",
@@ -42305,7 +42282,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Dia hoy izy: Mitandrema fandrao ho voafitaka ianareo; fa maro no ho avy amin’ny anarako sady hilaza hoe: Izaho no izy, ary koa: Efa akaiky ny andro; koa aza manaraka azy.",
-    "target": "Dia hoy i Jesoa: Mitandrema nge ho voafitaka agnareo. Betsaka ro ho avy amin’ny Agnarako sady hanao hoe: ‘Aho ro Mesia', sy hoe koa: ‘Efa avy ny fotoagna'; eko aza magnaraka azy.",
+    "target": " Mitandrema nge ho voafitaka agnareo. Betsaka ro ho avy amin’ny Agnarako sady hanao hoe: ‘Aho ro Mesia', sy hoe koa: ‘Efa avy ny fotoagna'; eko aza magnaraka azy.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 21:8",
     "book": "LUK",
@@ -42792,7 +42769,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Ina ro voasoratsa ao amin’ny lalàna? Manao akory ro fahazahoanao azy?",
+    "source": "translate Betsileo to Malagasy:  Ina ro voasoratsa ao amin’ny lalàna? Manao akory ro fahazahoanao azy?",
     "target": "Ary hoy izy taminy: Inona no voasoratra ao amin’ny Lalàna? Ahoana no famakianao azy?",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 10:26",
@@ -43064,7 +43041,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Tsa efa notarogniko taminao ve fa lehe mino agnao dia ho hitanao ny vogninahits’Andriamagnitsa?",
+    "source": "translate Betsileo to Malagasy:  Tsa efa notarogniko taminao ve fa lehe mino agnao dia ho hitanao ny vogninahits’Andriamagnitsa?",
     "target": "Hoy Jesosy taminy: Tsy voalazako va fa raha hino ianao dia ho hitanao ny voninahitr’Andriamanitra?",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 11:40",
@@ -43480,8 +43457,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Lazaiko aminareo marina dia marina tokoa: Raha tsy mihinana ny nofon’ny Zanak’Olona sy misotro ny rany ianareo dia tsy manana fiainana ao aminareo.",
-    "target": "Dia hoy i Jesoa: Ambarako aminareo ny marina fa lehe tsa mihinana ny nofon’ny Zanak’Ona sy misotro ny rany agnareo, dia tsa hanagna ny fiaignana ao aminareo.",
+    "source": "translate Malagasy to Betsileo:    Lazaiko aminareo marina dia marina tokoa: Raha tsy mihinana ny nofon’ny Zanak’Olona sy misotro ny rany ianareo dia tsy manana fiainana ao aminareo.",
+    "target": " Ambarako aminareo ny marina fa lehe tsa mihinana ny nofon’ny Zanak’Ona sy misotro ny rany agnareo, dia tsa hanagna ny fiaignana ao aminareo.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 6:53",
     "book": "JHN",
@@ -44072,7 +44049,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Androany no efa tanteraka eto anatrehanareo izany soratra izany.",
+    "source": "translate Malagasy to Betsileo:  Androany no efa tanteraka eto anatrehanareo izany soratra izany.",
     "target": "Dia niaiky volagna sady zendagna aby ny ona noho ny hasoan’ny raha notarogniny. Dia hoy ny sanagny tamin’ireo: Tsa zanak'i Josefa ve ity?",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 4:21",
@@ -44808,14 +44785,6 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: ka niteny taminy hoe: Ry tompokolahy isany ô! Hitako fa izao fandehanana izao dia hampisy fahasimbana sy fatiantoka be ihany, tsy amin’ny entana sy ny sambo ihany, fa amin’ny aintsika koa aza.",
-    "target": "hoe: Hitako, tompoko, fa ho ratsy ity dia ity satria hanimba ny sambo sy ny entagna eko hampidi-doza ny aintsika koa.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "ACT 27:10",
-    "book": "ACT",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Tena tiàko lehe mihoagny aminareo aho izao, mba hahitako ny fomba mety hirisahana aminareo satria mahasanganehana ahy agnareo.",
     "target": "Te ho tonga eo aminareo aho ankehitriny ka hanova ny feoko, fa sahiran-tsaina ny aminareo aho.",
     "direction": "Betsileo->Malagasy",
@@ -44837,14 +44806,6 @@
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 5:26",
     "book": "JHN",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Dia nomeny tapaky ny hazandrano voatono sy tantely izy.",
-    "target": "dia noraisiny ko nohaniny teo imason’iy aby.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "LUK 24:42",
-    "book": "LUK",
     "identical": false
   },
   {
@@ -45040,16 +45001,16 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: ka niteny hoe: «Hitahy anao tokoa Aho ary hahamaro dia hahamaro anao» (Gen 22.17).",
-    "target": "Fa ny ona dia mivoady amin’izay lihibe noho ny tegnany; eko izay fianianana ataony izay ro magnamafy ny tarognany mba hampiegnina ny fifandirana abiaby.",
+    "source": "translate Malagasy to Betsileo: Fa ny olona dia mivoady amin'izay lehibe noho ny tenany; ary ny fianianana izay ataony no manamarina ny teniny mba hampitsaharana ny fifandirana rehetra.",
+    "target": "    Fa ny ona dia mivoady amin’izay lihibe noho ny tegnany; eko izay fianianana izay ataony ro magnamafy ny tarognany mba hampiegnina ny fifandirana abiaby.",
     "direction": "Malagasy->Betsileo",
     "ref": "HEB 6:14",
     "book": "HEB",
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Zava-doza ro hanjo anareo mpahay lalàna sy Fariseo, mpihatsaravelatsihy! Fa robainareo ny tokantragnon’ny tokan-taigna, nefa agnareo mivony ao agnaty vavaka lavareny magnafin-kilema. Ho henjagna satrìa ny fagnamelohana hahazo anareo noho ny an’ny hafa.",
-    "target": "Lozanareo, mpanoradalàna sy Fariseo, mpihatsaravelatsihy! Fa laninareo ny tranon’ny mpitondratena, dia manao vavaka lavareny mba ho fiolahana ianareo; koa izany no hahazoanareo fanamelohana mafimafy kokoa.",
+    "source": "translate Betsileo to Malagasy: Fa robainareo ny tokantragnon’ny tokan-taigna, nefa agnareo mivony ao agnaty vavaka lavareny magnafin-kilema. ",
+    "target": "    Fa laninareo ny tranon’ny mpitondratena, nefa ianareo miafina ao anaty vavaka lavareny mba ho fiolahana.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 23:14",
     "book": "MAT",
@@ -45057,7 +45018,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Heveriko mantsy fa tsy mety ny mampanatitra gadra any nefa tsy milaza izay zavatra iampangana azy.",
-    "target": "Eritseretiko manko fa tsa mety ny mandefa gadra agny nefa tsa milaza ny raha iampangana azy.",
+    "target": " Eritseretiko manko fa tsa mety ny mandefa gadra agny nefa tsa milaza ny raha iampangana azy.",
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 25:27",
     "book": "ACT",
@@ -45257,7 +45218,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Eko hoy i Jesoa tamin’iy aby: Mpagnamarin-tegna eo agnatrehan’ny ona agnareo, feny Andriamagnitsa mahilala ny ao am-ponareo. Fa izay raha eritseretin’ny ona ho ambony dia fahavetavetana amin’Andriamagnitsa.",
-    "target": "Dia hoy Jesosy taminy: Mpanamarin-tena eo anatrehan’ny olona ianareo, nefa Andriamanitra mahafantatra ny fonareo; fa izay zavatra heverin’ny olona ho ambony dia fahavetavetana eo anatrehan’Andriamanitra.",
+    "target": " Mpanamarin-tena eo anatrehan’ny olona ianareo, nefa Andriamanitra mahafantatra ny fonareo; fa izay zavatra heverin’ny olona ho ambony dia fahavetavetana eo anatrehan’Andriamanitra.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 16:15",
     "book": "LUK",
@@ -45377,7 +45338,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa taminazy: Tsa misy ona mitagna angadin’aomby sady miherika ko mendrika ny fanjakan’Andriamagnitsa.",
-    "target": "Fa hoy Jesosy taminy: Tsy misy olona mitana angadinomby sady miherika ka mendrika ny fanjakan’Andriamanitra.",
+    "target": "   Tsy misy olona mitana angadinomby sady miherika ka mendrika ny fanjakan’Andriamanitra.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 9:62",
     "book": "LUK",
@@ -45512,7 +45473,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Nahoana Aho no anontanianao ny amin’izay tsara? Iray no tsara; fa raha te hiditra any amin’ny fiainana ianao, tandremo ny didy.",
+    "source": "translate Malagasy to Betsileo:    Nahoana Aho no anontanianao ny amin’izay tsara? Iray no tsara; fa raha te hiditra any amin’ny fiainana ianao, tandremo ny didy.",
     "target": "I Jesoa namaly azy hoe: Magnina Aho ro agnontanianao ny amin’izay soa? Raika madina ro soa. Lehe te hiditsa agny amin’ny fiaignana agnao, dia ankatoavo ny didy.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 19:17",
@@ -45761,7 +45722,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa tamindreo: Hitako Satana nilatsaka hatagny an-dagnitsa sahala amin’ny varatsa.",
-    "target": "Fa hoy Jesosy taminy: Izaho nahita an’i Satana nilatsaka avy tany an-danitra tahaka ny varatra.",
+    "target": "   Izaho nahita an’i Satana nilatsaka avy tany an-danitra tahaka ny varatra.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 10:18",
     "book": "LUK",
@@ -46256,8 +46217,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Eko hoy i Jesoa taminazy: Mahità ary! Ny finoanao ro efa nahavonjy anao.",
-    "target": "Dia hoy Jesosy taminy: Aoka ianao hahita indray! Ny finoanao no efa nahavonjy anao.",
+    "source": "translate Betsileo to Malagasy: Mahità ary! Ny finoanao ro efa nahavonjy anao.",
+    "target": " Aoka ianao hahita indray! Ny finoanao no efa nahavonjy anao.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 18:42",
     "book": "LUK",
@@ -46329,7 +46290,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Fa hoy i Jesoa taminazy: Nisy ona raika nagnomagna lagnonambe eko nagnasa ona be.",
-    "target": "Fa hoy Jesosy taminy: Nisy olona iray nanao fanasana lehibe ka nanasa olona maro.",
+    "target": "   Nisy olona iray nanao fanasana lehibe ka nanasa olona maro.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 14:16",
     "book": "LUK",
@@ -46416,7 +46377,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Tsa roambinifolo ve ny ora amin’ny andro raika? Izay mandeha amin’ny atoandro dia tsa mba ho totoitsa satria mahita ny fahazavan’izao tontolo izao.",
+    "source": "translate Betsileo to Malagasy:  Tsa roambinifolo ve ny ora amin’ny andro raika? Izay mandeha amin’ny atoandro dia tsa mba ho totoitsa satria mahita ny fahazavan’izao tontolo izao.",
     "target": "Dia hoy ny navalin’i Jesosy hoe: Tsy roa amby folo va ny ora amin’ny indray andro? Raha misy mandeha amin’ny antoandro dia tsy mba tafintohina izy, fa mahita ny fahazavan’izao tontolo izao.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 11:9",
@@ -49801,7 +49762,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Ko ia amindreo mirahalahy ro nanao ny sitrapon’ny babany? Dia hotsindreo: Ilay tompomboho. Eko hotsin’i Jesoa tamindreo: Ny marina ro ambarako aminareo fa efa mialoha anareo agny amin’ny fanjakan’Andriamagnitsa ny mpitaky hetsa sy ny mpivarotaigna.",
-    "target": "Koa iza amin’izy mirahalahy moa no nanao ny sitrapon’ny rainy? Dia hoy ireo: Ny lahimatoa. Dia hoy Jesosy taminy: Lazaiko aminareo marina tokoa fa ny mpamory hetra sy ny vehivavy janga dia mialoha anareo ho any amin’ny fanjakan’Andriamanitra.",
+    "target": "Koa iza amin’izy mirahalahy moa no nanao ny sitrapon’ny rainy? Dia hoy ireo: Ny lahimatoa.  Lazaiko aminareo marina tokoa fa ny mpamory hetra sy ny vehivavy janga dia mialoha anareo ho any amin’ny fanjakan’Andriamanitra.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 21:31",
     "book": "MAT",
@@ -51641,7 +51602,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Hoy Jesosy taminy: Mitsangàna, batao ny fandriananao ka mandehana.",
-    "target": "Eko hoy i Jesoa taminazy: Mitsangàna, fero ny fandrianao ko mandihana.",
+    "target": "    Mitsangàna, fero ny fandrianao ko mandihana.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 5:8",
     "book": "JHN",
@@ -52312,8 +52273,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Ampitoero ny ona. Be ahitsa manko tamin’io toerana io. Dia nitoatsa ny ona; eko tokony ho dimy arivo ro isan’ny lihilahy.",
-    "target": "Fa hoy Jesosy: Asaivo mipetraka ny olona. Ary nisy ahitra be teo. Dia nipetraka ireo ka tokony ho dimy arivo ny isan’ny lehilahy.",
+    "source": "translate Betsileo to Malagasy:  Ampitoero ny ona. Be ahitsa manko tamin’io toerana io. Dia nitoatsa ny ona; eko tokony ho dimy arivo ro isan’ny lihilahy.",
+    "target": " Asaivo mipetraka ny olona. Ary nisy ahitra be teo. Dia nipetraka ireo ka tokony ho dimy arivo ny isan’ny lehilahy.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 6:10",
     "book": "JHN",
@@ -53352,16 +53313,16 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Lozanareo, mpanoradalàna sy Fariseo, mpihatsaravelatsihy! Fa laninareo ny tranon’ny mpitondratena, dia manao vavaka lavareny mba ho fiolahana ianareo; koa izany no hahazoanareo fanamelohana mafimafy kokoa.",
-    "target": "Zava-doza ro hanjo anareo mpahay lalàna sy Fariseo, mpihatsaravelatsihy! Fa robainareo ny tokantragnon’ny tokan-taigna, nefa agnareo mivony ao agnaty vavaka lavareny magnafin-kilema. Ho henjagna satrìa ny fagnamelohana hahazo anareo noho ny an’ny hafa.",
+    "source": "translate Malagasy to Betsileo: Fa laninareo ny tranon’ny mpitondratena, nefa ianareo miafina ao anaty vavaka lavareny mba ho fiolahana.",
+    "target": "    Fa robainareo ny tokantragnon’ny tokan-taigna, nefa agnareo mivony ao agnaty vavaka lavareny magnafin-kilema.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 23:14",
     "book": "MAT",
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Raha maharitra ny asan’ny olona izay narafiny teo amboniny dia handray valim-pitia izy.",
-    "target": "Lehe tsa levogna ny raha narafitsy ny ona teo ambony fototsa, dia hahazo valisoa iy.",
+    "source": "translate Malagasy to Betsileo: Raha tsy levona ny asan narafirin'ny olona teo ambony fototra dia handray valim-pitia izy.",
+    "target": "    Lehe tsa levogna ny raha narafitsy ny ona teo ambony fototsa dia hahazo valisoa iy.",
     "direction": "Malagasy->Betsileo",
     "ref": "1CO 3:14",
     "book": "1CO",
@@ -53584,7 +53545,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Ho fitsarana ro nahatongavako eto amin’izao tontolo izao, mba hahita ny tsa mahita eko hanjary jamba koa ny mahita.",
+    "source": "translate Betsileo to Malagasy:  Ho fitsarana ro nahatongavako eto amin’izao tontolo izao, mba hahita ny tsa mahita eko hanjary jamba koa ny mahita.",
     "target": "Ary hoy Jesosy: Ho fitsarana no nahatongavako eto amin’izao tontolo izao, mba hahiratra ny tsy mahiratra ary mba ho tonga jamba kosa ny mahiratra.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 9:39",
@@ -53769,7 +53730,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Ary hoy Jesosy: Ho fitsarana no nahatongavako eto amin’izao tontolo izao, mba hahiratra ny tsy mahiratra ary mba ho tonga jamba kosa ny mahiratra.",
-    "target": "Dia hoy i Jesoa: Ho fitsarana ro nahatongavako eto amin’izao tontolo izao, mba hahita ny tsa mahita eko hanjary jamba koa ny mahita.",
+    "target": " Ho fitsarana ro nahatongavako eto amin’izao tontolo izao, mba hahita ny tsa mahita eko hanjary jamba koa ny mahita.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 9:39",
     "book": "JHN",
@@ -54392,7 +54353,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Hoy ireo Taminy: An’i Kaisara. Dia hoy Jesosy taminy: Aloavy ho an’i Kaisara ary izay an’i Kaisara ary ho an’Andriamanitra izay an’Andriamanitra.",
+    "source": "translate Malagasy to Betsileo: Hoy ireo Taminy: An’i Kaisara.  Aloavy ho an’i Kaisara ary izay an’i Kaisara ary ho an’Andriamanitra izay an’Andriamanitra.",
     "target": "Dia namaly an’i Jesoa reo hoe: An’i Kaisara. Dia hotsin’i Jesoa ndray: Aloavo ho an’i Kaisara izay an’i Kaisara, eko ho an’Andriamagnitsa izay an’Andriamagnitsa.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 22:21",
@@ -57472,7 +57433,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Tsy tokony handeha ireo; fa omeonareo hanina.",
+    "source": "translate Malagasy to Betsileo:    Tsy tokony handeha ireo; fa omeonareo hanina.",
     "target": "Dia hotsin’i Jesoa tamindreo: Tsa tokony ho roso ireo fa omeonareo hanina.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 14:16",
@@ -58289,7 +58250,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hoy Jesoa: Ambarako aminareo ny marina, tsa i Mosesy ro nagnome anareo ny mofo hatagny an-dagnitsa fa ny Raiko ro magnome anareo ny tena mofo hatagny an-dagnitsa.",
-    "target": "Dia hoy Jesosy taminy: Lazaiko aminareo marina dia marina tokoa: Tsy i Mosesy no nanome anareo ny mofo avy tany an-danitra fa ny Raiko no manome anareo ny tena mofo avy any an-danitra.",
+    "target": " Lazaiko aminareo marina dia marina tokoa: Tsy i Mosesy no nanome anareo ny mofo avy tany an-danitra fa ny Raiko no manome anareo ny tena mofo avy any an-danitra.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 6:32",
     "book": "JHN",
@@ -59417,7 +59378,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hotsin’i Jesoa tamindreo: Mandiniha agnareo ko mitandrema fa nge dia hazan’ny lalivain’ny Fariseo sy ny Sadoseo.",
-    "target": "Dia hoy Jesosy taminy: Mandiniha ianareo ka mitandrema mba tsy ho azon’ny masirasiran’ny Fariseo* sy ny Sadoseo* .",
+    "target": " Mandiniha ianareo ka mitandrema mba tsy ho azon’ny masirasiran’ny Fariseo* sy ny Sadoseo* .",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 16:6",
     "book": "MAT",
@@ -59712,8 +59673,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Lazaiko aminao marina tokoa: Anio no hiarahanao Amiko any Paradisa* .",
-    "target": "Eko hoy i Jesoa taminazy: Ambarako aminao ny marina fa niany noho niany dia hiaraka Aminahy agny am-paradisa agnao.",
+    "source": "translate Malagasy to Betsileo:  Lazaiko aminao marina tokoa: Anio no hiarahanao Amiko any Paradisa* .",
+    "target": "    Ambarako aminao ny marina fa niany noho niany dia hiaraka Aminahy agny am-paradisa agnao.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 23:43",
     "book": "LUK",
@@ -60672,7 +60633,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Agnareo va dia tsaova mahatakatsa madina?",
+    "source": "translate Betsileo to Malagasy:  Agnareo va dia tsaova mahatakatsa madina?",
     "target": "Dia hoy Jesosy: Ianareo koa va mbola tsy mahafantatra ihany?",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 15:16",
@@ -60697,7 +60658,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hotsin’i Jesoa: “Tiava NY TOMPO Andriamagnitsao amin’ny fonao manontolo sy ny fagnahinao manontolo eko ny saignanao manontolo” (Deo 6.5).",
-    "target": "Dia hoy Jesosy taminy: «Tiava NY TOMPO Andriamanitrao amin’ny fonao manontolo sy ny fanahinao manontolo» (Deo 6.5).",
+    "target": " «Tiava NY TOMPO Andriamanitrao amin’ny fonao manontolo sy ny fanahinao manontolo» (Deo 6.5).",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 22:37",
     "book": "MAT",
@@ -61377,7 +61338,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia namaly an’i Jesoa reo hoe: An’i Kaisara. Dia hotsin’i Jesoa ndray: Aloavo ho an’i Kaisara izay an’i Kaisara, eko ho an’Andriamagnitsa izay an’Andriamagnitsa.",
-    "target": "Hoy ireo Taminy: An’i Kaisara. Dia hoy Jesosy taminy: Aloavy ho an’i Kaisara ary izay an’i Kaisara ary ho an’Andriamanitra izay an’Andriamanitra.",
+    "target": "Hoy ireo Taminy: An’i Kaisara.  Aloavy ho an’i Kaisara ary izay an’i Kaisara ary ho an’Andriamanitra izay an’Andriamanitra.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 22:21",
     "book": "MAT",
@@ -63225,7 +63186,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Fa Jesosy namaly azy hoe: Heverinareo va fa ireny Galiliana ireny no mpanota mihoatra noho ny Galiliana rehetra satria niharan’izany zavatra izany?",
-    "target": "Dia hoy i Jesoa: Agnareo ve mieritseritsa fa ireo Galiliana novonoina ireo dia mpanota mihoatsa noho ny Galiliana hafa, satria reo novonoina sahala amin’izay?",
+    "target": " Agnareo ve mieritseritsa fa ireo Galiliana novonoina ireo dia mpanota mihoatsa noho ny Galiliana hafa, satria reo novonoina sahala amin’izay?",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 13:2",
     "book": "LUK",
@@ -63905,7 +63866,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Hoy Jesosy taminy: Izaho no lalana sy fahamarinana ary fiainana; tsy misy olona mankany amin’ny Ray, afa-tsy amin’ny alalako.",
-    "target": "Dia hoy i Jesoa: Aho ro lalagna sy fahamarinana eko fiaignana; tsa misy ona mihoagny amin’ny Ray lehe tsa amin’ny alalako.",
+    "target": " Aho ro lalagna sy fahamarinana eko fiaignana; tsa misy ona mihoagny amin’ny Ray lehe tsa amin’ny alalako.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 14:6",
     "book": "JHN",
@@ -64177,7 +64138,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Feny hoy i Jesoa: Ny tongotsa madina ro sasana ho an’izay efa nandro satria efa madio iy; madio agnareo feny tsa agnareo aby izay.",
-    "target": "Fa hoy Jesosy taminy: Izay efa nandro dia tsy mila hosasana, afa-tsy ny tongotra ihany, fa efa madio avokoa; ary ianareo dia madio, nefa tsy ianareo rehetra.",
+    "target": "   Izay efa nandro dia tsy mila hosasana, afa-tsy ny tongotra ihany, fa efa madio avokoa; ary ianareo dia madio, nefa tsy ianareo rehetra.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 13:10",
     "book": "JHN",
@@ -64681,7 +64642,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hotsin’i Jesoa: Sary sy sorats’ia ity?",
-    "target": "Dia hoy Jesosy taminy: An’iza ity sary sy soratra ity?",
+    "target": " An’iza ity sary sy soratra ity?",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 22:20",
     "book": "MAT",
@@ -66024,14 +65985,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: dia noraisiny ko nohaniny teo imason’iy aby.",
-    "target": "Dia nomeny tapaky ny hazandrano voatono sy tantely izy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "LUK 24:42",
-    "book": "LUK",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Feny tsa nanan-kaloa iy roalahy ko nafoiny ny trosa. Ia amin’iy roalahy ro tena ho tea azy?",
     "target": "Ary raha tsy nanan-kaloa izy roa lahy dia samy navelany. Koa iza moa amin’ireo no ho tia azy kokoa?",
     "direction": "Betsileo->Malagasy",
@@ -66039,17 +65992,10 @@
     "book": "LUK",
     "identical": false
   },
+
   {
-    "source": "translate Betsileo to Malagasy: eko lehe tsa natsangagna i Kristy, dia very maigna ny toriteninay, eko dia tsa misy dikany ny finoanareo;",
-    "target": "ary raha tsy natsangana Kristy dia foana ny toriteninay ary foana koa ny finoanareo.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "1CO 15:14",
-    "book": "1CO",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Sefa tafiditsa tao Jerosalema i Jesoa, dia nisahotaka ny ona rehetra tao an-tanàna ko nanao hoe: Ia re Rangahy io?",
-    "target": "Nony efa tafiditra tao Jerosalema izy dia nihotakotaka ny tanàna manontolo ka niteny hoe: Iza moa izao?",
+    "source": "translate Betsileo to Malagasy: Sefa tafiditsa iy dia nisahotaka ny ona rehetra tao an-tanàna ko nanao hoe: Ia re io?",
+    "target": "    Nony tafiditra izy dia nihotakotaka ny olona manontolo tao tanàna ka niteny hoe: Iza moa izao?",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 21:10",
     "book": "MAT",
@@ -66169,23 +66115,15 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Igny dia roso nipody nihoagny Jerosalema iy roalahy. Sỳ nahita azy roalahy ny raikambinifolo lahy sy izay niaraka tamindreo teo",
-    "target": "Dia nifampiresaka izy ireo hoe: Tsy nangorakoraka va ny fontsika, raha niresaka tamintsika teny an-dalana izy ka namoaka ny hevitry ny Soratra Masina tamintsika?",
+    "target": "    Dia nifampiresaka izy ireo hoe: Tsy nangorakoraka va ny fontsika, raha niresaka tamintsika teny an-dalana izy ka namoaka ny hevitry ny Soratra Masina tamintsika?",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 24:32",
     "book": "LUK",
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: eko hiatrika ny mpitondra sy ny mpanjaka noho ny Amiko, dia ho vavolombeloko eo agnatrehandreo sy ny hafa firenena agnareo.",
-    "target": "ary hoentiny eo anatrehan’ny mpanapaka sy ny mpanjaka ianareo noho ny Amiko, ho vavolombelona aminy sy amin’ny Jentilisa* .",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 10:18",
-    "book": "MAT",
-    "identical": false
-  },
-  {
     "source": "translate Malagasy to Betsileo: Ny olona tsara fanahy dia mamoaka ny tsara avy amin’ny rakitra tsaran’ny fony; ary ny ratsy fanahy kosa dia mamoaka ny ratsy; fa avy amin’ny haben’ny ao am-po no itenenan’ny vavany.",
-    "target": "Ny ona soa fagnahy dia mamoaka ny soa avy amin’ny rakitsa soan’ny fony; ny ratsy fagnahy kosa dia mamoaka ny ratsy. Fa amin’ny haben’ny ao am-pon’ny ona raika ro itarognan’ny vavany.",
+    "target": "    Ny ona soa fagnahy dia mamoaka ny soa avy amin’ny rakitsa soan’ny fony; ny ratsy fagnahy kosa dia mamoaka ny ratsy. Fa amin’ny haben’ny ao am-pon’ny ona raika ro itarognan’ny vavany.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 6:45",
     "book": "LUK",
@@ -66504,7 +66442,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Ho avy Aho hanasitrana azy.",
+    "source": "translate Malagasy to Betsileo:  Ho avy Aho hanasitrana azy.",
     "target": "Dia hotsin’i Jesoa tagnaminy: Ho avy Aho hagnasitragna azy.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 8:7",
@@ -69281,7 +69219,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Dia hoy Jesosy: Tahaka ny inona ny fanjakan’Andriamanitra? Ary inona no hanoharako azy?",
-    "target": "Dia hoy i Jesoa: Sahala amin’ina kay ny Fanjakan’Andriamagnitsa? Eko hohariko amin’ina iy?",
+    "target": " Sahala amin’ina kay ny Fanjakan’Andriamagnitsa? Eko hohariko amin’ina iy?",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 13:18",
     "book": "LUK",
@@ -69337,7 +69275,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Eko hoy i Jesoa: Lozanareo koa ry mpahay lalàna, fa ampitondrainareo entagna tsa hay ferina ny ona feny tsa mikasika izay entagna izay laky dia ny ratsantagnanareo raika aza.",
-    "target": "Fa hoy Jesosy: Lozanareo, mpahay lalàna koa! Fa mampitondra entana sarotra entina ny olona ianareo, nefa tsy mikasika izany entana izany akory ianareo na dia amin’ny rantsantananareo iray aza.",
+    "target": " Lozanareo, mpahay lalàna koa! Fa mampitondra entana sarotra entina ny olona ianareo, nefa tsy mikasika izany entana izany akory ianareo na dia amin’ny rantsantananareo iray aza.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 11:46",
     "book": "LUK",
@@ -70168,8 +70106,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Lehe tsa levogna ny raha narafitsy ny ona teo ambony fototsa, dia hahazo valisoa iy.",
-    "target": "Raha maharitra ny asan’ny olona izay narafiny teo amboniny dia handray valim-pitia izy.",
+    "source": "translate Betsileo to Malagasy: Lehe tsa levogna ny raha narafitsy ny ona teo ambony fototsa dia hahazo valisoa iy.",
+    "target": "    Raha tsy levona ny asan narafirin'ny olona teo ambony fototra dia handray valim-pitia izy.",
     "direction": "Betsileo->Malagasy",
     "ref": "1CO 3:14",
     "book": "1CO",
@@ -70184,27 +70122,11 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Nony hitan’i Simona fa ny fametrahan’ny Apostoly tanana no nanomezana ny Fanahy Masina dia nitondra vola homena azy izy",
-    "target": "Sỳ hitan’i Simona fa ny fametrahan’ny Apôstôly tagnana ro nagnomezana ny Fagnahy Masina, dia nitondra vola homena an’iy roalahy iy",
-    "direction": "Malagasy->Betsileo",
-    "ref": "ACT 8:18",
-    "book": "ACT",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Homba ny ona masina rehetra anie ny fahasoavan’i Jesoa Tompo.",
     "target": "Ho amin’ny olona masina rehetra anie ny fahasoavan’i Jesosy Kristy* Tompo! Amena.",
     "direction": "Betsileo->Malagasy",
     "ref": "REV 22:21",
     "book": "REV",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Rehefa ren’i Elizabeta ny fiarahaban’i Maria dia nibitaka ny zaza tao an-kibony; ary nofenoina ny Fanahy Masina i Elizabeta",
-    "target": "Eko sỳ ren’i Elizabeta ny fagnakorian’i Maria, dia nihetsika ny anajaza tao an-trokany. Ko feno ny Fagnahy Masina i Elizabeta.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "LUK 1:41",
-    "book": "LUK",
     "identical": false
   },
   {
@@ -70261,14 +70183,6 @@
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 7:37",
     "book": "JHN",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: dia nitory ny Vaovao Mahafaly tagny.",
-    "target": "ary tany no nitorian’izy ireo ny Filazantsara.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "ACT 14:7",
-    "book": "ACT",
     "identical": false
   },
   {
@@ -71688,7 +71602,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Agnareo ve mieritseritsa fa ireo Galiliana novonoina ireo dia mpanota mihoatsa noho ny Galiliana hafa, satria reo novonoina sahala amin’izay?",
+    "source": "translate Betsileo to Malagasy:  Agnareo ve mieritseritsa fa ireo Galiliana novonoina ireo dia mpanota mihoatsa noho ny Galiliana hafa, satria reo novonoina sahala amin’izay?",
     "target": "Fa Jesosy namaly azy hoe: Heverinareo va fa ireny Galiliana ireny no mpanota mihoatra noho ny Galiliana rehetra satria niharan’izany zavatra izany?",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 13:2",
@@ -71928,7 +71842,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Izay misotro ity rano ity dia vona hangetaheta madina;",
+    "source": "translate Betsileo to Malagasy:  Izay misotro ity rano ity dia vona hangetaheta madina;",
     "target": "Fa Jesosy namaly azy hoe: Izay rehetra misotro ity rano ity dia mbola hangetaheta indray;",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 4:13",
@@ -72256,7 +72170,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Amin’izao fiaignana izao ro misy mampaka-bady sy ampakarina.",
+    "source": "translate Betsileo to Malagasy:  Amin’izao fiaignana izao ro misy mampaka-bady sy ampakarina.",
     "target": "Ary hoy Jesosy taminy: Ny zanak’izao fiainana izao dia mampaka-bady sady avoaka hampakarina;",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 20:34",
@@ -72776,7 +72690,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Fenoy rano ny siny. Dia nofenoiny hatramin’ny molony.",
+    "source": "translate Malagasy to Betsileo:  Fenoy rano ny siny. Dia nofenoiny hatramin’ny molony.",
     "target": "Eko hoy i Jesoa tamin’ny mpiasa: Fenò rano aby ny bobòka, dia nofenoan’iy aby hategny am-bavany izany.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 2:7",
@@ -72936,7 +72850,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Efa ela izay niarahako taminareo izay, eko dia vona tsa mahilala Ahy madina ve agnao ry Filipo? Izay nahita Ahy dia nahita ny Ray, ko nahoana agnao ro mitarogna hoe: Atorò anay ny Ray?",
+    "source": "translate Betsileo to Malagasy:  Efa ela izay niarahako taminareo izay, eko dia vona tsa mahilala Ahy madina ve agnao ry Filipo? Izay nahita Ahy dia nahita ny Ray, ko nahoana agnao ro mitarogna hoe: Atorò anay ny Ray?",
     "target": "Hoy Jesosy taminy: Izay ela izay no efa nitoerako teto aminareo ka tsy mbola fantatrao ihany va Aho, ry Filipo? Izay nahita Ahy dia nahita ny Ray; koa ahoana no itenenanareo hoe: Asehoy anay ny Ray?",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 14:9",
@@ -73041,7 +72955,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hotsin’i Jesoa tagnaminy: Ampidiro amin’ny tragnony ny sabatsao! Izay re mamely amin’ny sabatsa dia hovonoana amin’ny sabatsa.",
-    "target": "Fa hoy Jesosy: Ampidiro amin’ny tranony ny sabatrao; fa izay rehetra mandray sabatra dia ho fatin’ny sabatra.",
+    "target": " Ampidiro amin’ny tranony ny sabatrao; fa izay rehetra mandray sabatra dia ho fatin’ny sabatra.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 26:52",
     "book": "MAT",
@@ -73672,8 +73586,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Aoka ianao hahita indray! Ny finoanao no efa nahavonjy anao.",
-    "target": "Eko hoy i Jesoa taminazy: Mahità ary! Ny finoanao ro efa nahavonjy anao.",
+    "source": "translate Malagasy to Betsileo:  Aoka ianao hahita indray! Ny finoanao no efa nahavonjy anao.",
+    "target": "    Mahità ary! Ny finoanao ro efa nahavonjy anao.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 18:42",
     "book": "LUK",
@@ -73865,7 +73779,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa taminazy: Jodasy! Fagnorohana ve ro anoloranao ny Zanak’Ona?",
-    "target": "Fa hoy Jesosy taminy: Ry Jodasy, fanorohana va no anoloranao ny Zanak’Olona* ?",
+    "target": "   Ry Jodasy, fanorohana va no anoloranao ny Zanak’Olona* ?",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 22:48",
     "book": "LUK",
@@ -74777,7 +74691,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa taminazy: Izay tokoa! Izay ro tantiraho dia ho velogna agnao.",
-    "target": "Dia hoy Jesosy taminy: Marina ny navalinao; ataovy izany dia ho velona ianao.",
+    "target": " Marina ny navalinao; ataovy izany dia ho velona ianao.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 10:28",
     "book": "LUK",
@@ -75088,7 +75002,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Azonareo atao ve ny mampifady hanina ny mpagnotrogna ny mpagnenga vady, lehe vo eo amindreo iy?",
+    "source": "translate Betsileo to Malagasy:  Azonareo atao ve ny mampifady hanina ny mpagnotrogna ny mpagnenga vady, lehe vo eo amindreo iy?",
     "target": "Hoy Jesosy taminy: Azonareo atao va ny mampifady hanina ny havan’ny mpampakatra, raha mbola ao aminy ny mpampakatra?",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 5:34",
@@ -75248,15 +75162,15 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Eko hoy i Jesoa taminazy: Tsa vona izao ny fotoagnako feny mety madina ny fotoagnanareo.",
-    "target": "Dia hoy Jesosy taminy: Tsy mbola tonga ny fotoanandroko; fa ny fotoananareo dia vonona lalandava.",
+    "source": "translate Betsileo to Malagasy: Tsa vona izao ny fotoagnako feny mety madina ny fotoagnanareo.",
+    "target": " Tsy mbola tonga ny fotoanandroko; fa ny fotoananareo dia vonona lalandava.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 7:6",
     "book": "JHN",
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Nahoana Aho no lazainao fa tsara? Tsy misy tsara afa-tsy iray ihany, dia Andriamanitra.",
+    "source": "translate Malagasy to Betsileo:    Nahoana Aho no lazainao fa tsara? Tsy misy tsara afa-tsy iray ihany, dia Andriamanitra.",
     "target": "Dia hoy i Jesoa taminazy: Nahoana Aho ro lazainao hoe soa? Tsa misy soa afa tsy raika madina dia Andriamagnitsa.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 18:19",
@@ -75481,7 +75395,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Eko hoy Jesoa: Tsa managna fahifana Aminahy agnao lehe tsa nomena anao hatagny ambony izay; ko manan-keloka bebe kokoa izay nanolotsa Ahy taminao.",
-    "target": "Dia hoy Jesosy taminy: Tsy manana fahefana Amiko akory ianao raha tsy nomena anao avy any ambony; koa izay nanolotra Ahy taminao no manan-keloka bebe kokoa.",
+    "target": " Tsy manana fahefana Amiko akory ianao raha tsy nomena anao avy any ambony; koa izay nanolotra Ahy taminao no manan-keloka bebe kokoa.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 19:11",
     "book": "JHN",
@@ -75504,30 +75418,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Fa Andriamagnitsa Ilay nibaiko hoe: “Aoka ny mazava hamirapiratsa ahatao amin’ny maizigna,” a ro nampahazava ny fonay mba ampahalalany anay ny vogninahits’Andriamagnitsa, izay mamirapiratsa eo amin’ny tarehin’i Jesoa Kristy.",
-    "target": "Fa Andriamanitra izay nandidy hoe: Aoka ny mazava hahazava ao amin’ny maizina, izy no nampahazava ny fonay ho amin’ny fahazavan’ny fahalalana ny voninahitr’Andriamanitra eo amin’ny tavan’i Jesosy Kristy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "2CO 4:6",
-    "book": "2CO",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Ry mpijangajanga! Tsy fantatrareo va fa fandrafiana an’Andriamanitra ny fisakaizana amin’izao tontolo izao? Koa na iza na iza te ho sakaizan’izao tontolo izao dia fahavalon’Andriamanitra izy.",
-    "target": "Ry mpampirafy an’Andriamagnitsa! Tsa fantatsareo ve fa fandrafiana an’Andriamagnitsa ny fisakaizana amin’izao tontolo izao? Eko izay te ho sakaizan’izao tontolo izao dia fahavalon’Andriamagnitsa.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "JAS 4:4",
-    "book": "JAS",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Fahasoavana ro namonjena anareo eko tamin’ny alalan’ny finoana izay; tsa hataminareo koa, fa fagnomezana hatamin’Andriamagnitsa;",
-    "target": "Fa fahasoavana no namonjena anareo amin’ny alalan’ny finoana; ary tsy avy aminareo izany, fa fanomezana avy amin’Andriamanitra;",
-    "direction": "Betsileo->Malagasy",
-    "ref": "EPH 2:8",
-    "book": "EPH",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Tsiahivo ny mpitondra anareo izay nitory ny tenin’Andriamagnitsa taminareo: diniho hoe nanao akory ny niaignany ny fiaignana maha mpino ko araho ny finoany.",
     "target": "Tsarovy ny mpitondra anareo izay efa nitory ny tenin’Andriamanitra taminareo; hevero ny niafaran’ny fiainany ka araho ny finoany.",
     "direction": "Betsileo->Malagasy",
@@ -75535,22 +75425,7 @@
     "book": "HEB",
     "identical": false
   },
-  {
-    "source": "translate Malagasy to Betsileo: Eny, Ray ô! Satria izany no sitraponao.",
-    "target": "Eka, Baba! Izay ro sitraponao.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "MAT 11:26",
-    "book": "MAT",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Sambatsa izay mamindra fo",
-    "target": "Sambatra ny mpamindra fo, fa izy no hamindrana fo.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 5:7",
-    "book": "MAT",
-    "identical": false
-  },
+
   {
     "source": "translate Malagasy to Betsileo: Ary indro, nisy lehilahy iray malemy, nandry tamin’ny fandriana noentin’ny olona teo Aminy; ary Jesosy, nony nahita ny finoan’ireo, dia niteny tamin’ilay malemy hoe: Matokia, anaka; voavela ny helokao.",
     "target": "Nisy lehilahy raika malemy nobaozin’ona nihoeo Agnaminy. Sefa hitan’i Jesoa ny finoandreo, dia hoy iy tamin-dranilahy: Mifalia anaka! Voavela ny helokao!",
@@ -75560,8 +75435,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Fantatso ny asanao, fa sady tsa manara ro tsa mafana agnao; aleo agnao manara na mafana.",
-    "target": "Fantatro ny asanao, fa tsy mangatsiaka na mafana ianao. Aleo mangatsiaka na mafana ianao!",
+    "source": "translate Betsileo to Malagasy: Fa tsa manara ro tsa mafana agnao; aleo  manara na mafana agnao.",
+    "target": "    Fa tsy mangatsiaka na mafana ianao; aleo mangatsiaka na mafana ianao.",
     "direction": "Betsileo->Malagasy",
     "ref": "REV 3:15",
     "book": "REV",
@@ -75569,17 +75444,9 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Aoka samy hitoetra eo amin’izay efa niantsoana azy ihany ny olona rehetra.",
-    "target": "Soa lehe miegnina amin’ny toetoetsa efa nangehana azy aby ny ona.",
+    "target": " Soa lehe miegnina amin’ny toetoetsa efa nangehana azy aby ny ona.",
     "direction": "Malagasy->Betsileo",
     "ref": "1CO 7:20",
-    "book": "1CO",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: tsy mifaly amin’ny tsy fahamarinana fa miara-mifaly amin’ny fahamarinana kosa,",
-    "target": "tsa mifaly amin’ny tsa fahamarinana, fa miara-mifaly amin’ny fahamarinana;",
-    "direction": "Malagasy->Betsileo",
-    "ref": "1CO 13:6",
     "book": "1CO",
     "identical": false
   },
@@ -75776,8 +75643,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Eko Isaia koa niantsoantso mafy ny amin’Isiraely hoe: “Na dia maro hoatra ny fasika aigny amin’ny ranomasina aza ny isan’ny Zanak'Isiraely, dia izay sisa ihany ro hovonjena,",
-    "target": "«Ary any amin’ny tany izay nilazana taminy hoe: Tsy oloko ianareo, any no hiantsoana azy hoe zanak’Andriamanitra velona» (Hos 2.1).",
+    "source": "translate Betsileo to Malagasy: Na dia maro hoatra ny fasika aigny amin’ny ranomasina aza ny isan’ny Zanak'Isiraely, dia izay sisa ihany ro hovonjena,",
+    "target": "Ary any amin’ny tany izay nilazana taminy hoe: Tsy oloko ianareo, any no hiantsoana azy hoe zanak’Andriamanitra velona» (Hos 2.1).",
     "direction": "Betsileo->Malagasy",
     "ref": "ROM 9:26",
     "book": "ROM",
@@ -76584,8 +76451,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Nony efa tafiditra tao Jerosalema izy dia nihotakotaka ny tanàna manontolo ka niteny hoe: Iza moa izao?",
-    "target": "Sefa tafiditsa tao Jerosalema i Jesoa, dia nisahotaka ny ona rehetra tao an-tanàna ko nanao hoe: Ia re Rangahy io?",
+    "source": "translate Malagasy to Betsileo: Nony efa tafiditra izy dia nihotakotaka ny tanàna manontolo ka niteny hoe: Iza moa izao?",
+    "target": "    Sefa tafiditsa iy dia nisahotaka ny ona rehetra tao an-tanàna ko nitarogna hoe: Ia re io?",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 21:10",
     "book": "MAT",
@@ -76712,8 +76579,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Ambarako aminareo ny marina fa lehe tsa mihinana ny nofon’ny Zanak’Ona sy misotro ny rany agnareo, dia tsa hanagna ny fiaignana ao aminareo.",
-    "target": "Fa hoy Jesosy taminy: Lazaiko aminareo marina dia marina tokoa: Raha tsy mihinana ny nofon’ny Zanak’Olona sy misotro ny rany ianareo dia tsy manana fiainana ao aminareo.",
+    "source": "translate Betsileo to Malagasy:  Ambarako aminareo ny marina fa lehe tsa mihinana ny nofon’ny Zanak’Ona sy misotro ny rany agnareo, dia tsa hanagna ny fiaignana ao aminareo.",
+    "target": "   Lazaiko aminareo marina dia marina tokoa: Raha tsy mihinana ny nofon’ny Zanak’Olona sy misotro ny rany ianareo dia tsy manana fiainana ao aminareo.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 6:53",
     "book": "JHN",
@@ -78688,7 +78555,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Lazaiko aminareo marina dia marina tokoa: Tsy i Mosesy no nanome anareo ny mofo avy tany an-danitra fa ny Raiko no manome anareo ny tena mofo avy any an-danitra.",
+    "source": "translate Malagasy to Betsileo:  Lazaiko aminareo marina dia marina tokoa: Tsy i Mosesy no nanome anareo ny mofo avy tany an-danitra fa ny Raiko no manome anareo ny tena mofo avy any an-danitra.",
     "target": "Dia hoy Jesoa: Ambarako aminareo ny marina, tsa i Mosesy ro nagnome anareo ny mofo hatagny an-dagnitsa fa ny Raiko ro magnome anareo ny tena mofo hatagny an-dagnitsa.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 6:32",
@@ -79784,7 +79651,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Izaho nahita an’i Satana nilatsaka avy tany an-danitra tahaka ny varatra.",
+    "source": "translate Malagasy to Betsileo:    Izaho nahita an’i Satana nilatsaka avy tany an-danitra tahaka ny varatra.",
     "target": "Dia hoy i Jesoa tamindreo: Hitako Satana nilatsaka hatagny an-dagnitsa sahala amin’ny varatsa.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 10:18",
@@ -80360,7 +80227,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Marina ny navalinao; ataovy izany dia ho velona ianao.",
+    "source": "translate Malagasy to Betsileo:  Marina ny navalinao; ataovy izany dia ho velona ianao.",
     "target": "Dia hoy i Jesoa taminazy: Izay tokoa! Izay ro tantiraho dia ho velogna agnao.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 10:28",
@@ -80912,8 +80779,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy ireo Taminazy: Misy sabatsa roa ireto, Tompoko. Dia hoy i Jesoa: Aoka izay.",
-    "target": "Ary hoy ireo: Tompoko, indreto sabatra roa. Dia hoy Jesosy taminy: Ampy izay.",
+    "source": "translate Betsileo to Malagasy: Dia hoy ireo Taminazy: Misy sabatsa roa ireto, Tompoko.  Aoka izay.",
+    "target": "Ary hoy ireo: Tompoko, indreto sabatra roa.  Ampy izay.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 22:38",
     "book": "LUK",
@@ -81153,7 +81020,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia niaiky volagna sady zendagna aby ny ona noho ny hasoan’ny raha notarogniny. Dia hoy ny sanagny tamin’ireo: Tsa zanak'i Josefa ve ity?",
-    "target": "Dia hoy Jesosy taminy: Androany no efa tanteraka eto anatrehanareo izany soratra izany.",
+    "target": " Androany no efa tanteraka eto anatrehanareo izany soratra izany.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 4:21",
     "book": "LUK",
@@ -82200,7 +82067,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Izay efa nandro dia tsy mila hosasana, afa-tsy ny tongotra ihany, fa efa madio avokoa; ary ianareo dia madio, nefa tsy ianareo rehetra.",
+    "source": "translate Malagasy to Betsileo:    Izay efa nandro dia tsy mila hosasana, afa-tsy ny tongotra ihany, fa efa madio avokoa; ary ianareo dia madio, nefa tsy ianareo rehetra.",
     "target": "Feny hoy i Jesoa: Ny tongotsa madina ro sasana ho an’izay efa nandro satria efa madio iy; madio agnareo feny tsa agnareo aby izay.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 13:10",
@@ -82985,7 +82852,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Hoy Jesosy taminy: Izay ela izay no efa nitoerako teto aminareo ka tsy mbola fantatrao ihany va Aho, ry Filipo? Izay nahita Ahy dia nahita ny Ray; koa ahoana no itenenanareo hoe: Asehoy anay ny Ray?",
-    "target": "Dia hoy i Jesoa: Efa ela izay niarahako taminareo izay, eko dia vona tsa mahilala Ahy madina ve agnao ry Filipo? Izay nahita Ahy dia nahita ny Ray, ko nahoana agnao ro mitarogna hoe: Atorò anay ny Ray?",
+    "target": " Efa ela izay niarahako taminareo izay, eko dia vona tsa mahilala Ahy madina ve agnao ry Filipo? Izay nahita Ahy dia nahita ny Ray, ko nahoana agnao ro mitarogna hoe: Atorò anay ny Ray?",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 14:9",
     "book": "JHN",
@@ -83489,7 +83356,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hotsin’i Jesoa tagnaminy: Ho avy Aho hagnasitragna azy.",
-    "target": "Dia hoy Jesosy taminy: Ho avy Aho hanasitrana azy.",
+    "target": " Ho avy Aho hanasitrana azy.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 8:7",
     "book": "MAT",
@@ -85065,7 +84932,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Hoy Jesosy taminy: Azonareo atao va ny mampifady hanina ny havan’ny mpampakatra, raha mbola ao aminy ny mpampakatra?",
-    "target": "Dia hoy i Jesoa: Azonareo atao ve ny mampifady hanina ny mpagnotrogna ny mpagnenga vady, lehe vo eo amindreo iy?",
+    "target": " Azonareo atao ve ny mampifady hanina ny mpagnotrogna ny mpagnenga vady, lehe vo eo amindreo iy?",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 5:34",
     "book": "LUK",
@@ -85328,7 +85195,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Nisy olona iray nanao fanasana lehibe ka nanasa olona maro.",
+    "source": "translate Malagasy to Betsileo:    Nisy olona iray nanao fanasana lehibe ka nanasa olona maro.",
     "target": "Fa hoy i Jesoa taminazy: Nisy ona raika nagnomagna lagnonambe eko nagnasa ona be.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 14:16",
@@ -86024,7 +85891,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Mandiniha ianareo ka mitandrema mba tsy ho azon’ny masirasiran’ny Fariseo* sy ny Sadoseo* .",
+    "source": "translate Malagasy to Betsileo:  Mandiniha ianareo ka mitandrema mba tsy ho azon’ny masirasiran’ny Fariseo* sy ny Sadoseo* .",
     "target": "Dia hotsin’i Jesoa tamindreo: Mandiniha agnareo ko mitandrema fa nge dia hazan’ny lalivain’ny Fariseo sy ny Sadoseo.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 16:6",
@@ -87096,7 +86963,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Ry taranaka sady tsa mino ro efa nivadika, mandra-pahavin’ny amin’ny viana ro hitoerako eto aminareo sy handiferako aminareo? Feiro atoy ny zanakao!",
+    "source": "translate Betsileo to Malagasy:  Ry taranaka sady tsa mino ro efa nivadika, mandra-pahavin’ny amin’ny viana ro hitoerako eto aminareo sy handiferako aminareo? Feiro atoy ny zanakao!",
     "target": "Ary hoy Jesosy: Ry taranaka sady tsy mino no efa nivadika, mandra-pahoviana no hitoerako aminareo sy handeferako aminareo? Ento atỳ ny zanakao.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 9:41",
@@ -87168,8 +87035,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Ary hoy ireo: Tompoko, indreto sabatra roa. Dia hoy Jesosy taminy: Ampy izay.",
-    "target": "Dia hoy ireo Taminazy: Misy sabatsa roa ireto, Tompoko. Dia hoy i Jesoa: Aoka izay.",
+    "source": "translate Malagasy to Betsileo: Ary hoy ireo: Tompoko, indreto sabatra roa.  Ampy izay.",
+    "target": "Dia hoy ireo Taminazy: Misy sabatsa roa ireto, Tompoko.  Aoka izay.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 22:38",
     "book": "LUK",
@@ -87352,7 +87219,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Aho koa tsa hilaza aminareo hoe fahifana hataia ro anaovako izao raha izao.",
+    "source": "translate Betsileo to Malagasy:  Aho koa tsa hilaza aminareo hoe fahifana hataia ro anaovako izao raha izao.",
     "target": "Ary hoy Jesosy tamin’izy ireo: Izaho kosa tsy hilaza aminareo izay fahefana anaovako izao zavatra izao.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 20:8",
@@ -87928,7 +87795,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy: Lozanareo, mpahay lalàna koa! Fa mampitondra entana sarotra entina ny olona ianareo, nefa tsy mikasika izany entana izany akory ianareo na dia amin’ny rantsantananareo iray aza.",
+    "source": "translate Malagasy to Betsileo:  Lozanareo, mpahay lalàna koa! Fa mampitondra entana sarotra entina ny olona ianareo, nefa tsy mikasika izany entana izany akory ianareo na dia amin’ny rantsantananareo iray aza.",
     "target": "Eko hoy i Jesoa: Lozanareo koa ry mpahay lalàna, fa ampitondrainareo entagna tsa hay ferina ny ona feny tsa mikasika izay entagna izay laky dia ny ratsantagnanareo raika aza.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 11:46",
@@ -89976,7 +89843,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Ambarako aminareo marina fa io mpitondrategna mahantra io ro tena nagnome be noho ny rehetra.",
+    "source": "translate Betsileo to Malagasy:  Ambarako aminareo marina fa io mpitondrategna mahantra io ro tena nagnome be noho ny rehetra.",
     "target": "Dia hoy izy: Lazaiko aminareo marina tokoa fa io mpitondratena mahantra io no nandrotsaka be noho izy rehetra.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 21:3",
@@ -90472,7 +90339,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Izaho ihany ity; aza matahotra.",
+    "source": "translate Malagasy to Betsileo:    Izaho ihany ity; aza matahotra.",
     "target": "Feny hoy i Jesoa: Aho ihany ity! Aza matahotsa!",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 6:20",
@@ -90761,15 +90628,15 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Dia hoy izy: Lazaiko aminareo marina tokoa fa io mpitondratena mahantra io no nandrotsaka be noho izy rehetra.",
-    "target": "Dia hoy i Jesoa: Ambarako aminareo marina fa io mpitondrategna mahantra io ro tena nagnome be noho ny rehetra.",
+    "target": " Ambarako aminareo marina fa io mpitondrategna mahantra io ro tena nagnome be noho ny rehetra.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 21:3",
     "book": "LUK",
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: Tsy mbola tonga ny fotoanandroko; fa ny fotoananareo dia vonona lalandava.",
-    "target": "Eko hoy i Jesoa taminazy: Tsa vona izao ny fotoagnako feny mety madina ny fotoagnanareo.",
+    "source": "translate Malagasy to Betsileo:  Tsy mbola tonga ny fotoanandroko; fa ny fotoananareo dia vonona lalandava.",
+    "target": "    Tsa vona izao ny fotoagnako feny mety madina ny fotoagnanareo.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 7:6",
     "book": "JHN",
@@ -91248,14 +91115,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: hoe: Hitako, tompoko, fa ho ratsy ity dia ity satria hanimba ny sambo sy ny entagna eko hampidi-doza ny aintsika koa.",
-    "target": "ka niteny taminy hoe: Ry tompokolahy isany ô! Hitako fa izao fandehanana izao dia hampisy fahasimbana sy fatiantoka be ihany, tsy amin’ny entana sy ny sambo ihany, fa amin’ny aintsika koa aza.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "ACT 27:10",
-    "book": "ACT",
-    "identical": false
-  },
-  {
     "source": "translate Malagasy to Betsileo: araka izay efa natolotra antsika avy tamin’ireo vavolombelona nahita maso hatramin’ny voalohany sady efa tonga mpanompon’ny Teny,",
     "target": "dia araka izay notarognin’ireo vavolombelogna nagnatri-maso hatagny am-boalohany, eko notoriany tamintsika.",
     "direction": "Malagasy->Betsileo",
@@ -91528,7 +91387,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Izaho manan-kanina izay tsy fantatrareo.",
+    "source": "translate Malagasy to Betsileo:    Izaho manan-kanina izay tsy fantatrareo.",
     "target": "Feny hoy i Jesoa: Manan-kanina izay tsa fantatsareo Aho.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 4:32",
@@ -92817,7 +92676,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Fa hoy i Jesoa: Nisy ona nikasika Ahy teo satria tsapako fa nisy hery niala Taminahy.",
-    "target": "Fa hoy Jesosy: Nisy olona nikasika Ahy; fantatro fa nisy hery niala avy tamiko.",
+    "target": " Nisy olona nikasika Ahy; fantatro fa nisy hery niala avy tamiko.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 8:46",
     "book": "LUK",
@@ -93345,7 +93204,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Dia hoy Jesosy: Ianareo koa va mbola tsy mahafantatra ihany?",
-    "target": "Dia hoy i Jesoa: Agnareo va dia tsaova mahatakatsa madina?",
+    "target": " Agnareo va dia tsaova mahatakatsa madina?",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 15:16",
     "book": "MAT",
@@ -93417,7 +93276,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa tagnaminy: Lehe te ho lavorary agnao dia ndeha amidio izay anagnanao eko omeo ny mahantra ny vidiny, dia hanagna harena agny an-dagnitsa agnao; se ahateo dia andao, hagnaraka Ahy.",
-    "target": "Dia hoy Jesosy taminy: Raha te ho tanteraka ianao dia mandehana, amidio ny fanananao ka omeo ny mahantra, dia hanana rakitra any an-danitra ianao; ary avia hanaraka Ahy.",
+    "target": " Raha te ho tanteraka ianao dia mandehana, amidio ny fanananao ka omeo ny mahantra, dia hanana rakitra any an-danitra ianao; ary avia hanaraka Ahy.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 19:21",
     "book": "MAT",
@@ -94920,7 +94779,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Ry Simona, manan-kolazaina aminao Aho. Dia hoy izy: Mpampianatra ô, lazao ary.",
+    "source": "translate Malagasy to Betsileo:    Ry Simona, manan-kolazaina aminao Aho. Dia hoy izy: Mpampianatra ô, lazao ary.",
     "target": "Dia hoy i Jesoa tamin’ilay Fariseo: Simona a! Misy raha tiàko hotarognina aminao. Hoy iy namaly: Fero ary ny resakao Ramose!",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 7:40",
@@ -95472,7 +95331,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Vetivety madina Aho ro eto aminareo, dia hipody agny amin’Izay nagniraka Ahy Aho avy eo.",
+    "source": "translate Betsileo to Malagasy:  Vetivety madina Aho ro eto aminareo, dia hipody agny amin’Izay nagniraka Ahy Aho avy eo.",
     "target": "Dia hoy Jesosy: Kely foana no mbola itoerako aminareo dia hankany amin’izay naniraka Ahy Aho.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 7:33",
@@ -96641,7 +96500,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Ary hoy Jesosy tamin’izy ireo: Izaho kosa tsy hilaza aminareo izay fahefana anaovako izao zavatra izao.",
-    "target": "Dia hoy i Jesoa: Aho koa tsa hilaza aminareo hoe fahifana hataia ro anaovako izao raha izao.",
+    "target": " Aho koa tsa hilaza aminareo hoe fahifana hataia ro anaovako izao raha izao.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 20:8",
     "book": "LUK",
@@ -98089,7 +97948,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Dia hoy Jesosy: Izay ataoko dia tsy fantatrao ankehitriny fa ho fantatrao aorianan’izao.",
-    "target": "Dia hoy i Jesoa: Tsa fantatsao izay ataoko izao fa ho fantatsao sỳ afara agny.",
+    "target": " Tsa fantatsao izay ataoko izao fa ho fantatsao sỳ afara agny.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 13:7",
     "book": "JHN",
@@ -98760,7 +98619,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Eko hoy i Jesoa taminazy: Mitsangàna, fero ny fandrianao ko mandihana.",
+    "source": "translate Betsileo to Malagasy: Mitsangàna, fero ny fandrianao ko mandihana.",
     "target": "Hoy Jesosy taminy: Mitsangàna, batao ny fandriananao ka mandehana.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 5:8",
@@ -98777,23 +98636,15 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Fa ny ona dia mivoady amin’izay lihibe noho ny tegnany; eko izay fianianana ataony izay ro magnamafy ny tarognany mba hampiegnina ny fifandirana abiaby.",
-    "target": "ka niteny hoe: «Hitahy anao tokoa Aho ary hahamaro dia hahamaro anao» (Gen 22.17).",
+    "target": "    Fa ny olona dia mivoady amin'izay lehibe noho ny tenany; ary ny fianianana ataony izay no manamarina ny teniny mba hampitsaharana ny fifandirana rehetra.",
     "direction": "Betsileo->Malagasy",
     "ref": "HEB 6:14",
     "book": "HEB",
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Efa mba tahaka an’izay koa ny sasagny aminareo taloha, feny efa voasasa sy efa nohamasignina agnareo eko efa nohamarigniny tamin’ny agnaran’i Jesoa Kristy Tompo sy tamin’ny Fagnahin’Andriamagnitsika.",
-    "target": "Ary efa mba toy izany ihany ny sasany aminareo, saingy efa voasasa ianareo, efa nohamasinina ianareo, efa nohamarinina ianareo, tamin’ny anaran’i Jesosy Kristy* Tompo sy tamin’ny Fanahin’Andriamanitsika.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "1CO 6:11",
-    "book": "1CO",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Nony tonga ny andro hiterahan’i Elizabeta dia niteraka zazalahy izy.",
-    "target": "Eko sỳ efa feno valo andro ny anajaza dia avy aby reo hagnatrika ny famorana. Soko hataon’iy aby hoe Zakaria tahaka an-drainy ny agnarany,",
+    "source": "translate Malagasy to Betsileo: Nony efa fono   tonga ny andro hiterahan’i Elizabeta dia niteraka zazalahy izy.",
+    "target": "    Eko sỳ efa feno valo andro ny anajaza dia avy aby reo hagnatrika ny famorana.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 1:57",
     "book": "LUK",
@@ -98801,8 +98652,8 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Dia nifampiresaka izy ireo hoe: Tsy nangorakoraka va ny fontsika, raha niresaka tamintsika teny an-dalana izy ka namoaka ny hevitry ny Soratra Masina tamintsika?",
-    "target": "Igny dia roso nipody nihoagny Jerosalema iy roalahy. Sỳ nahita azy roalahy ny raikambinifolo lahy sy izay niaraka tamindreo teo",
-    "direction": "Malagasy->Betsileo",
+    "target": "    Igny dia roso nipody nihoagny Jerosalema iy roalahy. Sỳ nahita azy roalahy ny raikambinifolo lahy sy izay niaraka tamindreo teo",
+    "direction": "Malagasy->Betsileo", 
     "ref": "LUK 24:32",
     "book": "LUK",
     "identical": false
@@ -99536,7 +99387,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy: Ny ainao va hafoinao noho ny Amiko? Lazaiko aminao marina dia marina tokoa: Tsy mbola hisy akoho haneno dia handa Ahy intelo ianao.",
+    "source": "translate Malagasy to Betsileo:  Ny ainao va hafoinao noho ny Amiko? Lazaiko aminao marina dia marina tokoa: Tsy mbola hisy akoho haneno dia handa Ahy intelo ianao.",
     "target": "Feny hoy Jesoa taminazy: Ho foanao noho ny Aminahy hoe ny ainao? Ambarako aminao ny marina fa vona tsa magneno aza ny akoho dia efa intelo agnao ro handà ho tsa mahilala Ahy.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 13:38",
@@ -99801,7 +99652,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Dia hoy Jesosy: Kely foana no mbola itoerako aminareo dia hankany amin’izay naniraka Ahy Aho.",
-    "target": "Dia hoy i Jesoa: Vetivety madina Aho ro eto aminareo, dia hipody agny amin’Izay nagniraka Ahy Aho avy eo.",
+    "target": " Vetivety madina Aho ro eto aminareo, dia hipody agny amin’Izay nagniraka Ahy Aho avy eo.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 7:33",
     "book": "JHN",
@@ -99840,7 +99691,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Tsy misy olona mitana angadinomby sady miherika ka mendrika ny fanjakan’Andriamanitra.",
+    "source": "translate Malagasy to Betsileo:    Tsy misy olona mitana angadinomby sady miherika ka mendrika ny fanjakan’Andriamanitra.",
     "target": "Dia hoy i Jesoa taminazy: Tsa misy ona mitagna angadin’aomby sady miherika ko mendrika ny fanjakan’Andriamagnitsa.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 9:62",
@@ -101305,7 +101156,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Dia namaly azy ireo Jesosy hoe: Izaho kosa mba hanontany anareo zavatra iray loha, koa lazao amiko:",
-    "target": "Dia hoy i Jesoa: Aho koa mba hagnontany raha raika anareo. Tarogno Aminahy hoe:",
+    "target": " Aho koa mba hagnontany raha raika anareo. Tarogno Aminahy hoe:",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 20:3",
     "book": "LUK",
@@ -103360,8 +103211,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Eko hoy i Jesoa taminazy: Aza mandrara azy, fa izay tsa manohitsa anareo dia momba anareo.",
-    "target": "Fa hoy Jesosy taminy: Aza rarana, fa izay tsy manohitra anareo dia momba anareo.",
+    "source": "translate Betsileo to Malagasy: Aza mandrara azy, fa izay tsa manohitsa anareo dia momba anareo.",
+    "target": "   Aza rarana, fa izay tsy manohitra anareo dia momba anareo.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 9:50",
     "book": "LUK",
@@ -103393,7 +103244,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa taminazy: Lehe tsa mahita famantarana sy fahagagana agnareo, dia tsa mba hety hino mihitsy.",
-    "target": "Dia hoy Jesosy taminy: Raha tsy mahita famantarana sy fahagagana ianareo dia tsy mba hety hino mihitsy.",
+    "target": " Raha tsy mahita famantarana sy fahagagana ianareo dia tsy mba hety hino mihitsy.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 4:48",
     "book": "JHN",
@@ -103785,7 +103636,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa taminazy: Ny bibidia manan-davaka, eko ny voromanidigna egny amin’ny habakabaka managna ny tragnony; Zanak’Ona nefa tsa mba managna izay hisitrihan’ny lohany.",
-    "target": "Fa hoy Jesosy taminy: Ny amboahaolo dia manan-davaka ary ny voromanidina dia manana akany; fa ny Zanak’Olona* tsy mba manana izay hampandriany ny lohany.",
+    "target": "   Ny amboahaolo dia manan-davaka ary ny voromanidina dia manana akany; fa ny Zanak’Olona* tsy mba manana izay hampandriany ny lohany.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 9:58",
     "book": "LUK",
@@ -104569,7 +104420,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Fa Jesosy namaly azy hoe: Izay rehetra misotro ity rano ity dia mbola hangetaheta indray;",
-    "target": "Dia hoy i Jesoa: Izay misotro ity rano ity dia vona hangetaheta madina;",
+    "target": " Izay misotro ity rano ity dia vona hangetaheta madina;",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 4:13",
     "book": "JHN",
@@ -105544,7 +105395,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy taminy: Ry Jodasy, fanorohana va no anoloranao ny Zanak’Olona* ?",
+    "source": "translate Malagasy to Betsileo:    Ry Jodasy, fanorohana va no anoloranao ny Zanak’Olona* ?",
     "target": "Dia hoy i Jesoa taminazy: Jodasy! Fagnorohana ve ro anoloranao ny Zanak’Ona?",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 22:48",
@@ -106248,7 +106099,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Mitandrema nge ho voafitaka agnareo. Betsaka ro ho avy amin’ny Agnarako sady hanao hoe: ‘Aho ro Mesia', sy hoe koa: ‘Efa avy ny fotoagna'; eko aza magnaraka azy.",
+    "source": "translate Betsileo to Malagasy:  Mitandrema nge ho voafitaka agnareo. Betsaka ro ho avy amin’ny Agnarako sady hanao hoe: ‘Aho ro Mesia', sy hoe koa: ‘Efa avy ny fotoagna'; eko aza magnaraka azy.",
     "target": "Dia hoy izy: Mitandrema fandrao ho voafitaka ianareo; fa maro no ho avy amin’ny anarako sady hilaza hoe: Izaho no izy, ary koa: Efa akaiky ny andro; koa aza manaraka azy.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 21:8",
@@ -106633,7 +106484,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Ary hoy izy taminy: Inona no voasoratra ao amin’ny Lalàna? Ahoana no famakianao azy?",
-    "target": "Dia hoy i Jesoa: Ina ro voasoratsa ao amin’ny lalàna? Manao akory ro fahazahoanao azy?",
+    "target": " Ina ro voasoratsa ao amin’ny lalàna? Manao akory ro fahazahoanao azy?",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 10:26",
     "book": "LUK",
@@ -106745,7 +106596,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Vokats’izay dia tafitohigna Taminazy reo. Fa hotsin’i Jesoa tamin’iy aby: Hajaina agny amin’ny tany aby izay ombany ny mpaminany, afa tsy eo amin’ny taniny sy ny fianakaviany ihany.",
-    "target": "Ary tafintohina Taminy izy ireo. Fa hoy Jesosy taminy: Tsy misy mpaminany tsy homen-kaja, afa-tsy eo amin’ny taniny sy ny mpianakaviny ihany.",
+    "target": "Ary tafintohina Taminy izy ireo.    Tsy misy mpaminany tsy homen-kaja, afa-tsy eo amin’ny taniny sy ny mpianakaviny ihany.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 13:57",
     "book": "MAT",
@@ -109560,8 +109411,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa hoy Jesosy: Asaivo mipetraka ny olona. Ary nisy ahitra be teo. Dia nipetraka ireo ka tokony ho dimy arivo ny isan’ny lehilahy.",
-    "target": "Dia hoy i Jesoa: Ampitoero ny ona. Be ahitsa manko tamin’io toerana io. Dia nitoatsa ny ona; eko tokony ho dimy arivo ro isan’ny lihilahy.",
+    "source": "translate Malagasy to Betsileo:  Asaivo mipetraka ny olona. Ary nisy ahitra be teo. Dia nipetraka ireo ka tokony ho dimy arivo ny isan’ny lehilahy.",
+    "target": " Ampitoero ny ona. Be ahitsa manko tamin’io toerana io. Dia nitoatsa ny ona; eko tokony ho dimy arivo ro isan’ny lihilahy.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 6:10",
     "book": "JHN",
@@ -110121,7 +109972,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Kanefa hotsin’i Jesoa tagnaminy: Satana! Rosoa agnao. Voasoratsa fa: “NY TOMPO Andriamagnitsao ro hiankohofanao, ary iy irery ro hotompoinao” (Deo 6.13).",
-    "target": "Fa hoy Jesosy taminy: Mandehana ianao, ry Satana: Fa voasoratra hoe: «NY TOMPO Andriamanitrao no hiankohofanao ary izy irery ihany no hotompoinao.» (Deo 6.13)",
+    "target": "   Mandehana ianao, ry Satana: Fa voasoratra hoe: «NY TOMPO Andriamanitrao no hiankohofanao ary izy irery ihany no hotompoinao.» (Deo 6.13)",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 4:10",
     "book": "MAT",
@@ -110192,7 +110043,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Nisy lihilahy raika nampindram-bola ona roalahy. Ny raika nampindraminy denaria dimanjato eko ny faharoa nampindraminy dimampolo.",
+    "source": "translate Betsileo to Malagasy:  Nisy lihilahy raika nampindram-bola ona roalahy. Ny raika nampindraminy denaria dimanjato eko ny faharoa nampindraminy dimampolo.",
     "target": "Nisy roa lahy nananan’ny mpampindram-bola iray trosa: Ny iray dia nananany denaria* dimanjato, ary ny iray kosa dia dimampolo.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 7:41",
@@ -111848,7 +111699,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy Jesosy taminy: «Tiava NY TOMPO Andriamanitrao amin’ny fonao manontolo sy ny fanahinao manontolo» (Deo 6.5).",
+    "source": "translate Malagasy to Betsileo:  «Tiava NY TOMPO Andriamanitrao amin’ny fonao manontolo sy ny fanahinao manontolo» (Deo 6.5).",
     "target": "Dia hotsin’i Jesoa: “Tiava NY TOMPO Andriamagnitsao amin’ny fonao manontolo sy ny fagnahinao manontolo eko ny saignanao manontolo” (Deo 6.5).",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 22:37",
@@ -111872,7 +111723,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy i Jesoa: Aho koa mba hagnontany raha raika anareo. Tarogno Aminahy hoe:",
+    "source": "translate Betsileo to Malagasy:  Aho koa mba hagnontany raha raika anareo. Tarogno Aminahy hoe:",
     "target": "Dia namaly azy ireo Jesosy hoe: Izaho kosa mba hanontany anareo zavatra iray loha, koa lazao amiko:",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 20:3",
