@@ -3153,16 +3153,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Izaho dia manao batisa anareo amin’ny rano ho amin’ny fibebahana; fa Ilay avy ao aorianako no mahery noho izaho ka tsy mendrika hanaisotra ny kapany aza aho; izy no hanao batisa anareo amin’ny Fanahy Masina sy ny afo;",
-    "target": "Aho dia manao batisa anareo amin’ny rano ho mariky ny fibebahanareo, fa Ilay ho avy ao afarako izay tena mahery noho aho ro hanao batisa anareo amin’ny Fagnahy Masina sy ny afo. Tsa mendrika ahy aby laky dia ny hamaha ny kapany aza.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "MAT 3:11",
-    "book": "MAT",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Koa aza manaiky azy ianao, fa mihoatra ny efapolo lahy izy ireo no miray tetika hisambotra an’i Paoly ka efa niozona sy nianiana fa tsy hihinana na hisotro raha tsy maty izy; ary efa vonona izy ankehitriny ka miandry ny teny avy atỳ aminao fotsiny.",
-    "target": "Koa aza magneky agnao, fa maherin’ny efapolo lahy reo ro mitetika hanambotsa an’i Paoly, ko efa nianiana aby fa tsa hihinana na hisotro mandra-pamonony azy. Efa vognona aby ireo izao ko ny tarogna hataminao sisa ro andrazany.",
+    "source": "translate Malagasy to Betsileo:  Koa aza manaiky ianao, ka efa niozona daholy fa tsy hihinana na hisotro raha tsy maty izy. Efa vonona izy ireo izao ka ny teny avy aminao sisa no andrasany.",
+    "target": "                                 Koa aza magneky agnao, ko efa nianiana aby fa tsa hihinana na hisotro mandra-pamonony azy. Efa vognona aby ireo izao ko ny tarogna hataminao sisa ro andrazany.",
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 23:21",
     "book": "ACT",
@@ -4937,26 +4929,10 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Raiso toa izany koa izy, izay antsoina hoe Josto. Avy amin’ny voafora ireo. Ireo ihany no mpiara-miasa amiko hampandroso ny fanjakan’Andriamanitra sady tonga fampiononana ahy.",
-    "target": "Mampamangy anareo koa izy atao hoe Josto; izy telo lahy irery ro mpino Jiosy a miara-miasa agnamiko ho an’ny fanjakan’Andriamagnitra. Hery ho ahy ny fanagnana andreo.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "COL 4:11",
-    "book": "COL",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Dia hanody anareo ny ran’ny ona marina rehetra, izay nilatsaka tetỳ ambonin’ny tany, ahatamin’ny ran’i Abela hatamin’ny ran’i Zakaria zanak’i Barakia, izay novonoenareo teo agnelagnelan’ny toerana masina sy ny alitara.",
     "target": "mba hanody anareo ny ran’ny tsy manan-tsiny rehetra, izay nalatsaka tetỳ ambonin’ny tany, hatramin’ny ran’i Abela marina ka hatramin’ny ran’i Zakaria, zanak’i Barakia, izay novonoinareo teo anelanelan’ny tempoly sy ny alitara.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 23:35",
-    "book": "MAT",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Fa hoy ny governora tamin’izy ireo: Iza amin’izy roa lahy moa no tianareo hafahako ho anareo? Dia hoy izy rehetra: I Barabasy.",
-    "target": "Dia nagnontany andreo i Pilato hoe: Ia amindreo roalahy ro tianareo hafahako ho anareo? Dia hotsindreo: Barabasy.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "MAT 27:21",
     "book": "MAT",
     "identical": false
   },
@@ -4966,14 +4942,6 @@
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 14:4",
     "book": "LUK",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: raha efa nanandrana ianareo fa tsara ny Tompo.",
-    "target": "rehe efa nagnandragna agnareo fa tsara ny Tompo.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "1PE 2:3",
-    "book": "1PE",
     "identical": false
   },
   {
@@ -8974,22 +8942,6 @@
     "direction": "Malagasy->Betsileo",
     "ref": "JAS 2:18",
     "book": "JAS",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Naetry iy ko tsa nomena rariny;",
-    "target": "noho ny fietreny dia nalaina Taminy ny zony; ary iza no hahalaza ny amin’ny fianakaviany? Fa ny ainy dia nesorina tamin’ny tany» (Isa 53.7-8).",
-    "direction": "Betsileo->Malagasy",
-    "ref": "ACT 8:33",
-    "book": "ACT",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Feny iy etsy andagniny dia natao Mpisorogna tamin’ny fianianana araka ny nolazain’Andriamagnitsa Taminazy hoe: “Efa nianiana Jehovah Agnao ro Mpisorogna mandrakizay.” (Sal. 110.4)",
-    "target": "nefa ny hafa dia natao mpisorona tsy tamin’ny fianianana, fa izy kosa dia tamin’ny fianianana nataon’ilay nilaza taminy hoe: «Efa nianiana NY TOMPO ka tsy hanenina: Ianao no mpisorona mandrakizay» (Sal 110.4).",
-    "direction": "Betsileo->Malagasy",
-    "ref": "HEB 7:21",
-    "book": "HEB",
     "identical": false
   },
   {
@@ -16098,14 +16050,6 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Samia mifanompo araka ny fanomezam-pahasoavana izay noraisinareo, tahaka ny mpitantana tsara ny fahasoavan’Andriamanitra izay miasa amin’ny fomba maro samihafa.",
-    "target": "Ampiasao ny fagnomezam-pahasoavana noraisinareo hanompoana ny hafa, tahaka ny mpitantana mahafatra-po ny fahasoavana samihafa ahatamin’Andriamagnitra.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "1PE 4:10",
-    "book": "1PE",
-    "identical": false
-  },
-  {
     "source": "translate Malagasy to Betsileo: Izay manan-tsofina hoenti-mihaino, aoka izy hihaino.",
     "target": "Izay manan-tsofigna hihainoana, dia mihainoa!",
     "direction": "Malagasy->Betsileo",
@@ -16135,14 +16079,6 @@
     "direction": "Betsileo->Malagasy",
     "ref": "HEB 1:9",
     "book": "HEB",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Fa ny fahasoavan’Andriamagnitsa ro nahatahak’izao ahy, eko tsa very maigna ny fahasoavana nomeny ahy fa niasa be lavitsa noho iy aby aho; feny tsa aho ro nanao ny asa fa ny fahasoavan’Andriamagnitsa ro niara-niasa taminahy.",
-    "target": "Fa ny fahasoavan’Andriamanitra no naha toy izao ahy; ary tsy foana ny fahasoavany nasehony tamiko; fa efa niasa fatratra mihoatra noho izy rehetra aho, nefa tsy izaho fa ny fahasoavan’Andriamanitra no nomba ahy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "1CO 15:10",
-    "book": "1CO",
     "identical": false
   },
   {
@@ -16183,14 +16119,6 @@
     "direction": "Betsileo->Malagasy",
     "ref": "2TH 2:2",
     "book": "2TH",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Homeko anao ny fagnalahidin’ny fanjakan’ny lagnitsa; na ina na ina fehezinao etỳ ambonin’ny tany dia hofehezina agny an-dagnitsa; eko na ina na ina vahànao etỳ ambonin’ny tany dia hovahàna agny an-dagnitsa.",
-    "target": "Homeko anao ny fanalahidin’ny fanjakan’ny lanitra; koa na inona na inona fehezinao etỳ ambonin’ny tany dia hofehezina any an-danitra ary na inona na inona vahànao etỳ ambonin’ny tany dia hovahana any an-danitra.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 16:19",
-    "book": "MAT",
     "identical": false
   },
   {
@@ -19887,14 +19815,6 @@
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 19:18",
     "book": "MAT",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Nefa fantatsika fa izay raha lazain’ny Lalàna dia lazainy amin’izay managna ny Lalàna, amin’izay voatampigna aby ny vava rehetra, ko hiharan’ny fitsaran’Andriamagnitra izao tontolo izao,",
-    "target": "«Mailaka handatsa-dra ny tongony;",
-    "direction": "Betsileo->Malagasy",
-    "ref": "ROM 3:15",
-    "book": "ROM",
     "identical": false
   },
   {
@@ -35915,14 +35835,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Ampiasao ny fagnomezam-pahasoavana noraisinareo hanompoana ny hafa, tahaka ny mpitantana mahafatra-po ny fahasoavana samihafa ahatamin’Andriamagnitra.",
-    "target": "Samia mifanompo araka ny fanomezam-pahasoavana izay noraisinareo, tahaka ny mpitantana tsara ny fahasoavan’Andriamanitra izay miasa amin’ny fomba maro samihafa.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "1PE 4:10",
-    "book": "1PE",
-    "identical": false
-  },
-  {
     "source": "translate Malagasy to Betsileo: Nahoana? Satria tsy tiako va ianareo? Andriamanitra no mahalala.",
     "target": "Nahoana moa aho ro milaza an’izay? Ataonareo hoe tsa tiako ve agnareo? Andriamagnitsa ro mahilala fa tiako agnareo.",
     "direction": "Malagasy->Betsileo",
@@ -39635,14 +39547,6 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa ny fahasoavan’Andriamanitra no naha toy izao ahy; ary tsy foana ny fahasoavany nasehony tamiko; fa efa niasa fatratra mihoatra noho izy rehetra aho, nefa tsy izaho fa ny fahasoavan’Andriamanitra no nomba ahy.",
-    "target": "Fa ny fahasoavan’Andriamagnitsa ro nahatahak’izao ahy, eko tsa very maigna ny fahasoavana nomeny ahy fa niasa be lavitsa noho iy aby aho; feny tsa aho ro nanao ny asa fa ny fahasoavan’Andriamagnitsa ro niara-niasa taminahy.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "1CO 15:10",
-    "book": "1CO",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Aho mahafantatsa Azy satria hatagny Aminazy Aho eko iy ro nagniraka Ahy.",
     "target": "Izaho mahalala Azy; fa izy no niaviako, koa izy no naniraka Ahy.",
     "direction": "Betsileo->Malagasy",
@@ -41579,14 +41483,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Feny isaorana Andriamagnitsa Izay mitondra anay mandrakariva ao amin’i  toy ny amin’ny filaharam-be fanaon’ny ona avy nandresy, eko dia ampiasainy agnay mba hanehoany ny hagnitsa mameroveron’ny fahalalana an’i  egny rehetra egny.",
-    "target": "Fa isaorana anie Andriamanitra izay mitondra anay mandrakariva ao amin’i * toy ny fanaon’izay avy nandresy ka ampisehoany ny hanitry ny fahalalana Azy eny tontolo eny izahay.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "2CO 2:14",
-    "book": "2CO",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Dia nangataka solaitsa i Zakaria ko nanoratsa hoe: Jaona ro agnarany; eko zendagna aby reo.",
     "target": "Fa hoy izy ireo taminy: Tsy misy na dia iray akory aza amin’ny havanao izay manana izany anarana izany.",
     "direction": "Betsileo->Malagasy",
@@ -42187,16 +42083,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Eko tsa niala teo amin’i Petera sy i Jaona iy, dia zendagna aby ny ona ko nirohotsa ho eo amin’iy telolahy, teo amin’ny fialofana atao hoe Fialofan’i Solomona.",
-    "target": "Raha mbola tsy niala teo amin’i Petera sy i Jaona izy dia niara-nirohotra ho eo amin’izy telo lahy teo amin’ny fialofana izay antsoina hoe Fialofan’i Solomona ny olona rehetra, sady talanjona.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "ACT 3:11",
-    "book": "ACT",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Andriamagnitsa mihitsy ro kehiko ho vavolombelogna fa tsa mandenga aho eko hagnala ny aiko iy lehe lengako izao: fitsinjovako anareo ro tsa nipodianako tagny Korinto koa.",
-    "target": "Ary miantso an’Andriamanitra ho vavolombelona ny amin’ny fanahiko aho, fa ny fialako nenina aminareo ihany no tsy mbola nankanesako tatỳ Korinto.",
+    "source": "translate Betsileo to Malagasy:fa ny fitsinjovako anareo ro tsa nipodianako tagny.",
+    "target": "                               fa ny fialako nenina aminareo no tsy nankanesako tatỳ Korinto.",
     "direction": "Betsileo->Malagasy",
     "ref": "2CO 1:23",
     "book": "2CO",
@@ -42411,22 +42299,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Nataoko aby izay rehetra izay noho ny Vaovao Mahafaly mba ho mpiombogna anjara aminazy amin’ny soa nampagnantignain’Andriamagnitsa aho.",
-    "target": "Ary izany rehetra izany dia ataoko noho ny Filazantsara mba ho tonga mpiombona aminy aho.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "1CO 9:23",
-    "book": "1CO",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Eko dia nagninagna ona hanapaka ny lohan’i Jaona tao an-dragnomaizigna iy.",
-    "target": "Koa nandefa iraka hanapaka ny lohan’i Jaona tao an-tranomaizina izy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 14:10",
-    "book": "MAT",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Intelo nipody izay dia nakarina nihoagny an-dagnitsa ilay raha sỳ ahateo.",
     "target": "Ary intelo no nitrangan’izany; dia nakarina nankany an-danitra ilay zavatra nony avy eo.",
     "direction": "Betsileo->Malagasy",
@@ -42587,14 +42459,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Sỳ avy nagnambara sy nitory ny tenin’ny Tompo i Petera sy i Jaona, dia nipody agny Jerosalema ko nitory ny Vaovao Mahafaly tamin’ny tanàna rehagna tao Samaria.",
-    "target": "Rehefa nanambara sy nitory ny tenin’ny Tompo i Petera sy i Jaona dia niverina nankany Jerosalema ka nitory ny Filazantsara teny amin’ny vohitra maro izay an’ny Samaritana* .",
-    "direction": "Betsileo->Malagasy",
-    "ref": "ACT 8:25",
-    "book": "ACT",
-    "identical": false
-  },
-  {
     "source": "translate Malagasy to Betsileo: Izay rehetra mankahala ny rahalahiny dia mpamono olona; ary fantatrareo fa tsy mba misy mpamono olona manana fiainana mandrakizay mitoetra ao anatiny.",
     "target": "Mpamono ona izay mankahala ny rahalahiny ao amin’ny finoana; agnareo mahafantatsa fa tsa mba misy mpamono ona managna fiaignana mandrakizay mitoatsa ao aminazy.",
     "direction": "Malagasy->Betsileo",
@@ -42704,14 +42568,6 @@
     "direction": "Malagasy->Betsileo",
     "ref": "1TI 5:3",
     "book": "1TI",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: mbaka i Anasy Mpisorognabe, i Kaiafa, i Jaona, i Aleksandro eko iy aby havan’ny Mpisorognabe.",
-    "target": "mbamin’i Anasy mpisoronabe* , i Kaiafa, i Jaona, i Aleksandra ary izay rehetra mety ho havan’ny Mpisoronabe.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "ACT 4:6",
-    "book": "ACT",
     "identical": false
   },
   {
@@ -43008,14 +42864,6 @@
     "direction": "Malagasy->Betsileo",
     "ref": "GAL 6:1",
     "book": "GAL",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Nisy lihilahy raika nirahin’Andriamagnitsa, Jaona ro agnarany.",
-    "target": "Nisy lehilahy nirahin’Andriamanitra, Jaona no anarany.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "JHN 1:6",
-    "book": "JHN",
     "identical": false
   },
   {
@@ -43562,14 +43410,7 @@
     "book": "ACT",
     "identical": false
   },
-  {
-    "source": "translate Betsileo to Malagasy: Izao ro agnaran’ny Apôstôly roambinifolo lahy: Simona, atao koa hoe Petera, sy Andrea rahalahiny; Jakoba sy Jaona, zanak’i Zebedio iy mirahalahy;",
-    "target": "Izao no anaran’ny Apostoly roa amby folo lahy: Ny voalohany, i Simona, izay atao hoe Petera, sy i Andrea rahalahiny; i Jakoba, zanak’i Zebedio, sy i Jaona rahalahiny;",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 10:2",
-    "book": "MAT",
-    "identical": false
-  },
+
   {
     "source": "translate Betsileo to Malagasy: Dia hotsiny: Rosoa agny an-tanàna ho agny amin-dranilahy raika, dia lazao agnaminy hoe: “Hotsiny ny Mpampianatsa: ‘Efa marìny ny fotonako; eko ato aminao Aho sy ny mpianatso ro hankalaza ny Paka.’”",
     "target": "Ary hoy izy: Mankanesa any an-tanàna ho any amin’ny lehilahy iray ka lazao aminy hoe: Hoy ny Mpampianatra: Efa akaiky ny fotoanandroko; koa ato aminao Aho sy ny mpianatro no hitandrina ny Paska.",
@@ -43619,14 +43460,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: rehe efa nagnandragna agnareo fa tsara ny Tompo.",
-    "target": "raha efa nanandrana ianareo fa tsara ny Tompo.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "1PE 2:3",
-    "book": "1PE",
-    "identical": false
-  },
-  {
     "source": "translate Malagasy to Betsileo:  Androany no efa tanteraka eto anatrehanareo izany soratra izany.",
     "target": "Dia niaiky volagna sady zendagna aby ny ona noho ny hasoan’ny raha notarogniny. Dia hoy ny sanagny tamin’ireo: Tsa zanak'i Josefa ve ity?",
     "direction": "Malagasy->Betsileo",
@@ -43636,7 +43469,7 @@
   },
   {
     "source": "translate Betsileo to Malagasy: Dia zendagna aby reo ko niresaka hoe: Ina ro hevits'izao?",
-    "target": "Dia talanjona izy rehetra sady sahiran-tsaina ka nifampiresaka hoe: Inona no tokony ho hevitr’izany?",
+    "target": "                                Dia talanjona izy rehetra ka nifampiresaka hoe: Inona no hevitr’izany?",
     "direction": "Betsileo->Malagasy",
     "ref": "ACT 2:12",
     "book": "ACT",
@@ -43667,35 +43500,11 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Andeha isika hizaha lehilahy iray, izay nilaza tamiko ny nataoko rehetra; izao angaha no !",
-    "target": "Andao agnareo hijaha izao Lihilahy izao! Notarogniny taminahy aby ny raha nataoko. Izao angamba ro  aminazy!",
+    "source": "translate Malagasy to Betsileo: Nolazainy tamiko daholy ny rehetra nataoko ;",
+    "target": "                                Notarogniny taminahy aby ny raha nataoko.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 4:29",
     "book": "JHN",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Dia talanjona avokoa izy rehetra ka niresaka hoe: Ahoana izao teny izao! Fa amim-pahefana sy hery no andidiany ny fanahy maloto dia miala ireny.",
-    "target": "Ko niely tamin’ny faritsa aby magnodidigna ny lazan’iy.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "LUK 4:36",
-    "book": "LUK",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: «Mailaka handatsa-dra ny tongony;",
-    "target": "Nefa fantatsika fa izay raha lazain’ny Lalàna dia lazainy amin’izay managna ny Lalàna, amin’izay voatampigna aby ny vava rehetra, ko hiharan’ny fitsaran’Andriamagnitra izao tontolo izao,",
-    "direction": "Malagasy->Betsileo",
-    "ref": "ROM 3:15",
-    "book": "ROM",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Hisy mpaminany sandoka maro hitsangana ka hamitaka olona maro.",
-    "target": "Ho be ny mpaminany sandoka hitsikavatsa hampivily lalagna onom-be.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "MAT 24:11",
-    "book": "MAT",
     "identical": false
   },
   {
@@ -43704,14 +43513,6 @@
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 13:6",
     "book": "LUK",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Aho dia manao batisa anareo amin’ny rano ho mariky ny fibebahanareo, fa Ilay ho avy ao afarako izay tena mahery noho aho ro hanao batisa anareo amin’ny Fagnahy Masina sy ny afo. Tsa mendrika ahy aby laky dia ny hamaha ny kapany aza.",
-    "target": "Izaho dia manao batisa anareo amin’ny rano ho amin’ny fibebahana; fa Ilay avy ao aorianako no mahery noho izaho ka tsy mendrika hanaisotra ny kapany aza aho; izy no hanao batisa anareo amin’ny Fanahy Masina sy ny afo;",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 3:11",
-    "book": "MAT",
     "identical": false
   },
   {
@@ -43803,27 +43604,11 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Davida tegnany mihitsy ro mitarogna ao amin’ny bokin’ny Salamo hoe: ‘NY TOMPO dia nilaza tamin’ny Tompoko hoe:",
-    "target": "Nefa i Davida ihany no milaza eo amin’ny bokin’ny Salamo hoe: «NY TOMPO nilaza tamin’ny Tompoko hoe: Mipetraha eo ankavanako",
-    "direction": "Betsileo->Malagasy",
-    "ref": "LUK 20:42",
-    "book": "LUK",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Atsika koa dia sahala amin’izay sỳ vona kely, nandevozin’ny abidim-pianaran’izao tontolo izao.",
-    "target": "Tahaka izany koa isika, fony mbola zaza, dia nandevozin’ny abidim-pianaran’izao tontolo izao;",
+    "source": "translate Betsileo to Malagasy: Atsika koa dia sahala amin’izay sỳ vona kely",
+    "target": "                                Isika koa dia tahaka izany fony mbola zaza",
     "direction": "Betsileo->Malagasy",
     "ref": "GAL 4:3",
     "book": "GAL",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Ary ny Fariseo* sasany izay teo Aminy, nony nandre izany, dia niteny taminy hoe: Izahay koa va mba jamba?",
-    "target": "Eko ny sasagny tamin’ny Fariseo teo sỳ nandre izay dia nagnontany hoe: Agnay koa ve mba jamba?",
-    "direction": "Malagasy->Betsileo",
-    "ref": "JHN 9:40",
-    "book": "JHN",
     "identical": false
   },
   {
@@ -44288,14 +44073,6 @@
     "direction": "Betsileo->Malagasy",
     "ref": "1CO 7:17",
     "book": "1CO",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Ny fanambaran’izy * , izay nomen’Andriamanitra Azy, mba hasehony amin’ny mpanompony rehetra izay zavatra tsy maintsy ho tonga haingana; ary naniraka ny anjeliny izy hanambara amin’i Jaona mpanompony amin’ny alalan’ny famantarana,",
-    "target": "Ity boky ity dia mirakitsa ny fagnambaran’iy , izay nomen’Andriamagnitsa Azy, mba hanehoana amin’ny mpanompony ny raha aby tsy maintsy hiboaka tsa ho ela; eko dia nambarany an’i Jaona mpanompony izany tamin’ny nagnirahany ny anjeliny.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "REV 1:1",
-    "book": "REV",
     "identical": false
   },
   {
@@ -45131,14 +44908,6 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Ary tamin’izany andro izany dia niseho vahoaka i Jaona Mpanao batisa, nitory tany an-tany efitr’i Jodia* ka nilaza hoe:",
-    "target": "Tamin’izany fotoana izany dia niseho tagny an-kodahoda, agny Jodia, i Jaona Mpanao Batisa eko nitoriteny hoe:",
-    "direction": "Malagasy->Betsileo",
-    "ref": "MAT 3:1",
-    "book": "MAT",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Ny maso ro jiron’ny taigna; eko amin’izay, lehe iy ro soa dia hazava aby ny taignanao; feny lehe iy ro ratsy dia ho maigna a aby ny taignanao.",
     "target": "Ny maso no jiron’ny tena; koa amin’izany, raha tsara ny masonao, dia hazava avokoa ny tenanao manontolo.",
     "direction": "Betsileo->Malagasy",
@@ -45851,14 +45620,6 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Ny Lalàna sy ny Mpaminany dia hatramin’i Jaona; hatramin’izany no efa nitoriana ny Filazantsaran’ny fanjakan’Andriamanitra, ary miditra an-keriny izay rehetra miditra ao.",
-    "target": "Ny lalàna sy ny mpaminany dia tapitsa teo amin’i Jaona Mpanao batisa. Nanomboka hateo dia ny fanjakan’Andriamagnitsa ro Vaovao Mahafaly notoriana, eko dia miezaka ny hiditsa ao aby ny ona.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "LUK 16:16",
-    "book": "LUK",
-    "identical": false
-  },
-  {
     "source": "translate Malagasy to Betsileo: Tamin’izany, raha niangona ny vahoaka betsaka, an’arivony maro, ka nifanitsa-kitro, dia niteny tamin’ny mpianany aloha iy hoe: Mitandrema ianareo amin’ny masirasiran’ny Fariseo* , dia ny fihatsarambelatsihy.",
     "target": "Tamin’izay fotoagna izay dia nifagnizigna ny ona hitaino an’iy. Dia nitarogna tamin’ny mpianany iy aloha hoe: Mitandrema agnareo nge dia tratsy ny lalivain’ny Fariseo, dia ny fihatsarambelatsihy izay.",
     "direction": "Malagasy->Betsileo",
@@ -45971,21 +45732,14 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Ary raha hitan’i Jakoba sy i Jaona mpianany izany dia hoy izy: Tompoko, tianao va raha hiteny izahay mba hisy afo milatsaka avy any an-danitra handevona azy ireo ?",
-    "target": "Sỳ nahita an’izay i Jakoba sy i Jaona mpianany, dia hoy reo Taminazy: Tompo ô! Tiànao ve lehe hitarogna agnay mba hisy afo hatagny an-dagnitsa handevogna andreo aby.",
+    "source": "translate Malagasy to Betsileo:Tianao va raha hiteny izahay mba hisy afo milatsaka avy any an-danitra handevona azy ireo ?",
+    "target": "                               Tiànao ve lehe hitarogna agnay mba hisy afo hatagny an-dagnitsa handevogna andreo aby ireo.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 9:54",
     "book": "LUK",
     "identical": false
   },
-  {
-    "source": "translate Betsileo to Malagasy: izy ro torìnay amin’ny fagnanaranay sy ny fampianaranay ny ona rehetra amin’ny fahendrena rehetra, mba samy hatolotray ho tanteraka ao amin’i  izy rehetra.",
-    "target": "izy no torinay amin’ny fampitandremanay sy ny fampianaranay ny olona rehetra amin’ny fahendrena rehetra, mba samy hatolotray ho tanteraka ao amin’i  izy rehetra.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "COL 1:28",
-    "book": "COL",
-    "identical": false
-  },
+
   {
     "source": "translate Betsileo to Malagasy: Hoy koa iy tamin’ny raika: ‘Ohatsina ny trosa agny aminao?’ ‘Vary zato vata lihibe b ,’ hoy ny navaliny. ‘Inty raiso ny taratasinao ko sorato eo hoe valopolo.'",
     "target": "Dia hoy izy tamin’ny iray koa: Ohatrinona kosa no trosa aminao? Vary injaton’ny kora* , hoy izy. Dia hoy izy taminy koa: Inty, raiso ny taratasinao, ka valopolo no soraty.",
@@ -46008,14 +45762,6 @@
     "direction": "Malagasy->Betsileo",
     "ref": "GAL 4:18",
     "book": "GAL",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Eko niangavy ny hiaraka tamin’iy ralihilahy izay efa nialan’ny demonia feny napodiny. Hoy iy:",
-    "target": "Ary ilay lehilahy izay efa nialan’ny demonia dia nangataka mba hijanona eo Aminy; nefa nasain’izy nandeha izy sady noteneniny hoe:",
-    "direction": "Betsileo->Malagasy",
-    "ref": "LUK 8:38",
-    "book": "LUK",
     "identical": false
   },
   {
@@ -46043,27 +45789,11 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Kanefa aza mifaly ianareo satria manaiky anareo ny fanahy, fa mifalia satria voasoratra any an-danitra ny anaranareo.",
-    "target": "Feny aza mifaly satria magneky anareo ny fagnahy, fa mifalea satria voasoratsa agny an-dagnitsa ny agnaranareo.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "LUK 10:20",
-    "book": "LUK",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Mifalea agnao ry lagnitsa noho ny raha nanjo an’i Babilona sy agnareo ona masina, sy agnareo Apôstôly, sy agnareo mpaminany! Andriamagnitsa efa nagnameloka azy ko nagnome rariny anareo.",
     "target": "Mifalia noho izay zavatra nanjo azy ianao, ry lanitra, sy ianareo olona masina, sy ianareo Apostoly, ary ianareo mpaminany! Fa Andriamanitra efa nitsara azy ka nanome rariny anareo.",
     "direction": "Betsileo->Malagasy",
     "ref": "REV 18:20",
     "book": "REV",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Eko sỳ nahita azy sy ireo Jiosy niaraka taminazy nitagny Izy dia vonto ny fagnahy ko nangorohoro ny tegnany.",
-    "target": "Ary iy nony nahita azy nitomany sy ny Jiosy izay niaraka taminy nitomany koa dia vonto ny fanahiny ka nangorohoro ny tenany;",
-    "direction": "Betsileo->Malagasy",
-    "ref": "JHN 11:33",
-    "book": "JHN",
     "identical": false
   },
   {
@@ -46075,8 +45805,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia niala nankany an-tany efitra izy ka nivavaka.",
-    "target": "Feny iy roso nihataka tagny amin’ny toerana mangigna ko nivavaka.",
+    "source": "translate Malagasy to Betsileo:  Dia lasa niala nankany an-tany efitra izy.",
+    "target": "                                 Feny roso nihataka tagny amin’ny toerana mangigna iy.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 5:16",
     "book": "LUK",
@@ -46120,14 +45850,6 @@
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 27:27",
     "book": "ACT",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Feny ny lohan’ny mpisorogna sy ny loholona dia nandresy lahatsa ny vahoaka mba hitaky ny hamoahana an’i Barabasy sy hamonoana an’iy.",
-    "target": "Ny lehiben’ny mpisorona mbamin’ny loholona anefa dia nitaona ny vahoaka mba hangataka an’i Barabasy ka hampamono an’izy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 27:20",
-    "book": "MAT",
     "identical": false
   },
   {
@@ -46216,14 +45938,6 @@
     "direction": "Malagasy->Betsileo",
     "ref": "2CO 7:16",
     "book": "2CO",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Rehefa nahazo an-tsaina izany izy dia nankany amin’ny tranon’i Maria, renin’i Jaona, izay antsoina koa hoe Marka, ary nisy olona maro vory tao nivavaka.",
-    "target": "Sỳ avy nieritseritsa izay iy, dia nihoagny an-dragnon’i Maria, renin’i Jaona izay atao koa hoe Marka. Eko nisy olon-drehagna nivory nivavaka tao.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "ACT 12:12",
-    "book": "ACT",
     "identical": false
   },
   {
@@ -48219,14 +47933,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Indraika andro, dia niakatsa ho eo amin’ny Tempoly hamonjy ny ora fivavahana amin’ny telo tolakandro i Petera sy i Jaona.",
-    "target": "Niakatra ho eo amin’ny tempoly* i Petera sy i Jaona tamin’ny fotoam-pivavahana tamin’ny ora fahasivy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "ACT 3:1",
-    "book": "ACT",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Eko sỳ avy nivavaka iy aby, dia nihovitsovitsa ny tragno izay nivoriany. Dia feno ny Fagnahy Masina iy aby eko nagnambara ny tenin’Andriamagnitsa tamin’ny fahasahiana.",
     "target": "Rehefa nivavaka izy ireo dia nihovotrovotra ny trano izay niangonany; dia feno ny Fanahy Masina izy rehetra ary nitory ny tenin’Andriamanitra tamin’ny fahasahiana.",
     "direction": "Betsileo->Malagasy",
@@ -48371,14 +48077,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Jaona nanao batisa tamin’ny rano feny afaka andro vitsivitsy dia hatao batisa amin’ny Fagnahy Masina agnareo.",
-    "target": "fa i Jaona dia nanao batisa tamin’ny rano fa ianareo kosa dia hatao batisa amin’ny Fanahy Masina rehefa afaka andro vitsivitsy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "ACT 1:5",
-    "book": "ACT",
-    "identical": false
-  },
-  {
     "source": "translate Malagasy to Betsileo: ny nampiseho ny Zanany tato anatiko, mba hitoriako Azy any amin’ny Jentilisa* , niaraka tamin’izay dia tsy naka saina tamin’ny nofo aman-dra aho",
     "target": "dia nampahalalainy ahy ny Zanany mba hitoriako Azy agny amin’ny hafa firenena, eko tsa nila hevitsa tamin’ny nofo aman-dra aho tamin’izay.",
     "direction": "Malagasy->Betsileo",
@@ -48515,22 +48213,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Teo am-panohizana ny diany iy, dia nahita mpirahalahy hafa koa, i Jakoba sy i Jaona. Niara-nipetraka tamin’i Zebedio rainy, nagnamboatsa harato tao agnaty sambokely reo mirahalahy eko nokehiny koa.",
-    "target": "Ary raha mbola nandroso izy dia nahita olona mirahalahy hafa koa, dia i Jakoba, zanak’i Zebedio, sy i Jaona, rahalahiny, izay niara-nipetraka tamin’i Zebedio rainy teo an-tsambokely ka nanamboatra ny haratony; ary niantso azy mirahalahy koa izy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 4:21",
-    "book": "MAT",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: izy Fanahy dia miara-milaza amin’ny fanahintsika fa zanak’Andriamanitra isika.",
-    "target": "Ny Fagnahy dia miara-milaza amin’ny fagnahintsika fa zanak'Andriamagnitra atsika.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "ROM 8:16",
-    "book": "ROM",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Izao ro tarogniko aminareo: Mangataha dia homena agnareo; mitadiava dia hahita agnareo; dondogno dia hovohana agnareo.",
     "target": "Hoy Izaho aminareo: Mangataha dia homena ianareo; mitadiava dia hahita ianareo; dondòny dia hovohana ianareo.",
     "direction": "Betsileo->Malagasy",
@@ -48555,19 +48237,11 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia nangataka jiro ilay mpiambigna eko niditsa malaky nihoao ko sady tora-kovitsa ro nihohoka teo agnatrehan’i Paoly sy i Silasy.",
-    "target": "Ary nangataka jiro izy dia niditra sady toran-kovitra ka niankohoka teo anatrehan’i Paoly sy i Silasy.",
+    "source": "translate Betsileo to Malagasy: Dia nangataka jiro ilay mpiambigna eko niditsa malaky nihoao ko sady tora-kovitsa ro nihohoka.",
+    "target": "Ary nangataka jiro izy dia niditra sady toran-kovitra ka niankohoka.",
     "direction": "Betsileo->Malagasy",
     "ref": "ACT 16:29",
     "book": "ACT",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: satria momba ny tegnan’i  atsika.",
-    "target": "satria momba ny tenany isika.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "EPH 5:30",
-    "book": "EPH",
     "identical": false
   },
   {
@@ -48755,14 +48429,6 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Ny mpianatr’i Jaona dia nanambara izany rehetra izany taminy. Ary niantso ny mpianany roa lahy hankao aminy i Jaona,",
-    "target": "Eko nandre izay raha aby izay tamin’ny mpianany i Jaona, dia nangaika mpianatsa roalahy,",
-    "direction": "Malagasy->Betsileo",
-    "ref": "LUK 7:18",
-    "book": "LUK",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Eko ny raika fahenina dia nagnidigna ny tao an-doviany tamin’i Eofrata, renirano lihibe; dia ritsa ny ranony mba hagnomagnana ny lalan’ireo mpanjaka hatagny atsinanana.",
     "target": "Ary ny fahenina dia nampidina ny tao an-doviany tao amin’i Eofrata, ony lehibe. Dia ritra ny ranony, mba hanamboarana ny lalan’ireny mpanjaka avy any amin’ny fiposahan’ny masoandro ireny.",
     "direction": "Betsileo->Malagasy",
@@ -48776,14 +48442,6 @@
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 23:8",
     "book": "ACT",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Fa hoy ny Soratra Masina: «Tsy hitsanga-menatra izay rehetra mino Azy» (Isa 28.16).",
-    "target": "Hoy ny Soratra Masina: “Tsa ho maignatra izay ona rehetra mino Azy” (Isa 28.16).",
-    "direction": "Malagasy->Betsileo",
-    "ref": "ROM 10:11",
-    "book": "ROM",
     "identical": false
   },
   {
@@ -49075,7 +48733,7 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Fa araka ny voasoratra hoe: «Izay tsy mbola hitan’ny maso ary tsy mbola ren’ny sofina na niditra tao am-pon’ny olona no efa namboarin’Andriamanitra ho an’izay tia Azy» (Isa 64.3).",
+    "source": "translate Malagasy to Betsileo: Fa araka ny voasoratra hoe: «Izay tsy mbola hitan’ny maso ary tsy mbola ren’ny sofina na niditra tao am-pon’ny olona no efa namboarin’Andriamanitra ho an’izay tia Azy».",
     "target": "Fa araka ny voalazan’ny Soratra Masina hoe:“Izay tsa vo hitan’ny maso sy tsa vo ren’ny sofigna, na niditsa tao am-pon’ny ona na ina na ina ro efa namboarin’Andriamagnitsa ho an’izay tea Azy” a",
     "direction": "Malagasy->Betsileo",
     "ref": "1CO 2:9",
@@ -49267,8 +48925,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy i Zakaria tamin’ilay anjely: Ahoana no hahafantarako izany? Fa izaho efa antitra ary efa antitra koa ny vadiko.",
-    "target": "Eko hoy i Zakaria tamin’ny anjely: Akory ro hahalalako hoe marina izay? Aho efa antitsa, eko efa antitsa koa ny fanambadiako.",
+    "source": "translate Malagasy to Betsileo: Ahoana no hahafantarako izany? Fa izaho efa antitra ary efa antitra koa ny vadiko.",
+    "target": " Akory ro hahalalako hoe marina izay? Aho efa antitsa, eko efa antitsa koa ny fanambadiako.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 1:18",
     "book": "LUK",
@@ -50723,14 +50381,6 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Rehefa nanambara sy nitory ny tenin’ny Tompo i Petera sy i Jaona dia niverina nankany Jerosalema ka nitory ny Filazantsara teny amin’ny vohitra maro izay an’ny Samaritana* .",
-    "target": "Sỳ avy nagnambara sy nitory ny tenin’ny Tompo i Petera sy i Jaona, dia nipody agny Jerosalema ko nitory ny Vaovao Mahafaly tamin’ny tanàna rehagna tao Samaria.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "ACT 8:25",
-    "book": "ACT",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Dia nitsioka ny antsivany ny anjely fahafito, eko nisy feo mahery tagny an-dagnitsa nanao hoe: Ny fanjakana amin’izao tontolo izao dia efa hazan’ny Tompontsika sy ny Kristiny;",
     "target": "Ary nitsoka ny anjely fahafito dia nisy feo mafy tany an-danitra niteny hoe: Ny fanjakana amin’izao tontolo izao dia lasan’ny Tompontsika sy ny Kristiny; hanjaka mandrakizay mandrakizay izy!",
     "direction": "Betsileo->Malagasy",
@@ -51283,8 +50933,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia novinalin’i Jaona hoe: Tsa misy ona mahay mandray na ina na ina, lehe tsa nomena azy hatagny an-dagnitsa izay.",
-    "target": "Dia hoy i Jaona hoe: Tsy misy olona mahay mandray na inona na inona, raha tsy nomena azy avy any an-danitra izany.",
+    "source": "translate Betsileo to Malagasy: Tsa misy ona mahay mandray na ina na ina, lehe tsa nomena azy hatagny an-dagnitsa izay.",
+    "target": " Tsy misy olona mahay mandray na inona na inona, raha tsy nomena azy avy any an-danitra izany.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 3:27",
     "book": "JHN",
@@ -51811,14 +51461,6 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: dia nanidy an’i Jaona tao an-tranomaizina ho fanampin’izany rehetra izany koa.",
-    "target": "dia vo nagnagadra an’i Jaona tao an-dragnomaizina koa, ho fagnampin’izay raha aby izay.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "LUK 3:20",
-    "book": "LUK",
-    "identical": false
-  },
-  {
     "source": "translate Malagasy to Betsileo: Tonga kosa ny Zanak’Olona* , mihinana sy misotro, ka hoy ny olona: Indro olona fatra-pitia hanina sy mpisotro divay, sakaizan’ny mpamory hetra sy ny mpanota. Fa ny fahendrena dia hamarinin’ny asany.",
     "target": "Feny avy ny Zanak’Ona, mihinana iy ro sady misotro, dia hotsin’ny ona: Tendan-kanina sy mpimamo divay iy, naman’ny mpitaky hetra sy ny mpanota. Fa hamarinin’ny asany ny fahendrena.",
     "direction": "Malagasy->Betsileo",
@@ -52299,14 +51941,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Enina andro tafaran’izay, dia noferin’iy niakatsa agny an-tendrombohitsa avo mba hitokana i Petera ary i Jakoba sy i Jaona mirahalahy.",
-    "target": "Nony afaka henemana, iy, dia naka an’i Petera sy i Jakoba ary i Jaona rahalahiny ka nitondra azy ireo niakatra ho any an-tendrombohitra avo mba hitokana.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 17:1",
-    "book": "MAT",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Ny fitiavan’i  ro manery anay satria resy lahatsa agnay hoe: Maty ny raika hamonjy ny ona aby ko dia maty ao Aminazy koa iy aby.",
     "target": "Fa ny fitiavan’i * no manery anay, satria izao no hevitray: Maty ny olona iray hamonjy ny olona rehetra, dia maty koa izy rehetra;",
     "direction": "Betsileo->Malagasy",
@@ -52483,16 +52117,16 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Rehefa tonga tao an-trano izy dia tsy nisy olona navelany hiara-miditra taminy afa-tsy i Petera sy i Jaona ary i Jakoba mbamin’ny ray aman-drenin-dRazazavavy.",
-    "target": "Sỳ tonga teo an-drindrigna iy dia, i Petera sy i Jaona sy i Jakoba eko ny ray sy renin-drakalakely ihany ro navelany hiara-hiditsa Taminazy tao andragno.",
+    "source": "translate Malagasy to Betsileo: Rehefa tonga teo an-tokontany izy dia tsy nisy olona navelany hiara-miditra taminy tao an trano.",
+    "target": "                               Sỳ tonga teo an-drindrigna iy dia tsa noisy ona ro navelany hiara-hiditsa taminazy tao andragno.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 8:51",
     "book": "LUK",
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Se tapy nitarogna an’izay rehetra izay iy dia nanao tamin’ny mpianany hoe:",
-    "target": "Rehefa vitan’izy izany teny rehetra izany dia nilaza tamin’ny mpianany izy hoe:",
+    "source": "translate Betsileo to Malagasy: Se tapy nitarogna an’izay aby izay iy de roso",
+    "target": "                               Rehefa vita  nilaza an'izay rehetra izay izy dia lasa",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 26:1",
     "book": "MAT",
@@ -53136,14 +52770,6 @@
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 13:25",
     "book": "JHN",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Sỳ nahavita ny fanompoany i Barnabasy sy i Saoly dia nipody hatagny Jerosalema. Noferin’iy roa lahy niaraka taminazy koa i Jaona izay atao hoe Marka.",
-    "target": "Niverina nankany Jerosalema i Barnabasy sy i Saoly rehefa vita ny fanompoany, dia nitondra an’i Jaona izay antsoina koa hoe Marka, hiaraka aminy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "ACT 12:25",
-    "book": "ACT",
     "identical": false
   },
   {
@@ -53979,22 +53605,6 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: hanjaka amin’ny taranak’i Jakoba mandrakizay izy; ary ny fanjakany tsy hanam-pahataperana.",
-    "target": "Hanjaka amin’ny taranak'i Jakoba mandrakizay iy, eko tsa hanam-pahataperana ny fanjakany.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "LUK 1:33",
-    "book": "LUK",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Noferiko tamin’ny mpianatsao iy fa tsa nahasitragna azy reo.",
-    "target": "Ary nitondra azy tamin’ny mpianatrao aho nefa tsy nahay nanasitrana azy izy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 17:16",
-    "book": "MAT",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Dia nisy ona nilanja lihilahy raika malemy tamin’ny fandreana, nitadia fomba hidirana tao an-dragno sy hametrahana azy eo alohan’iy.",
     "target": "Indro, nisy nitondra lehilahy iray izay malemy, tamin’ny fandriana, ka nitady izay hampidirany sy hametrahany azy teo anatrehany.",
     "direction": "Betsileo->Malagasy",
@@ -54018,22 +53628,7 @@
     "book": "1CO",
     "identical": false
   },
-  {
-    "source": "translate Betsileo to Malagasy: Mino agnay ko mahilala fa Agnao ro Ilay Masin’Andriamagnitsa.",
-    "target": "Ary mino izahay ka mahalala fa Ianao no Ilay Masin’Andriamanitra.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "JHN 6:69",
-    "book": "JHN",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Eko hoy i Heroda: Lehe Jaona aloha, dia efa notinapako ny lohany. Fa Ia marina ary izao Ona izao ro dia be ny raha reko nataony? Dia te hahita Azy iy.",
-    "target": "Fa hoy i Heroda: Raha i Jaona dia izaho no efa nanapaka ny lohany; fa iza indray moa izao, izay andrenesako izao zavatra izao? Ary naniry hahita Azy izy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "LUK 9:9",
-    "book": "LUK",
-    "identical": false
-  },
+
   {
     "source": "translate Betsileo to Malagasy: Izay nirahin’Andriamagnitsa dia milaza ny Teniny satria tsa misy fetra ny fagnomezan’Andriamagnitsa ny Fagnahy.",
     "target": "Fa izay nirahin’Andriamanitra dia milaza ny teniny; satria tsy misy fetra ny fanomezan’Andriamanitra ny Fanahy.",
@@ -54619,16 +54214,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: fa Izay niasa tao amin’i Petera ka nahatonga azy ho apostoly ho an’ny voafora no niasa tao amiko koa ho an’ny Jentilisa.",
-    "target": "satria Andriamagnitsa Izay nanendry an’i Petera ho Apôstôly ho an’ny Jiosy ro nanendry ahy koa ho Apôstôly ho an’ny hafa firenena.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "GAL 2:8",
-    "book": "GAL",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Sỳ efa nadiva hahatanteraka ny nagnirahana azy i Jaona, dia nanao hoe: Ataonareo ho ia moa aho? Tsa aho ro iy fa misy Raika avy ahatao afarako ko tsa mendrika leko dia hamaha ny kapa eo an-tongony aza aho.",
-    "target": "Ary rehefa nadiva hahatanteraka ny fihazakazahany i Jaona dia niteny hoe: Heverinareo ho iza moa aho? Tsy izy aho; fa indro, misy Iray avy ao aorianako, koa izaho dia tsy mendrika hamaha ny kapa eo an-tongony akory.",
+    "source": "translate Betsileo to Malagasy: Ataonareo ho ia moa aho? Tsa aho ro iy fa misy Raika avy ahatao afarako ko tsa mendrika leko dia hamaha ny kapa eo an-tongony aza aho.",
+    "target": "Heverinareo ho iza moa aho? Tsy izy aho; fa indro, misy Iray avy ao aorianako, koa izaho dia tsy mendrika hamaha ny kapa eo an-tongony akory.",
     "direction": "Betsileo->Malagasy",
     "ref": "ACT 13:25",
     "book": "ACT",
@@ -55491,14 +55078,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Maherin’ny efapolo reo ro niray tetika tamin’izay.",
-    "target": "Efapolo mahery izy no niray tetika tamin’izany.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "ACT 23:13",
-    "book": "ACT",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Sỳ avy teo dia nandre feo mahery teo amin’ny sezafiandriagnana aho nanao hoe: Jahao, ny tragnolain’Andriamagnitsa dia eo amin’ny ona, eko hiara-hitoatsa amindreo; dia ho olony reo. Andriamagnitsa ho eo amin’iy aby ko ho Andriamagnidreo.",
     "target": "Ary nandre feo mahery avy teo amin’ny sezafiandrianana aho niteny hoe: Indro, ny tabernakelin’Andriamanitra dia eo amin’ny olona! Ary izy hitoetra eo aminy, ary ireo ho olony, ary Andriamanitra mihitsy no hitoetra eo aminy, dia ho Andriamaniny.",
     "direction": "Betsileo->Malagasy",
@@ -55507,19 +55086,11 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Lazaiko aminao marina dia marina tokoa: Raha mbola tanora ianao dia nisikina ka nandeha tamin’izay tianao; fa rehefa antitra kosa ianao dia hanatsotra ny tananao ary olon-kafa no hanikina anao ka hitondra anao amin’izay tsy tianao.",
-    "target": "Ambarako aminao ny marina fa tamin’ny agnao vona tanora dia agnao ihany ro nampisikigna ny tegnanao eko nandeha tamin’izay tiànao agnao; feny sỳ antitsa agnao dia hagnatsotra ny tagnanao eko ny hafa ro hampisikigna anao ko hitondra anao agny amin’izay tsa tiànao handihanana.",
+    "source": "translate Malagasy to Betsileo:  Raha mbola tanora ianao dia nisikina ka nandeha tamin’izay tianao; fa rehefa antitra kosa ianao dia hanatsotra ny tananao ary olon-kafa no hanikina anao ka hitondra anao amin’izay tsy tianao.",
+    "target": " fa tamin’ny agnao vona tanora dia agnao ihany ro nampisikigna ny tegnanao eko nandeha tamin’izay tiànao agnao; feny sỳ antitsa agnao dia hagnatsotra ny tagnanao eko ny hafa ro hampisikigna anao ko hitondra anao agny amin’izay tsa tiànao handihanana.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 21:18",
     "book": "JHN",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Fa izao no lazaiko, ry rahalahy: Efa fohy ny andro, koa aoka mba ho toy ny tsy manambady ny manana amin’izao sisa izao;",
-    "target": "Izao ro taroko, ry havana: Efa fohy ny fotoagna, eko amin’izao sisa izao dia aleo ny lihilahy manambady mba ho tahaka ny tsa managna;",
-    "direction": "Malagasy->Betsileo",
-    "ref": "1CO 7:29",
-    "book": "1CO",
     "identical": false
   },
   {
@@ -56739,14 +56310,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Fa hoy i Paoly: Nanao batisan’ny fibebahana i Jaona ko nitarogna tamin’ny ona mba hino Ilay ho avy ao afarany, dia iy.",
-    "target": "Fa hoy i Paoly: I Jaona dia nanao ny batisan’ny fibebahana ka nilaza tamin’ny olona hino Izay ho avy manaraka azy, dia iy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "ACT 19:4",
-    "book": "ACT",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Niaraka tamin’izay dia voatsindrin’ny Fagnahy aho. Eko hitako fa io nisy sezafiandrianana raika tagny an-dagnitsa eko nisy nitoatsa teo amboniny.",
     "target": "Ary niaraka tamin’izay dia voatsindrin’ny Fanahy aho. Indro, nisy sezafiandrianana iray tany an-danitra ary nisy Iray nipetraka teo ambonin’ny sezafiandrianana.",
     "direction": "Betsileo->Malagasy",
@@ -57064,14 +56627,6 @@
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 17:33",
     "book": "ACT",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: I Jaona ro magnambara ny raha aby hitany, dia ny tenin’Andriamagnitsa, sy ny marina nambaran’iy .",
-    "target": "izay nanambara ny zavatra rehetra izay hitany, dia ny tenin’Andriamanitra sy ny filazana an’izy .",
-    "direction": "Betsileo->Malagasy",
-    "ref": "REV 1:2",
-    "book": "REV",
     "identical": false
   },
   {
@@ -58259,14 +57814,6 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia hoy i Paoly: Ho amin’inona ary no nanaovana batisa anareo? Dia hoy ireo: Ho amin’ny batisan’i Jaona.",
-    "target": "Dia hoy i Paoly: Ho amin’ina ary ro nanaovana batisa anareo? Eko hoy reo: Ho amin’ny batisan’i Jaona.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "ACT 19:3",
-    "book": "ACT",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Magnina ro tsa magnaraka ny fomban-drazagna ny mpianatsao? Tsa mba manasa tagnana manko reo se hihinan-kanina.",
     "target": "Nahoana ny mpianatrao no mandika ny fampianarana voatolotry ny razana? Fa tsy mba manasa tanana izy ireo rehefa hihinan-kanina.",
     "direction": "Betsileo->Malagasy",
@@ -58616,14 +58163,6 @@
     "direction": "Malagasy->Betsileo",
     "ref": "1JN 4:13",
     "book": "1JN",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Avy i Jaona Mpanao batisa, tsa nihinan-kanina mahazatsa na nisotro divay, dia hoy agnareo: Misy demonia iy.",
-    "target": "Fa tonga i Jaona Mpanao batisa, tsy nihinan-kanina na nisotro divay, dia hoy ianareo: Manana demonia* izy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "LUK 7:33",
-    "book": "LUK",
     "identical": false
   },
   {
@@ -62059,16 +61598,16 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Nirahiko koa i Onesimosy, rahalahy mahatoky sy malala izay avy aminareo; hampahafantatra anareo ny zavatra rehetra atỳ izy roa lahy.",
-    "target": "Nirahiko hiaraka agnaminy koa i Onesimosy, rahalahy mahatoky sady tianay. izy moa dia ahatatỳ aminareo ihany eko izy roalahy ro hitantara ny raha rehetra miseho atỳ.",
+    "source": "translate Malagasy to Betsileo: hampahafantatra anareo ny zavatra rehetra atỳ izy roa lahy.",
+    "target": "                                hitantara aminareo ny raha rehetra atỳ izy roalahy.",
     "direction": "Malagasy->Betsileo",
     "ref": "COL 4:9",
     "book": "COL",
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Tompokolahy, ahoana no anaovanareo izao? Olona tahaka anareo ihany izahay ary mitory ny Filazantsara aminareo mba hialanareo amin’izao zava-poana izao ka hanatonanareo an’Andriamanitra velona izay nanao ny lanitra sy ny tany ary ny ranomasina mbamin’izay rehetra ao anatiny.",
-    "target": "Ô ra ona ireto a! Nahoana agnareo ro manao an’izao? Ona sahala aminareo ihany agnay. Mitory ny Vaovao Mahafaly aminareo agnay mba hialanareo amin’izao raha foagna izao ko hagnatognareo an’Andriamagnitsa velogna Izay nanao ny lagnitsa sy ny tany eko ny ranomasina mbaka izay rehetra ao agnatiny.",
+    "source": "translate Malagasy to Betsileo:  Tompokolahy, ahoana ianareo no manao izao? Olona tahaka anareo ihany izahay.",
+    "target": "                                 Ô ra ona ireto a! Nahoana agnareo ro manao an’izao? Ona sahala aminareo ihany agnay. ",
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 14:15",
     "book": "ACT",
@@ -63768,14 +63307,6 @@
     "direction": "Betsileo->Malagasy",
     "ref": "HEB 6:6",
     "book": "HEB",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: ko hovonoindreo. Nefa hatsangana amin’ny maty iy amin’ny andro fahatelo. Dia nalahelo fatratsa ny mpianatsa.",
-    "target": "ka hovonoiny, nefa amin’ny andro fahatelo dia hatsangana indray izy. Ary nalahelo indrindra ireo.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 17:23",
-    "book": "MAT",
     "identical": false
   },
   {
@@ -67916,19 +67447,11 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Ary miantso an’Andriamanitra ho vavolombelona ny amin’ny fanahiko aho, fa ny fialako nenina aminareo ihany no tsy mbola nankanesako tatỳ Korinto.",
-    "target": "Andriamagnitsa mihitsy ro kehiko ho vavolombelogna fa tsa mandenga aho eko hagnala ny aiko iy lehe lengako izao: fitsinjovako anareo ro tsa nipodianako tagny Korinto koa.",
+    "source": "translate Malagasy to Betsileo:fa ny fialako nenina aminareo ihany no tsy nankanesako tany.",
+    "target": "                               fa ny fitsinjovako anareo ro tsa nipodianako tagny.",
     "direction": "Malagasy->Betsileo",
     "ref": "2CO 1:23",
     "book": "2CO",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Mampamangy anareo koa izy atao hoe Josto; izy telo lahy irery ro mpino Jiosy a miara-miasa agnamiko ho an’ny fanjakan’Andriamagnitra. Hery ho ahy ny fanagnana andreo.",
-    "target": "Raiso toa izany koa izy, izay antsoina hoe Josto. Avy amin’ny voafora ireo. Ireo ihany no mpiara-miasa amiko hampandroso ny fanjakan’Andriamanitra sady tonga fampiononana ahy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "COL 4:11",
-    "book": "COL",
     "identical": false
   },
   {
@@ -75981,14 +75504,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Noho izay, dia mivonògna koa agnareo; fa ho avy amin’ny ora tsa apoezinareo ny Zanak’Ona.",
-    "target": "Noho izany, miomàna koa ianareo; fa amin’izay ora tsy ampoizinareo no hiavian’ny Zanak’Olona.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 24:44",
-    "book": "MAT",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Managna batisam-pijaliana miandry Ahy Aho eko dia mitaintaigna be mandra-pahatanterany!",
     "target": "Ary manana batisa hanaovana Ahy batisa Aho; koa toy inona ny tebitebiko ambara-pahatanterany!",
     "direction": "Betsileo->Malagasy",
@@ -76018,14 +75533,6 @@
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 11:25",
     "book": "JHN",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: nefa ny hafa dia natao mpisorona tsy tamin’ny fianianana, fa izy kosa dia tamin’ny fianianana nataon’ilay nilaza taminy hoe: «Efa nianiana NY TOMPO ka tsy hanenina: Ianao no mpisorona mandrakizay» (Sal 110.4).",
-    "target": "Feny iy etsy andagniny dia natao Mpisorogna tamin’ny fianianana araka ny nolazain’Andriamagnitsa Taminazy hoe: “Efa nianiana Jehovah Agnao ro Mpisorogna mandrakizay.” (Sal. 110.4)",
-    "direction": "Malagasy->Betsileo",
-    "ref": "HEB 7:21",
-    "book": "HEB",
     "identical": false
   },
   {
@@ -76106,14 +75613,6 @@
     "direction": "Malagasy->Betsileo",
     "ref": "COL 2:10",
     "book": "COL",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Efapolo mahery izy no niray tetika tamin’izany.",
-    "target": "Maherin’ny efapolo reo ro niray tetika tamin’izay.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "ACT 23:13",
-    "book": "ACT",
     "identical": false
   },
   {
@@ -86941,22 +86440,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Izao ro taroko, ry havana: Efa fohy ny fotoagna, eko amin’izao sisa izao dia aleo ny lihilahy manambady mba ho tahaka ny tsa managna;",
-    "target": "Fa izao no lazaiko, ry rahalahy: Efa fohy ny andro, koa aoka mba ho toy ny tsy manambady ny manana amin’izao sisa izao;",
-    "direction": "Betsileo->Malagasy",
-    "ref": "1CO 7:29",
-    "book": "1CO",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Nefa i Davida ihany no milaza eo amin’ny bokin’ny Salamo hoe: «NY TOMPO nilaza tamin’ny Tompoko hoe: Mipetraha eo ankavanako",
-    "target": "Davida tegnany mihitsy ro mitarogna ao amin’ny bokin’ny Salamo hoe: ‘NY TOMPO dia nilaza tamin’ny Tompoko hoe:",
-    "direction": "Malagasy->Betsileo",
-    "ref": "LUK 20:42",
-    "book": "LUK",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Satria tsa mba manompo an’i  Tompontsika ireo, fa ny danin’ny kibony ihany. Tarogna malefaka sady soa lahatra ro amitahany ny ona tso-po.",
     "target": "Fa izy ireny dia tsy mba manompo an’i * Tompontsika, fa ny kibony ihany; ary amin’ny teny malefaka sady tsara lahatra no amitahany ny fon’ny tsy ary saina.",
     "direction": "Betsileo->Malagasy",
@@ -87797,14 +87280,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Eko ny sasagny tamin’ny Fariseo teo sỳ nandre izay dia nagnontany hoe: Agnay koa ve mba jamba?",
-    "target": "Ary ny Fariseo* sasany izay teo Aminy, nony nandre izany, dia niteny taminy hoe: Izahay koa va mba jamba?",
-    "direction": "Betsileo->Malagasy",
-    "ref": "JHN 9:40",
-    "book": "JHN",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Sỳ nitraka iy dia hoy iy tamin’ilay ampela: Aia iy aby teo? Tsa misy nagnameloka anao ve?",
     "target": "Rehefa nitraka iy dia hoy izy taminy; Ravehivavy, aiza ry zareo teo? Tsy nisy nanameloka anao va?",
     "direction": "Betsileo->Malagasy",
@@ -87821,14 +87296,6 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Nony maraina ny andro dia nikaon-doha ny lehiben’ny mpisorona rehetra sy ny loholona hiampanga an’izy mba hamonoany Azy ho faty.",
-    "target": "Se naraigna ny andro, dia nikaon-doha ny lohan’ny mpisorogna rehetra sy ny loholona mba hamoron-kevitsa hamonoana an’iy.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "MAT 27:1",
-    "book": "MAT",
-    "identical": false
-  },
-  {
     "source": "translate Malagasy to Betsileo: I Kaiafa dia ilay nanome saina ny Jiosy hoe mahatsara raha maty ny olona iray hamonjena ny firenena.",
     "target": "Kaiafa Mpisorognabe ilay nanoro hevitsa ny Jiosy fa mahasoa lehe maty ny ona raika hamonjena ny firenena.",
     "direction": "Malagasy->Betsileo",
@@ -87837,42 +87304,10 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: ka hovonoiny, nefa amin’ny andro fahatelo dia hatsangana indray izy. Ary nalahelo indrindra ireo.",
-    "target": "ko hovonoindreo. Nefa hatsangana amin’ny maty iy amin’ny andro fahatelo. Dia nalahelo fatratsa ny mpianatsa.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "MAT 17:23",
-    "book": "MAT",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Dia notarihin’ny Fagnahy Masina ho ao an-Tempoly i Simeona. Eko sỳ noferin’ny ray sy reniny mba hanaovana ny fomba araka ny lalàna iy Anajaza,",
-    "target": "Ary noentin’ny Fanahy Masina niditra tao amin’ny tempoly izy; koa rehefa nampidirin’ny ray aman-dreniny iy zaza mba hanatanterahany Aminy izay fomba fanao araka ny lalàna,",
-    "direction": "Betsileo->Malagasy",
-    "ref": "LUK 2:27",
-    "book": "LUK",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Omeo ny hanina sahaza anay agnay niany.",
-    "target": "Omeo anay anio izay hanina sahaza ho anay.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 6:11",
-    "book": "MAT",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Nofihezindreo lamba ny masony dia nagnontaneany hoe: Vinanio, ia ro nanjera Anao?",
     "target": "Rehefa notampenan’izy ireo ny masony dia nanontaniany hoe: Maminania; iza moa no nikapoka Anao?",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 22:64",
-    "book": "LUK",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Baba ô! lehe mety Agnao, dia alao Taminahy izao fijaleana izao; feny ny nahim-ponao ro hatao fa tsa ny Ahy.",
-    "target": "Raiko ô, raha sitrakao dia esory Amiko ity kapoaka ity; nefa aoka tsy ny sitrapoko anie no hatao fa ny Anao.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "LUK 22:42",
     "book": "LUK",
     "identical": false
   },
@@ -95232,30 +94667,6 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Noho izany, miomàna koa ianareo; fa amin’izay ora tsy ampoizinareo no hiavian’ny Zanak’Olona.",
-    "target": "Noho izay, dia mivonògna koa agnareo; fa ho avy amin’ny ora tsa apoezinareo ny Zanak’Ona.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "MAT 24:44",
-    "book": "MAT",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Homeko anao ny fanalahidin’ny fanjakan’ny lanitra; koa na inona na inona fehezinao etỳ ambonin’ny tany dia hofehezina any an-danitra ary na inona na inona vahànao etỳ ambonin’ny tany dia hovahana any an-danitra.",
-    "target": "Homeko anao ny fagnalahidin’ny fanjakan’ny lagnitsa; na ina na ina fehezinao etỳ ambonin’ny tany dia hofehezina agny an-dagnitsa; eko na ina na ina vahànao etỳ ambonin’ny tany dia hovahàna agny an-dagnitsa.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "MAT 16:19",
-    "book": "MAT",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Fa hoy i Pilato hoe: Izay voasoratro dia voasoratro.",
-    "target": "Feny hoy i Pilato: Izay voasoratso dia voasoratso.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "JHN 19:22",
-    "book": "JHN",
-    "identical": false
-  },
-  {
     "source": "translate Malagasy to Betsileo: koa izay hitany sy reny no ambarany; ary tsy misy mandray ny fanambaràny.",
     "target": "Izay hitany sy reny ro ambarany feny tsa misy mandray ny fagnambarany.",
     "direction": "Malagasy->Betsileo",
@@ -95472,14 +94883,6 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Ary nitondra Azy nankany Jerosalema izy dia nampitoetra Azy teo an-tampon’ny tempoly ka niteny Taminy hoe: Raha Zanak’Andriamanitra Ianao, mivarìna avy eto mankany ambany any;",
-    "target": "Sỳ avy eo iy dia noferin’ny devoly ho agny Jerosalema, ho eo an-tampon’ny Tempoly, eko nanao hoe: Lehe Zanak'Andriamagnitsa Agnao, mivarìgna agny ambany agny,",
-    "direction": "Malagasy->Betsileo",
-    "ref": "LUK 4:9",
-    "book": "LUK",
-    "identical": false
-  },
-  {
     "source": "translate Malagasy to Betsileo: mba hadinina amin’ity taranaka ity ny ran’ny mpaminany rehetra izay nalatsaka hatramin’ny nanorenana izao tontolo izao,",
     "target": "mba hadignina amin’ity taranaka ity ny ran’ny mpaminany aby izay nalatsaka hatamin’ny namorognana izao tontolo izao,",
     "direction": "Malagasy->Betsileo",
@@ -95576,16 +94979,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: noho ny fietreny dia nalaina Taminy ny zony; ary iza no hahalaza ny amin’ny fianakaviany? Fa ny ainy dia nesorina tamin’ny tany» (Isa 53.7-8).",
-    "target": "Naetry iy ko tsa nomena rariny;",
-    "direction": "Malagasy->Betsileo",
-    "ref": "ACT 8:33",
-    "book": "ACT",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Koa aza magneky agnao, fa maherin’ny efapolo lahy reo ro mitetika hanambotsa an’i Paoly, ko efa nianiana aby fa tsa hihinana na hisotro mandra-pamonony azy. Efa vognona aby ireo izao ko ny tarogna hataminao sisa ro andrazany.",
-    "target": "Koa aza manaiky azy ianao, fa mihoatra ny efapolo lahy izy ireo no miray tetika hisambotra an’i Paoly ka efa niozona sy nianiana fa tsy hihinana na hisotro raha tsy maty izy; ary efa vonona izy ankehitriny ka miandry ny teny avy atỳ aminao fotsiny.",
+    "source": "translate Betsileo to Malagasy: Koa aza magneky agnao, ko efa nianiana aby fa tsa hihinana na hisotro mandra-pamonony azy. Efa vognona aby ireo izao ko ny tarogna hataminao sisa ro andrazany.",
+    "target": "                                Koa aza manaiky ianao, ka efa niozona daholy fa tsy hihinana na hisotro raha tsy maty izy. Efa vonona izy ireo izao ka ny teny avy aminao sisa no andrasany.",
     "direction": "Betsileo->Malagasy",
     "ref": "ACT 23:21",
     "book": "ACT",
@@ -103463,25 +102858,10 @@
     "book": "2TI",
     "identical": false
   },
+
   {
-    "source": "translate Betsileo to Malagasy: Feny hoy i Pilato: Izay voasoratso dia voasoratso.",
-    "target": "Fa hoy i Pilato hoe: Izay voasoratro dia voasoratro.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "JHN 19:22",
-    "book": "JHN",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Se nidina ahatagny an-tampombohitsa iy, dia nisy vahoaka betsaka nagnaraka Azy.",
-    "target": "Rehefa nidina avy any an-tendrombohitra izy dia nisy vahoaka betsaka nanaraka Azy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 8:1",
-    "book": "MAT",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Nirahiko hiaraka agnaminy koa i Onesimosy, rahalahy mahatoky sady tianay. izy moa dia ahatatỳ aminareo ihany eko izy roalahy ro hitantara ny raha rehetra miseho atỳ.",
-    "target": "Nirahiko koa i Onesimosy, rahalahy mahatoky sy malala izay avy aminareo; hampahafantatra anareo ny zavatra rehetra atỳ izy roa lahy.",
+    "source": "translate Betsileo to Malagasy: hitantara aminareo ny raha rehetra atỳ izy roalahy.",
+    "target": "                                hampahafantatra anareo ny zavatra rehetra atỳ izy roa lahy.",
     "direction": "Betsileo->Malagasy",
     "ref": "COL 4:9",
     "book": "COL",
@@ -108352,14 +107732,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Izay mino fa iy ro  dia naterak'Andriamagnitsa; eko izay rehetra tia ny Ray dia tia izay zanany koa.",
-    "target": "Izay rehetra mino fa iy no * dia naterak’Andriamanitra; ary izay rehetra tia Izay niteraka dia tia izay naterany koa.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "1JN 5:1",
-    "book": "1JN",
-    "identical": false
-  },
-  {
     "source": "translate Malagasy to Betsileo: Ary raha ampahorina izahay dia ho fampiononana sy famonjena anareo izany; ary raha ampiononina izahay dia ho fampiononana anareo izany ka miasa amin’ny fiaretanareo fahoriana mitovy indrindra amin’izay entinay.",
     "target": "Eko lehe azom-pahoriana agnay, dia ho fampaherezana sy famonjena anareo izay, eko lehe ampaherezina agnay, dia ho fampaherezana anareo koa izay ko mahatonga anareo hahay miaritsa fijaleana, mitovy amin’izay fijaleana iaretanay.",
     "direction": "Malagasy->Betsileo",
@@ -108392,43 +107764,11 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Sỳ avy eo iy dia noferin’ny devoly ho agny Jerosalema, ho eo an-tampon’ny Tempoly, eko nanao hoe: Lehe Zanak'Andriamagnitsa Agnao, mivarìgna agny ambany agny,",
-    "target": "Ary nitondra Azy nankany Jerosalema izy dia nampitoetra Azy teo an-tampon’ny tempoly ka niteny Taminy hoe: Raha Zanak’Andriamanitra Ianao, mivarìna avy eto mankany ambany any;",
-    "direction": "Betsileo->Malagasy",
-    "ref": "LUK 4:9",
-    "book": "LUK",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Raha mbola tsy niala teo amin’i Petera sy i Jaona izy dia niara-nirohotra ho eo amin’izy telo lahy teo amin’ny fialofana izay antsoina hoe Fialofan’i Solomona ny olona rehetra, sady talanjona.",
-    "target": "Eko tsa niala teo amin’i Petera sy i Jaona iy, dia zendagna aby ny ona ko nirohotsa ho eo amin’iy telolahy, teo amin’ny fialofana atao hoe Fialofan’i Solomona.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "ACT 3:11",
-    "book": "ACT",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Fa isaorana anie Andriamanitra izay mitondra anay mandrakariva ao amin’i * toy ny fanaon’izay avy nandresy ka ampisehoany ny hanitry ny fahalalana Azy eny tontolo eny izahay.",
-    "target": "Feny isaorana Andriamagnitsa Izay mitondra anay mandrakariva ao amin’i  toy ny amin’ny filaharam-be fanaon’ny ona avy nandresy, eko dia ampiasainy agnay mba hanehoany ny hagnitsa mameroveron’ny fahalalana an’i  egny rehetra egny.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "2CO 2:14",
-    "book": "2CO",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Ô ra ona ireto a! Nahoana agnareo ro manao an’izao? Ona sahala aminareo ihany agnay. Mitory ny Vaovao Mahafaly aminareo agnay mba hialanareo amin’izao raha foagna izao ko hagnatognareo an’Andriamagnitsa velogna Izay nanao ny lagnitsa sy ny tany eko ny ranomasina mbaka izay rehetra ao agnatiny.",
-    "target": "Tompokolahy, ahoana no anaovanareo izao? Olona tahaka anareo ihany izahay ary mitory ny Filazantsara aminareo mba hialanareo amin’izao zava-poana izao ka hanatonanareo an’Andriamanitra velona izay nanao ny lanitra sy ny tany ary ny ranomasina mbamin’izay rehetra ao anatiny.",
+    "source": "translate Betsileo to Malagasy: Ô ra ona ireto a! Nahoana agnareo ro manao an’izao? Ona sahala aminareo ihany agnay.",
+    "target": "                                Tompokolahy, ahoana ianareo no manao izao? Olona tahaka anareo ihany izahay.",
     "direction": "Betsileo->Malagasy",
     "ref": "ACT 14:15",
     "book": "ACT",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Izany no nosoratako taminareo izay mino ny anaran’ny Zanak’Andriamanitra mba ho fantatrareo fa manana fiainana mandrakizay ianareo.",
-    "target": "Izay raha izay ro nosoratako taminareo izay mino ny agnaran’ny Zanak'Andriamagnitsa mba ho fantatsareo fa managna fiaignana mandrakizay agnareo.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "1JN 5:13",
-    "book": "1JN",
     "identical": false
   },
   {
@@ -111368,14 +110708,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Sỳ tapy nitarogna an’izay iy, dia nifanditsa ny Fariseo mbaka ny Sadoseo ko nizara ho toko roa.",
-    "target": "Ary rehefa nilaza izany izy dia nifanditra ny Fariseo sy ny Sadoseo ka nizara roa toko ny olona.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "ACT 23:7",
-    "book": "ACT",
-    "identical": false
-  },
-  {
     "source": "translate Betsileo to Malagasy: Feny Aho nangataka ho anao mba tsa ho levogna ny finoanao; eko sỳ mibebaka agnao dia mba ampahirezo aby ireo rahalahinao.",
     "target": "Nefa Izaho nangataka ho anao mba tsy ho levona ny finoanao; ary rehefa mibebaka ianao dia ampaherezo ireo rahalahinao.",
     "direction": "Betsileo->Malagasy",
@@ -111389,22 +110721,6 @@
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 16:11",
     "book": "LUK",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Dia nihoagny amin’ny fasagna koa ny namanay sasany ko nahita izay voalazan’ny ampela, feny tsa nahita an’iy.",
-    "target": "ka tsy nahita ny faty, dia tonga ka nilaza fa nahita anjely niseho, izay nilaza fa velona izy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "LUK 24:23",
-    "book": "LUK",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Eko heverinao va, ry Kapernaomy, fa hakarina hatragny an-dagnitsa agnao? Tsa izay fa hampidignina agny amin’ny fiainantsihita agnao. Lehe mba tagny Sodoma ro nanaovana ny fahagagana izay natao taminao, dia ho nisy hatramin’izao iy.",
-    "target": "Ary ianao, ry Kapernaomy, hasandratra hatrany an-danitra va ianao? Hietry hatrany amin’ny fitoeran’ny maty* ianao; fa raha mba tany Sodoma no natao ny asa lehibe izay natao teo aminao dia ho naharitra ambaraka androany izy.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 11:23",
-    "book": "MAT",
     "identical": false
   },
   {
@@ -111456,14 +110772,6 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Se nahita izay ny Fariseo, dia nanao tamin’ny mpianatsa hoe: Nahoana ny Mpampianatsa anareo ro miara-mihinan-kanina amin’ny mpamory hetsa sy ny mpanota?",
-    "target": "Raha nahita izany ny Fariseo* dia niteny tamin’ny mpianatra hoe: Nahoana kosa ny Mpampianatra anareo no miara-komana amin’ny mpamory hetra sy ny mpanota?",
-    "direction": "Betsileo->Malagasy",
-    "ref": "MAT 9:11",
-    "book": "MAT",
-    "identical": false
-  },
-  {
     "source": "translate Malagasy to Betsileo: Fa tamin’ny divain’ny fahatezerana noho ny fijangajangany no nahalavoan’ny firenena rehetra, ary ny mpanjakan’ny tany dia nijangajanga taminy, ary ny mpivaro-mandeha amin’ny tany dia tonga mpanankarena noho ny fanaranam-pony tamin’ny fiainam-ben-dRavehivavy.",
     "target": "Fa efa nisotro ny divain’ny fahasiahana Eko nijangajanga taminazy ny mpanjaka ambonin’ny tany,",
     "direction": "Malagasy->Betsileo",
@@ -111472,40 +110780,16 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Nataon’ny Tompo taminahy izao hahafa-tondromaso ahy amin’ny ona.",
-    "target": "Izao no nataon’ny Tompo tamiko tamin’ny andro izay niheverany manokana ny hahafa-tondro-maso ahy amin’ny olona.",
-    "direction": "Betsileo->Malagasy",
-    "ref": "LUK 1:25",
-    "book": "LUK",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Fa toy ny Ray manangana sy mamelona ny maty dia tahaka izany koa no ameloman’ny Zanaka izay tiany.",
-    "target": "Tahaka ny Ray manangana sy mamerina ny maty ho amin’ny fahavelomana, dia tahaka izay koa ro ameloman’ny Zanaka izay tiàny.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "JHN 5:21",
-    "book": "JHN",
-    "identical": false
-  },
-  {
-    "source": "translate Malagasy to Betsileo: Didy vaovao no omeko anareo dia ny mba hifankatiavanareo; eny, aoka ho tahaka ny nitiavako anareo no mba hifankatiavanareo koa.",
-    "target": "Omeko didy vaovao agnareo: Mifankatiava! Dia tena mifankatiava tokoa sahala amin’ny nitiavako anareo.",
-    "direction": "Malagasy->Betsileo",
-    "ref": "JHN 13:34",
-    "book": "JHN",
-    "identical": false
-  },
-  {
-    "source": "translate Betsileo to Malagasy: Fa ny Mpagnanatsa, dia ny Fagnahy Masina, izay hirahin’ny Ray amin’ny Agnarako, ro hampianatsa anareo ny raha aby sy hampahatsiahy anareo ny raha aby izay notarogniko taminareo.",
-    "target": "fa ny Mpananatra, dia ny Fanahy Masina, izay hirahin’ny Ray amin’ny anarako, izy no hampianatra anareo ny zavatra rehetra sy hampahatsiaro anareo ny zavatra rehetra izay nolazaiko taminareo.",
+    "source": "translate Betsileo to Malagasy: hampianatsa anareo ny raha aby sy hampahatsiahy anareo ny raha aby izay notarogniko taminareo.",
+    "target": "                                hampianatra anareo ny zavatra rehetra sy hampahatsiaro anareo ny zavatra rehetra izay nolazaiko taminareo.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 14:26",
     "book": "JHN",
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Indro, zavamiafina no ambarako aminareo: Tsy hodimandry avokoa isika rehetra,",
-    "target": "Misy tsiambaratelo ho tarogniko anareo: Tsa ho maty aby atsika; feny hovàna aby atsika,",
+    "source": "translate Malagasy to Betsileo:Misy zavamiafina ho ambarako aminareo",
+    "target": "                               Misy tsiambaratelo ho tarogniko anareo",
     "direction": "Malagasy->Betsileo",
     "ref": "1CO 15:51",
     "book": "1CO",
