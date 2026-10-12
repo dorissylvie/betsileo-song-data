@@ -6632,7 +6632,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Fanaon’ny mpitondra romana amin’ny fetin’ny Paka ny mamototsa gadra raika tian’ny vahoaka.",
+    "source": "translate Betsileo to Malagasy: Fanaon’ny mpitondra vazaha amin’ny fetin’ny Paka ny mamototsa gadra raika tian’ny vahoaka.",
     "target": "Isaky ny tonga ny andro firavoravoana dia fanaon’ny governora ny manafaka mpifatotra iray ho an’ny vahoaka, araka izay tiany.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 27:15",
@@ -7000,16 +7000,16 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia niala teo nalaky ireo ona saika hagnadigna azy ; natahotsa koa ilay lihiben’ny miaramila sỳ nahilala fa romana iy nefa nampandrohiziny.",
-    "target": "Dia nandao azy haingana ireo olona efa handeha hanadina azy ; natahotra koa ny mpifehy arivo, rehefa nahalala fa Romana izy, satria efa nampamatotra azy .",
+    "source": "translate Betsileo to Malagasy: Dia niala teo nalaky ireo ona saika hagnadigna azy ; natahotsa koa ilay lihiben’ny miaramila sỳ nahilala fa vazaha iy nefa nampandrohiziny.",
+    "target": "Dia nandao azy haingana ireo olona efa handeha hanadina azy ; natahotra koa ny mpifehy arivo, rehefa nahalala fa vazaha izy, satria efa nampamatotra azy .",
     "direction": "Betsileo->Malagasy",
     "ref": "ACT 22:29",
     "book": "ACT",
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Lehe avelantsika hanao tahaka izay madina iy, dia hino azy aby ny ona; eko ho avy ny Romana handrava ny tempolintsika sy ny firenentsika.",
-    "target": "Raha avelantsika hanao toy izany ihany izy dia hino azy avokoa ny olona rehetra; ary ho avy ny Romana ka handrava ny fonenantsika sy ny firenentsika.",
+    "source": "translate Betsileo to Malagasy: Lehe avelantsika hanao tahaka izay madina iy, dia hino azy aby ny ona; eko ho avy ny vazaha handrava ny tempolintsika sy ny firenentsika.",
+    "target": "Raha avelantsika hanao toy izany ihany izy dia hino azy avokoa ny olona rehetra; ary ho avy ny vazaha ka handrava ny fonenantsika sy ny firenentsika.",
     "direction": "Betsileo->Malagasy",
     "ref": "JHN 11:48",
     "book": "JHN",
@@ -18440,8 +18440,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia nagnatogna an’i Paoly ny lihiben’ny miaramila ko nanao taminazy hoe: Lazao aminahy, romana tokoa ve agnao? Dia hoy iy: Ie.",
-    "target": "Dia nankeo aminy ny mpifehy arivo ka niteny taminy hoe: Lazao amiko: Romana va ianao? Dia hoy izy: Eny.",
+    "source": "translate Betsileo to Malagasy: Dia nagnatogna an’i Paoly ny lihiben’ny miaramila ko nanao taminazy hoe: Lazao aminahy, vazaha tokoa ve agnao? Dia hoy iy: Ie.",
+    "target": "Dia nankeo aminy ny mpifehy arivo ka niteny taminy hoe: Lazao amiko: vazaha va ianao? Dia hoy izy: Eny.",
     "direction": "Betsileo->Malagasy",
     "ref": "ACT 22:27",
     "book": "ACT",
@@ -20689,7 +20689,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Narary efa ho faty ny mpanompon’ny kapiteny iray, izay tiany.",
-    "target": "Nisy mpiasa raika izay tena tiàn’ny kapiteny romana, narary mafy efa teo am-bavahaognan’ny fahafatesana.",
+    "target": "Nisy mpiasa raika izay tena tiàn’ny kapiteny vazaha, narary mafy efa teo am-bavahaognan’ny fahafatesana.",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 7:2",
     "book": "LUK",
@@ -21136,8 +21136,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: dia novaliko hoe: Tsy fanaon’ny Romana ny manolotra olona raha tsy mbola mifanatrika ny ampangaina sy ny mpiampanga ka mahazo mandahatra hanala tsiny ny tenany ny amin’izay niampangan’ireo azy izy.",
-    "target": "Dia hoy aho tamindreo: Tsa fanaon’ny Romana ny manolotsa ona voapanga amin’ny fitsarana lehe vana tsa mifagnatrika amin’ny mpiampanga iy ko mahazo miaro ny tegnany mikasika izay iampangana azy .",
+    "source": "translate Malagasy to Betsileo: dia novaliko hoe: Tsy fanaon’ny vazaha ny manolotra olona raha tsy mbola mifanatrika ny ampangaina sy ny mpiampanga ka mahazo mandahatra hanala tsiny ny tenany ny amin’izay niampangan’ireo azy izy.",
+    "target": "Dia hoy aho tamindreo: Tsa fanaon’ny vazaha ny manolotsa ona voapanga amin’ny fitsarana lehe vana tsa mifagnatrika amin’ny mpiampanga iy ko mahazo miaro ny tegnany mikasika izay iampangana azy .",
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 25:16",
     "book": "ACT",
@@ -21320,8 +21320,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Ary ny mpitan-defona nilaza izany teny izany tamin’ireo governora; dia natahotra izy ireo raha nahare fa Romana izy roa lahy.",
-    "target": "Dia nilaza izay tarogna izay tamin’ireo mpitsara ny iraka eko natahotsa reo sỳ nahafantatsa fa Romana iy roalahy.",
+    "source": "translate Malagasy to Betsileo: Ary ny mpitan-defona nilaza izany teny izany tamin’ireo governora; dia natahotra izy ireo raha nahare fa vazaha izy roa lahy.",
+    "target": "Dia nilaza izay tarogna izay tamin’ireo mpitsara ny iraka eko natahotsa reo sỳ nahafantatsa fa vazaha iy roalahy.",
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 16:38",
     "book": "ACT",
@@ -25529,7 +25529,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: ary raha misy milaza izany amin’ny governora, izahay no handresy lahatra azy ka hanao izay tsy hampaninona anareo.",
-    "target": "Eko lehe misy mitarogna an’izay amin’ny mpitondra romana, dia agnay ro handresy lahatsa azy mba tsa hampagnina anareo.",
+    "target": "Eko lehe misy mitarogna an’izay amin’ny mpitondra vazaha, dia agnay ro handresy lahatsa azy mba tsa hampagnina anareo.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 28:14",
     "book": "MAT",
@@ -28137,7 +28137,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Ary ny miaramilan’ny governora dia nitondra an’izy ho ao anaty lapa sady nanangona ny miaramila namany rehetra ho eo Aminy.",
-    "target": "Eko nitondra an’iy ho ao agnatirova ny miaramilan’ny mpitondra romana sady namory ny miaramila namany rehetra.",
+    "target": "Eko nitondra an’iy ho ao agnatirova ny miaramilan’ny mpitondra vazaha sady namory ny miaramila namany rehetra.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 27:27",
     "book": "MAT",
@@ -30544,8 +30544,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia nilaza izay tarogna izay tamin’ireo mpitsara ny iraka eko natahotsa reo sỳ nahafantatsa fa Romana iy roalahy.",
-    "target": "Ary ny mpitan-defona nilaza izany teny izany tamin’ireo governora; dia natahotra izy ireo raha nahare fa Romana izy roa lahy.",
+    "source": "translate Betsileo to Malagasy: Dia nilaza izay tarogna izay tamin’ireo mpitsara ny iraka eko natahotsa reo sỳ nahafantatsa fa vazaha iy roalahy.",
+    "target": "Ary ny mpitan-defona nilaza izany teny izany tamin’ireo governora; dia natahotra izy ireo raha nahare fa vazaha izy roa lahy.",
     "direction": "Betsileo->Malagasy",
     "ref": "ACT 16:38",
     "book": "ACT",
@@ -32017,7 +32017,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Isaky ny tonga ny andro firavoravoana dia fanaon’ny governora ny manafaka mpifatotra iray ho an’ny vahoaka, araka izay tiany.",
-    "target": "Fanaon’ny mpitondra romana amin’ny fetin’ny Paka ny mamototsa gadra raika tian’ny vahoaka.",
+    "target": "Fanaon’ny mpitondra vazaha amin’ny fetin’ny Paka ny mamototsa gadra raika tian’ny vahoaka.",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 27:15",
     "book": "MAT",
@@ -33673,7 +33673,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Ary rehefa nafatony izy dia noentiny ka natolony an’ny mpitsara governora.",
-    "target": "Se voarohy iy, dia noferindreo tagny amin’ny mpitsara mpitondra romana eko natolotsandreo azy .",
+    "target": "Se voarohy iy, dia noferindreo tagny amin’ny mpitsara mpitondra vazaha eko natolotsandreo azy .",
     "direction": "Malagasy->Betsileo",
     "ref": "MAT 27:2",
     "book": "MAT",
@@ -34280,7 +34280,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Eko hoy ilay lihiben’ny miaramila: Nandoa vola be aho mba hahazoako ny zom-pirenena romana. Feny hoy i Paoly: Vao teraka aho dia efa nanagna an’izay.",
+    "source": "translate Betsileo to Malagasy: Eko hoy ilay lihiben’ny miaramila: Nandoa vola be aho mba hahazoako ny zom-pirenena vazaha. Feny hoy i Paoly: Vao teraka aho dia efa nanagna an’izay.",
     "target": "Hoy ilay mpifehy arivo: Vola be no nahazoako izany zo izany. Fa hoy i Paoly: Izaho kosa efa nanana izany hatry ny fony vao teraka.",
     "direction": "Betsileo->Malagasy",
     "ref": "ACT 22:28",
@@ -35384,8 +35384,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: eko mampianatsa raha tsa mety amintsika Romana.",
-    "target": "ka mampianatra fanao tsy azontsika horaisina na hatao amin’ny maha Romana antsika.",
+    "source": "translate Betsileo to Malagasy: eko mampianatsa raha tsa mety amintsika vazaha.",
+    "target": "ka mampianatra fanao tsy azontsika horaisina na hatao amin’ny maha vazaha antsika.",
     "direction": "Betsileo->Malagasy",
     "ref": "ACT 16:21",
     "book": "ACT",
@@ -39880,7 +39880,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Eko nitondra an’iy ho ao agnatirova ny miaramilan’ny mpitondra romana sady namory ny miaramila namany rehetra.",
+    "source": "translate Betsileo to Malagasy: Eko nitondra an’iy ho ao agnatirova ny miaramilan’ny mpitondra vazaha sady namory ny miaramila namany rehetra.",
     "target": "Ary ny miaramilan’ny governora dia nitondra an’izy ho ao anaty lapa sady nanangona ny miaramila namany rehetra ho eo Aminy.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 27:27",
@@ -40569,7 +40569,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Raha nahita izay zava-nitranga teo ny kapiteny dia nankalaza an’azy hoe: Tena olona marina tokoa io Lehilahy io.",
-    "target": "Nahita ny raha aby nitranga ny kapiteny romana ko nankalaza an’azy hoe: Tena olo-marina tokoa io Lihilahy io!",
+    "target": "Nahita ny raha aby nitranga ny kapiteny vazaha ko nankalaza an’azy hoe: Tena olo-marina tokoa io Lihilahy io!",
     "direction": "Malagasy->Betsileo",
     "ref": "LUK 23:47",
     "book": "LUK",
@@ -46247,7 +46247,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Nisy mpiasa raika izay tena tiàn’ny kapiteny romana, narary mafy efa teo am-bavahaognan’ny fahafatesana.",
+    "source": "translate Betsileo to Malagasy: Nisy mpiasa raika izay tena tiàn’ny kapiteny vazaha, narary mafy efa teo am-bavahaognan’ny fahafatesana.",
     "target": "Narary efa ho faty ny mpanompon’ny kapiteny iray, izay tiany.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 7:2",
@@ -47015,8 +47015,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia nankeo aminy ny mpifehy arivo ka niteny taminy hoe: Lazao amiko: Romana va ianao? Dia hoy izy: Eny.",
-    "target": "Dia nagnatogna an’i Paoly ny lihiben’ny miaramila ko nanao taminazy hoe: Lazao aminahy, romana tokoa ve agnao? Dia hoy iy: Ie.",
+    "source": "translate Malagasy to Betsileo: Dia nankeo aminy ny mpifehy arivo ka niteny taminy hoe: Lazao amiko: vazaha va ianao? Dia hoy izy: Eny.",
+    "target": "Dia nagnatogna an’i Paoly ny lihiben’ny miaramila ko nanao taminazy hoe: Lazao aminahy, vazaha tokoa ve agnao? Dia hoy iy: Ie.",
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 22:27",
     "book": "ACT",
@@ -52311,8 +52311,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: ka mampianatra fanao tsy azontsika horaisina na hatao amin’ny maha Romana antsika.",
-    "target": "eko mampianatsa raha tsa mety amintsika Romana.",
+    "source": "translate Malagasy to Betsileo: ka mampianatra fanao tsy azontsika horaisina na hatao amin’ny maha vazaha antsika.",
+    "target": "eko mampianatsa raha tsa mety amintsika vazaha.",
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 16:21",
     "book": "ACT",
@@ -53271,8 +53271,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Sỳ nandre izay ilay kapiteny dia nitarogna tamin’ny lihiben’ny miaramila hoe: Ina izao ro hataonao? Romana io lihilahy io.",
-    "target": "Nony nahare izany ilay kapiteny dia lasa nilaza tamin’ny mpifehy arivo hoe: Inona izao no hataonao fa Romana io lehilahy io?",
+    "source": "translate Betsileo to Malagasy: Sỳ nandre izay ilay kapiteny dia nitarogna tamin’ny lihiben’ny miaramila hoe: Ina izao ro hataonao? vazaha io lihilahy io.",
+    "target": "Nony nahare izany ilay kapiteny dia lasa nilaza tamin’ny mpifehy arivo hoe: Inona izao no hataonao fa vazaha io lehilahy io?",
     "direction": "Betsileo->Malagasy",
     "ref": "ACT 22:26",
     "book": "ACT",
@@ -56712,7 +56712,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: Hoy ilay mpifehy arivo: Vola be no nahazoako izany zo izany. Fa hoy i Paoly: Izaho kosa efa nanana izany hatry ny fony vao teraka.",
-    "target": "Eko hoy ilay lihiben’ny miaramila: Nandoa vola be aho mba hahazoako ny zom-pirenena romana. Feny hoy i Paoly: Vao teraka aho dia efa nanagna an’izay.",
+    "target": "Eko hoy ilay lihiben’ny miaramila: Nandoa vola be aho mba hahazoako ny zom-pirenena vazaha. Feny hoy i Paoly: Vao teraka aho dia efa nanagna an’izay.",
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 22:28",
     "book": "ACT",
@@ -57800,7 +57800,7 @@
   },
   {
     "source": "translate Malagasy to Betsileo: ary rehefa noentiny tany amin’ireo governora izy roa lahy dia nolazainy hoe: Ireto lehilahy ireto dia mampitabataba ny tanànantsika loatra; Gasy izy ireo",
-    "target": "Dia natolony ny mpitsara romana iy roalahy sady nataony hoe: Mampitabataba ny tanànantsika ireto lihilahy Gasy ireto",
+    "target": "Dia natolony ny mpitsara vazaha iy roalahy sady nataony hoe: Mampitabataba ny tanànantsika ireto lihilahy Gasy ireto",
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 16:20",
     "book": "ACT",
@@ -58239,8 +58239,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Eko lehe narohy mba hokaravasiana i Paoly, dia hoy iy tamin’ilay kapiteny nagnatrika teo: Azonareo atao ve ny manjera ona romana izay tsa vana voatsara?",
-    "target": "Raha namatotra azy tamin’ny kofehy hoditra izy dia hoy i Paoly tamin’ny kapiteny izay nitsangana teo: Azonareo atao va ny mikapoka lehilahy romana izay tsy mbola nohelohina?",
+    "source": "translate Betsileo to Malagasy: Eko lehe narohy mba hokaravasiana i Paoly, dia hoy iy tamin’ilay kapiteny nagnatrika teo: Azonareo atao ve ny manjera ona vazaha izay tsa vana voatsara?",
+    "target": "Raha namatotra azy tamin’ny kofehy hoditra izy dia hoy i Paoly tamin’ny kapiteny izay nitsangana teo: Azonareo atao va ny mikapoka lehilahy vazaha izay tsy mbola nohelohina?",
     "direction": "Betsileo->Malagasy",
     "ref": "ACT 22:25",
     "book": "ACT",
@@ -58503,8 +58503,8 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia hoy aho tamindreo: Tsa fanaon’ny Romana ny manolotsa ona voapanga amin’ny fitsarana lehe vana tsa mifagnatrika amin’ny mpiampanga iy ko mahazo miaro ny tegnany mikasika izay iampangana azy .",
-    "target": "dia novaliko hoe: Tsy fanaon’ny Romana ny manolotra olona raha tsy mbola mifanatrika ny ampangaina sy ny mpiampanga ka mahazo mandahatra hanala tsiny ny tenany ny amin’izay niampangan’ireo azy izy.",
+    "source": "translate Betsileo to Malagasy: Dia hoy aho tamindreo: Tsa fanaon’ny vazaha ny manolotsa ona voapanga amin’ny fitsarana lehe vana tsa mifagnatrika amin’ny mpiampanga iy ko mahazo miaro ny tegnany mikasika izay iampangana azy .",
+    "target": "dia novaliko hoe: Tsy fanaon’ny vazaha ny manolotra olona raha tsy mbola mifanatrika ny ampangaina sy ny mpiampanga ka mahazo mandahatra hanala tsiny ny tenany ny amin’izay niampangan’ireo azy izy.",
     "direction": "Betsileo->Malagasy",
     "ref": "ACT 25:16",
     "book": "ACT",
@@ -61271,8 +61271,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Raha avelantsika hanao toy izany ihany izy dia hino azy avokoa ny olona rehetra; ary ho avy ny Romana ka handrava ny fonenantsika sy ny firenentsika.",
-    "target": "Lehe avelantsika hanao tahaka izay madina iy, dia hino azy aby ny ona; eko ho avy ny Romana handrava ny tempolintsika sy ny firenentsika.",
+    "source": "translate Malagasy to Betsileo: Raha avelantsika hanao toy izany ihany izy dia hino azy avokoa ny olona rehetra; ary ho avy ny vazaha ka handrava ny fonenantsika sy ny firenentsika.",
+    "target": "Lehe avelantsika hanao tahaka izay madina iy, dia hino azy aby ny ona; eko ho avy ny vazaha handrava ny tempolintsika sy ny firenentsika.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 11:48",
     "book": "JHN",
@@ -61879,8 +61879,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Dia nandao azy haingana ireo olona efa handeha hanadina azy ; natahotra koa ny mpifehy arivo, rehefa nahalala fa Romana izy, satria efa nampamatotra azy .",
-    "target": "Dia niala teo nalaky ireo ona saika hagnadigna azy ; natahotsa koa ilay lihiben’ny miaramila sỳ nahilala fa romana iy nefa nampandrohiziny.",
+    "source": "translate Malagasy to Betsileo: Dia nandao azy haingana ireo olona efa handeha hanadina azy ; natahotra koa ny mpifehy arivo, rehefa nahalala fa vazaha izy, satria efa nampamatotra azy .",
+    "target": "Dia niala teo nalaky ireo ona saika hagnadigna azy ; natahotsa koa ilay lihiben’ny miaramila sỳ nahilala fa vazaha iy nefa nampandrohiziny.",
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 22:29",
     "book": "ACT",
@@ -63663,7 +63663,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Dia natolony ny mpitsara romana iy roalahy sady nataony hoe: Mampitabataba ny tanànantsika ireto lihilahy Gasy ireto",
+    "source": "translate Betsileo to Malagasy: Dia natolony ny mpitsara vazaha iy roalahy sady nataony hoe: Mampitabataba ny tanànantsika ireto lihilahy Gasy ireto",
     "target": "ary rehefa noentiny tany amin’ireo governora izy roa lahy dia nolazainy hoe: Ireto lehilahy ireto dia mampitabataba ny tanànantsika loatra; Gasy izy ireo",
     "direction": "Betsileo->Malagasy",
     "ref": "ACT 16:20",
@@ -67031,7 +67031,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Nahita ny raha aby nitranga ny kapiteny romana ko nankalaza an’azy hoe: Tena olo-marina tokoa io Lihilahy io!",
+    "source": "translate Betsileo to Malagasy: Nahita ny raha aby nitranga ny kapiteny vazaha ko nankalaza an’azy hoe: Tena olo-marina tokoa io Lihilahy io!",
     "target": "Raha nahita izay zava-nitranga teo ny kapiteny dia nankalaza an’azy hoe: Tena olona marina tokoa io Lehilahy io.",
     "direction": "Betsileo->Malagasy",
     "ref": "LUK 23:47",
@@ -67583,7 +67583,7 @@
     "identical": false
   },
   {
-    "source": "translate Betsileo to Malagasy: Se voarohy iy, dia noferindreo tagny amin’ny mpitsara mpitondra romana eko natolotsandreo azy .",
+    "source": "translate Betsileo to Malagasy: Se voarohy iy, dia noferindreo tagny amin’ny mpitsara mpitondra vazaha eko natolotsandreo azy .",
     "target": "Ary rehefa nafatony izy dia noentiny ka natolony an’ny mpitsara governora.",
     "direction": "Betsileo->Malagasy",
     "ref": "MAT 27:2",
@@ -68159,8 +68159,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Raha namatotra azy tamin’ny kofehy hoditra izy dia hoy i Paoly tamin’ny kapiteny izay nitsangana teo: Azonareo atao va ny mikapoka lehilahy romana izay tsy mbola nohelohina?",
-    "target": "Eko lehe narohy mba hokaravasiana i Paoly, dia hoy iy tamin’ilay kapiteny nagnatrika teo: Azonareo atao ve ny manjera ona romana izay tsa vana voatsara?",
+    "source": "translate Malagasy to Betsileo: Raha namatotra azy tamin’ny kofehy hoditra izy dia hoy i Paoly tamin’ny kapiteny izay nitsangana teo: Azonareo atao va ny mikapoka lehilahy vazaha izay tsy mbola nohelohina?",
+    "target": "Eko lehe narohy mba hokaravasiana i Paoly, dia hoy iy tamin’ilay kapiteny nagnatrika teo: Azonareo atao ve ny manjera ona vazaha izay tsa vana voatsara?",
     "direction": "Malagasy->Betsileo",
     "ref": "ACT 22:25",
     "book": "ACT",
@@ -68223,8 +68223,8 @@
     "identical": false
   },
   {
-    "source": "translate Malagasy to Betsileo: Ary izany anarana izany dia novakin’ny Gasy maro, fa akaikin’ny tanàna ny toerana izay nanomboana an’izy tamin’ny hazofijaliana; voasoratra tamin’ny teny hebreo sy romana ary grika izany soratra izany.",
-    "target": "Novinakin’ny Gasy maro io soratsa io satria marìny ny tanàna ny toerana namantsihana an’iy. Voasoratsa tamin’ny teny hebreo sy romana eko grika koa izay.",
+    "source": "translate Malagasy to Betsileo: Ary izany anarana izany dia novakin’ny Gasy maro, fa akaikin’ny tanàna ny toerana izay nanomboana an’izy tamin’ny hazofijaliana; voasoratra tamin’ny teny hebreo sy vazaha ary grika izany soratra izany.",
+    "target": "Novinakin’ny Gasy maro io soratsa io satria marìny ny tanàna ny toerana namantsihana an’iy. Voasoratsa tamin’ny teny hebreo sy vazaha eko grika koa izay.",
     "direction": "Malagasy->Betsileo",
     "ref": "JHN 19:20",
     "book": "JHN",
