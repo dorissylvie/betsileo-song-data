@@ -1,0 +1,237 @@
+{"instruction": "Translate English to Betsileo: ALL", "reponse": "aby"}
+{"instruction": "Translate English to Betsileo: FIRE", "reponse": "afo"}
+{"instruction": "Translate English to Betsileo: THOU", "reponse": "agnao"}
+{"instruction": "Translate English to Betsileo: NAME", "reponse": "agnara"}
+{"instruction": "Translate English to Betsileo: YOU", "reponse": "agnareo"}
+{"instruction": "Translate English to Betsileo: IN", "reponse": "agnaty"}
+{"instruction": "Translate English to Betsileo: AT", "reponse": "agny"}
+{"instruction": "Translate English to Betsileo: GRASS", "reponse": "ahitsa"}
+{"instruction": "Translate English to Betsileo: WHERE", "reponse": "aia"}
+{"instruction": "Translate English to Betsileo: FOREST", "reponse": "ala"}
+{"instruction": "Translate English to Betsileo: NIGHT", "reponse": "aly"}
+{"instruction": "Translate English to Betsileo: DOG", "reponse": "amboa"}
+{"instruction": "Translate English to Betsileo: WITH", "reponse": "amin ny"}
+{"instruction": "Translate English to Betsileo: DAY (NOT NIGHT)", "reponse": "andro"}
+{"instruction": "Translate English to Betsileo: WOMAN", "reponse": "apela"}
+{"instruction": "Translate English to Betsileo: THERE", "reponse": "atato"}
+{"instruction": "Translate English to Betsileo: HERE", "reponse": "ateto"}
+{"instruction": "Translate English to Betsileo: OLD (AGED)", "reponse": "atitse"}
+{"instruction": "Translate English to Betsileo: OLD (USED)", "reponse": "atitse"}
+{"instruction": "Translate English to Betsileo: EGG", "reponse": "atody"}
+{"instruction": "Translate English to Betsileo: WE (INCLUSIVE)", "reponse": "atsika"}
+{"instruction": "Translate English to Betsileo: WE (EXCLUSIVE)", "reponse": "atsika"}
+{"instruction": "Translate English to Betsileo: LIVER", "reponse": "aty"}
+{"instruction": "Translate English to Betsileo: COME", "reponse": "avy"}
+{"instruction": "Translate English to Betsileo: FATHER", "reponse": "baba"}
+{"instruction": "Translate English to Betsileo: MANY", "reponse": "be"}
+{"instruction": "Translate English to Betsileo: SNAKE", "reponse": "bibilava"}
+{"instruction": "Translate English to Betsileo: ANIMAL", "reponse": "biby"}
+{"instruction": "Translate English to Betsileo: ROUND", "reponse": "boribory"}
+{"instruction": "Translate English to Betsileo: FIVE", "reponse": "dimy"}
+{"instruction": "Translate English to Betsileo: BLUNT", "reponse": "dombo"}
+{"instruction": "Translate English to Betsileo: FOUR", "reponse": "efatse"}
+{"instruction": "Translate English to Betsileo: WING", "reponse": "elatsa"}
+{"instruction": "Translate English to Betsileo: ROOT", "reponse": "faka"}
+{"instruction": "Translate English to Betsileo: LAKE", "reponse": "farihy"}
+{"instruction": "Translate English to Betsileo: SAND", "reponse": "fasika"}
+{"instruction": "Translate English to Betsileo: FULL", "reponse": "feno"}
+{"instruction": "Translate English to Betsileo: HEART", "reponse": "fo"}
+{"instruction": "Translate English to Betsileo: SHORT", "reponse": "fohy"}
+{"instruction": "Translate English to Betsileo: WHITE", "reponse": "fotsy"}
+{"instruction": "Translate English to Betsileo: ICE", "reponse": "gilasy"}
+{"instruction": "Translate English to Betsileo: OTHER", "reponse": "hafa"}
+{"instruction": "Translate English to Betsileo: WORM", "reponse": "haka"}
+{"instruction": "Translate English to Betsileo: LOUSE", "reponse": "hao"}
+{"instruction": "Translate English to Betsileo: RIGHT", "reponse": "havana"}
+{"instruction": "Translate English to Betsileo: LEFT", "reponse": "havia"}
+{"instruction": "Translate English to Betsileo: TREE", "reponse": "hazo"}
+{"instruction": "Translate English to Betsileo: MEAT", "reponse": "hena"}
+{"instruction": "Translate English to Betsileo: BARK", "reponse": "hodikazo"}
+{"instruction": "Translate English to Betsileo: SKIN", "reponse": "hoditse"}
+{"instruction": "Translate English to Betsileo: FINGERNAIL", "reponse": "hoho"}
+{"instruction": "Translate English to Betsileo: HE", "reponse": "i"}
+{"instruction": "Translate English to Betsileo: WHO", "reponse": "ia"}
+{"instruction": "Translate English to Betsileo: I", "reponse": "iaho"}
+{"instruction": "Translate English to Betsileo: WHAT", "reponse": "ino"}
+{"instruction": "Translate English to Betsileo: THIS", "reponse": "itito"}
+{"instruction": "Translate English to Betsileo: FAT (ORGANIC SUBSTANCE)", "reponse": "jabora"}
+{"instruction": "Translate English to Betsileo: FEW", "reponse": "kele"}
+{"instruction": "Translate English to Betsileo: SMALL", "reponse": "kele"}
+{"instruction": "Translate English to Betsileo: SOME", "reponse": "kelikely"}
+{"instruction": "Translate English to Betsileo: CHILD (DESCENDANT)", "reponse": "kilonga"}
+{"instruction": "Translate English to Betsileo: CHILD (YOUNG HUMAN)", "reponse": "kilonga"}
+{"instruction": "Translate English to Betsileo: STAR", "reponse": "kintana"}
+{"instruction": "Translate English to Betsileo: LEG", "reponse": "kirango"}
+{"instruction": "Translate English to Betsileo: SKY", "reponse": "lagnitse"}
+{"instruction": "Translate English to Betsileo: ROAD", "reponse": "lala"}
+{"instruction": "Translate English to Betsileo: BACK", "reponse": "lamosy"}
+{"instruction": "Translate English to Betsileo: LONG", "reponse": "lava"}
+{"instruction": "Translate English to Betsileo: ASH", "reponse": "laveno"}
+{"instruction": "Translate English to Betsileo: FAR", "reponse": "lavitse"}
+{"instruction": "Translate English to Betsileo: IF", "reponse": "lehe"}
+{"instruction": "Translate English to Betsileo: TONGUE", "reponse": "lela"}
+{"instruction": "Translate English to Betsileo: BIG", "reponse": "lihibe"}
+{"instruction": "Translate English to Betsileo: MALE PERSON", "reponse": "lihilahy"}
+{"instruction": "Translate English to Betsileo: ROTTEN", "reponse": "lo"}
+{"instruction": "Translate English to Betsileo: HEAD", "reponse": "loha"}
+{"instruction": "Translate English to Betsileo: KNEE", "reponse": "lohalika"}
+{"instruction": "Translate English to Betsileo: WARM", "reponse": "mafana"}
+{"instruction": "Translate English to Betsileo: SWELL", "reponse": "magnabotsigna"}
+{"instruction": "Translate English to Betsileo: RUB", "reponse": "magnasoka"}
+{"instruction": "Translate English to Betsileo: BITE", "reponse": "magnehitsa"}
+{"instruction": "Translate English to Betsileo: COUNT", "reponse": "magnisa"}
+{"instruction": "Translate English to Betsileo: GIVE", "reponse": "magnome"}
+{"instruction": "Translate English to Betsileo: BURN (SOMETHING)", "reponse": "magnoro"}
+{"instruction": "Translate English to Betsileo: BURNING", "reponse": "magnoro"}
+{"instruction": "Translate English to Betsileo: KNOW (SOMETHING)", "reponse": "mahay"}
+{"instruction": "Translate English to Betsileo: SEE", "reponse": "mahita"}
+{"instruction": "Translate English to Betsileo: STRAIGHT", "reponse": "mahitsy"}
+{"instruction": "Translate English to Betsileo: DRY", "reponse": "maigna"}
+{"instruction": "Translate English to Betsileo: BLACK", "reponse": "mainty"}
+{"instruction": "Translate English to Betsileo: GREEN", "reponse": "maitso"}
+{"instruction": "Translate English to Betsileo: WIDE", "reponse": "malalake"}
+{"instruction": "Translate English to Betsileo: SMOOTH", "reponse": "malama"}
+{"instruction": "Translate English to Betsileo: DIRTY", "reponse": "maloto"}
+{"instruction": "Translate English to Betsileo: WIPE", "reponse": "mamafa"}
+{"instruction": "Translate English to Betsileo: SPLIT", "reponse": "mamaky"}
+{"instruction": "Translate English to Betsileo: TIE", "reponse": "mamehe"}
+{"instruction": "Translate English to Betsileo: KILL", "reponse": "mamono"}
+{"instruction": "Translate English to Betsileo: SQUEEZE", "reponse": "mamotsika"}
+{"instruction": "Translate English to Betsileo: COLD", "reponse": "manara"}
+{"instruction": "Translate English to Betsileo: WASH", "reponse": "manasa"}
+{"instruction": "Translate English to Betsileo: GO", "reponse": "mandeha"}
+{"instruction": "Translate English to Betsileo: CUT", "reponse": "mandidy"}
+{"instruction": "Translate English to Betsileo: WET", "reponse": "mando"}
+{"instruction": "Translate English to Betsileo: VOMIT", "reponse": "mandoa"}
+{"instruction": "Translate English to Betsileo: SPIT", "reponse": "mandrehoka"}
+{"instruction": "Translate English to Betsileo: LIE DOWN", "reponse": "mandry"}
+{"instruction": "Translate English to Betsileo: FREEZE", "reponse": "mandry"}
+{"instruction": "Translate English to Betsileo: THIN (OF SHAPE OF OBJECT)", "reponse": "manify"}
+{"instruction": "Translate English to Betsileo: THIN (SLIM)", "reponse": "manify"}
+{"instruction": "Translate English to Betsileo: SEW", "reponse": "manjaitse"}
+{"instruction": "Translate English to Betsileo: STRIKE", "reponse": "manjera"}
+{"instruction": "Translate English to Betsileo: STAB", "reponse": "manomboka mesa"}
+{"instruction": "Translate English to Betsileo: PUSH", "reponse": "manosike"}
+{"instruction": "Translate English to Betsileo: SHARP", "reponse": "maragnitsa"}
+{"instruction": "Translate English to Betsileo: NEAR", "reponse": "mariny"}
+{"instruction": "Translate English to Betsileo: EYE", "reponse": "maso"}
+{"instruction": "Translate English to Betsileo: SUN", "reponse": "masoandro"}
+{"instruction": "Translate English to Betsileo: FEAR (BE AFRAID)", "reponse": "matahotse"}
+{"instruction": "Translate English to Betsileo: THICK", "reponse": "matevy"}
+{"instruction": "Translate English to Betsileo: SLEEP", "reponse": "matory"}
+{"instruction": "Translate English to Betsileo: DIE", "reponse": "maty"}
+{"instruction": "Translate English to Betsileo: HEAVY", "reponse": "mavesatse"}
+{"instruction": "Translate English to Betsileo: YELLOW", "reponse": "mavo"}
+{"instruction": "Translate English to Betsileo: RED", "reponse": "mena"}
+{"instruction": "Translate English to Betsileo: CORRECT (RIGHT)", "reponse": "mety"}
+{"instruction": "Translate English to Betsileo: FIGHT", "reponse": "miady"}
+{"instruction": "Translate English to Betsileo: BREATHE", "reponse": "miaigna"}
+{"instruction": "Translate English to Betsileo: THINK (REFLECT)", "reponse": "mieritseritsa"}
+{"instruction": "Translate English to Betsileo: THINK (BELIEVE)", "reponse": "mieritseritsa"}
+{"instruction": "Translate English to Betsileo: BLOW (OF WIND)", "reponse": "mifioky"}
+{"instruction": "Translate English to Betsileo: SMELL (PERCEIVE)", "reponse": "mifofona"}
+{"instruction": "Translate English to Betsileo: SMELL (STINK)", "reponse": "mifofona"}
+{"instruction": "Translate English to Betsileo: FALL", "reponse": "migebo"}
+{"instruction": "Translate English to Betsileo: DIG", "reponse": "mihady"}
+{"instruction": "Translate English to Betsileo: HUNT", "reponse": "mihaza"}
+{"instruction": "Translate English to Betsileo: LAUGH", "reponse": "mihehy"}
+{"instruction": "Translate English to Betsileo: EAT", "reponse": "mihina"}
+{"instruction": "Translate English to Betsileo: SING", "reponse": "mihira"}
+{"instruction": "Translate English to Betsileo: TURN (SOMETHING)", "reponse": "mihody"}
+{"instruction": "Translate English to Betsileo: TURN AROUND", "reponse": "mihody"}
+{"instruction": "Translate English to Betsileo: SCRAPE", "reponse": "mikiky"}
+{"instruction": "Translate English to Betsileo: FLOW", "reponse": "mikoria"}
+{"instruction": "Translate English to Betsileo: SWIM", "reponse": "milagno"}
+{"instruction": "Translate English to Betsileo: PLAY", "reponse": "miregny"}
+{"instruction": "Translate English to Betsileo: SUCK", "reponse": "misike"}
+{"instruction": "Translate English to Betsileo: DRINK", "reponse": "misotro"}
+{"instruction": "Translate English to Betsileo: HOLD", "reponse": "mitagna"}
+{"instruction": "Translate English to Betsileo: HEAR", "reponse": "mitaino"}
+{"instruction": "Translate English to Betsileo: SAY", "reponse": "mitaro"}
+{"instruction": "Translate English to Betsileo: PULL", "reponse": "mitifotse"}
+{"instruction": "Translate English to Betsileo: SIT", "reponse": "mitoatse"}
+{"instruction": "Translate English to Betsileo: THROW", "reponse": "mitorake"}
+{"instruction": "Translate English to Betsileo: STAND", "reponse": "mitsanga"}
+{"instruction": "Translate English to Betsileo: FLY (MOVE THROUGH AIR)", "reponse": "mitsidy"}
+{"instruction": "Translate English to Betsileo: FLOAT", "reponse": "mitsingafo"}
+{"instruction": "Translate English to Betsileo: HOW", "reponse": "nahoa"}
+{"instruction": "Translate English to Betsileo: MOTHER", "reponse": "nene"}
+{"instruction": "Translate English to Betsileo: TOOTH", "reponse": "nify"}
+{"instruction": "Translate English to Betsileo: PERSON", "reponse": "olo"}
+{"instruction": "Translate English to Betsileo: RAIN (PRECIPITATION)", "reponse": "ora"}
+{"instruction": "Translate English to Betsileo: NOSE", "reponse": "oro"}
+{"instruction": "Translate English to Betsileo: WHEN", "reponse": "ovia"}
+{"instruction": "Translate English to Betsileo: BLOOD", "reponse": "ra"}
+{"instruction": "Translate English to Betsileo: CLOUD", "reponse": "raho"}
+{"instruction": "Translate English to Betsileo: ONE", "reponse": "raika"}
+{"instruction": "Translate English to Betsileo: TAIL", "reponse": "rambo"}
+{"instruction": "Translate English to Betsileo: WATER", "reponse": "rano"}
+{"instruction": "Translate English to Betsileo: SNOW", "reponse": "ranomandry"}
+{"instruction": "Translate English to Betsileo: SEA", "reponse": "ranomasina"}
+{"instruction": "Translate English to Betsileo: BAD", "reponse": "ratsy"}
+{"instruction": "Translate English to Betsileo: LEAF", "reponse": "ravy"}
+{"instruction": "Translate English to Betsileo: THEY", "reponse": "reo"}
+{"instruction": "Translate English to Betsileo: WIND", "reponse": "rivotse"}
+{"instruction": "Translate English to Betsileo: TWO", "reponse": "roa"}
+{"instruction": "Translate English to Betsileo: BECAUSE", "reponse": "satria"}
+{"instruction": "Translate English to Betsileo: SMOKE (EXHAUST)", "reponse": "setroke"}
+{"instruction": "Translate English to Betsileo: SALT", "reponse": "sira"}
+{"instruction": "Translate English to Betsileo: GOOD", "reponse": "soa"}
+{"instruction": "Translate English to Betsileo: EAR", "reponse": "sofy"}
+{"instruction": "Translate English to Betsileo: AND", "reponse": "sy"}
+{"instruction": "Translate English to Betsileo: ROPE", "reponse": "tady"}
+{"instruction": "Translate English to Betsileo: HAND", "reponse": "tagna"}
+{"instruction": "Translate English to Betsileo: FISH", "reponse": "talapia"}
+{"instruction": "Translate English to Betsileo: EARTH (SOIL)", "reponse": "tany"}
+{"instruction": "Translate English to Betsileo: YEAR", "reponse": "tao"}
+{"instruction": "Translate English to Betsileo: BONE", "reponse": "taolagna"}
+{"instruction": "Translate English to Betsileo: STICK", "reponse": "tehy"}
+{"instruction": "Translate English to Betsileo: THREE", "reponse": "telo"}
+{"instruction": "Translate English to Betsileo: MOUNTAIN", "reponse": "tendromboitse"}
+{"instruction": "Translate English to Betsileo: NARROW", "reponse": "tere"}
+{"instruction": "Translate English to Betsileo: FOOT", "reponse": "tongotse"}
+{"instruction": "Translate English to Betsileo: CHEST", "reponse": "tratra"}
+{"instruction": "Translate English to Betsileo: BELLY", "reponse": "troky"}
+{"instruction": "Translate English to Betsileo: NOT", "reponse": "tsa"}
+{"instruction": "Translate English to Betsileo: HORN (ANATOMY)", "reponse": "tsifa"}
+{"instruction": "Translate English to Betsileo: GUTS", "reponse": "tsinay"}
+{"instruction": "Translate English to Betsileo: WIFE", "reponse": "vady"}
+{"instruction": "Translate English to Betsileo: HUSBAND", "reponse": "vady"}
+{"instruction": "Translate English to Betsileo: NEW", "reponse": "vaovao"}
+{"instruction": "Translate English to Betsileo: STONE", "reponse": "vato"}
+{"instruction": "Translate English to Betsileo: MOUTH", "reponse": "vava"}
+{"instruction": "Translate English to Betsileo: RIVER", "reponse": "vavarano"}
+{"instruction": "Translate English to Betsileo: BE ALIVE", "reponse": "velo"}
+{"instruction": "Translate English to Betsileo: SEED", "reponse": "voa"}
+{"instruction": "Translate English to Betsileo: FRUIT", "reponse": "voakazo"}
+{"instruction": "Translate English to Betsileo: MOON", "reponse": "volagna"}
+{"instruction": "Translate English to Betsileo: HAIR (HEAD)", "reponse": "volo"}
+{"instruction": "Translate English to Betsileo: FEATHER", "reponse": "volomboro"}
+{"instruction": "Translate English to Betsileo: FLOWER", "reponse": "vonikazo"}
+{"instruction": "Translate English to Betsileo: BIRD", "reponse": "voro"}
+{"instruction": "Translate English to Betsileo: DUST", "reponse": "vovotany"}
+{"instruction": "Translate English to Betsileo: NECK", "reponse": "vozo"}
+{"instruction": "Translate English to Betsileo: THAT", "reponse": "zao"}
+{"instruction": "Translate English to Betsileo: FOG", "reponse": "zavo"}
+{"instruction": "Translate English to Betsileo: I", "reponse": "izaho"}
+{"instruction": "Translate English to Betsileo: THOU", "reponse": "anao"}
+{"instruction": "Translate English to Betsileo: WE", "reponse": "isika"}
+{"instruction": "Translate English to Betsileo: ONE", "reponse": "ray"}
+{"instruction": "Translate English to Betsileo: FISH", "reponse": "trondro"}
+{"instruction": "Translate English to Betsileo: LEAF", "reponse": "ravina"}
+{"instruction": "Translate English to Betsileo: SKIN", "reponse": "hoditra"}
+{"instruction": "Translate English to Betsileo: BONE", "reponse": "taolana"}
+{"instruction": "Translate English to Betsileo: EAR", "reponse": "sofina"}
+{"instruction": "Translate English to Betsileo: NOSE", "reponse": "orona"}
+{"instruction": "Translate English to Betsileo: TOOTH", "reponse": "nifi"}
+{"instruction": "Translate English to Betsileo: HAND", "reponse": "tanana"}
+{"instruction": "Translate English to Betsileo: LIVER", "reponse": "ati"}
+{"instruction": "Translate English to Betsileo: HEAR", "reponse": "mitehino"}
+{"instruction": "Translate English to Betsileo: DIE", "reponse": "mati"}
+{"instruction": "Translate English to Betsileo: COME", "reponse": "avi"}
+{"instruction": "Translate English to Betsileo: STAR", "reponse": "vasiana"}
+{"instruction": "Translate English to Betsileo: PATH", "reponse": "lalana"}
+{"instruction": "Translate English to Betsileo: MOUNTAIN", "reponse": "tendrombohice"}
+{"instruction": "Translate English to Betsileo: NIGHT", "reponse": "alina"}
+{"instruction": "Translate English to Betsileo: NEW", "reponse": "vao"}
+{"instruction": "Translate English to Betsileo: NAME", "reponse": "anarana"}

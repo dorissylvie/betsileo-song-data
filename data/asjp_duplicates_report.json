@@ -1,0 +1,64 @@
+{
+  "note": "Comparaison ASJP (Fianarantsoa) vs corpus Serva/CLICS existant",
+  "asjp_total": 36,
+  "exact_duplicates": {
+    "count": 14,
+    "description": "Même concept EN + même forme Betsileo (ignorés à l'ajout)",
+    "items": [
+      {"en": "TWO", "betsileo": "roa"},
+      {"en": "PERSON", "betsileo": "olo"},
+      {"en": "DOG", "betsileo": "amboa"},
+      {"en": "LOUSE", "betsileo": "hao"},
+      {"en": "TREE", "betsileo": "hazo"},
+      {"en": "BLOOD", "betsileo": "ra"},
+      {"en": "EYE", "betsileo": "maso"},
+      {"en": "TONGUE", "betsileo": "lela"},
+      {"en": "DRINK", "betsileo": "misotro"},
+      {"en": "SEE", "betsileo": "mahita"},
+      {"en": "SUN", "betsileo": "masoandro"},
+      {"en": "WATER", "betsileo": "rano"},
+      {"en": "STONE", "betsileo": "vato"},
+      {"en": "FIRE", "betsileo": "afo"}
+    ]
+  },
+  "near_duplicates_orthography": {
+    "count": 4,
+    "description": "Même concept, variante orthographique mineure (ajoutées)",
+    "items": [
+      {"en": "TOOTH", "serva": "nify", "asjp": "nifi"},
+      {"en": "LIVER", "serva": "aty", "asjp": "ati"},
+      {"en": "DIE", "serva": "maty", "asjp": "mati"},
+      {"en": "COME", "serva": "avy", "asjp": "avi"}
+    ]
+  },
+  "concept_duplicates_variants": {
+    "count": 17,
+    "description": "Même concept EN, forme Betsileo différente (ajoutées comme variantes)",
+    "items": [
+      {"en": "I", "serva": "iaho", "asjp": "izaho"},
+      {"en": "THOU", "serva": "agnao", "asjp": "anao"},
+      {"en": "WE", "serva": "atsika", "asjp": "isika", "note": "Serva a WE (INCLUSIVE/EXCLUSIVE)"},
+      {"en": "ONE", "serva": "raika", "asjp": "ray"},
+      {"en": "FISH", "serva": "talapia", "asjp": "trondro"},
+      {"en": "LEAF", "serva": "ravy", "asjp": "ravina"},
+      {"en": "SKIN", "serva": "hoditse", "asjp": "hoditra"},
+      {"en": "BONE", "serva": "taolagna", "asjp": "taolana"},
+      {"en": "EAR", "serva": "sofy", "asjp": "sofina"},
+      {"en": "NOSE", "serva": "oro", "asjp": "orona"},
+      {"en": "HAND", "serva": "tagna", "asjp": "tanana"},
+      {"en": "HEAR", "serva": "mitaino", "asjp": "mitehino"},
+      {"en": "STAR", "serva": "kintana", "asjp": "vasiana", "note": "lexèmes différents"},
+      {"en": "MOUNTAIN", "serva": "tendromboitse", "asjp": "tendrombohice", "note": "ASJP raw: tendromb~ohice"},
+      {"en": "NIGHT", "serva": "aly", "asjp": "alina"},
+      {"en": "NEW", "serva": "vaovao", "asjp": "vao"},
+      {"en": "NAME", "serva": "agnara", "asjp": "anarana"}
+    ]
+  },
+  "new_entries": {
+    "count": 1,
+    "description": "Concept absent du corpus Serva (ajouté)",
+    "items": [
+      {"en": "PATH", "betsileo": "lalana", "note": "Serva a ROAD=lala (proche mais label différent)"}
+    ]
+  }
+}
