@@ -1,0 +1,235 @@
+statut	malagasy	betsileo	source	en	versets_bible	trouve_pct	freq_bts_bible	freq_bts_chansons	forme_bible_suggeree
+conflit	izy	i	swadesh		1556	4	139	8	iy (381), izy (143), reo (30)
+conflit	izay	zao	data.txt	THAT	1312	0	1	5	izay (967), ny (32), ro (5)
+conflit	amin'ny	amin ny	swadesh		1192	0	2940	301	amin'ny (943), ny (30), tamin'ny (9)
+conflit	izany	zany	swadesh		811	0	3	0	izay (204), an'izay (48), izany (37)
+conflit	olona	olo	swadesh		531	3	28	2	ona (224), olo (7), vitan'ny (1)
+conflit	ireo	reo	data.txt	THEY	463	29	255	3	ireo (125), aby (22), reo (20)
+conflit	izaho	iaho	data.txt	I	147	0	0	0	aho (57), iy (1), anao (1)
+conflit	isika	tsika	swadesh		140	2	4	7	atsika (47), antsika (2), isika (2)
+conflit	lehilahy	lehilahy	swadesh		135	9	14	7	lihilahy (50), lehilahy (12), lailahy (3)
+conflit	inona	ino	swadesh		128	0	0	4	ina (75), ro (1), eko (1)
+conflit	lehibe	ngeza	swadesh		107	0	0	2	lihibe (28), lehibe (13), be (2)
+conflit	ity	itito	swadesh		95	1	2	0	ity (109), itoy (1), io (1)
+conflit	vehivavy	apela	data.txt	WOMAN	73	0	0	12	ampela (32), vehivavy (2), vaivavy (2)
+conflit	nahoana	nahoa	data.txt	HOW	59	0	0	0	nahoana (39), vogninahiny (1), magnina (1)
+conflit	ahoana	ahoana	swadesh		55	0	0	0	akory (12), ina (2), fa (1)
+conflit	vaovao	vao	data.txt	NEW	43	9	75	10	vaovao (37), vao (2), ho (1)
+conflit	dada	baba	data.txt	FATHER	26	4	16	4	aba (4), tompo (1), agnareo (1)
+conflit	taona	taolagna	swadesh		24	0	1	0	taogna (10), novahana (1), taona (1)
+conflit	mihinana	mihina	data.txt	EAT	24	0	0	0	mihinana (23), dia (1)
+conflit	efatra	efatse	data.txt	FOUR	23	0	0	0	efatsa (13), efatra (1)
+conflit	manome	manome	swadesh		22	0	0	0	magnome (10), tena (1)
+conflit	lalana	lalagna	swadesh		17	29	13	0	lalagna (3), lalana (2)
+conflit	loha	loha	swadesh		14	29	6	6	loha (4), madina (2)
+conflit	akaiky	mariny	swadesh		14	0	0	2	fidy (1), marìny (1), akaiky (1)
+conflit	tendrombohitra	tendrobohitsa	swadesh		13	0	0	0	tendrombohitsa (4), vohitsa (1)
+conflit	tendrombohitra	tendromboitsa	data.txt	MOUNTAIN	13	0	0	0	tendrombohitsa (4), vohitsa (1)
+conflit	rahona	raho	data.txt	CLOUD	11	0	0	0	rahogna (4)
+conflit	oviana	oviana	swadesh		10	10	6	0	oviana (1), ia (1)
+conflit	mitsangana	mitsangana	swadesh		9	11	3	2	misabaka (1), mitsangana (1), mijoro (1)
+conflit	havanana	havana	swadesh		9	0	26	1	havàna (4), havanana (3)
+conflit	mitsangana	mitsanga	data.txt	STAND	9	0	0	0	misabaka (1), mitsangana (1), mijoro (1)
+conflit	mandry	mandrimandry	swadesh		6	0	0	1	mandry (4)
+conflit	volo	volondoha	swadesh		4	0	0	0	volo (3), amin'ny (1)
+conflit	manery	mitery	swadesh		4	0	0	0	manery (3)
+conflit	sofina	sofina	swadesh		3	0	0	0	sofigna (1)
+conflit	mikapoka	mikapoka	swadesh		3	0	0	0	manjera (2)
+conflit	zavona	zavona	swadesh		2	0	0	0	zavogna (1)
+conflit	vitsivitsy	mahalagna	swadesh		1	0	0	0	
+conflit	fohy	bory	swadesh		1	0	0	1	fohy (1)
+conflit	manify	manify	swadesh		1	0	0	0	madinika (1)
+conflit	kankana	kankana	swadesh		1	0	0	0	hakagna (1)
+conflit	ravina	ravina	swadesh		1	0	0	0	
+conflit	faka	fakany	swadesh		1	0	2	0	faka (1)
+conflit	tady	tady	swadesh		1	0	3	0	
+conflit	miaina	miaigna	swadesh		1	0	8	0	
+conflit	milomano	milomagno	swadesh		1	0	0	0	
+conflit	manidina	mitsidina	swadesh		1	0	0	0	mitsidigna (1)
+conflit	mianjera	migetraka	swadesh		1	0	0	0	
+conflit	mitantana	mitantagna	swadesh		1	0	1	0	hitantagna (1)
+conflit	mamafa	mamafa	swadesh		1	0	0	0	
+conflit	mihira	mihira	swadesh		1	0	0	0	
+conflit	maitso	maintso	swadesh		1	0	0	0	maitso (1)
+conflit	mavo	mavo	swadesh		1	0	0	0	
+conflit	manidina	mitsidy	data.txt	FLY	1	0	0	0	mitsidigna (1)
+conflit	rahoviana	ovia	data.txt	WHEN	1	0	0	0	
+a_verifier	eto	atsika	data.txt	WE (EXCLUSIVE)	42	2	151	24	eto (29), atỳ (1), ato (1)
+a_verifier	eto	aty	data.txt	LIVER	42	0	7	2	eto (29), atỳ (1), ato (1)
+a_verifier	eto	boribory	data.txt	ROUND	42	0	1	0	eto (29), atỳ (1), ato (1)
+a_verifier	eto	dombo	data.txt	BLUNT	42	0	0	0	eto (29), atỳ (1), ato (1)
+a_verifier	ankizy	kilonga	data.txt	CHILD	4	100	15	9	kilonga (2)
+a_verifier	ankizy	magnehitsa	data.txt	BITE	4	0	0	0	kilonga (2)
+nouveau	matevina	matevigna	swadesh		0	0	0	0	
+nouveau	trondro	trondro	swadesh		0	0	22	0	
+nouveau	hao	hao	swadesh		0	0	0	0	
+nouveau	kibay	tehigna	swadesh		0	0	1	0	
+nouveau	hodi-kazo	hodikazo	swadesh		0	0	0	0	
+nouveau	taviny	taviny	swadesh		0	0	0	0	
+nouveau	rambo	rambo	swadesh		0	0	1	0	
+nouveau	volom-borona	volomborona	swadesh		0	0	0	0	
+nouveau	orona	orogna	swadesh		0	0	0	0	
+nouveau	hoho	hoho	swadesh		0	0	0	0	
+nouveau	ranjo	ranjo	swadesh		0	0	1	0	
+nouveau	tsinay	tsinay	swadesh		0	0	0	0	
+nouveau	vozona	vozogna	swadesh		0	0	0	0	
+nouveau	lamosina	lamosigna	swadesh		0	0	0	0	
+nouveau	aty	aty	swadesh		0	0	7	2	
+nouveau	manaikitra	magnehitsa	swadesh		0	0	0	0	
+nouveau	mifiaka	minono	swadesh		0	0	0	0	
+nouveau	mandrehoka	mandrehoka	swadesh		0	0	0	0	
+nouveau	manimbolo	mifofona	swadesh		0	0	0	0	
+nouveau	mihaza	miagnala	swadesh		0	0	0	0	
+nouveau	manatsatoka antsy	manatsatoka antsy	swadesh		0	0	0	0	
+nouveau	mikiky	mikiky	swadesh		0	0	0	0	
+nouveau	mangady	mangady	swadesh		0	0	0	0	
+nouveau	mihodina	mihodina	swadesh		0	0	0	0	
+nouveau	manakasoka	mikiky	swadesh		0	0	0	0	
+nouveau	mitifitra	mitifitsa	swadesh		0	0	0	0	
+nouveau	manosika	manosika	swadesh		0	0	0	1	
+nouveau	manoraka	mitoraka	swadesh		0	0	0	0	
+nouveau	manjaitra	manjaitra	swadesh		0	0	0	0	
+nouveau	manisa	magnisa	swadesh		0	0	0	0	
+nouveau	milalao	miregnina	swadesh		0	0	0	0	
+nouveau	mitsinkafona	mitsinkafona	swadesh		0	0	0	0	
+nouveau	mikoriana	mitete	swadesh		0	0	0	0	
+nouveau	mibontsina	mibontsina	swadesh		0	0	0	0	
+nouveau	orana	oragna	swadesh		0	0	6	0	
+nouveau	renirano	renirano	swadesh		0	0	5	0	
+nouveau	ranomandry	ranomandry	swadesh		0	0	0	0	
+nouveau	lavenona	lavenona	swadesh		0	0	0	0	
+nouveau	boribory	boribory	swadesh		0	0	1	0	
+nouveau	dombo	dombo	swadesh		0	0	0	0	
+nouveau	malama	malama	swadesh		0	0	0	2	
+nouveau	mando	mando	swadesh		0	0	0	0	
+nouveau	mangatsika	manara	data.txt	COLD	0	0	3	2	
+nouveau	ito	itito	data.txt	THIS	0	0	2	0	
+nouveau	ery	atato	data.txt	THERE	0	0	0	0	
+nouveau	atitra	atitsa	data.txt	old	0	0	0	0	
+nouveau	mikoriana	mikoria	data.txt	FLOW	0	0	0	0	
+nouveau	mitsinkafona	mitsingafo	data.txt	FLOAT	0	0	0	0	
+nouveau	orona	oro	data.txt	NOSE	0	0	0	0	
+coherent	tsy	tsa	swadesh		1587	92	2079	262	tsa (793), tsy (60), vona (8)
+coherent	sy	sy	swadesh		720	84	891	86	sy (629), eko (12), sady (3)
+coherent	raha	lehe	swadesh		649	59	483	15	lehe (187), raha (37), rehe (23)
+coherent	rehetra	aby	swadesh		642	54	682	21	rehetra (209), aby (83), manontolo (11)
+coherent	ianareo	agnareo	swadesh		480	86	558	45	agnareo (211), koa (3), hoe (2)
+coherent	avy	avy	swadesh		395	31	292	14	avy (116), hatagny (4), tonga (3)
+coherent	any	agny	swadesh		296	64	358	61	agny (107), any (8), an'azy (7)
+coherent	ao	ao	swadesh		290	64	292	61	ao (196), agny (3), eo (2)
+coherent	iray	raika	swadesh		284	79	309	4	raika (80), iray (7), iraika (3)
+coherent	satria	satria	swadesh		272	74	380	13	satria (184), fa (7), noho (1)
+coherent	tany	tany	swadesh		252	52	180	17	tany (129), tagny (26), tegny (2)
+coherent	tsara	soa	swadesh		236	56	252	41	soa (64), tsara (32), mafy (3)
+coherent	ianao	agnao	swadesh		216	92	268	52	agnao (83), ko (1), hotsinao (1)
+coherent	andro	andro	swadesh		209	78	205	9	andro (155), fotoagna (6), ny (3)
+coherent	ratsy	ratsy	swadesh		172	84	200	3	ratsy (142), an'azy (1), faty (1)
+coherent	izy ireo	reo	swadesh		164	54	255	3	
+coherent	izaho	aho	swadesh		147	92	654	68	aho (57), iy (1), anao (1)
+coherent	isika	atsika	data.txt	WE (INCLUSIVE)	140	83	151	24	atsika (47), antsika (2), isika (2)
+coherent	roa	roa	swadesh		132	42	74	26	roa (57), roalahy (3), roavavy (2)
+coherent	maty	maty	swadesh		124	93	172	2	maty (126), namoizany (1)
+coherent	ray	ray	swadesh		105	87	129	6	ray (101), baba (5), rainao (1)
+coherent	hafa	hafa	swadesh		102	81	149	12	hafa (87), samihafa (1), sy (1)
+coherent	iza	ia	swadesh		97	81	167	6	ia (40), amin'iy (1), lehe (1)
+coherent	milaza	mitarogna	swadesh		74	36	90	2	milaza (12), mitarogna (10), manao (5)
+coherent	vehivavy	ampela	swadesh		73	77	88	3	ampela (32), vehivavy (2), vaivavy (2)
+coherent	mety	mety	swadesh		72	57	84	18	mety (45), magneky (2), tsa (1)
+coherent	velona	velogna	swadesh		61	89	80	1	velogna (37), amin'ny (1)
+coherent	fo	fo	swadesh		60	78	63	2	fo (46), efa (1), fontsika (1)
+coherent	kely	kely	swadesh		59	56	57	20	kely (33), madinika (2), kitika (1)
+coherent	hazo	hazo	swadesh		47	89	57	5	hazo (49), vahogna (1)
+coherent	afo	afo	swadesh		43	84	46	0	afo (34)
+coherent	vaovao	vaovao	swadesh		43	91	55	1	vaovao (37), vao (2), ho (1)
+coherent	eto	eto	swadesh		42	76	58	41	eto (29), atỳ (1), ato (1)
+coherent	vato	vato	swadesh		40	75	37	3	vato (27), hidim-pasagna (1), vatosoa (1)
+coherent	alina	aligna	swadesh		40	75	35	1	aligna (11), alina (2), nanao (1)
+coherent	feno	feno	swadesh		39	72	47	2	feno (27), romotsy (1), hipoka (1)
+coherent	mandeha	mandeha	swadesh		35	66	39	2	mandeha (23), roso (4), tsa (1)
+coherent	mahay	mahay	swadesh		34	62	39	22	mahay (22), hahay (2), mahavita (1)
+coherent	rano	rano	swadesh		34	97	53	17	rano (36)
+coherent	ranomasina	ranomasina	swadesh		34	68	27	0	ranomasina (23), an-dranomasina (1)
+coherent	lavitra	lavitsa	swadesh		33	76	38	6	lavitsa (9), lavitra (2), an'izay (1)
+coherent	aiza	aia	swadesh		31	74	39	8	aia (16), hataia (1), niagnaia (1)
+coherent	rivotra	rivotsa	swadesh		31	81	28	0	rivotsa (17), habakabaka (1), tafiotsa (1)
+coherent	matahotra	matahotsa	swadesh		30	83	27	0	matahotsa (18), matahotra (2), magnahy (1)
+coherent	lanitra	lagnitsa	swadesh		30	80	25	0	lagnitsa (12), lagnitra (1)
+coherent	betsaka	be	swadesh		28	32	113	20	betsaka (6), be (6), rehagna (2)
+coherent	dimy	dimy	swadesh		26	96	38	2	dimy (31)
+coherent	mihinana	mihinana	swadesh		24	83	36	2	mihinana (23), dia (1)
+coherent	telo	telo	swadesh		23	100	34	0	telo (23)
+coherent	efatra	efatsa	swadesh		23	96	29	0	efatsa (13), efatra (1)
+coherent	mahita	mahita	swadesh		23	87	36	4	mahita (18)
+coherent	mihaino	mitaino	swadesh		22	77	22	0	mitaino (10), mihaino (1), nitaino (1)
+coherent	manome	magnome	data.txt	GIVE	22	82	32	1	magnome (10), tena (1)
+coherent	voa	voa	swadesh		21	57	16	1	voa (14), ambeo (2), voan-draha (1)
+coherent	mipetraka	mitoatsa	swadesh		21	48	40	0	mitoatsa (8), mamonjy (1), mitoatra (1)
+coherent	masoandro	masoandro	swadesh		21	95	23	6	masoandro (18)
+coherent	fotsy	fotsy	swadesh		20	95	24	5	fotsy (21)
+coherent	anaty	agnaty	swadesh		19	47	33	1	agnaty (5), amin'ny (2)
+coherent	ra	ra	swadesh		18	83	18	6	ra (14)
+coherent	misotro	misotro	swadesh		16	88	18	3	misotro (14)
+coherent	zaza	kilonga	swadesh		15	53	15	9	zaza (5), kilonga (2), anajaza (1)
+coherent	maso	maso	swadesh		15	80	16	0	maso (13), sỳ (1)
+coherent	kintana	kintagna	swadesh		15	80	13	0	kintagna (3), kintana (2)
+coherent	avia	avy	data.txt	COME	15	40	292	14	magnenga (1), marea (1), avia (1)
+coherent	reny	reny	swadesh		14	79	13	2	reny (10), reniny (1)
+coherent	volana	volagna	swadesh		14	86	12	0	volagna (5), sy (1), fivoahana (1)
+coherent	anarana	agnarana	swadesh		13	77	12	0	agnarana (4), tany (1)
+coherent	tanana	tagnana	swadesh		12	92	19	1	tagnana (7)
+coherent	mamono	mamono	swadesh		12	92	14	2	mamono (13)
+coherent	rahona	rahogna	swadesh		11	91	12	0	rahogna (4)
+coherent	biby	biby	swadesh		10	70	10	0	biby (8), menaragna (1), raha (1)
+coherent	matory	matory	swadesh		10	90	10	1	matory (9), mierotsa (1)
+coherent	lela	lela	swadesh		9	67	10	0	lela (7)
+coherent	miady	miady	swadesh		9	78	12	3	miady (8), manohitra (1)
+coherent	tratra	tratra	swadesh		8	38	4	1	tratra (3), vesatra (1)
+coherent	lava	lava	swadesh		7	86	8	8	lava (6)
+coherent	ahitra	ahitsa	swadesh		7	86	6	0	ahitsa (4)
+coherent	hena	hena	swadesh		7	71	5	1	hena (5)
+coherent	manasa	manasa	swadesh		7	57	4	0	manasa (4), magnasa (1), mamory (1)
+coherent	farihy	farihy	swadesh		7	43	4	1	farihy (3), dobo (1)
+coherent	lo	lo	swadesh		7	71	9	0	lo (5), vatagnany (1)
+coherent	malalaka	malalaka	swadesh		6	100	6	1	malalaka (4)
+coherent	vava	vava	swadesh		6	83	13	4	vava (5)
+coherent	tongotra	tongotsa	swadesh		6	100	9	1	tongotsa (1)
+coherent	mandry	mandry	swadesh		6	67	9	2	mandry (4)
+coherent	mavesatra	mavesatsa	swadesh		5	40	2	0	sarotsa (1), mitondra (1)
+coherent	vorona	vorogna	swadesh		5	80	4	0	vorogna (2)
+coherent	hoditra	hoditsa	swadesh		5	80	7	0	hoditsa (3), i (1)
+coherent	vovoka	vovoka	swadesh		5	80	4	0	vovoka (4), vovotany (1)
+coherent	maloto	maloto	swadesh		5	80	8	0	maloto (5)
+coherent	vady	vady	swadesh		4	75	13	2	vady (3)
+coherent	mamaky	mamaky	swadesh		4	50	2	0	mamaky (2)
+coherent	setroka	setroka	swadesh		4	100	6	0	setroka (5)
+coherent	mena	mena	swadesh		4	100	6	2	mena (3)
+coherent	antitra	antitsa	swadesh		4	75	3	0	sỳ (1)
+coherent	tery	tery	swadesh		3	33	4	0	tery (1)
+coherent	voninkazo	voninkazo	swadesh		3	100	3	3	voninkazo (3)
+coherent	kibo	troka	swadesh		3	33	1	1	kibo (3), troka (1)
+coherent	mandoa	mandoa	swadesh		3	100	4	0	mandoa (3)
+coherent	mandidy	mandidy	swadesh		3	67	6	0	mandidy (2), manery (1)
+coherent	sira	sira	swadesh		3	100	4	1	sira (3)
+coherent	fasika	fasika	swadesh		3	100	3	0	fasika (3)
+coherent	mangatsiaka	manara	swadesh		3	67	3	2	mangitsy (1)
+coherent	maranitra	maragnitsa	swadesh		3	67	2	0	manindrona (1)
+coherent	bibilava	bibilava	swadesh		2	50	5	0	bibilava (1)
+coherent	tandroka	tandroka	swadesh		2	100	2	1	tandroka (2)
+coherent	lohalika	lohalika	swadesh		2	100	2	0	lohalika (2)
+coherent	mitsoka	mitsoka	swadesh		2	100	2	0	mitsoka (1)
+coherent	mainty	mainty	swadesh		2	100	2	0	mainty (2)
+coherent	mafana	mafana	swadesh		2	100	6	1	mafana (2)
+coherent	mahitsy	mahitsy	swadesh		2	100	6	0	mahitsy (2)
+coherent	maina	maigna	swadesh		2	100	11	0	maigna (1)
+coherent	havia	havia	swadesh		2	100	3	1	havia (2)
+coherent	alika	amboa	swadesh		1	100	4	0	
+coherent	ala	ala	swadesh		1	100	1	4	ala (1)
+coherent	voankazo	voankazo	swadesh		1	100	1	0	voankazo (1)
+coherent	taolana	taolagna	swadesh		1	100	1	0	taolagna (1)
+coherent	atody	atody	swadesh		1	100	1	0	atody (1)
+coherent	nify	nify	swadesh		1	100	2	1	nify (2)
+coherent	elatra	elatsa	swadesh		1	100	1	0	
+coherent	mihomehy	mihehy	swadesh		1	100	1	0	
+coherent	mieritreritra	mieritseritsa	swadesh		1	100	6	0	mieritseritsa (1)
+coherent	mamehy	mamehy	swadesh		1	100	1	0	mamehy (1)
+coherent	mandoro	magnoro	swadesh		1	100	3	0	

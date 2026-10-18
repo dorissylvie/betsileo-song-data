@@ -1,0 +1,2078 @@
+[
+  {
+    "source": "translate Malagasy to Betsileo: izaho",
+    "target": "aho",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:izaho"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: aho",
+    "target": "izaho",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:izaho"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: ianao",
+    "target": "agnao",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:ianao"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: agnao",
+    "target": "ianao",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:ianao"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: ianareo",
+    "target": "agnareo",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:ianareo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: agnareo",
+    "target": "ianareo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:ianareo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: izy ireo",
+    "target": "reo",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:izy ireo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: reo",
+    "target": "izy ireo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:izy ireo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: eto",
+    "target": "eto",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:eto"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: eto",
+    "target": "eto",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:eto"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: ao",
+    "target": "ao",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:ao"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: ao",
+    "target": "ao",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:ao"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: iza",
+    "target": "ia",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:iza"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: ia",
+    "target": "iza",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:iza"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: aiza",
+    "target": "aia",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:aiza"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: aia",
+    "target": "aiza",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:aiza"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: tsy",
+    "target": "tsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:tsy"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: tsa",
+    "target": "tsy",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:tsy"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: rehetra",
+    "target": "aby",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:rehetra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: aby",
+    "target": "rehetra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:rehetra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: betsaka",
+    "target": "be",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:betsaka"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: be",
+    "target": "betsaka",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:betsaka"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: kely",
+    "target": "kely",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:kely"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: kely",
+    "target": "kely",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:kely"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: hafa",
+    "target": "hafa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:hafa"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: hafa",
+    "target": "hafa",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:hafa"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: iray",
+    "target": "raika",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:iray"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: raika",
+    "target": "iray",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:iray"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: roa",
+    "target": "roa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:roa"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: roa",
+    "target": "roa",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:roa"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: telo",
+    "target": "telo",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:telo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: telo",
+    "target": "telo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:telo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: efatra",
+    "target": "efatsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:efatra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: efatsa",
+    "target": "efatra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:efatra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: dimy",
+    "target": "dimy",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:dimy"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: dimy",
+    "target": "dimy",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:dimy"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: lava",
+    "target": "lava",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:lava"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: lava",
+    "target": "lava",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:lava"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: malalaka",
+    "target": "malalaka",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:malalaka"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: malalaka",
+    "target": "malalaka",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:malalaka"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: matevina",
+    "target": "matevigna",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:matevina"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: matevigna",
+    "target": "matevina",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:matevina"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mavesatra",
+    "target": "mavesatsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mavesatra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mavesatsa",
+    "target": "mavesatra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mavesatra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: tery",
+    "target": "tery",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:tery"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: tery",
+    "target": "tery",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:tery"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: vehivavy",
+    "target": "ampela",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:vehivavy"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: ampela",
+    "target": "vehivavy",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:vehivavy"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: zaza",
+    "target": "kilonga",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:zaza"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: kilonga",
+    "target": "zaza",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:zaza"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: vady",
+    "target": "vady",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:vady"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: vady",
+    "target": "vady",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:vady"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: reny",
+    "target": "reny",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:reny"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: reny",
+    "target": "reny",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:reny"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: ray",
+    "target": "ray",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:ray"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: ray",
+    "target": "ray",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:ray"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: biby",
+    "target": "biby",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:biby"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: biby",
+    "target": "biby",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:biby"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: trondro",
+    "target": "trondro",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:trondro"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: trondro",
+    "target": "trondro",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:trondro"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: vorona",
+    "target": "vorogna",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:vorona"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: vorogna",
+    "target": "vorona",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:vorona"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: alika",
+    "target": "amboa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:alika"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: amboa",
+    "target": "alika",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:alika"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: hao",
+    "target": "hao",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:hao"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: hao",
+    "target": "hao",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:hao"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: bibilava",
+    "target": "bibilava",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:bibilava"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: bibilava",
+    "target": "bibilava",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:bibilava"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: hazo",
+    "target": "hazo",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:hazo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: hazo",
+    "target": "hazo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:hazo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: ala",
+    "target": "ala",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:ala"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: ala",
+    "target": "ala",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:ala"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: kibay",
+    "target": "tehigna",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:kibay"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: tehigna",
+    "target": "kibay",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:kibay"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: voankazo",
+    "target": "voankazo",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:voankazo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: voankazo",
+    "target": "voankazo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:voankazo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: voa",
+    "target": "voa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:voa"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: voa",
+    "target": "voa",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:voa"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: hodi-kazo",
+    "target": "hodikazo",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:hodi-kazo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: hodikazo",
+    "target": "hodi-kazo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:hodi-kazo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: voninkazo",
+    "target": "voninkazo",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:voninkazo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: voninkazo",
+    "target": "voninkazo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:voninkazo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: ahitra",
+    "target": "ahitsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:ahitra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: ahitsa",
+    "target": "ahitra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:ahitra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: hoditra",
+    "target": "hoditsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:hoditra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: hoditsa",
+    "target": "hoditra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:hoditra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: hena",
+    "target": "hena",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:hena"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: hena",
+    "target": "hena",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:hena"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: ra",
+    "target": "ra",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:ra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: ra",
+    "target": "ra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:ra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: taolana",
+    "target": "taolagna",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:taolana"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: taolagna",
+    "target": "taolana",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:taolana"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: taviny",
+    "target": "taviny",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:taviny"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: taviny",
+    "target": "taviny",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:taviny"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: atody",
+    "target": "atody",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:atody"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: atody",
+    "target": "atody",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:atody"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: tandroka",
+    "target": "tandroka",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:tandroka"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: tandroka",
+    "target": "tandroka",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:tandroka"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: rambo",
+    "target": "rambo",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:rambo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: rambo",
+    "target": "rambo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:rambo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: volom-borona",
+    "target": "volomborona",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:volom-borona"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: volomborona",
+    "target": "volom-borona",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:volom-borona"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: maso",
+    "target": "maso",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:maso"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: maso",
+    "target": "maso",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:maso"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: orona",
+    "target": "orogna",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:orona"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: orogna",
+    "target": "orona",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:orona"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: vava",
+    "target": "vava",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:vava"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: vava",
+    "target": "vava",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:vava"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: nify",
+    "target": "nify",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:nify"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: nify",
+    "target": "nify",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:nify"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: lela",
+    "target": "lela",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:lela"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: lela",
+    "target": "lela",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:lela"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: hoho",
+    "target": "hoho",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:hoho"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: hoho",
+    "target": "hoho",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:hoho"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: tongotra",
+    "target": "tongotsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:tongotra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: tongotsa",
+    "target": "tongotra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:tongotra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: ranjo",
+    "target": "ranjo",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:ranjo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: ranjo",
+    "target": "ranjo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:ranjo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: lohalika",
+    "target": "lohalika",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:lohalika"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: lohalika",
+    "target": "lohalika",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:lohalika"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: tanana",
+    "target": "tagnana",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:tanana"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: tagnana",
+    "target": "tanana",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:tanana"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: elatra",
+    "target": "elatsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:elatra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: elatsa",
+    "target": "elatra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:elatra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: kibo",
+    "target": "troka",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:kibo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: troka",
+    "target": "kibo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:kibo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: tsinay",
+    "target": "tsinay",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:tsinay"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: tsinay",
+    "target": "tsinay",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:tsinay"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: vozona",
+    "target": "vozogna",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:vozona"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: vozogna",
+    "target": "vozona",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:vozona"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: lamosina",
+    "target": "lamosigna",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:lamosina"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: lamosigna",
+    "target": "lamosina",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:lamosina"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: tratra",
+    "target": "tratra",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:tratra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: tratra",
+    "target": "tratra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:tratra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: fo",
+    "target": "fo",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:fo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: fo",
+    "target": "fo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:fo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: aty",
+    "target": "aty",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:aty"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: aty",
+    "target": "aty",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:aty"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: misotro",
+    "target": "misotro",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:misotro"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: misotro",
+    "target": "misotro",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:misotro"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mihinana",
+    "target": "mihinana",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mihinana"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mihinana",
+    "target": "mihinana",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mihinana"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: manaikitra",
+    "target": "magnehitsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:manaikitra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: magnehitsa",
+    "target": "manaikitra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:manaikitra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mifiaka",
+    "target": "minono",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mifiaka"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: minono",
+    "target": "mifiaka",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mifiaka"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mandrehoka",
+    "target": "mandrehoka",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mandrehoka"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mandrehoka",
+    "target": "mandrehoka",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mandrehoka"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mandoa",
+    "target": "mandoa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mandoa"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mandoa",
+    "target": "mandoa",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mandoa"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mitsoka",
+    "target": "mitsoka",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mitsoka"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mitsoka",
+    "target": "mitsoka",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mitsoka"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mihomehy",
+    "target": "mihehy",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mihomehy"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mihehy",
+    "target": "mihomehy",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mihomehy"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mahita",
+    "target": "mahita",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mahita"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mahita",
+    "target": "mahita",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mahita"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mihaino",
+    "target": "mitaino",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mihaino"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mitaino",
+    "target": "mihaino",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mihaino"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mahay",
+    "target": "mahay",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mahay"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mahay",
+    "target": "mahay",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mahay"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mieritreritra",
+    "target": "mieritseritsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mieritreritra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mieritseritsa",
+    "target": "mieritreritra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mieritreritra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: manimbolo",
+    "target": "mifofona",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:manimbolo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mifofona",
+    "target": "manimbolo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:manimbolo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: matahotra",
+    "target": "matahotsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:matahotra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: matahotsa",
+    "target": "matahotra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:matahotra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: matory",
+    "target": "matory",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:matory"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: matory",
+    "target": "matory",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:matory"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: velona",
+    "target": "velogna",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:velona"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: velogna",
+    "target": "velona",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:velona"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: maty",
+    "target": "maty",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:maty"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: maty",
+    "target": "maty",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:maty"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mamono",
+    "target": "mamono",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mamono"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mamono",
+    "target": "mamono",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mamono"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: miady",
+    "target": "miady",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:miady"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: miady",
+    "target": "miady",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:miady"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mihaza",
+    "target": "miagnala",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mihaza"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: miagnala",
+    "target": "mihaza",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mihaza"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mandidy",
+    "target": "mandidy",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mandidy"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mandidy",
+    "target": "mandidy",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mandidy"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mamaky",
+    "target": "mamaky",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mamaky"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mamaky",
+    "target": "mamaky",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mamaky"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: manatsatoka antsy",
+    "target": "manatsatoka antsy",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:manatsatoka antsy"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: manatsatoka antsy",
+    "target": "manatsatoka antsy",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:manatsatoka antsy"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mikiky",
+    "target": "mikiky",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mikiky"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mikiky",
+    "target": "mikiky",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mikiky"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mangady",
+    "target": "mangady",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mangady"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mangady",
+    "target": "mangady",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mangady"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mandeha",
+    "target": "mandeha",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mandeha"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mandeha",
+    "target": "mandeha",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mandeha"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: avy",
+    "target": "avy",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:avy"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: avy",
+    "target": "avy",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:avy"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mipetraka",
+    "target": "mitoatsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mipetraka"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mitoatsa",
+    "target": "mipetraka",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mipetraka"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mihodina",
+    "target": "mihodina",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mihodina"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mihodina",
+    "target": "mihodina",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mihodina"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: manakasoka",
+    "target": "mikiky",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:manakasoka"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mikiky",
+    "target": "manakasoka",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:manakasoka"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: manasa",
+    "target": "manasa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:manasa"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: manasa",
+    "target": "manasa",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:manasa"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mitifitra",
+    "target": "mitifitsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mitifitra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mitifitsa",
+    "target": "mitifitra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mitifitra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: manosika",
+    "target": "manosika",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:manosika"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: manosika",
+    "target": "manosika",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:manosika"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: manoraka",
+    "target": "mitoraka",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:manoraka"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mitoraka",
+    "target": "manoraka",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:manoraka"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mamehy",
+    "target": "mamehy",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mamehy"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mamehy",
+    "target": "mamehy",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mamehy"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: manjaitra",
+    "target": "manjaitra",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:manjaitra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: manjaitra",
+    "target": "manjaitra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:manjaitra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: manisa",
+    "target": "magnisa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:manisa"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: magnisa",
+    "target": "manisa",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:manisa"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: milaza",
+    "target": "mitarogna",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:milaza"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mitarogna",
+    "target": "milaza",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:milaza"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: milalao",
+    "target": "miregnina",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:milalao"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: miregnina",
+    "target": "milalao",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:milalao"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mitsinkafona",
+    "target": "mitsinkafona",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mitsinkafona"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mitsinkafona",
+    "target": "mitsinkafona",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mitsinkafona"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mikoriana",
+    "target": "mitete",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mikoriana"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mitete",
+    "target": "mikoriana",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mikoriana"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mandry",
+    "target": "mandry",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mandry"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mandry",
+    "target": "mandry",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mandry"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mibontsina",
+    "target": "mibontsina",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mibontsina"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mibontsina",
+    "target": "mibontsina",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mibontsina"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: masoandro",
+    "target": "masoandro",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:masoandro"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: masoandro",
+    "target": "masoandro",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:masoandro"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: volana",
+    "target": "volagna",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:volana"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: volagna",
+    "target": "volana",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:volana"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: kintana",
+    "target": "kintagna",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:kintana"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: kintagna",
+    "target": "kintana",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:kintana"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: rano",
+    "target": "rano",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:rano"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: rano",
+    "target": "rano",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:rano"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: orana",
+    "target": "oragna",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:orana"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: oragna",
+    "target": "orana",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:orana"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: renirano",
+    "target": "renirano",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:renirano"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: renirano",
+    "target": "renirano",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:renirano"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: farihy",
+    "target": "farihy",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:farihy"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: farihy",
+    "target": "farihy",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:farihy"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: ranomasina",
+    "target": "ranomasina",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:ranomasina"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: ranomasina",
+    "target": "ranomasina",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:ranomasina"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: sira",
+    "target": "sira",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:sira"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: sira",
+    "target": "sira",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:sira"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: vato",
+    "target": "vato",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:vato"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: vato",
+    "target": "vato",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:vato"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: fasika",
+    "target": "fasika",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:fasika"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: fasika",
+    "target": "fasika",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:fasika"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: vovoka",
+    "target": "vovoka",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:vovoka"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: vovoka",
+    "target": "vovoka",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:vovoka"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: tany",
+    "target": "tany",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:tany"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: tany",
+    "target": "tany",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:tany"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: rahona",
+    "target": "rahogna",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:rahona"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: rahogna",
+    "target": "rahona",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:rahona"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: lanitra",
+    "target": "lagnitsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:lanitra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: lagnitsa",
+    "target": "lanitra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:lanitra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: rivotra",
+    "target": "rivotsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:rivotra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: rivotsa",
+    "target": "rivotra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:rivotra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: ranomandry",
+    "target": "ranomandry",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:ranomandry"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: ranomandry",
+    "target": "ranomandry",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:ranomandry"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: setroka",
+    "target": "setroka",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:setroka"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: setroka",
+    "target": "setroka",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:setroka"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: afo",
+    "target": "afo",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:afo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: afo",
+    "target": "afo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:afo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: lavenona",
+    "target": "lavenona",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:lavenona"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: lavenona",
+    "target": "lavenona",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:lavenona"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mandoro",
+    "target": "magnoro",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mandoro"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: magnoro",
+    "target": "mandoro",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mandoro"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mena",
+    "target": "mena",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mena"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mena",
+    "target": "mena",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mena"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: fotsy",
+    "target": "fotsy",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:fotsy"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: fotsy",
+    "target": "fotsy",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:fotsy"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mainty",
+    "target": "mainty",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mainty"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mainty",
+    "target": "mainty",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mainty"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: alina",
+    "target": "aligna",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:alina"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: aligna",
+    "target": "alina",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:alina"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: andro",
+    "target": "andro",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:andro"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: andro",
+    "target": "andro",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:andro"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mafana",
+    "target": "mafana",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mafana"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mafana",
+    "target": "mafana",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mafana"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mangatsiaka",
+    "target": "manara",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mangatsiaka"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: manara",
+    "target": "mangatsiaka",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mangatsiaka"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: feno",
+    "target": "feno",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:feno"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: feno",
+    "target": "feno",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:feno"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: vaovao",
+    "target": "vaovao",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:vaovao"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: vaovao",
+    "target": "vaovao",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:vaovao"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: antitra",
+    "target": "antitsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:antitra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: antitsa",
+    "target": "antitra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:antitra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: tsara",
+    "target": "soa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:tsara"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: soa",
+    "target": "tsara",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:tsara"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: ratsy",
+    "target": "ratsy",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:ratsy"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: ratsy",
+    "target": "ratsy",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:ratsy"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: lo",
+    "target": "lo",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:lo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: lo",
+    "target": "lo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:lo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: maloto",
+    "target": "maloto",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:maloto"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: maloto",
+    "target": "maloto",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:maloto"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mahitsy",
+    "target": "mahitsy",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mahitsy"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mahitsy",
+    "target": "mahitsy",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mahitsy"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: boribory",
+    "target": "boribory",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:boribory"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: boribory",
+    "target": "boribory",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:boribory"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: maranitra",
+    "target": "maragnitsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:maranitra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: maragnitsa",
+    "target": "maranitra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:maranitra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: dombo",
+    "target": "dombo",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:dombo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: dombo",
+    "target": "dombo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:dombo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: malama",
+    "target": "malama",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:malama"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: malama",
+    "target": "malama",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:malama"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mando",
+    "target": "mando",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mando"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mando",
+    "target": "mando",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mando"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: maina",
+    "target": "maigna",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:maina"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: maigna",
+    "target": "maina",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:maina"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mety",
+    "target": "mety",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:mety"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mety",
+    "target": "mety",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:mety"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: lavitra",
+    "target": "lavitsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:lavitra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: lavitsa",
+    "target": "lavitra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:lavitra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: havia",
+    "target": "havia",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:havia"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: havia",
+    "target": "havia",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:havia"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: any",
+    "target": "agny",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:any"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: agny",
+    "target": "any",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:any"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: anaty",
+    "target": "agnaty",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:anaty"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: agnaty",
+    "target": "anaty",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:anaty"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: sy",
+    "target": "sy",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:sy"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: sy",
+    "target": "sy",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:sy"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: raha",
+    "target": "lehe",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:raha"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: lehe",
+    "target": "raha",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:raha"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: satria",
+    "target": "satria",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:satria"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: satria",
+    "target": "satria",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:satria"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: anarana",
+    "target": "agnarana",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:anarana"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: agnarana",
+    "target": "anarana",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:anarana"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mangatsika",
+    "target": "manara",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX data.txt:mangatsika"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: manara",
+    "target": "mangatsika",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX data.txt:mangatsika"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: isika",
+    "target": "atsika",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX data.txt:isika"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: atsika",
+    "target": "isika",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX data.txt:isika"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: ito",
+    "target": "itito",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX data.txt:ito"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: itito",
+    "target": "ito",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX data.txt:ito"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: ery",
+    "target": "atato",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX data.txt:ery"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: atato",
+    "target": "ery",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX data.txt:ery"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: atitra",
+    "target": "atitsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX data.txt:atitra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: atitsa",
+    "target": "atitra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX data.txt:atitra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: avia",
+    "target": "avy",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX data.txt:avia"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: avy",
+    "target": "avia",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX data.txt:avia"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: manome",
+    "target": "magnome",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX data.txt:manome"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: magnome",
+    "target": "manome",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX data.txt:manome"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mikoriana",
+    "target": "mikoria",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX data.txt:mikoriana"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mikoria",
+    "target": "mikoriana",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX data.txt:mikoriana"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mitsinkafona",
+    "target": "mitsingafo",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX data.txt:mitsinkafona"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mitsingafo",
+    "target": "mitsinkafona",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX data.txt:mitsinkafona"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: orona",
+    "target": "oro",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX data.txt:orona"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: oro",
+    "target": "orona",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX data.txt:orona"
+  }
+]
