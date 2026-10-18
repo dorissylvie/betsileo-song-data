@@ -1,0 +1,446 @@
+[
+  {
+    "source":"translate Malagasy to Betsileo: Raha nanao izay tsy marina taminao izy na nitrosa taminao dia ataovy ho anjarako izany.",
+    "target":"Rehe nisy ratsy nataony taminao, na anagnanao trosa izy, dia sorato amin’ny agnarako.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"PHM 1:18"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: ny teny tsy misy kilema, izay tsy azo kianina, mba ho menatra izay manohitra satria tsy hisy ratsy hitenenany anareo.",
+    "target":"tsa misy kilema sady tsa azo kiagnina, mba ho maignatra zay manohitra anao satria tsa hitany izay holazaina hitenenan-dratsy atsika.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 2:8"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: mba hampianarany ny vehivavy tanora ho tia ny vadiny, ho tia ny zanany,",
+    "target":"mba hanoroany ny ampela vao tagnora ho tia ny vadiny sy ny zanagny,",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 2:4"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Fa halaviro ny resabe tsa mitondra aia, ny tetiharana, ny fifandirana ary ny adihevitra momba ny lalàna; fa sady tsa mahasoa iraigny ro zava-poagna.",
+    "target":"Fa halaviro kosa ny fanontaniana adaladala, ny tantaram-pirazanana, ny fifandirana, ny ady teny ny amin’ny lalàna; fa tsy mahasoa sady zava-poana izany.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 3:9"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: tsy maintsy hotampenam-bava ireo fa mampivadika fianakaviana maro sady mampianatra izay tsy mety mba hahazoany harena maloto.",
+    "target":"Tsy maintsy ho tapenam-bava ireo ona ireo fa mampivadika fianakaviana maro noho ny fampianarana raha tsa izy, mba hahazahoany harena amin’ny tsa fahamarinana.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 1:11"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Ry malala, manao asa mahatoky agnao amin’izay rehetra ataonao amin’ireo rahalahy ireo, laky dia vahiny aza iy,",
+    "target":"Ry malala, manao asa mahatoky ianao amin’izay rehetra ataonao amin’ireo rahalahy ireo na dia vahiny aza izy;",
+    "direction":"Betsileo->Malagasy",
+    "ref":"3JN 1:5"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Ary izao no fitiavana dia ny handehanantsika araka ny teniny. Izany no didy, tahaka ny efa renareo hatramin’ny taloha ihany dia ny handehananareo aminy.",
+    "target":"Eko izao ro fitiavana, dia ny handihanantsika araka ny teniny. Izao ro didy, sahala amin’ny efa renareo hatagny am-boalohany ihany, dia ny hiaignanareo amin’ny fitiavana.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"2JN 1:6"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Aho lohologna ro mamangy an’Andriambavy voafidin’Andriamagnitsa sy ny zanany a amin’ny alalan’itoy taratasy itoy, izay tiàko amin’ny fahamarinana, eko tsa aho irery, fa izay rehetra mahalala ny marina koa",
+    "target":"Izaho loholona no mamangy an’Itompokovavy voafidy sy ny zanany, izay tiako amin’ny fahamarinana, ary tsy izaho ihany, fa izay rehetra mahalala ny marina koa",
+    "direction":"Betsileo->Malagasy",
+    "ref":"2JN 1:1"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Mitandrema ianareo, fandrao mahavery izay namonoanay tena, fa mba handraisanareo valim-pitia tanteraka kosa.",
+    "target":"Eko mitandrema agnareo, fa nge ho very ny vokatsy ny asantsika b , fa mba handraisanareo valim-pitea feno.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"2JN 1:8"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: fa izay miarahaba azy dia miombona amin’ny ratsy ataony.",
+    "target":"fa izay miarahaba azy dia mpiray tsikombakomba amin’ny ratsy ataony.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"2JN 1:11"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Fa manantena hahita anao faingana ihany aho dia hiresaka mifanatrika isika.",
+    "target":"Fa magnategna hahita anao tsa ho ela aho, ko dia hiresaka mivantagna atsika.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"3JN 1:14"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Izany angamba no nialany vetivety teo aminao mba hanananao azy mandrakizay,",
+    "target":"Angamba ny antony nangalàna azy taminao vetivety, dia ny hanagnanao azy hatramin’ny farany;",
+    "direction":"Malagasy->Betsileo",
+    "ref":"PHM 1:15"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Fa agnao kosa, ny raha marina ro ampianaro.",
+    "target":"Fa ianao kosa dia milazà izay mendrika ny fampianarana tsy misy kilema.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 2:1"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Fa faly indrindra aho, fony nisy rahalahy tonga ka nanambara ny fahamarinanao, dia ny fandehananao amin’ny marina.",
+    "target":"Tena faly tokoa aho, sỳ nisy rahalahy avy ko nagnambara taminahy fa mitagna ny fahamarinana agnao, dia ny iaignanao amin’ny fahamarinana.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"3JN 1:3"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Fa tsika koa taloha dia mba adala, tsa nankatò, voafitaka, andevon’ny filàna sy ny fahafinaretana maro, velogna tamin’ny haratsiam-pagnahy sy ny fialognana; sady halan’ona ro vao nifankahala koa.",
+    "target":"Fa isika koa dia mba adala fahiny, tsy nanaiky, voafitaka; eny, andevon’ny filana sy ny fahafinaretana isan-karazany ary velona teo amin’ny lolompo sy ny fialonana sady nankahalaina no nifankahala.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 3:3"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: averiko atỳ aminao indray izy izay sombin’ny aiko.",
+    "target":"Eko dia apodiko agny aminao izy, ilay sombin’ny aiko.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"PHM 1:12"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Fa magnategna hahita anao tsa ho ela aho, ko dia hiresaka mivantagna atsika.",
+    "target":"Fa manantena hahita anao faingana ihany aho dia hiresaka mifanatrika isika.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"3JN 1:14"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Tokony hianatra hanao amin’ny fo ny asa soa koa ny onantsika, mba hahafahany magnome izay tena mila fagnampiana. Miteraka voka-tsoa ho an’ny hafa izy rehe manao an’izay.",
+    "target":"Aoka koa ny olontsika hianatra hazoto amin’ny asa tsara mba hahazoany izay zavatra tena ilainy fa tsy mba ho isan’izay tsy mamokatra izy.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 3:14"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Matoky aho fa hagnaiky agnao, ko izay ro antony anoratako aminao sady fantatro fa hanao mihoatra noho izay angatahiko aza agnao.",
+    "target":"Noho ny fahatokiako fa hanaiky ianao no anoratako aminao, koa fantatro fa hanao mihoatra noho izay lazaiko aza ianao.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"PHM 1:21"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Tsy manana fifaliana mihoatra noho izao aho dia ny andrenesako fa mandeha amin’ny marina ny zanako.",
+    "target":"Tsa managna fifaliana mihoatsa noho izao aho, dia ny andrenesako fa miaigna ny fahamarinana ireo zanako.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"3JN 1:4"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Fa ianao kosa dia milazà izay mendrika ny fampianarana tsy misy kilema.",
+    "target":"Fa agnao kosa, ny raha marina ro ampianaro.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 2:1"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Anaro indraika izay ona mampisaratsaraka, dia vona anaro koa fagnindroany; eko rehe tsa mety dia ialao.",
+    "target":"Izay mpanao hevi-diso, rehefa nanarinao indray mandeha na indroa, dia ialao",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 3:10"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Ho aminao anie ny fiadanana! Ny namana atỳ dia manao veloma anao. Veloma amin’ny namana tsirairay araka ny anarany avy.",
+    "target":"Ho aminao anie ny fiadagnana! Mampamangy anao ireo namana atoy. Dia mampamangy amin’ny namantsika kiraidraika isan’agnarana aby.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"3JN 1:15"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Fa isika koa dia mba adala fahiny, tsy nanaiky, voafitaka; eny, andevon’ny filana sy ny fahafinaretana isan-karazany ary velona teo amin’ny lolompo sy ny fialonana sady nankahalaina no nifankahala.",
+    "target":"Fa tsika koa taloha dia mba adala, tsa nankatò, voafitaka, andevon’ny filàna sy ny fahafinaretana maro, velogna tamin’ny haratsiam-pagnahy sy ny fialognana; sady halan’ona ro vao nifankahala koa.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 3:3"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: ilay tsy nahasoa anao fahiny, nefa mahasoa antsika ankehitriny; dia ianao sy izaho;",
+    "target":"igny kilonga lahy tsa nisy nilanao azy taloha igny nefa izaohe dia ilaintsika sy agnao.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"PHM 1:11"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Noho ny fahatokiako fa hanaiky ianao no anoratako aminao, koa fantatro fa hanao mihoatra noho izay lazaiko aza ianao.",
+    "target":"Matoky aho fa hagnaiky agnao, ko izay ro antony anoratako aminao sady fantatro fa hanao mihoatra noho izay angatahiko aza agnao.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"PHM 1:21"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Aoka koa ny olontsika hianatra hazoto amin’ny asa tsara mba hahazoany izay zavatra tena ilainy fa tsy mba ho isan’izay tsy mamokatra izy.",
+    "target":"Tokony hianatra hanao amin’ny fo ny asa soa koa ny onantsika, mba hahafahany magnome izay tena mila fagnampiana. Miteraka voka-tsoa ho an’ny hafa izy rehe manao an’izay.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 3:14"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Mampahatsiarova azy hanaiky izay mitondra sy manam-pahefana, hanoa tsara, ho vonona ho amin’ny asa tsara rehetra,",
+    "target":"Ampahatsiahivo ny ona hagnaiky sy hankatò ny mpitondra sy ny manam-pahefana, ho vognona amin’ny asa tsara rehetra,",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 3:1"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Izay mpanao hevi-diso, rehefa nanarinao indray mandeha na indroa, dia ialao",
+    "target":"Anaro indraika izay ona mampisaratsaraka, dia vona anaro koa fagnindroany; eko rehe tsa mety dia ialao.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 3:10"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: mba hanoroany ny ampela vao tagnora ho tia ny vadiny sy ny zanagny,",
+    "target":"mba hampianarany ny vehivavy tanora ho tia ny vadiny, ho tia ny zanany,",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 2:4"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Koa raha ataonao fa namanao aho dia raiso toa ahy izy.",
+    "target":"Eko, rehe tena raisinao ho mpiara-miasa tokoa aho, dia raiso sahala agnamiko izy.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"PHM 1:17"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Manana zavatra maro hosoratana aminareo aho, nefa tsy tiako hatao amin’ny taratasy sy ny ranomainty izany; fa manantena ho tonga atỳ aminareo aho ka hiteny mifanatrika mba ho tanteraka ny fifalianareo.",
+    "target":"Managna raha be hotarognina aminareo aho feny tsa tiàko hosoratana amin’ny taratasy sy ny ranomainty izay; magnantegna manko aho ny avy atoy aminareo ko hiresaka mivantagna aminareo, mba ho tena feno tokoa ny fifaleantsika.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"2JN 1:12"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Ny mpanompo koa dia anaro hanaiky ny tompony mba hanao izay ankasitrahany amin’ny zavatra rehetra fa tsy hamalivaly,",
+    "target":"Toroy koa ny mpanompo hagnaiky amin’ny raha aby, hanao izay ankasitrahan’ny tompony, eko tsa hamalivaly azy,",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 2:9"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Tena faly tokoa aho, sỳ nisy rahalahy avy ko nagnambara taminahy fa mitagna ny fahamarinana agnao, dia ny iaignanao amin’ny fahamarinana.",
+    "target":"Fa faly indrindra aho, fony nisy rahalahy tonga ka nanambara ny fahamarinanao, dia ny fandehananao amin’ny marina.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"3JN 1:3"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Eko dia apodiko agny aminao izy, ilay sombin’ny aiko.",
+    "target":"averiko atỳ aminao indray izy izay sombin’ny aiko.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"PHM 1:12"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: noho ny fahamarinana izay mitoatsa ato agnatintsika sady ho ato amintsika mandrakizay.",
+    "target":"noho ny fahamarinana izay mitoetra ato anatintsika sady ho ato amintsika mandrakizay:",
+    "direction":"Betsileo->Malagasy",
+    "ref":"2JN 1:2"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Ataovo soa ny raha aby mba ho fianarana ho azy agnao, eko dia ataovo marina sady matotra ny fampianaranao:",
+    "target":"amin’ny zavatra rehetra dia asehoy ny tenanao ho fianarana ny asa tsara, amin’ny fampianaranao madio sy maotina,",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 2:7"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Rehe nisy ratsy nataony taminao, na anagnanao trosa izy, dia sorato amin’ny agnarako.",
+    "target":"Raha nanao izay tsy marina taminao izy na nitrosa taminao dia ataovy ho anjarako izany.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"PHM 1:18"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Fa halaviro kosa ny fanontaniana adaladala, ny tantaram-pirazanana, ny fifandirana, ny ady teny ny amin’ny lalàna; fa tsy mahasoa sady zava-poana izany.",
+    "target":"Fa halaviro ny resabe tsa mitondra aia, ny tetiharana, ny fifandirana ary ny adihevitra momba ny lalàna; fa sady tsa mahasoa iraigny ro zava-poagna.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 3:9"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Angamba ny antony nangalàna azy taminao vetivety, dia ny hanagnanao azy hatramin’ny farany;",
+    "target":"Izany angamba no nialany vetivety teo aminao mba hanananao azy mandrakizay,",
+    "direction":"Betsileo->Malagasy",
+    "ref":"PHM 1:15"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Nefa tsa te hanao na ina na ina aho aloha, rehe tsa mahalala izay hevitrao satria tsa tiako hoterena agnao no ho manao soa, fa mba ho an-tsitrapo ro anaovanao azy.",
+    "target":"nefa raha tsy mahalala izay hevitrao aho aloha dia tsy ta hanao na inona na inona mba tsy ho toy ny an-tery ny soa ataonao fa an-tsitrapo.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"PHM 1:14"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Maro ny zavatra tiako ho nosoratana taminao nefa tsy tiako hosoratana aminao amin’ny ranomainty sy ny penina.",
+    "target":"Managna raha be hotarognina aminao aho, feny tsa tiàko hosoratana amin’ny ranomainty sy ny penina izay;",
+    "direction":"Malagasy->Betsileo",
+    "ref":"3JN 1:13"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: nefa raha tsy mahalala izay hevitrao aho aloha dia tsy ta hanao na inona na inona mba tsy ho toy ny an-tery ny soa ataonao fa an-tsitrapo.",
+    "target":"Nefa tsa te hanao na ina na ina aho aloha, rehe tsa mahalala izay hevitrao satria tsa tiako hoterena agnao no ho manao soa, fa mba ho an-tsitrapo ro anaovanao azy.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"PHM 1:14"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Tsy maintsy ho tapenam-bava ireo ona ireo fa mampivadika fianakaviana maro noho ny fampianarana raha tsa izy, mba hahazahoany harena amin’ny tsa fahamarinana.",
+    "target":"tsy maintsy hotampenam-bava ireo fa mampivadika fianakaviana maro sady mampianatra izay tsy mety mba hahazoany harena maloto.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 1:11"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Managna raha be hotarognina aminareo aho feny tsa tiàko hosoratana amin’ny taratasy sy ny ranomainty izay; magnantegna manko aho ny avy atoy aminareo ko hiresaka mivantagna aminareo, mba ho tena feno tokoa ny fifaleantsika.",
+    "target":"Manana zavatra maro hosoratana aminareo aho, nefa tsy tiako hatao amin’ny taratasy sy ny ranomainty izany; fa manantena ho tonga atỳ aminareo aho ka hiteny mifanatrika mba ho tanteraka ny fifalianareo.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"2JN 1:12"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: tsa hiteny ratsy ona, ho tia fihavanana, handefitra eko halemy fagnahy amin’ny ona aby.",
+    "target":"tsy hiteny ratsy olona, tsy ho mpila ady, fa ho mpandefitra, maneho ny halemem-panahy rehetra amin’ny olona rehetra.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 3:2"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Ry malala, manao asa mahatoky ianao amin’izay rehetra ataonao amin’ireo rahalahy ireo na dia vahiny aza izy;",
+    "target":"Ry malala, manao asa mahatoky agnao amin’izay rehetra ataonao amin’ireo rahalahy ireo, laky dia vahiny aza iy,",
+    "direction":"Malagasy->Betsileo",
+    "ref":"3JN 1:5"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Raha misy olona mankeo aminareo ka tsy mitondra izao fampianarana izao, aza mampiantrano azy na miarahaba azy akory;",
+    "target":"Lehe misy ona mihoeo aminareo ko tsa mitondra an’izay fampianarana izay, dia aza mampiditsa andragno na miarahaba azy akory;",
+    "direction":"Malagasy->Betsileo",
+    "ref":"2JN 1:10"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Eko, rehe tena raisinao ho mpiara-miasa tokoa aho, dia raiso sahala agnamiko izy.",
+    "target":"Koa raha ataonao fa namanao aho dia raiso toa ahy izy.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"PHM 1:17"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Ho aminao anie ny fiadagnana! Mampamangy anao ireo namana atoy. Dia mampamangy amin’ny namantsika kiraidraika isan’agnarana aby.",
+    "target":"Ho aminao anie ny fiadanana! Ny namana atỳ dia manao veloma anao. Veloma amin’ny namana tsirairay araka ny anarany avy.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"3JN 1:15"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: noho ny fahamarinana izay mitoetra ato anatintsika sady ho ato amintsika mandrakizay:",
+    "target":"noho ny fahamarinana izay mitoatsa ato agnatintsika sady ho ato amintsika mandrakizay.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"2JN 1:2"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Ampahatsiahivo ny ona hagnaiky sy hankatò ny mpitondra sy ny manam-pahefana, ho vognona amin’ny asa tsara rehetra,",
+    "target":"Mampahatsiarova azy hanaiky izay mitondra sy manam-pahefana, hanoa tsara, ho vonona ho amin’ny asa tsara rehetra,",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 3:1"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Anaro hahonon-tena koa ny lehilahy tanora;",
+    "target":"Toroy koa ny lailahy vao tagnora hahonon-taigna.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 2:6"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: mifikitra mafy amin’ny fampianarana marina nomena azy mba hahafahany mampahery ny hafa amin’ny fampianarana tsa misy kilema sy mba handreseny lahatra ireo mpanohitra.",
+    "target":"mitana mafy ny teny marina araka ny efa nampianarina mba hahaizany hananatra amin’ny fampianarana tsy misy kilema sady handresy lahatra ny mpanohitra.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 1:9"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Eko izao ro fitiavana, dia ny handihanantsika araka ny teniny. Izao ro didy, sahala amin’ny efa renareo hatagny am-boalohany ihany dia ny hiaignanareo amin’ny fitiavana.",
+    "target":"Ary izao no fitiavana dia ny handehanantsika araka ny teniny. Izany no didy, tahaka ny efa renareo hatramin’ny taloha ihany dia ny handehananareo aminy.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"2JN 1:6"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Eko mitandrema agnareo, fa nge ho very ny vokatsy ny asantsika b , fa mba handraisanareo valim-pitea feno.",
+    "target":"Mitandrema ianareo, fandrao mahavery izay namonoanay tena, fa mba handraisanareo valim-pitia tanteraka kosa.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"2JN 1:8"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Izaho loholona no mamangy an’Itompokovavy voafidy sy ny zanany, izay tiako amin’ny fahamarinana, ary tsy izaho ihany, fa izay rehetra mahalala ny marina koa",
+    "target":"Aho lohologna ro mamangy an’Andriambavy voafidin’Andriamagnitsa sy ny zanany a amin’ny alalan’itoy taratasy itoy, izay tiàko amin’ny fahamarinana, eko tsa aho irery, fa izay rehetra mahalala ny marina koa",
+    "direction":"Malagasy->Betsileo",
+    "ref":"2JN 1:1"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Toroy koa ny lailahy vao tagnora hahonon-taigna.",
+    "target":"Anaro hahonon-tena koa ny lehilahy tanora;",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 2:6"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Izay ary ro lazao sy agnanaro eko andrarao amin’ny fahefanao rehetra, sefa agnao mampianatra. Aza avela hisy hanao tsinontsinona anao.",
+    "target":"Izany no lazao sy ananaro ary andrarao amin’ny fahefana rehetra. Aza avela hisy hanao tsinontsinona anao!",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 2:15"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Lehe misy ona mihoeo aminareo ko tsa mitondra an’izay fampianarana izay, dia aza mampiditsa andragno na miarahaba azy akory;",
+    "target":"Raha misy olona mankeo aminareo ka tsy mitondra izao fampianarana izao, aza mampiantrano azy na miarahaba azy akory;",
+    "direction":"Betsileo->Malagasy",
+    "ref":"2JN 1:10"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: fa tokony ho ona mahay mandray vahiny, tia ny raha soa, mahafehy taigna, marina, mahonon-taigna,",
+    "target":"fa mampiantrano vahiny, tia ny tsara, mahonon-tena, marina, mahafehy tena,",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 1:8"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Izany no lazao sy ananaro ary andrarao amin’ny fahefana rehetra. Aza avela hisy hanao tsinontsinona anao!",
+    "target":"Izay ary ro lazao sy agnanaro eko andrarao amin’ny fahefanao rehetra, sefa agnao mampianatra. Aza avela hisy hanao tsinontsinona anao.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 2:15"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: mitana mafy ny teny marina araka ny efa nampianarina mba hahaizany hananatra amin’ny fampianarana tsy misy kilema sady handresy lahatra ny mpanohitra.",
+    "target":"mifikitra mafy amin’ny fampianarana marina nomena azy mba hahafahany mampahery ny hafa amin’ny fampianarana tsa misy kilema sy mba handreseny lahatra ireo mpanohitra.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 1:9"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: amin’ny zavatra rehetra dia asehoy ny tenanao ho fianarana ny asa tsara, amin’ny fampianaranao madio sy maotina,",
+    "target":"Ataovo soa ny raha aby mba ho fianarana ho azy agnao, eko dia ataovo marina sady matotra ny fampianaranao:",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 2:7"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Eko dia tokony hanohagna ny ona sahala amin’ireo atsika mba ho mpiara-miasa aminazy amin’ny fahamarinana.",
+    "target":"Koa isika dia tokony handray tsara ny olona toy izany, mba ho mpiara-miasa aminy amin’ny fahamarinana isika.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"3JN 1:8"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Toroy koa ny mpanompo hagnaiky amin’ny raha aby, hanao izay ankasitrahan’ny tompony, eko tsa hamalivaly azy,",
+    "target":"Ny mpanompo koa dia anaro hanaiky ny tompony mba hanao izay ankasitrahany amin’ny zavatra rehetra fa tsy hamalivaly,",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 2:9"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Tsa managna fifaliana mihoatsa noho izao aho, dia ny andrenesako fa miaigna ny fahamarinana ireo zanako.",
+    "target":"Tsy manana fifaliana mihoatra noho izao aho dia ny andrenesako fa mandeha amin’ny marina ny zanako.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"3JN 1:4"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: Koa isika dia tokony handray tsara ny olona toy izany, mba ho mpiara-miasa aminy amin’ny fahamarinana isika.",
+    "target":"Eko dia tokony hanohagna ny ona sahala amin’ireo atsika mba ho mpiara-miasa aminazy amin’ny fahamarinana.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"3JN 1:8"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: fa izay miarahaba azy dia mpiray tsikombakomba amin’ny ratsy ataony.",
+    "target":"fa izay miarahaba azy dia miombona amin’ny ratsy ataony.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"2JN 1:11"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: tsy hiteny ratsy olona, tsy ho mpila ady, fa ho mpandefitra, maneho ny halemem-panahy rehetra amin’ny olona rehetra.",
+    "target":"tsa hiteny ratsy ona, ho tia fihavanana, handefitra eko halemy fagnahy amin’ny ona aby.",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 3:2"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: tsa misy kilema sady tsa azo kiagnina, mba ho maignatra zay manohitra anao satria tsa hitany izay holazaina hitenenan-dratsy atsika.",
+    "target":"ny teny tsy misy kilema, izay tsy azo kianina, mba ho menatra izay manohitra satria tsy hisy ratsy hitenenany anareo.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"TIT 2:8"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: igny kilonga lahy tsa nisy nilanao azy taloha igny nefa izaohe dia ilaintsika sy agnao.",
+    "target":"ilay tsy nahasoa anao fahiny, nefa mahasoa antsika ankehitriny; dia ianao sy izaho;",
+    "direction":"Betsileo->Malagasy",
+    "ref":"PHM 1:11"
+  },
+  {
+    "source":"translate Malagasy to Betsileo: fa mampiantrano vahiny, tia ny tsara, mahonon-tena, marina, mahafehy tena,",
+    "target":"fa tokony ho ona mahay mandray vahiny, tia ny raha soa, mahafehy taigna, marina, mahonon-taigna,",
+    "direction":"Malagasy->Betsileo",
+    "ref":"TIT 1:8"
+  },
+  {
+    "source":"translate Betsileo to Malagasy: Managna raha be hotarognina aminao aho, feny tsa tiàko hosoratana amin’ny ranomainty sy ny penina izay;",
+    "target":"Maro ny zavatra tiako ho nosoratana taminao nefa tsy tiako hosoratana aminao amin’ny ranomainty sy ny penina.",
+    "direction":"Betsileo->Malagasy",
+    "ref":"3JN 1:13"
+  }
+]

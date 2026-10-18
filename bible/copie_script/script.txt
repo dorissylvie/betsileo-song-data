@@ -1,0 +1,1375 @@
+# This Python 3 environment comes with many helpful analytics libraries installed
+# It is defined by the kaggle/python Docker image: https://github.com/kaggle/docker-python
+# For example, here's several helpful packages to load
+
+import numpy as np # linear algebra
+import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+
+# Input data files are available in the read-only "../input/" directory
+# For example, running this (by clicking run or pressing Shift+Enter) will list all files under the input directory
+
+import os
+for dirname, _, filenames in os.walk('/kaggle/input'):
+    for filename in filenames:
+        print(os.path.join(dirname, filename))
+
+# You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using "Save & Run All" 
+# You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session
+
+# Use the kagglehub client library to attach Kaggle resources like competitions, datasets, and models to your session
+# Learn more about kagglehub: https://github.com/Kaggle/kagglehub/blob/main/README.md
+
+import kagglehub
+# kagglehub.dataset_download('<owner>/<dataset-slug>')
+
+
+from kaggle_secrets import UserSecretsClient
+from huggingface_hub import login, whoami
+
+user_secrets = UserSecretsClient()
+secret_value_0 = user_secrets.get_secret("HF_TOKEN")
+login(token=secret_value_0)
+
+
+"""
+Construit le corpus ByT5 Betsileo <-> Malgache officiel.
+
+Source unique :
+nirina-doris-sylvie/scrapping-bible-protestante
+  splits utilises : mg | betsileo   (fr et en sont ignores)
+
+Changements par rapport a la version multilingue
+------------------------------------------------
+1. Plus de francais ni d'anglais. Une seule paire de langues, deux
+   directions. Le modele ne disperse plus sa capacite sur des langues
+   qui ne sont pas la cible.
+
+2. Le decoupage train/validation/test se fait PAR LIVRE, pas au hasard.
+   Un split aleatoire sur des versets met Matthieu 5:3 en train et
+   Matthieu 5:4 en validation : les deux partagent vocabulaire, noms
+   propres et tournures. Le score obtenu est alors une illusion. Avec un
+   decoupage par livre, aucun verset du test n'a de voisin en train.
+
+3. Deduplication, et comptage des paires ou le verset betsileo est
+   identique au malgache officiel. Ces paires existent en nombre (les
+   deux varietes sont proches) et gonflent artificiellement les scores :
+   on les garde mais on les mesure, et le script d'evaluation les
+   isole.
+
+Usage :
+  export HF_TOKEN=hf_...
+  python 01_build_dataset_mg_bts.py
+  python 01_build_dataset_mg_bts.py --no-push      # test local
+"""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import os
+import re
+from collections import Counter, defaultdict
+
+DEFAULT_REPO = "nirina-doris-sylvie/scrapping-bible-protestante"
+DEFAULT_OUTPUT_REPO = "nirina-doris-sylvie/byt5-betsileo-mg-ft"
+
+MIN_CHARS = 10
+MAX_CHARS = 800
+SEED = 42
+
+SRC_LANG = "Malagasy"
+TGT_LANG = "Betsileo"
+
+# Livres entierement reserves au test. Choisis pour couvrir des genres
+# differents : recit, epitre, apocalyptique. Aucun verset de ces livres
+# n'apparait en entrainement ni en validation.
+TEST_BOOKS = {"MRK", "PHP", "JUD"}
+
+# Livres reserves a la validation (suivi pendant l'entrainement).
+VAL_BOOKS = {"TIT", "PHM", "2JN", "3JN"}
+
+
+def rows_to_verse_index(rows) -> dict[tuple[str, str, str], str]:
+    """Convertit un split HF (book, chapter, text[{verse: str}]) en index."""
+    index: dict[tuple[str, str, str], str] = {}
+    for row in rows:
+        book = str(row.get("book") or "").strip().upper()
+        chapter = row.get("chapter")
+        if not book or chapter is None:
+            continue
+        try:
+            chapter_i = int(chapter)
+        except (TypeError, ValueError):
+            continue
+        if chapter_i <= 0:
+            continue
+
+        texts = row.get("text") or []
+        for item in texts:
+            if not isinstance(item, dict):
+                continue
+            for num_verset, texte in item.items():
+                texte_propre = re.sub(r"\s+", " ", str(texte)).strip()
+                if not texte_propre:
+                    continue
+                if not (MIN_CHARS <= len(texte_propre) <= MAX_CHARS):
+                    continue
+                index[(book, str(chapter_i), str(num_verset))] = texte_propre
+    return index
+
+
+def align_pairs(src_index: dict, tgt_index: dict) -> list[tuple[tuple, str, str]]:
+    """Aligne sur la cle (livre, chapitre, verset). Garde la cle."""
+    pairs = []
+    for key, src_text in src_index.items():
+        tgt_text = tgt_index.get(key)
+        if tgt_text:
+            pairs.append((key, src_text, tgt_text))
+    return pairs
+
+
+def deduplicate(pairs: list[tuple[tuple, str, str]]) -> tuple[list, int]:
+    """Retire les doublons exacts (meme source ET meme cible)."""
+    seen: set[str] = set()
+    out = []
+    dropped = 0
+    for key, src, tgt in pairs:
+        h = hashlib.sha1(f"{src}\u0000{tgt}".encode()).hexdigest()
+        if h in seen:
+            dropped += 1
+            continue
+        seen.add(h)
+        out.append((key, src, tgt))
+    return out, dropped
+
+
+def assign_split(book: str) -> str:
+    if book in TEST_BOOKS:
+        return "test"
+    if book in VAL_BOOKS:
+        return "validation"
+    return "train"
+
+
+def pairs_to_examples(pairs: list[tuple[tuple, str, str]]) -> list[dict]:
+    """Chaque paire alignee produit deux exemples : aller et retour."""
+    examples = []
+    for (book, chapter, verse), src, tgt in pairs:
+        ref = f"{book} {chapter}:{verse}"
+        identical = src.strip() == tgt.strip()
+        examples.append({
+            "source": f"translate {SRC_LANG} to {TGT_LANG}: {src}",
+            "target": tgt,
+            "direction": f"{SRC_LANG}->{TGT_LANG}",
+            "ref": ref,
+            "book": book,
+            "identical": identical,
+        })
+        examples.append({
+            "source": f"translate {TGT_LANG} to {SRC_LANG}: {tgt}",
+            "target": src,
+            "direction": f"{TGT_LANG}->{SRC_LANG}",
+            "ref": ref,
+            "book": book,
+            "identical": identical,
+        })
+    return examples
+
+
+def build(pairs: list[tuple[tuple, str, str]]) -> dict[str, list[dict]]:
+    """Repartit les exemples en train / validation / test, par livre."""
+    buckets: dict[str, list] = defaultdict(list)
+    for item in pairs:
+        buckets[assign_split(item[0][0])].append(item)
+    return {name: pairs_to_examples(items) for name, items in buckets.items()}
+
+
+def summarize(splits: dict[str, list[dict]]) -> None:
+    print("\n  Repartition (decoupage par livre) :")
+    for name in ("train", "validation", "test"):
+        rows = splits.get(name, [])
+        if not rows:
+            print(f"    {name:<11} 0")
+            continue
+        books = sorted({r['book'] for r in rows})
+        identical = sum(1 for r in rows if r["identical"])
+        pct = 100 * identical / len(rows)
+        print(f"    {name:<11} {len(rows):>6} exemples | "
+              f"{len(books)} livres | "
+              f"{pct:.1f}% de versets identiques mg/bts")
+        if name != "train":
+            print(f"                livres : {', '.join(books)}")
+
+    all_books = {r["book"] for rows in splits.values() for r in rows}
+    overlap = Counter()
+    for name, rows in splits.items():
+        for b in {r["book"] for r in rows}:
+            overlap[b] += 1
+    leaked = [b for b, c in overlap.items() if c > 1]
+    if leaked:
+        print(f"\n  ATTENTION : livres presents dans plusieurs splits : {leaked}")
+    else:
+        print(f"\n  Aucune fuite : les {len(all_books)} livres sont "
+              f"dans un seul split.")
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--repo", default=DEFAULT_REPO)
+    parser.add_argument("--output-repo", default=DEFAULT_OUTPUT_REPO)
+    parser.add_argument("--private", action="store_true", default=True)
+    parser.add_argument("--no-push", action="store_true")
+    parser.add_argument("--local-out", default="byt5_betsileo_mg_ft")
+    args, _ = parser.parse_known_args()
+
+    from datasets import Dataset, DatasetDict, load_dataset
+    from huggingface_hub import login
+
+    token = os.environ.get("HF_TOKEN") or os.environ.get("HUGGINGFACE_HUB_TOKEN")
+    if token:
+        login(token=token)
+    else:
+        print("Pas de HF_TOKEN - tentative avec cache local / login existant")
+
+    print("=" * 62)
+    print("BUILD DATASET ByT5 - Betsileo <-> Malgache officiel uniquement")
+    print(f"Source : {args.repo}")
+    print("=" * 62)
+
+    print("\n[1/4] Chargement HF...")
+    ds_mg = load_dataset(args.repo, split="mg")
+    ds_bts = load_dataset(args.repo, split="betsileo")
+    print(f"  mg={len(ds_mg)} | betsileo={len(ds_bts)}")
+
+    print("\n[2/4] Index versets + alignement...")
+    idx_mg = rows_to_verse_index(ds_mg)
+    idx_bts = rows_to_verse_index(ds_bts)
+    print(f"  versets mg={len(idx_mg)} | bts={len(idx_bts)}")
+
+    pairs = align_pairs(idx_mg, idx_bts)
+    print(f"  paires alignees : {len(pairs)}")
+
+    pairs, dropped = deduplicate(pairs)
+    print(f"  doublons exacts retires : {dropped}")
+    print(f"  paires retenues : {len(pairs)}")
+
+    n_identical = sum(1 for _, s, t in pairs if s.strip() == t.strip())
+    print(f"  dont versets identiques mg == bts : {n_identical} "
+          f"({100 * n_identical / max(1, len(pairs)):.1f}%)")
+    print("    -> ces paires n'apprennent rien au modele mais gonflent")
+    print("       les scores. 03_evaluate.py les isole.")
+
+    print("\n[3/4] Construction des splits...")
+    splits = build(pairs)
+    summarize(splits)
+
+    if not splits.get("test"):
+        print("\n  ATTENTION : split test vide. Verifiez que les codes de")
+        print(f"  TEST_BOOKS ({sorted(TEST_BOOKS)}) existent dans le corpus.")
+
+    out = DatasetDict({
+        name: Dataset.from_list(rows).shuffle(seed=SEED)
+        for name, rows in splits.items() if rows
+    })
+
+    print("\n  -- Exemples --")
+    for row in out["train"].select(range(min(2, len(out["train"])))):
+        print(f"    [{row['ref']}] {row['source'][:78]}...")
+        print(f"        -> {row['target'][:66]}")
+
+    os.makedirs(args.local_out, exist_ok=True)
+    out.save_to_disk(args.local_out)
+    for name in out:
+        out[name].to_json(
+            os.path.join(args.local_out, f"{name}.jsonl"), force_ascii=False
+        )
+    print(f"\n  Sauve localement : {args.local_out}/")
+
+    if not args.no_push:
+        print(f"\n[4/4] Push Hub -> {args.output_repo} ...")
+        out.push_to_hub(args.output_repo, private=args.private)
+        print(f"  OK https://huggingface.co/datasets/{args.output_repo}")
+    else:
+        print("\n[4/4] Push ignore (--no-push)")
+
+    print("\nTermine.")
+
+
+if __name__ == "__main__":
+    main()
+
+
+Pas de HF_TOKEN - tentative avec cache local / login existant
+==============================================================
+BUILD DATASET ByT5 - Betsileo <-> Malgache officiel uniquement
+Source : nirina-doris-sylvie/scrapping-bible-protestante
+==============================================================
+
+[1/4] Chargement HF...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+  mg=260 | betsileo=260
+
+[2/4] Index versets + alignement...
+  versets mg=7957 | bts=7936
+  paires alignees : 7933
+  doublons exacts retires : 4
+  paires retenues : 7929
+  dont versets identiques mg == bts : 3 (0.0%)
+    -> ces paires n'apprennent rien au modele mais gonflent
+       les scores. 03_evaluate.py les isole.
+
+[3/4] Construction des splits...
+
+  Repartition (decoupage par livre) :
+    train        14050 exemples | 20 livres | 0.0% de versets identiques mg/bts
+    validation     198 exemples | 4 livres | 0.0% de versets identiques mg/bts
+                livres : 2JN, 3JN, PHM, TIT
+    test          1610 exemples | 3 livres | 0.0% de versets identiques mg/bts
+                livres : JUD, MRK, PHP
+
+  Aucune fuite : les 27 livres sont dans un seul split.
+
+  -- Exemples --
+    [1PE 4:5] translate Malagasy to Betsileo: nefa hampamoahin’Ilay efa vonona hitsara ny ve...
+        -> kanefa hampamoahin’Ilay efa vognona hitsara ny velogna sy ny maty 
+    [REV 3:14] translate Malagasy to Betsileo: Ary soraty ho amin’ny anjelin’ny Fiangonana an...
+        -> Sorato ho an’ny anjelin’ny Fiangonana agny Laodikia. Izao ro lazai
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+
+  Sauve localement : byt5_betsileo_mg_ft/
+
+[4/4] Push Hub -> nirina-doris-sylvie/byt5-betsileo-mg-ft ...
+Setting num_proc from 1 back to 1 for the train split to disable multiprocessing as it only contains one shard.
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Setting num_proc from 1 back to 1 for the test split to disable multiprocessing as it only contains one shard.
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Setting num_proc from 1 back to 1 for the validation split to disable multiprocessing as it only contains one shard.
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+  OK https://huggingface.co/datasets/nirina-doris-sylvie/byt5-betsileo-mg-ft
+
+Termine.
+add Codeadd Markdown
+
+
+"""
+Baseline de copie et caracterisation du corpus, AVANT tout entrainement.
+
+Pourquoi ce script existe
+-------------------------
+Le corpus construit montre que les versets betsileo et malgache officiel
+sont quasi identiques : 0,04 % de versets strictement egaux, mais
+seulement quelques mots differents par verset. Exemple reel :
+
+  mg  : nefa   hampamoahin'Ilay efa vonona  hitsara ny velona  sy ny maty
+  bts : kanefa hampamoahin'Ilay efa vognona hitsara ny velogna sy ny maty
+
+La tache n'est donc pas une traduction mais une transformation
+systematique. Trois consequences :
+
+1. Recopier l'entree obtient deja un score tres eleve. Il faut connaitre
+   ce score AVANT d'entrainer, sinon on ne saura pas interpreter celui
+   du modele.
+
+2. Les metriques globales (chrF, BLEU) sont ecrasees par les mots
+   inchanges. Un modele qui recopie tout obtient 85 de chrF en n'ayant
+   rien appris. Ce script mesure donc aussi la performance sur les MOTS
+   QUI CHANGENT, seule zone ou le modele a quelque chose a faire.
+
+3. Les substitutions recurrentes (vonona -> vognona, velona -> velogna,
+   nefa -> kanefa) constituent une grammaire differentielle empirique.
+   Le script les extrait et les classe. C'est exploitable pour de
+   l'augmentation par regles, et c'est un resultat presentable en soi.
+
+Usage
+-----
+  python 00_baseline.py
+  python 00_baseline.py --split test --top 60 --out baseline_results
+"""
+
+from __future__ import annotations
+
+import argparse
+import difflib
+import json
+import os
+import re
+import unicodedata
+from collections import Counter
+
+DEFAULT_DATASET = "nirina-doris-sylvie/byt5-betsileo-mg-ft"
+
+WORD_RE = re.compile(r"[\w\u2019'-]+", re.UNICODE)
+
+
+def tokenize(s: str) -> list[str]:
+    return WORD_RE.findall(s)
+
+
+def norm(s: str) -> str:
+    """Normalise pour comparer : minuscules, apostrophes unifiees."""
+    s = unicodedata.normalize("NFC", s)
+    s = s.replace("\u2019", "'").replace("\u02bc", "'")
+    return s.lower()
+
+
+# ---------------------------------------------------------------------------
+# Metriques
+# ---------------------------------------------------------------------------
+def corpus_metrics(hyps: list[str], refs: list[str]) -> dict:
+    import sacrebleu
+
+    pairs = [(h.strip(), r.strip())
+             for h, r in zip(hyps, refs) if h.strip() and r.strip()]
+    if not pairs:
+        return {"n": 0, "chrf": 0.0, "bleu": 0.0, "exact": 0.0}
+    hyp = [h for h, _ in pairs]
+    ref = [[r for _, r in pairs]]
+    return {
+        "n": len(pairs),
+        "chrf": round(sacrebleu.corpus_chrf(hyp, ref, word_order=2).score, 2),
+        "bleu": round(sacrebleu.corpus_bleu(hyp, ref).score, 2),
+        "exact": round(100 * sum(1 for h, r in pairs if h == r) / len(pairs), 2),
+    }
+
+
+def char_error_rate(hyps: list[str], refs: list[str]) -> float:
+    """Taux d'erreur caractere, via distance d'edition (Levenshtein)."""
+    total_edits, total_chars = 0, 0
+    for h, r in zip(hyps, refs):
+        h, r = h.strip(), r.strip()
+        if not r:
+            continue
+        sm = difflib.SequenceMatcher(None, r, h, autojunk=False)
+        matched = sum(b.size for b in sm.get_matching_blocks())
+        total_edits += max(len(r), len(h)) - matched
+        total_chars += len(r)
+    return round(100 * total_edits / max(1, total_chars), 2)
+
+
+# ---------------------------------------------------------------------------
+# Analyse mot a mot
+# ---------------------------------------------------------------------------
+def word_alignment_stats(srcs: list[str], refs: list[str]
+                         ) -> tuple[dict, Counter, Counter]:
+    """
+    Aligne les mots source et reference via difflib et compte :
+      - la proportion de mots inchanges
+      - les substitutions (mot mg -> mot bts)
+      - les insertions et suppressions
+    """
+    kept = changed = inserted = deleted = 0
+    subs: Counter = Counter()
+    ops: Counter = Counter()
+
+    for src, ref in zip(srcs, refs):
+        a = [norm(t) for t in tokenize(src)]
+        b = [norm(t) for t in tokenize(ref)]
+        sm = difflib.SequenceMatcher(None, a, b, autojunk=False)
+        for tag, i1, i2, j1, j2 in sm.get_opcodes():
+            if tag == "equal":
+                kept += i2 - i1
+            elif tag == "replace":
+                changed += max(i2 - i1, j2 - j1)
+                ops["substitution"] += 1
+                # Substitution mot pour mot quand les blocs ont la meme
+                # taille : c'est le cas le plus informatif.
+                if (i2 - i1) == (j2 - j1):
+                    for k in range(i2 - i1):
+                        subs[(a[i1 + k], b[j1 + k])] += 1
+            elif tag == "insert":
+                inserted += j2 - j1
+                ops["insertion"] += 1
+            elif tag == "delete":
+                deleted += i2 - i1
+                ops["deletion"] += 1
+
+    total = kept + changed + inserted + deleted
+    stats = {
+        "mots_total": total,
+        "mots_inchanges_pct": round(100 * kept / max(1, total), 2),
+        "mots_substitues_pct": round(100 * changed / max(1, total), 2),
+        "mots_inseres_pct": round(100 * inserted / max(1, total), 2),
+        "mots_supprimes_pct": round(100 * deleted / max(1, total), 2),
+    }
+    return stats, subs, ops
+
+
+def char_rules(subs: Counter, top: int = 25) -> Counter:
+    """
+    Deduit les transformations de caracteres recurrentes a partir des
+    substitutions de mots. Donne la grammaire differentielle empirique.
+    """
+    rules: Counter = Counter()
+    for (a, b), count in subs.items():
+        sm = difflib.SequenceMatcher(None, a, b, autojunk=False)
+        for tag, i1, i2, j1, j2 in sm.get_opcodes():
+            if tag == "equal":
+                continue
+            src_frag = a[i1:i2] or "\u2205"
+            tgt_frag = b[j1:j2] or "\u2205"
+            # On ignore les fragments trop longs : ce sont des mots
+            # entierement differents, pas des regles.
+            if len(src_frag) <= 4 and len(tgt_frag) <= 4:
+                rules[(src_frag, tgt_frag)] += count
+    return rules
+
+
+# ---------------------------------------------------------------------------
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--dataset", default=DEFAULT_DATASET)
+    ap.add_argument("--split", default="test")
+    ap.add_argument("--top", type=int, default=40)
+    ap.add_argument("--out", default="baseline_results")
+    args, _ = ap.parse_known_args()
+
+    try:
+        import sacrebleu  # noqa: F401
+    except ImportError:
+        os.system("pip install -q sacrebleu")
+
+    from datasets import load_dataset
+
+    tok = os.environ.get("HF_TOKEN")
+    if tok:
+        from huggingface_hub import login
+        login(token=tok)
+
+    print("=" * 66)
+    print("BASELINE DE COPIE ET CARACTERISATION DU CORPUS")
+    print("=" * 66)
+    print(f"Dataset : {args.dataset} [{args.split}]")
+
+    ds = load_dataset(args.dataset, split=args.split)
+    print(f"Exemples: {len(ds)}")
+
+    sources = list(ds["source"])
+    refs = list(ds["target"])
+    directions = list(ds["direction"])
+    inputs = [s.split(": ", 1)[1] if ": " in s else s for s in sources]
+
+    # ---- 1. baseline de copie ----
+    print("\n" + "-" * 66)
+    print("1. BASELINE DE COPIE  (recopier l'entree, sans rien apprendre)")
+    print("-" * 66)
+    print(f"  {'sous-ensemble':<26} {'n':>6} {'chrF++':>8} {'BLEU':>8} "
+          f"{'exact%':>8} {'CER%':>7}")
+    print("  " + "-" * 62)
+
+    results = {"dataset": args.dataset, "split": args.split, "copy": {}}
+
+    def row(label, keep):
+        h = [inputs[i] for i in keep]
+        r = [refs[i] for i in keep]
+        m = corpus_metrics(h, r)
+        m["cer"] = char_error_rate(h, r)
+        print(f"  {label:<26} {m['n']:>6} {m['chrf']:>8} {m['bleu']:>8} "
+              f"{m['exact']:>8} {m['cer']:>7}")
+        return m
+
+    results["copy"]["global"] = row("global", list(range(len(refs))))
+    for d in sorted(set(directions)):
+        keep = [i for i, x in enumerate(directions) if x == d]
+        results["copy"][d] = row(d, keep)
+
+    chrf_copy = results["copy"]["global"]["chrf"]
+    print(f"\n  C'est la barre a depasser. Votre modele doit faire mieux")
+    print(f"  que {chrf_copy} de chrF++ pour apporter quoi que ce soit.")
+
+    # ---- 2. ampleur des changements ----
+    print("\n" + "-" * 66)
+    print("2. AMPLEUR DES CHANGEMENTS  (alignement mot a mot)")
+    print("-" * 66)
+    mg2bts = [i for i, d in enumerate(directions) if d.startswith("Malagasy")]
+    stats, subs, ops = word_alignment_stats(
+        [inputs[i] for i in mg2bts], [refs[i] for i in mg2bts])
+    for k, v in stats.items():
+        print(f"  {k:<24} {v}")
+    print(f"\n  operations : {dict(ops)}")
+    results["word_stats"] = stats
+    results["operations"] = dict(ops)
+
+    pct = stats["mots_inchanges_pct"]
+    print(f"\n  {pct}% des mots sont identiques dans les deux varietes.")
+    print("  Un modele qui recopie tout a donc deja ce pourcentage juste.")
+    print("  La performance reelle se joue sur les autres.")
+
+    # ---- 3. substitutions les plus frequentes ----
+    print("\n" + "-" * 66)
+    print(f"3. SUBSTITUTIONS LES PLUS FREQUENTES  (mg -> betsileo)")
+    print("-" * 66)
+    print(f"  {'malgache officiel':<26} {'betsileo':<26} {'n':>5}")
+    print("  " + "-" * 60)
+    for (a, b), n in subs.most_common(args.top):
+        print(f"  {a:<26} {b:<26} {n:>5}")
+    results["top_substitutions"] = [
+        {"mg": a, "bts": b, "count": n} for (a, b), n in subs.most_common(200)
+    ]
+
+    # ---- 4. regles de caracteres ----
+    print("\n" + "-" * 66)
+    print("4. GRAMMAIRE DIFFERENTIELLE EMPIRIQUE  (transformations de "
+          "caracteres)")
+    print("-" * 66)
+    print("  Deduite automatiquement des substitutions ci-dessus.")
+    print("  Le symbole \u2205 marque une insertion ou une suppression.\n")
+    print(f"  {'mg':<10} -> {'betsileo':<10} {'n':>6}")
+    print("  " + "-" * 34)
+    rules = char_rules(subs)
+    for (a, b), n in rules.most_common(args.top):
+        print(f"  {a:<10} -> {b:<10} {n:>6}")
+    results["char_rules"] = [
+        {"mg": a, "bts": b, "count": n} for (a, b), n in rules.most_common(200)
+    ]
+
+    # ---- 5. exemples ----
+    print("\n" + "-" * 66)
+    print("5. EXEMPLES DE PAIRES  (mg -> betsileo)")
+    print("-" * 66)
+    for i in mg2bts[:5]:
+        print(f"\n  mg  : {inputs[i][:96]}")
+        print(f"  bts : {refs[i][:96]}")
+
+    # ---- sorties ----
+    os.makedirs(args.out, exist_ok=True)
+    with open(os.path.join(args.out, "baseline.json"), "w",
+              encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=2)
+    with open(os.path.join(args.out, "substitutions.tsv"), "w",
+              encoding="utf-8") as f:
+        f.write("malagasy\tbetsileo\tcount\n")
+        for (a, b), n in subs.most_common():
+            f.write(f"{a}\t{b}\t{n}\n")
+    with open(os.path.join(args.out, "char_rules.tsv"), "w",
+              encoding="utf-8") as f:
+        f.write("mg_fragment\tbts_fragment\tcount\n")
+        for (a, b), n in rules.most_common():
+            f.write(f"{a}\t{b}\t{n}\n")
+
+    print(f"\n  Ecrit : {args.out}/baseline.json")
+    print(f"  Ecrit : {args.out}/substitutions.tsv")
+    print(f"  Ecrit : {args.out}/char_rules.tsv")
+    print("\n  substitutions.tsv et char_rules.tsv sont directement")
+    print("  citables dans le memoire : ils decrivent empiriquement la")
+    print("  difference entre les deux varietes, mesuree sur 8000 versets.")
+
+
+if __name__ == "__main__":
+    main()
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.8/100.8 kB 1.5 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 129.0/129.0 kB 5.1 MB/s eta 0:00:00
+==================================================================
+BASELINE DE COPIE ET CARACTERISATION DU CORPUS
+==================================================================
+Dataset : nirina-doris-sylvie/byt5-betsileo-mg-ft [test]
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Exemples: 1610
+
+------------------------------------------------------------------
+1. BASELINE DE COPIE  (recopier l'entree, sans rien apprendre)
+------------------------------------------------------------------
+  sous-ensemble                   n   chrF++     BLEU   exact%    CER%
+  --------------------------------------------------------------
+  global                       1610    43.72    10.84      0.0   41.53
+  Betsileo->Malagasy            805    43.59    10.79      0.0    41.4
+  Malagasy->Betsileo            805    43.85    10.78      0.0   41.66
+
+  C'est la barre a depasser. Votre modele doit faire mieux
+  que 43.72 de chrF++ pour apporter quoi que ce soit.
+
+------------------------------------------------------------------
+2. AMPLEUR DES CHANGEMENTS  (alignement mot a mot)
+------------------------------------------------------------------
+  mots_total               19831
+  mots_inchanges_pct       29.47
+  mots_substitues_pct      59.1
+  mots_inseres_pct         5.56
+  mots_supprimes_pct       5.86
+
+  operations : {'substitution': 3251, 'insertion': 351, 'deletion': 397}
+
+  29.47% des mots sont identiques dans les deux varietes.
+  Un modele qui recopie tout a donc deja ce pourcentage juste.
+  La performance reelle se joue sur les autres.
+
+------------------------------------------------------------------
+3. SUBSTITUTIONS LES PLUS FREQUENTES  (mg -> betsileo)
+------------------------------------------------------------------
+  malgache officiel          betsileo                       n
+  ------------------------------------------------------------
+  tsy                        tsa                           83
+  no                         ro                            68
+  izy                        iy                            63
+  jesosy                     jesoa                         55
+  ary                        eko                           41
+  olona                      ona                           37
+  ary                        dia                           34
+  ka                         ko                            34
+  any                        agny                          24
+  zavatra                    raha                          21
+  izy                        jesoa                         20
+  ianareo                    agnareo                       20
+  ka                         eko                           20
+  iza                        ia                            17
+  raha                       lehe                          17
+  izany                      izay                          17
+  inona                      ina                           16
+  ka                         dia                           14
+  taminy                     tagnaminy                     14
+  rehefa                     sefa                          14
+  fanjakan'andriamanitra     fanjakan'andriamagnitsa       13
+  teny                       taigny                        12
+  hoy                        hotsin'i                      11
+  niteny                     nitarogna                     11
+  ireo                       ny                            10
+  tany                       tagny                         10
+  ianao                      agnao                         10
+  iray                       raika                          9
+  fanahy                     fagnahy                        8
+  izay                       ny                             8
+  izany                      an'izay                        8
+  taminy                     tamindreo                      8
+  koa                        eko                            7
+  rehetra                    aby                            7
+  nanontany                  nagnontany                     7
+  ireo                       reo                            7
+  vahoaka                    ona                            7
+  tsara                      soa                            7
+  zovy                       ia                             7
+  teo                        taigny                         6
+
+------------------------------------------------------------------
+4. GRAMMAIRE DIFFERENTIELLE EMPIRIQUE  (transformations de caracteres)
+------------------------------------------------------------------
+  Deduite automatiquement des substitutions ci-dessus.
+  Le symbole ∅ marque une insertion ou une suppression.
+
+  mg         -> betsileo        n
+  ----------------------------------
+  ∅          -> g             343
+  r          -> s             121
+  y          -> a             105
+  z          -> ∅              89
+  n          -> r              70
+  a          -> o              61
+  i          -> ∅              59
+  sy         -> a              55
+  ry         -> ∅              46
+  ary        -> eko            41
+  n          -> ∅              41
+  ∅          -> di             38
+  ol         -> ∅              37
+  a          -> e              33
+  ∅          -> e              32
+  ny         -> ∅              29
+  ∅          -> ha             28
+  ∅          -> agn            24
+  e          -> aig            24
+  ra         -> ∅              21
+  a          -> ∅              19
+  ∅          -> t              18
+  e          -> arog           18
+  ∅          -> o              18
+  t          -> ∅              17
+  ra         -> le             17
+  on         -> ∅              16
+  k          -> di             15
+  a          -> y              15
+  y          -> ∅              15
+  ∅          -> h              14
+  reh        -> s              14
+  ireo       -> ny             13
+  ∅          -> s              13
+  ∅          -> a              13
+  ∅          -> n              13
+  y          -> dreo           13
+  na         -> ∅              12
+  y          -> ika            12
+  iz         -> ∅              12
+
+------------------------------------------------------------------
+5. EXEMPLES DE PAIRES  (mg -> betsileo)
+------------------------------------------------------------------
+
+  mg  : Ary na taiza na taiza no nidiran’i Jesosy, na tao amin’ny vohitra, na tao an-tanàna, na tany an-
+  bts : Eko na taia na taia nombàny, na tanàna kely na tanàn-dehibe, na ambanivohitsa dia nataon’ny ona 
+
+  mg  : Ary nibanjina azy ireo tamim-pahatezerana Izy sady nalahelo noho ny hamafin’ny fony ka hoy Izy t
+  bts : Eko sỳ nijery andreo aby Iy dia sady nadiky ro nalahelo fatratsa noho ny hamafin’ny fony, dia ho
+
+  mg  : Koa miambena ianareo fa tsy fantatrareo izay andro hiavian’ny tompon-trano, na ho hariva, na ho 
+  bts : Eko miambena agnareo, fa tsa fantatsareo izay hiavian’ny tompontragno na ho hariva, na ho misasa
+
+  mg  : Ary nitondra an’i Jesosy ho any amin’ny Mpisoronabe izy ireo; ary nivory ireo lehiben’ny mpisoro
+  bts : Noferin’ny vahoaka ho agny amin’ny mpisorognabe Jesoa. Efa vory tao aby ny lohan’ny mpisorogna s
+
+  mg  : koa tiava ny TOMPO Andriamanitrao amin’ny fonao manontolo, amin’ny fanahinao manontolo, amin’ny 
+  bts : Eko tiava NY TOMPO Andriamagnitsao amin’ny fonao manontolo, amin’ny fagnahinao manontolo, amin’n
+
+  Ecrit : baseline_results/baseline.json
+  Ecrit : baseline_results/substitutions.tsv
+  Ecrit : baseline_results/char_rules.tsv
+
+  substitutions.tsv et char_rules.tsv sont directement
+  citables dans le memoire : ils decrivent empiriquement la
+  difference entre les deux varietes, mesuree sur 8000 versets.
+
+  """
+Fine-tuning ByT5 Betsileo <-> Malgache officiel - Kaggle / Colab.
+
+Prerequis :
+  - Dataset : doris-sylvie/byt5-betsileo-mg-ft  (produit par 01_)
+  - HF_TOKEN (Write) via env ou Kaggle Secrets
+
+----------------------------------------------------------------------
+POURQUOI IL N'Y A PLUS DE SHARDING DES DONNEES
+----------------------------------------------------------------------
+L'ancien schema entrainait 5 epochs sur le 1er cinquieme des donnees,
+puis 5 epochs sur le 2e cinquieme, etc. Ces sous-ensembles sont
+disjoints : pendant les 5 epochs sur le shard 1, le modele n'a plus
+aucun exemple du shard 0 et l'oublie en grande partie. C'est de l'oubli
+catastrophique, et a la fin on obtient surtout un modele specialise sur
+le dernier cinquieme.
+
+La bonne facon de reprendre entre sessions est de decouper par EPOCH,
+pas par sous-ensemble : chaque session fait 1 ou 2 passes sur la
+TOTALITE des donnees, puis repart du checkpoint precedent.
+
+  Session 1 : --epochs 2 --base-model google/byt5-base
+  Session 2 : --epochs 2 --base-model doris-sylvie/byt5-betsileo-mg
+  Session 3 : --epochs 2 --base-model doris-sylvie/byt5-betsileo-mg
+  ...
+
+Le modele voit tout le corpus a chaque session. Rien n'est oublie.
+----------------------------------------------------------------------
+"""
+
+from __future__ import annotations
+
+import argparse
+import os
+import sys
+
+import numpy as np
+import torch
+from datasets import load_dataset
+from transformers import (
+    AutoConfig,
+    AutoModelForSeq2SeqLM,
+    AutoTokenizer,
+    DataCollatorForSeq2Seq,
+    EarlyStoppingCallback,
+    Seq2SeqTrainer,
+    Seq2SeqTrainingArguments,
+    TrainerCallback,
+)
+
+DEFAULT_DATASET = "nirina-doris-sylvie/byt5-betsileo-mg-ft"
+DEFAULT_OUTPUT_REPO = "nirina-doris-sylvie/byt5-betsileo-mg"
+
+
+# ---------------------------------------------------------------------------
+# Auth
+# ---------------------------------------------------------------------------
+def setup_hf_auth() -> str | None:
+    token = os.environ.get("HF_TOKEN") or os.environ.get("HUGGINGFACE_HUB_TOKEN")
+    if not token:
+        try:
+            from kaggle_secrets import UserSecretsClient
+
+            token = UserSecretsClient().get_secret("HF_TOKEN")
+            os.environ["HF_TOKEN"] = token
+        except Exception:
+            token = None
+    if token:
+        from huggingface_hub import login
+
+        login(token=token)
+        print("  HF login OK")
+    else:
+        print("  Pas de HF_TOKEN - depots prives inaccessibles")
+    return token
+
+
+def install_deps():
+    for pkg in ("sacrebleu",):
+        try:
+            __import__(pkg)
+        except ImportError:
+            os.system(f"{sys.executable} -m pip install -q {pkg}")
+
+
+# ---------------------------------------------------------------------------
+# Push a chaque sauvegarde
+# ---------------------------------------------------------------------------
+class PushHubCallback(TrainerCallback):
+    def __init__(self, repo_id: str, enabled: bool = True):
+        self.repo_id = repo_id
+        self.enabled = enabled
+
+    def on_save(self, args, state, control, **kwargs):
+        if not self.enabled or not state.is_world_process_zero:
+            return
+        model = kwargs.get("model")
+        tok = kwargs.get("tokenizer") or kwargs.get("processing_class")
+        if model is None:
+            return
+        try:
+            model.push_to_hub(
+                self.repo_id,
+                commit_message=f"checkpoint step {state.global_step}",
+                private=True,
+            )
+            if tok is not None:
+                tok.push_to_hub(self.repo_id, private=True)
+            print(f"  Push Hub @ step {state.global_step} -> {self.repo_id}")
+        except Exception as e:
+            print(f"  Push Hub echoue : {e}")
+
+
+# ---------------------------------------------------------------------------
+# Metrique pendant l'entrainement : chrF
+# ---------------------------------------------------------------------------
+class ChrfComputer:
+    """
+    chrF plutot que BLEU comme metrique de suivi.
+
+    BLEU compte des n-grammes de MOTS. Sur une langue agglutinante a
+    morphologie riche et sur un modele qui travaille au niveau de
+    l'octet, un mot presque juste vaut zero en BLEU. chrF compte des
+    n-grammes de CARACTERES et capture ces quasi-reussites, ce qui en
+    fait une metrique bien plus informative ici. On garde BLEU dans
+    03_evaluate.py pour la comparabilite avec la litterature.
+    """
+
+    def __init__(self, tokenizer, pad_id: int):
+        self.tokenizer = tokenizer
+        self.pad_id = pad_id
+
+    def __call__(self, eval_pred):
+        import sacrebleu
+
+        predictions, labels = eval_pred
+        if isinstance(predictions, tuple):
+            predictions = predictions[0]
+        if getattr(predictions, "ndim", 0) == 3:
+            predictions = np.argmax(predictions, axis=-1)
+
+        predictions = np.where(predictions != -100, predictions, self.pad_id)
+        labels = np.where(labels != -100, labels, self.pad_id)
+
+        try:
+            preds = self.tokenizer.batch_decode(
+                predictions, skip_special_tokens=True)
+            refs = self.tokenizer.batch_decode(
+                labels, skip_special_tokens=True)
+        except Exception as e:
+            print(f"  decode error: {e}")
+            return {"chrf": 0.0}
+
+        valid = [(p.strip(), r.strip())
+                 for p, r in zip(preds, refs) if p.strip() and r.strip()]
+        if not valid:
+            return {"chrf": 0.0}
+
+        print("\n  -- Exemples generation --")
+        for p, r in valid[:3]:
+            print(f"    Predit    : {p[:76]}")
+            print(f"    Reference : {r[:76]}")
+
+        # [refs] et non [[r] for r in refs] : sacrebleu attend une
+        # liste de FLUX de references, pas une liste de listes a une
+        # entree. La confusion fait tomber le score a zero.
+        chrf = sacrebleu.corpus_chrf(
+            [p for p, _ in valid], [[r for _, r in valid]], word_order=2
+        )
+        return {"chrf": round(chrf.score, 2)}
+
+
+# ---------------------------------------------------------------------------
+# Sanity check
+# ---------------------------------------------------------------------------
+def sanity_check_forward(model, tokenizer, device):
+    model.train()
+    src = "translate Malagasy to Betsileo: Ny filazana ny razan'i Jesosy Kristy"
+    tgt = "Hoatsa izao ro tetiaran'ny razamben'i Jesoa Kristy"
+    inputs = tokenizer(src, return_tensors="pt", truncation=True,
+                       max_length=512).to(device)
+    labels = tokenizer(text_target=tgt, return_tensors="pt", truncation=True,
+                       max_length=256).to(device)
+    with torch.no_grad():
+        out = model(**inputs, labels=labels["input_ids"])
+    loss = float(out.loss.item())
+    print(f"  Forward loss = {loss:.4f}")
+    if loss == 0.0 or np.isnan(loss):
+        raise ValueError(f"Forward pass anormal (loss={loss})")
+    print("  Forward pass OK")
+
+
+# ---------------------------------------------------------------------------
+# Entrainement
+# ---------------------------------------------------------------------------
+def run_training(
+    *,
+    dataset: str = DEFAULT_DATASET,
+    base_model: str = "google/byt5-base",
+    output_repo: str = DEFAULT_OUTPUT_REPO,
+    output_dir: str = "./byt5-betsileo-mg",
+    epochs: int = 2,
+    batch_size: int = 4,
+    grad_accum: int = 4,
+    learning_rate: float = 3e-4,
+    max_source_length: int = 512,
+    max_target_length: int = 256,
+    num_workers: int = 2,
+    push: bool = True,
+    eval_max_samples: int = 256,
+    chrf_during_train: bool = True,
+    early_stopping_patience: int = 3,
+):
+    install_deps()
+    setup_hf_auth()
+
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    n_gpu = torch.cuda.device_count() if device == "cuda" else 0
+
+    print("=" * 62)
+    print("TRAIN ByT5 - Betsileo <-> Malgache officiel")
+    print("=" * 62)
+    print(f"Device      : {device} | GPUs : {n_gpu}")
+    if device == "cuda":
+        print(f"GPU 0       : {torch.cuda.get_device_name(0)}")
+    print(f"Base model  : {base_model}")
+    print(f"Epochs      : {epochs}  (sur la TOTALITE du corpus)")
+    print(f"LR          : {learning_rate}")
+
+    # ---- modele ----
+    print("\n[1/5] Chargement modele...")
+    config = AutoConfig.from_pretrained(base_model)
+    if "google/byt5" in base_model:
+        config.tie_word_embeddings = False
+    tokenizer = AutoTokenizer.from_pretrained(base_model)
+    model = AutoModelForSeq2SeqLM.from_pretrained(base_model, config=config)
+    model = model.to(device)
+
+    if hasattr(model, "gradient_checkpointing_enable"):
+        model.gradient_checkpointing_enable()
+        model.config.use_cache = False
+        print("  gradient_checkpointing ON")
+
+    print(f"  Parametres : {sum(p.numel() for p in model.parameters()):,}")
+    print("\n  -- Sanity check --")
+    sanity_check_forward(model, tokenizer, device)
+    pad_id = tokenizer.pad_token_id
+
+    # ---- donnees ----
+    print(f"\n[2/5] Dataset : {dataset}")
+    raw = load_dataset(dataset)
+    train_raw = raw["train"]
+    eval_raw = raw.get("validation") or raw.get("test")
+    if eval_raw is None:
+        split = train_raw.train_test_split(test_size=0.1, seed=42)
+        train_raw, eval_raw = split["train"], split["test"]
+
+    print(f"  Train={len(train_raw)} | Eval={len(eval_raw)}")
+    if len(eval_raw) > eval_max_samples:
+        eval_raw = eval_raw.shuffle(seed=42).select(range(eval_max_samples))
+        print(f"  Eval echantillonnee a {len(eval_raw)} (vitesse)")
+    print(f"  Colonnes : {train_raw.column_names}")
+
+    def preprocess(batch):
+        model_inputs = tokenizer(
+            batch["source"], max_length=max_source_length,
+            truncation=True, padding=False)
+        labels = tokenizer(
+            text_target=batch["target"], max_length=max_target_length,
+            truncation=True, padding=False)
+        model_inputs["labels"] = labels["input_ids"]
+        return model_inputs
+
+    print("\n[3/5] Tokenisation (padding dynamique)...")
+    train_tok = train_raw.map(
+        preprocess, batched=True, batch_size=128,
+        remove_columns=list(train_raw.column_names), desc="tokenize train")
+    eval_tok = eval_raw.map(
+        preprocess, batched=True, batch_size=128,
+        remove_columns=list(eval_raw.column_names), desc="tokenize eval")
+
+    if not train_tok[0]["labels"]:
+        raise ValueError("Labels vides apres tokenisation")
+
+    def add_length(batch):
+        batch["length"] = [len(x) for x in batch["input_ids"]]
+        return batch
+
+    train_tok = train_tok.map(add_length, batched=True)
+    eval_tok = eval_tok.map(add_length, batched=True)
+
+    collator = DataCollatorForSeq2Seq(
+        tokenizer=tokenizer, model=model, padding=True,
+        label_pad_token_id=-100)
+
+    eff_batch = batch_size * grad_accum * max(1, n_gpu)
+    steps_per_epoch = max(1, len(train_tok) // eff_batch)
+
+    print(f"\n[4/5] Config")
+    print(f"  effective batch = {eff_batch}")
+    print(f"  steps/epoch     = {steps_per_epoch}")
+    print(f"  total steps     = {steps_per_epoch * epochs}")
+
+    training_args = Seq2SeqTrainingArguments(
+        output_dir=output_dir,
+        eval_strategy="epoch",
+        save_strategy="epoch",
+        load_best_model_at_end=True,
+        per_device_train_batch_size=batch_size,
+        per_device_eval_batch_size=batch_size,
+        gradient_accumulation_steps=grad_accum,
+        # Adafactor sans learning rate explicite utilise un schedule
+        # interne qui convient mal au fine-tuning court. On fixe le LR.
+        learning_rate=learning_rate,
+        lr_scheduler_type="linear",
+        warmup_ratio=0.03,
+        weight_decay=0.0,
+        num_train_epochs=epochs,
+        fp16=False,
+        bf16=False,
+        max_grad_norm=1.0,
+        generation_max_length=max_target_length,
+        logging_steps=max(10, steps_per_epoch // 10),
+        logging_first_step=True,
+        optim="adafactor",
+        save_total_limit=2,
+        report_to="none",
+        dataloader_num_workers=num_workers,
+        dataloader_pin_memory=(device == "cuda"),
+        remove_unused_columns=True,
+        group_by_length=True,
+        length_column_name="length",
+    )
+
+    if chrf_during_train:
+        training_args.predict_with_generate = True
+        training_args.generation_num_beams = 1
+        training_args.metric_for_best_model = "chrf"
+        training_args.greater_is_better = True
+        compute_metrics = ChrfComputer(tokenizer, pad_id)
+        print("  Suivi : chrF a chaque epoch")
+    else:
+        training_args.predict_with_generate = False
+        training_args.metric_for_best_model = "loss"
+        training_args.greater_is_better = False
+        compute_metrics = None
+        print("  Suivi : loss seulement (plus rapide)")
+
+    callbacks = [EarlyStoppingCallback(
+        early_stopping_patience=early_stopping_patience)]
+    if push:
+        callbacks.append(PushHubCallback(output_repo, enabled=True))
+
+    trainer = Seq2SeqTrainer(
+        model=model,
+        args=training_args,
+        train_dataset=train_tok,
+        eval_dataset=eval_tok,
+        processing_class=tokenizer,
+        data_collator=collator,
+        compute_metrics=compute_metrics,
+        callbacks=callbacks,
+    )
+
+    print("\n[5/5] Entrainement...")
+    print("=" * 62)
+    trainer.train()
+
+    print("\nSauvegarde...")
+    trainer.save_model(output_dir)
+    tokenizer.save_pretrained(output_dir)
+
+    if push:
+        print(f"\nPush final -> {output_repo}")
+        model.push_to_hub(output_repo, private=True,
+                          commit_message=f"+{epochs} epochs")
+        tokenizer.push_to_hub(output_repo, private=True)
+        print(f"  https://huggingface.co/{output_repo}")
+        print("  Session suivante : relancer avec")
+        print(f"    --base-model {output_repo}")
+
+    print("\nTermine. Evaluation : python 03_evaluate.py")
+
+
+def parse_args():
+    p = argparse.ArgumentParser()
+    p.add_argument("--dataset", default=DEFAULT_DATASET)
+    p.add_argument("--base-model", default="google/byt5-base")
+    p.add_argument("--output-repo", default=DEFAULT_OUTPUT_REPO)
+    p.add_argument("--output-dir", default="./byt5-betsileo-mg")
+    p.add_argument("--epochs", type=int, default=2)
+    p.add_argument("--batch-size", type=int, default=4)
+    p.add_argument("--grad-accum", type=int, default=4)
+    p.add_argument("--learning-rate", type=float, default=3e-4)
+    p.add_argument("--max-source-length", type=int, default=512)
+    p.add_argument("--max-target-length", type=int, default=256)
+    p.add_argument("--num-workers", type=int, default=2)
+    p.add_argument("--no-push", action="store_true")
+    p.add_argument("--no-chrf", action="store_true",
+                   help="desactive chrF pendant le train (plus rapide)")
+    p.add_argument("--eval-max-samples", type=int, default=256)
+    args, _ = p.parse_known_args()
+
+    for env, attr, cast in (("BASE_MODEL", "base_model", str),
+                            ("EPOCHS", "epochs", int),
+                            ("LR", "learning_rate", float)):
+        if os.environ.get(env):
+            setattr(args, attr, cast(os.environ[env]))
+    return args
+
+
+def main():
+    a = parse_args()
+    run_training(
+        dataset=a.dataset,
+        base_model=a.base_model,
+        output_repo=a.output_repo,
+        output_dir=a.output_dir,
+        epochs=a.epochs,
+        batch_size=a.batch_size,
+        grad_accum=a.grad_accum,
+        learning_rate=a.learning_rate,
+        max_source_length=a.max_source_length,
+        max_target_length=a.max_target_length,
+        num_workers=a.num_workers,
+        push=not a.no_push,
+        eval_max_samples=a.eval_max_samples,
+        chrf_during_train=not a.no_chrf,
+    )
+
+
+if __name__ == "__main__":
+    main()
+
+
+HF login OK
+==============================================================
+TRAIN ByT5 - Betsileo <-> Malgache officiel
+==============================================================
+Device      : cuda | GPUs : 2
+GPU 0       : Tesla T4
+Base model  : google/byt5-base
+Epochs      : 2  (sur la TOTALITE du corpus)
+LR          : 0.0003
+
+[1/5] Chargement modele...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+  gradient_checkpointing ON
+  Parametres : 582,832,896
+
+  -- Sanity check --
+  Forward loss = 5.6244
+  Forward pass OK
+
+[2/5] Dataset : nirina-doris-sylvie/byt5-betsileo-mg-ft
+  Train=14050 | Eval=198
+  Colonnes : ['source', 'target', 'direction', 'ref', 'book', 'identical']
+
+[3/5] Tokenisation (padding dynamique)...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+
+[4/5] Config
+  effective batch = 32
+  steps/epoch     = 439
+  total steps     = 878
+  Suivi : chrF a chaque epoch
+
+[5/5] Entrainement...
+==============================================================
+/usr/local/lib/python3.12/dist-packages/torch/autograd/function.py:583: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+ [880/880 2:11:40, Epoch 2/2]
+Epoch	Training Loss	Validation Loss	Chrf
+1	8.693224	0.897714	53.230000
+2	5.850273	0.678849	56.450000
+
+  -- Exemples generation --
+    Predit    : Ary raha avy aho, dia hampatsiahiviko ny asa ataony, fa mitarotarom-pahatany
+    Reference : Koa amin’izany, raha tonga aho, dia hotsarovako izay asa ataony, fa mibedibe
+    Predit    : Ary izay rehetra mihoa-pefy ary tsy mitoatra ao amin’ny fampianaran’i Kristy
+    Reference : Izay rehetra mitarika nefa tsy mitoetra ao amin’ny fampianaran’i Kristy dia 
+    Predit    : Asika koa dia mba adala fahiny, tsa nagnaiky, voafitaka; ary andevon’ny fila
+    Reference : Fa tsika koa taloha dia mba adala, tsa nankatò, voafitaka, andevon’ny filàna
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+  Push Hub @ step 440 -> nirina-doris-sylvie/byt5-betsileo-mg
+/usr/local/lib/python3.12/dist-packages/torch/autograd/function.py:583: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+
+  -- Exemples generation --
+    Predit    : Ary raha tonga aho dia hampatsiahiviko ny asa ataony fa miteny tamin’izany i
+    Reference : Koa amin’izany, raha tonga aho, dia hotsarovako izay asa ataony, fa mibedibe
+    Predit    : Ary manana zavatra be hotenenina aminareo aho, nefa tsy tiako hosoratana ami
+    Reference : Manana zavatra maro hosoratana aminareo aho, nefa tsy tiako hatao amin’ny ta
+    Predit    : Ary mahatoky ireo teny ireo, eko izay raha izay dia tiako hitompoanao mafy, 
+    Reference : Azo itokiana izay teny izay. Ary dia tiako ny hagnamafisanao izay rehetra iz
+Loading widget...
+Loading widget...
+Loading widget...
+Loading widget...
+No files have been modified since last commit. Skipping to prevent empty commit.
+  Push Hub @ step 880 -> nirina-doris-sylvie/byt5-betsileo-mg
+
+Sauvegarde...
+Loading widget...
+
+Push final -> nirina-doris-sylvie/byt5-betsileo-mg
+Loading widget...
+Loading widget...
+Loading widget...
+No files have been modified since last commit. Skipping to prevent empty commit.
+No files have been modified since last commit. Skipping to prevent empty commit.
+  https://huggingface.co/nirina-doris-sylvie/byt5-betsileo-mg
+  Session suivante : relancer avec
+    --base-model nirina-doris-sylvie/byt5-betsileo-mg
+
+Termine. Evaluation : python 03_evaluate.py
