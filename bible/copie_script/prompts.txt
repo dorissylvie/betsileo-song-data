@@ -1,0 +1,1443 @@
+je veux que tu analyse le script d'un amie et me dis pourquoi elle a obtenu des bons resultats 
+
+TRADUCTION BETSIMISARAKA TO MALAGASY
+
+USAGE DE T5 BASE DATASET (2100 PAIRES DE PHRASES) last update : 7/12/2025 version : v6
+
+Après augmentation dataset 3200 paires last update : 10/01/2026 version : v7
+
+TRADUCTION MALAGASY TO BETSIMISARAKA
+
+USAGE ET T5 BASE DATASET : 3200 paires last updte : v3
+
+
+# --- 1. Installation des librairies ---
+# On ajoute 'evaluate' et 'sacrebleu' pour calculer le score de traduction réel
+!pip install transformers datasets accelerate sentencepiece torch evaluate sacrebleu -q
+
+import pandas as pd
+import numpy as np
+from datasets import Dataset, DatasetDict
+from transformers import (
+    T5ForConditionalGeneration,
+    T5Tokenizer,
+    Seq2SeqTrainer,
+    Seq2SeqTrainingArguments,
+    DataCollatorForSeq2Seq,
+    EarlyStoppingCallback
+)
+import torch
+import evaluate
+from huggingface_hub import login
+import google.colab.userdata
+
+# --- 2. Connexion au Hub ---
+print("Step 0: Connecting to Hugging Face Hub...")
+try:
+
+    hf_token = google.colab.userdata.get('nlpmodel')
+    if hf_token:
+        login(token=hf_token)
+        print("Connection successful using 'nlpmodel' secret!")
+    else:
+        raise ValueError("Hugging Face token 'nlpmodel' not found in Colab secrets. Please ensure it's set correctly.")
+
+except Exception as e:
+    print(f"Connection failed: {e}")
+    print("Please ensure your Hugging Face token is correctly configured as a Colab secret named 'nlpmodel'.")
+
+
+# --- 3. Définition de la Normalisation ---
+
+def normalize_betsimisaraka(text):
+    if not isinstance(text, str):
+        return ""
+
+    text = text.lower().strip()
+
+    # 1. Standardisation des caractères
+    text = text.replace('ô', 'o')
+
+
+    text = text.replace('ñ', 'gn')
+
+    # 2. Standardisation des variations lexicales courantes
+
+    replacements = {
+        "zagny": "zegny",
+        "izegny": "zegny",
+        "zany": "zegny",
+        "izany": "zegny",
+        "ôlogno": "olo",
+        "ologno": "olo",
+        "olona": "olo",
+    }
+
+    words = text.split()
+    new_words = [replacements.get(word, word) for word in words]
+    return " ".join(new_words)
+
+# --- 4. Chargement et Préparation des Données ---
+print("\nStep 1: Loading and preparing the dataset...")
+
+try:
+    df = pd.read_csv(
+        'betsim_malagasy_augmented_v4.csv',
+        encoding='utf-8'
+    )
+    # Nettoyage de base
+    df.dropna(subset=['src', 'tgt'], inplace=True)
+    df['src'] = df['src'].astype(str).str.strip()
+    df['tgt'] = df['tgt'].astype(str).str.strip()
+
+    # --- APPLICATION DE LA NORMALISATION ---
+    print("Applying normalization to source texts...")
+    df['src'] = df['src'].apply(normalize_betsimisaraka)
+
+    print(f"Dataset loaded. {len(df)} examples.")
+    print(df.head())
+
+except FileNotFoundError:
+    print("Error: CSV file 'betsim_malagasy_dataset_v4.csv' not found. Please ensure it exists in the correct directory.")
+    exit()
+
+# Conversion en Dataset
+dataset = Dataset.from_pandas(df)
+
+# Division (80% train, 10% val, 10% test)
+train_val_test = dataset.train_test_split(test_size=0.2, seed=42)
+test_val = train_val_test['test'].train_test_split(test_size=0.5, seed=42)
+
+dataset_dict = DatasetDict({
+    'train': train_val_test['train'],
+    'validation': test_val['train'],
+    'test': test_val['test']
+})
+
+print("\nSplits created:", dataset_dict)
+
+# --- 5. Tokenizer et Prétraitement ---
+print("\nStep 2: Loading tokenizer...")
+model_name = "t5-base"
+tokenizer = T5Tokenizer.from_pretrained(model_name)
+
+def preprocess_function(examples):
+
+    inputs = [f"translate Betsimisaraka to Malagasy: {text}" for text in examples['src']]
+    targets = [text for text in examples['tgt']]
+
+    model_inputs = tokenizer(inputs, max_length=128, truncation=True)
+    labels = tokenizer(text_target=targets, max_length=128, truncation=True)
+
+    model_inputs["labels"] = labels["input_ids"]
+    return model_inputs
+
+tokenized_datasets = dataset_dict.map(preprocess_function, batched=True)
+
+# --- 6. Configuration des Métriques (BLEU Score) ---
+
+metric = evaluate.load("sacrebleu")
+
+def compute_metrics(eval_preds):
+    preds, labels = eval_preds
+    if isinstance(preds, tuple):
+        preds = preds[0]
+
+    # Décoder les prédictions
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+
+    # Remplacer -100 par pad_token_id pour décoder les labels
+    labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
+    decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+
+    # Post-traitement simple
+    decoded_preds = [pred.strip() for pred in decoded_preds]
+    decoded_labels = [[label.strip()] for label in decoded_labels]
+
+    result = metric.compute(predictions=decoded_preds, references=decoded_labels)
+    return {"bleu": result["score"]}
+
+# --- 7. Fine-Tuning ---
+print("\nStep 3: Setup Training...")
+
+model = T5ForConditionalGeneration.from_pretrained(model_name)
+data_collator = DataCollatorForSeq2Seq(tokenizer, model=model)
+
+repo_id = "Amboara001/bmm-to-plt-t5-norm-aug"
+
+
+training_args = Seq2SeqTrainingArguments(
+    output_dir="./results",
+    eval_strategy="steps",
+    eval_steps=200,
+
+    logging_steps=50,
+    save_strategy="steps",
+    save_steps=200,
+    learning_rate=4e-5,
+    per_device_train_batch_size=8,
+    per_device_eval_batch_size=8,
+    weight_decay=0.01,
+    save_total_limit=2,
+    num_train_epochs=40,
+    predict_with_generate=True,
+    fp16=torch.cuda.is_available(),
+    push_to_hub=True,
+    hub_model_id=repo_id,
+    hub_private_repo=True,
+    load_best_model_at_end=True,
+    metric_for_best_model="bleu",
+    greater_is_better=True,
+    report_to="none"
+)
+
+trainer = Seq2SeqTrainer(
+    model=model,
+    args=training_args,
+    train_dataset=tokenized_datasets["train"],
+    eval_dataset=tokenized_datasets["validation"],
+    tokenizer=tokenizer,
+    data_collator=data_collator,
+    compute_metrics=compute_metrics,
+    callbacks=[EarlyStoppingCallback(early_stopping_patience=8)]
+)
+
+print("Starting training...")
+trainer.train()
+
+# --- 8. Sauvegarde ---
+output_dir = "./fine_tuned_betsim_model"
+trainer.save_model(output_dir)
+tokenizer.save_pretrained(output_dir)
+print(f"Model saved to {output_dir}")
+
+try:
+    trainer.push_to_hub()
+    print("Model pushed to Hub.")
+except:
+    print("Push to Hub failed (check token).")
+
+# --- 9. Test d'Inférence (AVEC NORMALISATION) ---
+print("\nStep 6: Testing translation...")
+
+def translate_text_optimized(text, model, tokenizer):
+    # 1. IMPORTANT : On applique la MÊME normalisation que pour l'entraînement
+
+    text_cleaned = normalize_betsimisaraka(text)
+
+    # 2. Préparation du prompt
+    input_text = f"translate Betsimisaraka to Malagasy: {text_cleaned}"
+
+    # 3. Génération
+    inputs = tokenizer(input_text, return_tensors="pt", max_length=128, truncation=True)
+    if torch.cuda.is_available():
+        inputs = {k: v.to('cuda') for k, v in inputs.items()}
+        model.to('cuda')
+
+    outputs = model.generate(
+        **inputs,
+        max_length=128,
+        num_beams=5,
+        early_stopping=True
+    )
+
+    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+# Test avec des variations non présentes dans le dataset propre
+test_sentences = [
+    "Ino vaovao zagny?",
+    "Misy ôlo ao an-trano",
+    "Ino ny hevitrao momba izegny?",
+    "Nivôlagna taminy zaho fa tsy nety izy",
+    "maandihana mivanga rô tsika atoandro dia ndeso tanty io.",
+    "mbo mitandregny tsara be anao io va ?",
+]
+
+for sent in test_sentences:
+    trans = translate_text_optimized(sent, model, tokenizer)
+    print(f"Input: {sent} -> Norm: {normalize_betsimisaraka(sent)} -> Pred: {trans}")
+
+# --- 10. Évaluation Finale ---
+print("\nFinal Test Set Evaluation:")
+print(trainer.evaluate(tokenized_datasets["test"]))
+
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.8/51.8 kB 2.4 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 84.1/84.1 kB 7.0 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 104.1/104.1 kB 10.0 MB/s eta 0:00:00
+Step 0: Connecting to Hugging Face Hub...
+Connection successful using 'nlpmodel' secret!
+
+Step 1: Loading and preparing the dataset...
+Applying normalization to source texts...
+Dataset loaded. 3241 examples.
+                                               src  \
+0         zaho migny no nizaka ananjy vao nety izy   
+1  zaho migny no nanontsafa ananjy vao namaly izy.   
+2                          azovy nivolana an-jegny   
+3               azovy nivolagna an-jegny taminareo   
+4                            zaho no nizaka ananjy   
+
+                                            tgt  
+0        izaho ihany no niteny azy vao nety izy  
+1  izaho ihany no nanontany azy vao namaly izy.  
+2                        iza no nilaza an'izany  
+3              iza no nilaza an'izany taminareo  
+4                           izaho no niteny azy  
+
+Splits created: DatasetDict({
+    train: Dataset({
+        features: ['src', 'tgt'],
+        num_rows: 2592
+    })
+    validation: Dataset({
+        features: ['src', 'tgt'],
+        num_rows: 324
+    })
+    test: Dataset({
+        features: ['src', 'tgt'],
+        num_rows: 325
+    })
+})
+
+Step 2: Loading tokenizer...
+spiece.model: 100%
+ 792k/792k [00:00<00:00, 14.6MB/s]
+tokenizer.json: 100%
+ 1.39M/1.39M [00:00<00:00, 24.9MB/s]
+config.json: 100%
+ 1.21k/1.21k [00:00<00:00, 146kB/s]
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Map: 100%
+ 2592/2592 [00:00<00:00, 3201.92 examples/s]
+Map: 100%
+ 324/324 [00:00<00:00, 2696.54 examples/s]
+Map: 100%
+ 325/325 [00:00<00:00, 2636.05 examples/s]
+Downloading builder script: 
+ 8.15k/? [00:00<00:00, 617kB/s]
+
+Step 3: Setup Training...
+model.safetensors: 100%
+ 892M/892M [00:09<00:00, 101MB/s]
+generation_config.json: 100%
+ 147/147 [00:00<00:00, 15.7kB/s]
+/tmp/ipython-input-2193074190.py:181: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Seq2SeqTrainer.__init__`. Use `processing_class` instead.
+  trainer = Seq2SeqTrainer(
+Starting training...
+ [12600/12960 2:56:38 < 05:02, 1.19 it/s, Epoch 38/40]
+Step	Training Loss	Validation Loss	Bleu
+200	1.377300	1.258436	4.684029
+400	1.171800	1.015477	6.031751
+600	0.988500	0.864944	7.757332
+800	0.867300	0.771904	8.622837
+1000	0.778800	0.706049	9.176861
+1200	0.720400	0.670731	9.968215
+1400	0.643100	0.621032	10.927320
+1600	0.629400	0.591921	11.095015
+1800	0.568300	0.557950	11.318344
+2000	0.555100	0.535058	12.255494
+2200	0.514100	0.513162	12.513730
+2400	0.476700	0.494833	12.926094
+2600	0.462100	0.472459	13.413439
+2800	0.425300	0.461391	13.592449
+3000	0.408500	0.436087	14.237693
+3200	0.388800	0.430332	14.567474
+3400	0.374900	0.418403	14.456992
+3600	0.373300	0.407893	14.867426
+3800	0.329900	0.397349	15.284625
+4000	0.319300	0.385762	15.502120
+4200	0.318900	0.381136	15.566775
+4400	0.293400	0.374938	15.572496
+4600	0.272600	0.367177	16.148036
+4800	0.300400	0.352536	16.167434
+5000	0.272300	0.352334	16.171389
+5200	0.256300	0.346676	16.391228
+5400	0.255600	0.338693	16.335227
+5600	0.248100	0.336907	16.463118
+5800	0.239000	0.328528	16.665632
+6000	0.230900	0.324301	16.786021
+6200	0.204200	0.322172	16.820527
+6400	0.219300	0.314516	16.643411
+6600	0.202500	0.314303	16.834014
+6800	0.206100	0.306789	16.834224
+7000	0.200300	0.299317	16.920396
+7200	0.181900	0.308076	17.195211
+7400	0.185200	0.295599	17.403716
+7600	0.181100	0.294709	17.085829
+7800	0.169200	0.291459	17.445069
+8000	0.169500	0.288733	17.474848
+8200	0.167500	0.284520	17.473533
+8400	0.163600	0.284184	17.516716
+8600	0.149900	0.287878	17.500780
+8800	0.145400	0.284472	17.893439
+9000	0.146000	0.280966	17.728189
+9200	0.151100	0.279532	17.879156
+9400	0.139200	0.279378	17.880228
+9600	0.141600	0.277253	17.888699
+9800	0.156300	0.273715	17.970021
+10000	0.125300	0.274281	18.156851
+10200	0.140900	0.274981	18.226185
+10400	0.141700	0.273050	18.298182
+10600	0.121800	0.271628	18.176718
+10800	0.121900	0.272495	18.185337
+11000	0.134800	0.270990	18.422723
+11200	0.126400	0.269619	18.345713
+11400	0.127700	0.268373	18.286183
+11600	0.114800	0.269535	18.315604
+11800	0.117500	0.268049	18.195035
+12000	0.124800	0.269629	18.225234
+12200	0.116100	0.267847	18.243356
+12400	0.113500	0.268300	18.267850
+12600	0.113100	0.267843	18.220178
+# --- 8. Sauvegarde ---
+output_dir = "./fine_tuned_betsim_model"
+trainer.save_model(output_dir)
+tokenizer.save_pretrained(output_dir)
+print(f"Model saved to {output_dir}")
+
+try:
+    trainer.push_to_hub()
+    print("Model pushed to Hub.")
+except:
+    print("Push to Hub failed (check token).")
+
+# --- 9. Test d'Inférence (AVEC NORMALISATION) ---
+print("\nStep 6: Testing translation...")
+
+def translate_text_optimized(text, model, tokenizer):
+    # 1. IMPORTANT : On applique la MÊME normalisation que pour l'entraînement
+    # Si l'utilisateur écrit "nivôlagna", cela devient "nivolagna" ici.
+    # Le modèle reconnait "nivolagna" car il a été entrainé dessus.
+    text_cleaned = normalize_betsimisaraka(text)
+
+    # 2. Préparation du prompt
+    input_text = f"translate Betsimisaraka to Malagasy: {text_cleaned}"
+
+    # 3. Génération
+    inputs = tokenizer(input_text, return_tensors="pt", max_length=128, truncation=True)
+    if torch.cuda.is_available():
+        inputs = {k: v.to('cuda') for k, v in inputs.items()}
+        model.to('cuda')
+
+    outputs = model.generate(
+        **inputs,
+        max_length=128,
+        num_beams=5, # Beam search légèrement augmenté pour la qualité
+        early_stopping=True
+    )
+
+    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+# Test avec des variations non présentes dans le dataset propre
+test_sentences = [
+    "Ino vaovao zagny?",       # Variation 'zagny'
+    "Misy ôlo ao an-trano",    # Variation 'ôlo'
+    "Ino ny hevitrao momba izegny?", # Variation 'izegny'
+    "Nivôlagna taminy zaho fa tsy nety izy", # Test: nivôlagna -> nivolagna
+    "maandihana mivanga rô tsika atoandro dia ndeso tanty io.",
+    "mbo mitandregny tsara be anao io va ?",
+]
+
+for sent in test_sentences:
+    trans = translate_text_optimized(sent, model, tokenizer)
+    print(f"Input: {sent} -> Norm: {normalize_betsimisaraka(sent)} -> Pred: {trans}")
+
+# --- 10. Évaluation Finale ---
+print("\nFinal Test Set Evaluation:")
+print(trainer.evaluate(tokenized_datasets["test"]))
+
+
+# --- 1. Installation des librairies ---
+# On ajoute 'evaluate' et 'sacrebleu' pour calculer le score de traduction réel
+!pip install transformers datasets accelerate sentencepiece torch evaluate sacrebleu -q
+
+import pandas as pd
+import numpy as np
+from datasets import Dataset, DatasetDict
+from transformers import (
+    T5ForConditionalGeneration,
+    T5Tokenizer,
+    Seq2SeqTrainer,
+    Seq2SeqTrainingArguments,
+    DataCollatorForSeq2Seq,
+    EarlyStoppingCallback
+)
+import torch
+import evaluate # Pour le score BLEU
+from huggingface_hub import login # Changed from notebook_login
+import google.colab.userdata # Added import
+
+# --- 2. Connexion au Hub --- # Uncomment if needed for push_to_hub
+print("Step 0: Connecting to Hugging Face Hub...")
+try:
+    # Retrieve the token with the specified name from Colab secrets
+    hf_token = google.colab.userdata.get('nlpmodel')
+    if hf_token:
+        login(token=hf_token) # Pass the token explicitly to huggingface_hub.login
+        print("Connection successful using 'nlpmodel' secret!")
+    else:
+        raise ValueError("Hugging Face token 'nlpmodel' not found in Colab secrets. Please ensure it's set correctly.")
+
+except Exception as e:
+    print(f"Connection failed: {e}")
+    print("Please ensure your Hugging Face token is correctly configured as a Colab secret named 'nlpmodel'.")
+    # On continue quand même, l'upload échouera juste à la fin si pas connecté
+
+
+
+# 1- Normalisation des variantes de traduction dans le dataset
+def normalize_merina(text):
+    if not isinstance(text, str):
+        return ""
+    return text.lower().strip()
+
+
+def normalize_betsimisaraka_output(text):
+    if not isinstance(text, str):
+        return ""
+
+    text = text.lower().strip()
+
+    replacements = {
+        # PERSONNE
+        "olo": "ôlo",
+        "olona": "ôlo",
+        "ologno": "ôlo",
+        "ôlogno": "ôlo",
+
+        # DEMONSTRATIF
+        "izany": "zegny",
+        "izagny": "zegny",
+        "zagny": "zegny",
+        "zegny": "zegny"
+    }
+
+    words = text.split()
+    normalized = [replacements.get(w, w) for w in words]
+
+    return " ".join(normalized)
+
+#2 chargement du dataset
+
+df = pd.read_csv("merina_betsim_v4.csv", encoding="utf-8")
+
+df.dropna(subset=["src", "tgt"], inplace=True)
+
+df["src"] = df["src"].apply(normalize_merina)
+df["tgt"] = df["tgt"].astype(str).str.strip()
+
+dataset = Dataset.from_pandas(df)
+
+splits = dataset.train_test_split(test_size=0.2, seed=42)
+val_test = splits["test"].train_test_split(test_size=0.5, seed=42)
+
+dataset_dict = DatasetDict({
+    "train": splits["train"],
+    "validation": val_test["train"],
+    "test": val_test["test"]
+})
+
+#4- tokenization et preprocessing
+MODEL_NAME = "t5-base"
+tokenizer = T5Tokenizer.from_pretrained(MODEL_NAME)
+
+def preprocess(examples):
+    inputs = [f"translate Malagasy to Betsimisaraka: {x}" for x in examples["src"]]
+    targets = examples["tgt"]
+
+    model_inputs = tokenizer(inputs, max_length=96, truncation=True)
+    labels = tokenizer(text_target=targets, max_length=96, truncation=True)
+
+    model_inputs["labels"] = labels["input_ids"]
+    return model_inputs
+
+tokenized = dataset_dict.map(preprocess, batched=True)
+
+# Libération mémoire
+df = None
+dataset_dict = None
+
+
+
+metric = evaluate.load("sacrebleu")
+
+def compute_metrics(eval_preds):
+    preds, labels = eval_preds
+
+    preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+
+    labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
+    labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+    labels = [[l] for l in labels]
+
+    return {"bleu": metric.compute(predictions=preds, references=labels)["score"]}
+
+
+
+#5- entrainement du modèle
+model = T5ForConditionalGeneration.from_pretrained(MODEL_NAME)
+data_collator = DataCollatorForSeq2Seq(tokenizer, model=model)
+
+repo_id = "Amboara001/plt-to-bmm-t5-v3"
+
+training_args = Seq2SeqTrainingArguments(
+    output_dir="./plt_bmm",
+    eval_strategy="steps",
+    eval_steps=300,
+    logging_steps=50,
+    save_strategy="steps",
+    save_steps=300,
+    learning_rate=4e-5,
+    per_device_train_batch_size=8,
+    per_device_eval_batch_size=8,
+    weight_decay=0.01,
+    save_total_limit=2,
+    num_train_epochs=40,
+    predict_with_generate=True,
+    fp16=torch.cuda.is_available(),
+    push_to_hub=True,
+    hub_model_id=repo_id,
+    hub_private_repo=True,
+    load_best_model_at_end=True,
+    metric_for_best_model="bleu",
+    greater_is_better=True,
+    report_to="none"
+)
+
+trainer = Seq2SeqTrainer(
+    model=model,
+    args=training_args,
+    train_dataset=tokenized["train"],
+    eval_dataset=tokenized["validation"],
+    tokenizer=tokenizer,
+    data_collator=DataCollatorForSeq2Seq(tokenizer, model),
+    compute_metrics=compute_metrics,
+    callbacks=[EarlyStoppingCallback(early_stopping_patience=6)]
+)
+
+trainer.train()
+
+Step 0: Connecting to Hugging Face Hub...
+Connection successful using 'nlpmodel' secret!
+spiece.model: 100%
+ 792k/792k [00:00<00:00, 4.88MB/s]
+tokenizer.json: 100%
+ 1.39M/1.39M [00:00<00:00, 10.1MB/s]
+config.json: 100%
+ 1.21k/1.21k [00:00<00:00, 69.4kB/s]
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Map: 100%
+ 2584/2584 [00:00<00:00, 2667.35 examples/s]
+Map: 100%
+ 323/323 [00:00<00:00, 1944.77 examples/s]
+Map: 100%
+ 323/323 [00:00<00:00, 2133.58 examples/s]
+Downloading builder script: 
+ 8.15k/? [00:00<00:00, 414kB/s]
+model.safetensors: 100%
+ 892M/892M [00:07<00:00, 251MB/s]
+generation_config.json: 100%
+ 147/147 [00:00<00:00, 6.78kB/s]
+/tmp/ipython-input-1586248241.py:158: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Seq2SeqTrainer.__init__`. Use `processing_class` instead.
+  trainer = Seq2SeqTrainer(
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:668: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+ [ 7/12920 01:30 < 65:10:12, 0.06 it/s, Epoch
+
+
+# --- 1. Installation des dépendances ---
+!pip install transformers datasets accelerate sentencepiece torch evaluate sacrebleu -q
+
+import pandas as pd
+import numpy as np
+from datasets import Dataset, DatasetDict
+from transformers import (
+    T5ForConditionalGeneration,
+    T5Tokenizer,
+    Seq2SeqTrainer,
+    Seq2SeqTrainingArguments,
+    DataCollatorForSeq2Seq,
+    EarlyStoppingCallback
+)
+import torch
+import evaluate
+from huggingface_hub import login
+import google.colab.userdata
+
+# --- 2. Connexion Hugging Face ---
+print("Step 0: Connexion au Hub...")
+try:
+    hf_token = google.colab.userdata.get('mytok')
+    if hf_token:
+        login(token=hf_token)
+        print("Connexion réussie via secret 'mytok'.")
+    else:
+        # Fallback manuel si le secret n'existe pas
+        login()
+except Exception as e:
+    print(f"Note: Connexion automatique échouée ({e}). Vous devrez peut-être vous connecter manuellement.")
+
+# --- 3. Fonctions de Normalisation ---
+
+# A. Normalisation de l'entrée Betsimisaraka (pour BMM -> MLG)
+# On aide le modèle à comprendre les variantes en entrée
+def clean_input_betsimisaraka(text):
+    if not isinstance(text, str): return ""
+    text = text.lower().strip()
+    text = text.replace('ô', 'o').replace('ñ', 'gn')
+    # On unifie les entrées pour réduire le vocabulaire
+    replacements = {"zagny": "zegny", "zany": "zegny", "ôlogno": "ôlo", "olona": "ôlo", "tragno": "trano"}
+    words = text.split()
+    return " ".join([replacements.get(w, w) for w in words])
+
+# B. Normalisation de la CIBLE Betsimisaraka (pour MLG -> BMM)
+# C'est CRUCIAL : On force le modèle à apprendre UNE SEULE orthographe correcte
+def normalize_target_betsimisaraka(text):
+    if not isinstance(text, str): return ""
+    text = text.lower().strip()
+    text = text.replace('ô', 'o').replace('ñ', 'gn')
+
+    # Règles strictes de génération
+    replacements = {
+        # Le modèle doit apprendre à dire "ôlo" (ou olo selon votre choix) et pas "olona"
+        "olona": "ôlo", "ologno": "ôlo", "ôlogno": "ôlo",
+        # Le modèle doit apprendre "zegny"
+        "izany": "zegny", "zagny": "zegny", "zany": "zegny", "izegny": "zegny",
+        # Autres
+        "trano": "tragno", # Si vous voulez trano
+    }
+    words = text.split()
+    return " ".join([replacements.get(w, w) for w in words])
+
+# --- 4. Préparation du Dataset Bidirectionnel ---
+print("\nStep 1: Préparation du Dataset Multitâche...")
+
+# Charger le fichier (supposons format: src=Betsimisaraka, tgt=Merina)
+CSV_FILE = 'betsim_malagasy_augmented_v4.csv'
+
+try:
+    df = pd.read_csv(CSV_FILE, names=['src', 'tgt'], encoding='utf-8')
+    df.dropna(inplace=True)
+
+    # --- Tâche 1 : Betsimisaraka -> Merina ---
+    df_forward = pd.DataFrame()
+    # On nettoie l'entrée BMM
+    df_forward['input_text'] = df['src'].apply(clean_input_betsimisaraka)
+    # On ajoute le préfixe
+    df_forward['input_text'] = "translate Betsimisaraka to Malagasy: " + df_forward['input_text']
+    # La cible est le Merina (nettoyage simple)
+    df_forward['target_text'] = df['tgt'].str.lower().str.strip()
+
+    # --- Tâche 2 : Merina -> Betsimisaraka ---
+    df_reverse = pd.DataFrame()
+    # L'entrée est le Merina
+    df_reverse['input_text'] = df['tgt'].str.lower().str.strip()
+    # On ajoute le préfixe inverse
+    df_reverse['input_text'] = "translate Malagasy to Betsimisaraka: " + df_reverse['input_text']
+    # La cible est le Betsimisaraka (NORMALISÉ STRICTEMENT)
+    df_reverse['target_text'] = df['src'].apply(normalize_target_betsimisaraka)
+
+    # Fusion des deux tâches
+    df_multitask = pd.concat([df_forward, df_reverse], ignore_index=True)
+    # Mélange aléatoire
+    df_multitask = df_multitask.sample(frac=1, random_state=42).reset_index(drop=True)
+
+    print(f"Dataset chargé. {len(df)} paires originales.")
+    print(f"Dataset Multitâche créé. {len(df_multitask)} exemples d'entraînement.")
+    print("Exemple BMM->MLG:", df_multitask[df_multitask['input_text'].str.contains("Betsimisaraka to")].iloc[0].values)
+    print("Exemple MLG->BMM:", df_multitask[df_multitask['input_text'].str.contains("Malagasy to")].iloc[0].values)
+
+except FileNotFoundError:
+    print(f"Erreur: Fichier {CSV_FILE} introuvable.")
+    exit()
+
+# Conversion en Dataset Hugging Face
+dataset = Dataset.from_pandas(df_multitask)
+splits = dataset.train_test_split(test_size=0.1, seed=42) # 10% test
+dataset_dict = DatasetDict({
+    'train': splits['train'],
+    'validation': splits['test'], # On utilise test comme validation ici pour simplifier
+    'test': splits['test']
+})
+
+# --- 5. Tokenization ---
+model_name = "t5-base"
+tokenizer = T5Tokenizer.from_pretrained(model_name)
+
+def preprocess_function(examples):
+    model_inputs = tokenizer(examples['input_text'], max_length=128, truncation=True)
+    labels = tokenizer(text_target=examples['target_text'], max_length=128, truncation=True)
+    model_inputs["labels"] = labels["input_ids"]
+    return model_inputs
+
+tokenized_datasets = dataset_dict.map(preprocess_function, batched=True)
+
+# --- 6. Configuration de l'Entraînement ---
+model = T5ForConditionalGeneration.from_pretrained(model_name)
+data_collator = DataCollatorForSeq2Seq(tokenizer, model=model)
+metric = evaluate.load("sacrebleu")
+
+def compute_metrics(eval_preds):
+    preds, labels = eval_preds
+    if isinstance(preds, tuple): preds = preds[0]
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+    labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
+    decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+    decoded_labels = [[l] for l in decoded_labels]
+    result = metric.compute(predictions=decoded_preds, references=decoded_labels)
+    return {"bleu": result["score"]}
+
+repo_id = "ambooara/betsimisaraka-merina-bidirectional-v1"
+
+# --- OPTIMISATION DU TEMPS D'ENTRAÎNEMENT ---
+training_args = Seq2SeqTrainingArguments(
+    output_dir="./results_bidir_opt",
+
+    # 1. Stratégie d'évaluation par ÉPOQUE (moins fréquent = plus rapide)
+    eval_strategy="epoch",
+    save_strategy="epoch",
+
+    # 2. Augmentation du Batch Size (Utilisation max du GPU T4)
+    per_device_train_batch_size=16, # Passé de 8 à 16 (x2 vitesse)
+    per_device_eval_batch_size=16,
+
+    # 3. Accumulation de gradients (Simule un batch de 32)
+    gradient_accumulation_steps=2,
+
+    learning_rate=5e-5, # Légèrement augmenté car le batch size est plus grand
+    weight_decay=0.01,
+    save_total_limit=2,
+
+    # 4. Nombre d'époques réduit (compensé par la qualité du batching)
+    # 30 époques suffisent souvent avec un batch size plus grand
+    num_train_epochs=30,
+
+    predict_with_generate=True,
+    fp16=torch.cuda.is_available(), # Toujours garder True sur T4
+    push_to_hub=True,
+    hub_model_id=repo_id,
+    hub_private_repo=True,
+    load_best_model_at_end=True,
+    metric_for_best_model="bleu",
+    greater_is_better=True,
+    report_to="none",
+    logging_steps=50 # Pour suivre la loss fréquemment
+)
+
+trainer = Seq2SeqTrainer(
+    model=model,
+    args=training_args,
+    train_dataset=tokenized_datasets["train"],
+    eval_dataset=tokenized_datasets["validation"],
+    tokenizer=tokenizer,
+    data_collator=data_collator,
+    compute_metrics=compute_metrics,
+    callbacks=[EarlyStoppingCallback(early_stopping_patience=5)] # Patience réduite pour arrêter plus vite si stable
+)
+
+# --- 7. Entraînement ---
+print("\nDébut de l'entraînement bidirectionnel...")
+trainer.train()
+
+# --- 8. Sauvegarde et Push ---
+trainer.save_model("./final_bidir_model")
+tokenizer.save_pretrained("./final_bidir_model")
+try:
+    trainer.push_to_hub()
+    print(f"Modèle poussé sur : https://huggingface.co/{repo_id}")
+except:
+    print("Erreur push hub.")
+
+# --- 9. Fonction de Traduction Universelle ---
+def translate_universal(text, direction, model, tokenizer):
+    """
+    direction: 'to_merina' ou 'to_betsimisaraka'
+    """
+    # 1. Préparer le prompt selon la direction
+    if direction == 'to_merina':
+        # On normalise l'entrée Betsimisaraka
+        clean_text = clean_input_betsimisaraka(text)
+        prompt = f"translate Betsimisaraka to Malagasy: {clean_text}"
+    else:
+        # L'entrée Merina est juste nettoyée
+        clean_text = text.lower().strip()
+        prompt = f"translate Malagasy to Betsimisaraka: {clean_text}"
+
+    # 2. Inférence
+    inputs = tokenizer(prompt, return_tensors="pt", max_length=128, truncation=True)
+    if torch.cuda.is_available():
+        inputs = {k: v.to('cuda') for k, v in inputs.items()}
+        model.to('cuda')
+
+    outputs = model.generate(**inputs, max_length=128, num_beams=5, early_stopping=True)
+    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+# Test rapide
+print("\n--- Tests Bidirectionnels ---")
+test_bmm = "Karakory atao izy koà te hivanga tragno zaho nefa tsy ambola manana taratasy jiaby ?"
+test_mlg = "Maheno olona miresaka ao an-trano ao aho izany fa andana hoe mba jereo kely."
+
+print(f"BMM -> MLG: '{test_bmm}' =>", translate_universal(test_bmm, 'to_merina', model, tokenizer))
+print(f"MLG -> BMM: '{test_mlg}' =>", translate_universal(test_mlg, 'to_betsimisaraka', model, tokenizer))
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.8/51.8 kB 3.4 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 84.1/84.1 kB 8.5 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 104.1/104.1 kB 10.7 MB/s eta 0:00:00
+Step 0: Connexion au Hub...
+Connexion réussie via secret 'mytok'.
+
+Step 1: Préparation du Dataset Multitâche...
+Dataset chargé. 3242 paires originales.
+Dataset Multitâche créé. 6484 exemples d'entraînement.
+Exemple BMM->MLG: ['translate Betsimisaraka to Malagasy: mizaka aminareo migny zahay kaofa pare zahay'
+ 'miteny aminareo ihany izahay rehefa vonona izahay']
+Exemple MLG->BMM: ["translate Malagasy to Betsimisaraka: 44 dia nitodika nijery an-dravehivavy iny i rova , ka niteny tamin'i simona hoe: hitanao va io vehivavy io?"
+ "44 dia nitodika nizaha an-draviavy igny i rova , ka nizaka tamin'i simona hoe: hitanao ma io viavy io?"]
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_auth.py:104: UserWarning: 
+Error while fetching `HF_TOKEN` secret value from your vault: 'Requesting secret HF_TOKEN timed out. Secrets can only be fetched when running from the Colab UI.'.
+You are not authenticated with the Hugging Face Hub in this notebook.
+If the error persists, please let us know by opening an issue on GitHub (https://github.com/huggingface/huggingface_hub/issues/new).
+  warnings.warn(
+spiece.model: 100%
+ 792k/792k [00:00<00:00, 5.96MB/s]
+tokenizer.json: 100%
+ 1.39M/1.39M [00:00<00:00, 10.7MB/s]
+config.json: 100%
+ 1.21k/1.21k [00:00<00:00, 143kB/s]
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Map: 100%
+ 5835/5835 [00:07<00:00, 614.57 examples/s]
+Map: 100%
+ 649/649 [00:01<00:00, 493.98 examples/s]
+Map: 100%
+ 649/649 [00:00<00:00, 711.54 examples/s]
+model.safetensors: 100%
+ 892M/892M [00:06<00:00, 157MB/s]
+generation_config.json: 100%
+ 147/147 [00:00<00:00, 18.7kB/s]
+Downloading builder script: 
+ 8.15k/? [00:00<00:00, 607kB/s]
+/tmp/ipython-input-3892206418.py:180: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Seq2SeqTrainer.__init__`. Use `processing_class` instead.
+  trainer = Seq2SeqTrainer(
+
+Début de l'entraînement bidirectionnel...
+ [5490/5490 1:59:55, Epoch 30/30]
+Epoch	Training Loss	Validation Loss	Bleu
+1	1.443200	1.191203	6.236064
+2	1.115900	0.953017	7.185029
+3	1.000300	0.811861	8.737744
+4	0.855700	0.721303	9.629731
+5	0.774600	0.660356	10.054365
+6	0.713000	0.613720	10.680651
+7	0.659300	0.572826	11.371636
+8	0.604900	0.536500	11.902009
+9	0.582600	0.511598	12.074445
+10	0.555600	0.489728	12.271354
+11	0.522000	0.469231	12.505304
+12	0.503900	0.451311	12.705446
+13	0.476900	0.434096	12.966670
+14	0.460700	0.420573	13.366455
+15	0.436200	0.407560	13.278796
+16	0.422500	0.395099	13.605614
+17	0.416900	0.388777	13.767831
+18	0.404100	0.376705	14.067279
+19	0.390000	0.372138	14.198837
+20	0.384100	0.369354	14.199721
+21	0.372100	0.360396	14.270630
+22	0.374100	0.355143	14.434611
+23	0.358700	0.351340	14.557870
+24	0.351500	0.344770	14.750546
+25	0.347600	0.341705	14.685246
+26	0.340500	0.339026	14.829267
+27	0.339100	0.335294	14.953750
+28	0.335700	0.335332	14.866588
+29	0.336600	0.334108	14.972792
+30	0.342700	0.334077	14.971641
+There were missing keys in the checkpoint model loaded: ['encoder.embed_tokens.weight', 'decoder.embed_tokens.weight', 'lm_head.weight'].
+Processing Files (3 / 3)      : 100%
+  892MB /  892MB,  126MB/s  
+New Data Upload               : 
+  0.00B /  0.00B,  0.00B/s  
+There were missing keys in the checkpoint model loaded: ['encoder.embed_tokens.weight', 'decoder.embed_tokens.weight', 'lm_head.weight'].
+Processing Files (3 / 3)      : 100%
+  892MB /  892MB,  126MB/s  
+New Data Upload               : 
+  0.00B /  0.00B,  0.00B/s  
+  .
+# --- Algorithme d'Évaluation des Métriques pour la Traduction ---
+# Cet script permet de comparer deux modèles T5 fine-tunés sur un jeu de données de test.
+
+import pandas as pd
+import numpy as np
+from datasets import Dataset, DatasetDict
+from transformers import T5ForConditionalGeneration, T5Tokenizer
+import torch
+import evaluate
+from tqdm.auto import tqdm
+import google.colab.userdata # Import to get the HF token
+
+# --- 0. Configuration des Modèles et des Données ---
+
+MODELS_TO_EVALUATE = [
+
+    #"Amboara001/betsimisaraka-merina-bidirectional-optimized",
+    "ambooara/betsimisaraka-merina-bidirectional-v1"
+]
+
+# Fichier CSV contenant les données de test (doit être le même que pour l'entraînement)
+CSV_TEST_FILE = 'betsim_malagasy_augmented_v4.csv'
+
+# Récupérer le token Hugging Face
+hf_token = google.colab.userdata.get('mytok') # Assuming 'nlpmodel' is the correct secret name
+if hf_token is None:
+    hf_token = google.colab.userdata.get('mytok') # Fallback to 'mytok' if 'nlpmodel' is not found
+
+# Si vous aviez utilisé une normalisation pour l'entraînement, IL FAUT la réutiliser ici
+def normalize_betsimisaraka(text):
+    if not isinstance(text, str):
+        return ""
+    text = text.lower().strip()
+    text = text.replace('ô', 'o')
+    text = text.replace('ñ', 'gn')
+    replacements = {
+        "zagny": "zegny", "izegny": "zegny", "zany": "zegny", "izany": "zegny",
+        "ôlogno": "ôlo", "ologno": "ôlo", "olona": "ôlo",
+    }
+    words = text.split()
+    new_words = [replacements.get(word, word) for word in words]
+    return " ".join(new_words)
+
+# --- 1. Installation des Librairies de Métriques ---
+print("Étape 1: Installation des librairies d'évaluation...")
+# Installation des métriques ChrF et TER
+!pip install transformers datasets sentencepiece torch evaluate sacrebleu --quiet
+
+# --- 2. Chargement des Données de Test ---
+print("\nÉtape 2: Chargement et préparation des données de test...")
+
+try:
+    df = pd.read_csv(
+        CSV_TEST_FILE,
+        names=['src', 'tgt'],
+        encoding='utf-8'
+    )
+    df.dropna(subset=['src', 'tgt'], inplace=True)
+    df['src'] = df['src'].astype(str).str.strip()
+    df['tgt'] = df['tgt'].astype(str).str.strip()
+
+    # Normalisation du texte source (DOIT matcher le preprocessing du training)
+    df['src'] = df['src'].apply(normalize_betsimisaraka)
+
+    dataset = Dataset.from_pandas(df)
+
+    # Division (80% train, 10% val, 10% test) - On reprend la même logique de split
+    train_val_test = dataset.train_test_split(test_size=0.2, seed=42)
+    test_val = train_val_test['test'].train_test_split(test_size=0.5, seed=42)
+    test_dataset = test_val['test']
+
+    print(f"Dataset de test chargé. {len(test_dataset)} exemples.")
+
+except FileNotFoundError:
+    print(f"ERREUR: Le fichier CSV de test '{CSV_TEST_FILE}' n'a pas été trouvé. Veuillez le générer d'abord.")
+    exit()
+
+# --- 3. Initialisation des Métriques ---
+# Chargement des 3 métriques clés: BLEU, ChrF, TER
+bleu_metric = evaluate.load("sacrebleu")
+chrf_metric = evaluate.load("chrf")
+ter_metric = evaluate.load("ter")
+
+# --- 4. Fonction d'Inférence Générique ---
+
+def generate_predictions(model, tokenizer, dataset):
+    """Génère les traductions pour tout l'ensemble de données."""
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model.to(device)
+    model.eval()
+
+    predictions = []
+    references = []
+
+    print(f"Génération des prédictions sur {len(dataset)} exemples...")
+
+    for example in tqdm(dataset, desc="Generating translations"):
+        # Préparation du prompt pour la tâche BMM -> MLG (DOIT être le même que pour l'entraînement)
+        input_text = f"translate Betsimisaraka to Malagasy: {example['src']}"
+
+        # Tokenisation
+        inputs = tokenizer(input_text, return_tensors="pt", max_length=128, truncation=True).to(device)
+
+        # Génération
+        outputs = model.generate(
+            **inputs,
+            max_length=128,
+            num_beams=5,
+            early_stopping=True
+        )
+
+        # Décodage et Nettoyage
+        decoded_pred = tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
+
+        predictions.append(decoded_pred)
+        references.append(example['tgt'].strip()) # La référence est le texte cible non modifié
+
+    return predictions, references
+
+# --- 5. Boucle d'Évaluation Principale ---
+print("\nÉtape 3: Début de l'évaluation quantitative des modèles...")
+
+results_summary = {}
+
+for repo_id in MODELS_TO_EVALUATE:
+    print(f"\n--- Évaluation du modèle: {repo_id} ---")
+
+    try:
+        # Charger le modèle et le tokenizer depuis le Hub
+        # Pass the authentication token
+        tokenizer = T5Tokenizer.from_pretrained(repo_id, use_auth_token=hf_token)
+        model = T5ForConditionalGeneration.from_pretrained(repo_id, use_auth_token=hf_token)
+
+        # 4. Générer les prédictions
+        # NOTE: L'évaluation quantitative se concentre ici sur la tâche BMM -> MLG car le dataset de test est structuré ainsi.
+        preds, refs = generate_predictions(model, tokenizer, test_dataset)
+
+        # 5. Calculer les métriques
+
+        # BLEU (Plus c'est haut, mieux c'est)
+        bleu_result = bleu_metric.compute(predictions=preds, references=[[r] for r in refs])
+        bleu_score = bleu_result["score"]
+
+        # ChrF / ChrF++ (Plus c'est haut, mieux c'est - score de 0 à 100)
+        chrf_result = chrf_metric.compute(predictions=preds, references=[[r] for r in refs], word_order=2)
+        chrf_score = chrf_result["score"]
+
+        # TER (Plus c'est BAS, mieux c'est - de 0 à 100)
+        ter_result = ter_metric.compute(predictions=preds, references=[[r] for r in refs])
+        ter_score = ter_result["score"]
+
+        # 6. Stocker les résultats
+        results_summary[repo_id] = {
+            "BLEU": round(bleu_score, 2),
+            "ChrF++": round(chrf_score, 2),
+            "TER": round(ter_score, 2)
+        }
+
+        print(f"Résultats pour {repo_id}:")
+        print(f"  BLEU: {results_summary[repo_id]['BLEU']:.2f}")
+        print(f"  ChrF++: {results_summary[repo_id]['ChrF++']:.2f}")
+        print(f"  TER: {results_summary[repo_id]['TER']:.2f}")
+
+    except Exception as e:
+        print(f"ERREUR lors du chargement ou de l'évaluation du modèle {repo_id}. Veuillez vérifier l'ID.")
+        print(f"Détail de l'erreur: {e}")
+
+
+# --- 6. Affichage du Rapport Final ---
+print("\n" + "="*50)
+print("RAPPORT D'ÉVALUATION FINAL DES MODÈLES (BMM -> MLG)")
+print("="*50)
+
+# Only create summary_df if results_summary is not empty
+if results_summary:
+    summary_df = pd.DataFrame.from_dict(results_summary, orient='index')
+
+    summary_df['Interprétation'] = summary_df.apply(
+        lambda row: (
+            "Meilleure performance globale sur les métriques combinées (BLEU/ChrF++ élevés, TER bas)."
+            if row.name == summary_df['BLEU'].idxmax() else
+            "Performance à comparer."
+        ), axis=1
+    )
+
+    print(summary_df.to_markdown())
+else:
+    print("Aucun modèle n'a pu être évalué avec succès. Le rapport est vide.")
+
+print("\n--- Interprétation des Métriques ---")
+print("BLEU et ChrF++ : Plus la valeur est élevée, meilleure est la traduction (0 à 100).")
+print("TER : Plus la valeur est faible, meilleure est la traduction (0 à 100).")
+
+
+# --- 7. Évaluation Qualitative (Test Use Cases) ---
+
+# Nous allons utiliser le premier modèle bidirectionnel de la liste pour les tests qualitatifs,
+# car il est censé être le modèle fraîchement entraîné.
+if MODELS_TO_EVALUATE and results_summary:
+    BEST_MODEL_FOR_QUALITATIVE_TESTS = MODELS_TO_EVALUATE[0]
+
+    try:
+        print(f"\n\n{'='*50}")
+        print(f"7. ÉVALUATION QUALITATIVE (Use Cases Divers) - Modèle: {BEST_MODEL_FOR_QUALITATIVE_TESTS}")
+        print(f"  Vérification de la traduction BMM -> MLG et MLG -> BMM.")
+        print(f"{'='*50}")
+
+        # Recharge le tokenizer et le modèle pour les tests universels
+        tokenizer_qual = T5Tokenizer.from_pretrained(BEST_MODEL_FOR_QUALITATIVE_TESTS, use_auth_token=hf_token)
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        model_qual = T5ForConditionalGeneration.from_pretrained(BEST_MODEL_FOR_QUALITATIVE_TESTS, use_auth_token=hf_token).to(device)
+
+        # Fonctions de normalisation du training (répétées ici pour l'autonomie)
+        def clean_input_betsimisaraka_qual(text):
+            if not isinstance(text, str): return ""
+            text = text.lower().strip()
+            text = text.replace('ô', 'o').replace('ñ', 'gn')
+            replacements = {"zagny": "zegny", "zany": "zegny", "ôlogno": "ôlo", "olona": "ôlo", "trano": "tragno"}
+            words = text.split()
+            return " ".join([replacements.get(w, w) for w in words])
+
+        def translate_universal(text, direction, model, tokenizer):
+            # Utilise la fonction de nettoyage appropriée avant de construire le prompt
+            if direction == 'to_merina':
+                clean_text = clean_input_betsimisaraka_qual(text)
+                prompt = f"translate Betsimisaraka to Malagasy: {clean_text}"
+            else: # to_betsimisaraka
+                clean_text = text.lower().strip()
+                prompt = f"translate Malagasy to Betsimisaraka: {clean_text}"
+
+            inputs = tokenizer(prompt, return_tensors="pt", max_length=128, truncation=True)
+            inputs = {k: v.to(device) for k, v in inputs.items()}
+
+            outputs = model.generate(**inputs, max_length=128, num_beams=5, early_stopping=True)
+            return tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+        test_cases = [
+            # BMM -> MLG (Questions & Salutations)
+            {"direction": 'to_merina', "input": "Karakory atao izy koà te hivanga tragno zaho, nefa tsy ambola manana taratasy jiaby ? Zaho mokony olo avy ambanivolo mbola sahiragna amin'ny raha an-tagnam-be aty.", "expected_context": "Ahoana no atao raha te hividy trano aho, nefa tsy mbola manana ny taratasy rehetra ? Izaho mantsy olona avy any ambanivohitra mbola sahirana amin'ny zavatra aty ambonivohitra aty."},
+            {"direction": 'to_merina', "input": "Misy ôlo mikoragna zegny an-dragno akao ? Karaha tsisy feo regniko kozany", "expected_context": "Misy olona miresaka izany ao an-trano ao ? Ohatrany tsy misy feo henoko intsony"},
+            # MLG -> BMM (Statements & Commands)
+            {"direction": 'to_betsimisaraka', "input": "Misy olona ao an-trano fa andana jereo haingana sao i neny niverin avy niantsena .", "expected_context": "Misy ôlo an-dragno akao fa ndana zahano malaky sao i mama niherigna avy nagnano bazary ."},
+            {"direction": 'to_betsimisaraka', "input": "Teneno izy ireo fa ho avy any izahay rahampitso fa vao avy nividy lovia sy sotro.", "expected_context": "Zakao zareo fa ho avy akagny zahay amaraigna fa vao avy nivanga lasiety sy koera."},
+            {"direction": 'to_betsimisaraka', "input": "Tsy marina ve izany zavatra lazaiko izany hoy ianao ?", "expected_context": "Tsy marigny ma raha volagniko aozinao ?"},
+        ]
+
+        for case in test_cases:
+            direction_label = "BMM -> MLG" if case['direction'] == 'to_merina' else "MLG -> BMM"
+            translation = translate_universal(case['input'], case['direction'], model_qual, tokenizer_qual)
+            print(f"[{direction_label}] Input: '{case['input']}'")
+            print(f"        -> Output: '{translation}' (Context: {case['expected_context']})")
+
+    except Exception as e:
+        print(f"\nERREUR lors de l'exécution de l'évaluation qualitative (Vérifiez si le modèle est correctement poussé sur le Hub ou si le token est valide).")
+        print(f"Détail de l'erreur: {e}")
+else:
+    print("\nImpossible de procéder à l'évaluation qualitative car aucun modèle n'a pu être chargé/évalué.")Étape 1: Installation des librairies d'évaluation...
+
+Étape 2: Chargement et préparation des données de test...
+Dataset de test chargé. 325 exemples.
+
+Étape 3: Début de l'évaluation quantitative des modèles...
+
+--- Évaluation du modèle: ambooara/betsimisaraka-merina-bidirectional-v1 ---
+/usr/local/lib/python3.12/dist-packages/transformers/tokenization_utils_base.py:1935: FutureWarning: The `use_auth_token` argument is deprecated and will be removed in v5 of Transformers. Please use `token` instead.
+  warnings.warn(
+tokenizer_config.json: 100%
+ 20.9k/20.9k [00:00<00:00, 193kB/s]
+spiece.model: 100%
+ 792k/792k [00:02<00:00, 282kB/s]
+added_tokens.json: 100%
+ 2.59k/2.59k [00:00<00:00, 105kB/s]
+special_tokens_map.json: 100%
+ 2.54k/2.54k [00:00<00:00, 81.3kB/s]
+/usr/local/lib/python3.12/dist-packages/transformers/modeling_utils.py:4715: FutureWarning: The `use_auth_token` argument is deprecated and will be removed in v5 of Transformers. Please use `token` instead.
+  warnings.warn(
+config.json: 100%
+ 1.47k/1.47k [00:00<00:00, 55.3kB/s]
+model.safetensors: 100%
+ 892M/892M [00:18<00:00, 87.9MB/s]
+generation_config.json: 100%
+ 122/122 [00:00<00:00, 3.78kB/s]
+Génération des prédictions sur 325 exemples...
+Generating translations: 100%
+ 325/325 [39:12<00:00,  5.59s/it]
+Résultats pour ambooara/betsimisaraka-merina-bidirectional-v1:
+  BLEU: 64.51
+  ChrF++: 80.68
+  TER: 19.01
+
+==================================================
+RAPPORT D'ÉVALUATION FINAL DES MODÈLES (BMM -> MLG)
+==================================================
+|                                                |   BLEU |   ChrF++ |   TER | Interprétation                                                                           |
+|:-----------------------------------------------|-------:|---------:|------:|:-----------------------------------------------------------------------------------------|
+| ambooara/betsimisaraka-merina-bidirectional-v1 |  64.51 |    80.68 | 19.01 | Meilleure performance globale sur les métriques combinées (BLEU/ChrF++ élevés, TER bas). |
+
+--- Interprétation des Métriques ---
+BLEU et ChrF++ : Plus la valeur est élevée, meilleure est la traduction (0 à 100).
+TER : Plus la valeur est faible, meilleure est la traduction (0 à 100).
+
+
+==================================================
+7. ÉVALUATION QUALITATIVE (Use Cases Divers) - Modèle: ambooara/betsimisaraka-merina-bidirectional-v1
+  Vérification de la traduction BMM -> MLG et MLG -> BMM.
+==================================================
+/usr/local/lib/python3.12/dist-packages/transformers/tokenization_utils_base.py:1935: FutureWarning: The `use_auth_token` argument is deprecated and will be removed in v5 of Transformers. Please use `token` instead.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/modeling_utils.py:4715: FutureWarning: The `use_auth_token` argument is deprecated and will be removed in v5 of Transformers. Please use `token` instead.
+  warnings.warn(
+!pip install -q transformers datasets sentencepiece evaluate sacrebleu torch
+import pandas as pd
+import numpy as np
+import torch
+from datasets import Dataset
+from transformers import T5Tokenizer, T5ForConditionalGeneration
+import evaluate
+from huggingface_hub import login
+import google.colab.userdata
+
+#connexion aux repos huggin face
+def hf_login(repo_owner):
+    if repo_owner == "ambooara":
+        token = google.colab.userdata.get("mytok")
+    else:
+        token = google.colab.userdata.get("nlpmodel")
+
+    if token is None:
+        raise ValueError("Token HF manquant dans Colab secrets")
+
+    login(token=token)
+    print(f"✅ Connecté au compte {repo_owner}")
+
+#chargement des modèles à évaluer
+def load_model(repo_id, owner):
+    hf_login(owner)
+    tokenizer = T5Tokenizer.from_pretrained(repo_id)
+    model = T5ForConditionalGeneration.from_pretrained(repo_id)
+    if torch.cuda.is_available():
+        model.to("cuda")
+    return tokenizer, model
+# Modèles
+bidir_repo = "ambooara/betsimisaraka-merina-bidirectional-v1"
+bmm_plt_repo = "Amboara001/bmm-to-plt-t5-norm-aug"
+plt_bmm_repo = "Amboara001/plt-to-bmm-t5-v3"
+
+tok_bidir, model_bidir = load_model(bidir_repo, "ambooara")
+tok_bmm_plt, model_bmm_plt = load_model(bmm_plt_repo, "Amboara001")
+tok_plt_bmm, model_plt_bmm = load_model(plt_bmm_repo, "Amboara001")
+
+
+#Fonctions de traductions génériques
+def translate(text, model, tokenizer, direction):
+    prompt = f"translate {direction}: {text}"
+    inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=256)
+    if torch.cuda.is_available():
+        inputs = {k: v.to("cuda") for k, v in inputs.items()}
+
+    outputs = model.generate(
+        **inputs,
+        max_length=256,
+        num_beams=4,
+        early_stopping=True
+    )
+    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+df_bmm_plt = pd.read_csv("betsim_malagasy_augmented_v4.csv")
+df_plt_bmm = pd.read_csv("merina_betsim_v4.csv")
+
+df_bmm_plt.dropna(inplace=True)
+df_plt_bmm.dropna(inplace=True)
+
+
+def build_use_cases(df, n=50):
+    return {
+        "UC1_court": df.sample(n)["src"].tolist(),
+        "UC2_long": df[df["src"].str.len() > 80].sample(n)["src"].tolist(),
+        "UC3_variantes": df.sample(n)["src"].tolist(),
+        "UC4_erreurs": [s.replace("ny", "ni").replace("fa", "f") for s in df.sample(n)["src"]],
+        "UC5_code_switch": [s + " réunion" for s in df.sample(n)["src"]],
+    }
+
+use_cases_bmm = build_use_cases(df_bmm_plt)
+use_cases_plt = build_use_cases(df_plt_bmm)
+
+
+#évaluations métriques
+bleu = evaluate.load("sacrebleu")
+chrf = evaluate.load("chrf")
+
+def compute_metrics(preds, refs):
+    bleu_score = bleu.compute(predictions=preds, references=[[r] for r in refs])["score"]
+    chrf_score = chrf.compute(predictions=preds, references=refs)["score"]
+    return bleu_score, chrf_score
+
+
+results = []
+
+def evaluate_model(use_cases, model, tokenizer, direction, label):
+    for uc, texts in use_cases.items():
+        preds = []
+        refs = []
+
+        for text in texts:
+            pred = translate(text, model, tokenizer, direction)
+            preds.append(pred)
+            refs.append(text)  # proxy reference (qualitative focus)
+
+        bleu_s, chrf_s = compute_metrics(preds, refs)
+
+        results.append({
+            "Modèle": label,
+            "Use case": uc,
+            "BLEU": round(bleu_s, 2),
+            "chrF": round(chrf_s, 2)
+        })
+
+#Lancement de l'évaluation
+
+# Bidirectionnel
+evaluate_model(
+    use_cases_bmm,
+    model_bidir,
+    tok_bidir,
+    "Betsimisaraka to Malagasy",
+    "Bidirectionnel"
+)
+
+evaluate_model(
+    use_cases_plt,
+    model_bidir,
+    tok_bidir,
+    "Malagasy to Betsimisaraka",
+    "Bidirectionnel"
+)
+
+# Pipeline spécialisé
+evaluate_model(
+    use_cases_bmm,
+    model_bmm_plt,
+    tok_bmm_plt,
+    "Betsimisaraka to Malagasy",
+    "BMM→PLT spécialisé"
+)
+
+evaluate_model(
+    use_cases_plt,
+    model_plt_bmm,
+    tok_plt_bmm,
+    "Malagasy to Betsimisaraka",
+    "PLT→BMM spécialisé"
+)
+
+results_df = pd.DataFrame(results)
+results_df
+results_df.groupby(["Modèle", "Use case"]).mean()
+
+Connecté au compte ambooara
+✅ Connecté au compte Amboara001
+✅ Connecté au compte Amboara001
+BLEU	chrF
+Modèle	Use case		
+BMM→PLT spécialisé	UC1_court	30.340	61.420
+UC2_long	40.740	66.360
+UC3_variantes	25.510	63.010
+UC4_erreurs	31.230	62.520
+UC5_code_switch	27.950	61.450
+Bidirectionnel	UC1_court	30.885	64.230
+UC2_long	43.455	71.260
+UC3_variantes	39.110	70.325
+UC4_erreurs	35.960	66.065
+UC5_code_switch	34.940	65.460
+PLT→BMM spécialisé	UC1_court	22.270	58.540
+UC2_long	33.320	65.600
+UC3_variantes	36.430	66.410
+UC4_erreurs	31.710	61.300
+UC5_code_switch	35.570	66.870
+
