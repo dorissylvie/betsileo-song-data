@@ -1,0 +1,55 @@
+
+a_verifier	oladad/5 tsindrina 5.json:0	 avia agnao ho agny ambala	avia ianao ho any ambanivohitra	    1
+a_verifier	oladad/5 tsindrina 5.json:4	ataovy manety amin’ny andro tsa fiasàna	ataovy mety amin’ny andro tsy fiasana		
+a_verifier	oladad/5 tsindrina 5.json:15	tandremo sy voa, ko mandoandoa	tandremo rehefa voa, ka mandoadoa	
+a_verifier	oladad/5 tsindrina 5.json:18	ny volandrangahy fa nosakan’ny ampela	ny volan-drangahy fa nalain’ny vehivavy	
+a_verifier	oladad/5 tsindrina 5.json:33	ka, iaraha-miteko ny mangidy, iaraha mitelina ny mamy	ka, iaraha-mandrora ny mangidy, iaraha-mitelina ny mamy	
+a_verifier	oladad/5 tsindrina 5.json:40	soa fianatsa ro mahavokatsa liaka aaaa	tsara fianatra no mahavokatra lehiretsy a	
+a_verifier	oladad/agnao.json:3	tsa zarizary ny fiainako	tsy milamina ny fiainako	
+a_verifier	oladad/agnao.json:9	nangaigña teo aho, saika roso gegy anie aho!	nangaina teo aho, saika lasa adala anie aho!	
+a_verifier	oladad/agnao.json:21	tô mila tsy ho zaka fa maranitra mandratra	saika tsy ho zaka fa maranitra mandratra	
+bruit (voyelles allongees)	oladad/agnao.json:23	aia agñao?	aiza ianao?	
+a_verifier	oladad/agnao.json:24	nivoendrivoendry aho, sy mba nanova hafa e! n tsa nahita aho! ny foko ro naratse!	nivezivezy aho, ary mba nanova hafa e! nefa tsy nahita aho! ny foko no naratra!	
+a_verifier	oladad/agnao.json:30	mararirary an’ia	mararirary aho	1	
+a_verifier	oladad/agnao.json:31	fa mila ho roso gegy an’ia!	fa saika ho lasa adala aho!	1	
+a_verifier	oladad/mlaolao.json:1	hiregnina hilaolao	hirenireny hilaolao	
+a_verifier	oladad/mlaolao.json:4	mifalia rana fa mandalo	mifalia ry namana fa mandalo	
+a_verifier	oladad/mlaolao.json:11	aza laitsa loatsa am’izao	aza kivy loatra amin’izao	
+a_verifier	oladad/sesily.json:4	fitiavana io raha tsa hifagnirena	fitiavana io raha tsy hifanerena			
+a_verifier	oladad/ziva.json:50	eka roaba, avelao agny fa tsa magnahy igny	eny re ry dada, avelao any fa tsy maninona iny	
+a_verifier	tsivahiny/Asabotsy mifankahita.json:0	agnay ty izao tsa afaka miagnany	izahay ity izao tsy afaka mankany		
+a_verifier	tsivahiny/Asabotsy mifankahita.json:17	ny fitiavako an-drika ro nahafaty	ny fitiavako anao no nahafaty			
+a_verifier	tsivahiny/Mihinana soa.json:6	fa leha tsa ampela soa rika tsa nalaiko ho vady	fa raha tsy vehivavy tsara ianao, tsy nalaiko ho vady	
+a_verifier	tsivahiny/Mihinana soa.json:13	leky soa ny rami-rebaka, tsa atakaloko laisoa	na dia tsara aza ny rami-rebaka, tsy atakaloko laisoa	
+a_verifier	tsivahiny/Mihinana soa.json:14	manaova soa tsa hanebaka, fa hanahira anareo roa	manaova tsara tsy hanebaka, fa hanahirana anareo roa	
+a_verifier	tsivahiny/Mihinana soa.json:16	ka mandiniha soa ra, fa raha tsa zaza na kilonga	ka mandiniha tsara re, fa zavatra tsy an’ny zaza na ankizy		
+a_verifier	tsivahiny/Rapagnarakandro.json:13	fairo ny aombe, hisotro rano	ento ny omby, hisotro rano	
+a_verifier	tsivahiny/tsahavelako.json:13	avilao hikendry amin’zay kindreny ny kamo	avelao hikendry amin’izay kendreny ny kamo	
+a_verifier	tsivahiny/tsiahyMisareba.json:0	hitety vohitsa aia leky manigna	hitety vohitra aiza moa raha manina	
+a_verifier	tsivahiny/tsiahyMisareba.json:1	tolakandro tsa mgnila ho ah hariva tsa misy hafa	tolakandro tsy mila ho ahy hariva tsy misy hafa	
+a_verifier	tsivahiny/tsiahyMisareba.json:8	a leky iy tsa ho vadiako hatao kisipasipa e!	a na dia tsy ho vadiko aza izy hatao kisipasipa e!	
+a_verifier	tsivahiny/tsiahyMisareba.json:12	raha mba soasoa e ny miaraka amin’igny e	mba tsaratsara kokoa e ny miaraka amin’iny e		
+a_verifier	tsivahiny/tsiahyMisareba.json:19	tsa nifakahita e izao fa samy naharary an!	tsy nifankahita e izao fa samy narary an!	
+a_verifier	tsivahiny/tsiahyMisareba.json:21	sy mahita kilonga ampela ko te handodotsa	rehefa mahita zazavavy dia te hanenjika	
+a_verifier	tsivahiny/tsiahyMisareba.json:29	kilonga ampela roa finainy amy môtô	zazavavy roa entiny amin’ny moto	
+a_verifier	tsivahiny/tsiahyMisareba.json:30	lanin’ny akoho ny vary an!	lanin’ny akoho ny vary an!	
+a_verifier	tsivahiny/tsiahyMisareba.json:32	mandihana agna tsiena apitso hividianako zipo kely	mandehana any an-tsena rahampitso hividianako zipo kely	
+a_verifier	tsivahiny/tsiahyMisareba.json:42	avognavogna tsa ho lefy tsendry e	avonavona tsy ho lefy mihitsy e	
+a_verifier	tsivahiny/tsiahyMisareba.json:43	nagaika an-droky a ko tsa nanoigna roky an	nantsoiko ianao a fa tsy namaly ianao an	
+a_verifier	tsivahiny/tsiahyMisareba.json:46	magnelognelo agn’andohany agny an	manelonelo any an-dohany any an	
+a_verifier	tsivahiny/tsiahyMisareba.json:47	manaitaigna agn’atratrany agny a an	manaitaina any an-tratrany any a an	
+a_verifier	tsivahiny/tsiahyMisareba.json:53	tagnako malemilemy toy tsa hoferiko manoto vary laigna	tanako malemilemy ity tsy hoentiko manoto vary lena	
+a_verifier	tsivahiny/tsiahyMisareba.json:54	babeonareo manan-daba i zanako toy e fa manara an	babeonareo manan-damba i zanako ity e fa manaraka an	
+doublon d'Asabotsy mifankahita	tsivahiny/tsiahyMisareba.json:55	agnay izao e hitatara ny fahaela	izahay izao e hitantara ny fahiny	
+doublon d'Asabotsy mifankahita	tsivahiny/tsiahyMisareba.json:56	koa aza tsigniana e fa hitondra ny sokela	koa aza tsinina e fa hitondra ny sokela	
+a_verifier	tsivahiny/tsiahyMisareba.json:60	ny fitiavako an-drika ro mahafaty fa mandihana fa tsa mila koa	ny fitiavako anao no mahafaty fa mandehena fa tsy mila koa	
+a_verifier	tsivahiny/velo-po.json:14	fotoa mampanjeky ny kitroy	fotoana mampanaiky ny kitroy	
+a_verifier	tsivahiny/zipety.json:8	(iny ako moa ny raha, aza dia mahery manara-maso moa...	(iny ahy moa ny zavatra, aza dia mahery manara-maso moa...	
+noms propres	tsivahiny/zipety.json:9	eh! ino liaka ty, tano soa liaka ra-piera	eh! inona ity, tano tsara ra-piera	
+a_verifier	tsivahiny/zipety.json:11	tanon-drika soa, raiso hatagny afara koa moa	tano tsara, raiso hatrany aoriana koa moa	
+a_verifier	tsivahiny/zipety.json:19	samy manao ’zay maha-miramira ny sainy	samy manao izay mahafaly ny sainy	
+religieux (Psaume 23)	ventsonFianar/Arakandron'Andriana.json:23	tapa-kevitsa aho fa tamagna	tapa-kevitra aho fa tamana	
+a_verifier	autres.txt:5	soa moa izay, ndrondroandro eroa izay, eko ina ro maresaka agny?	tsara moa izay, elaela ihany izay, ka inona no vaovao any?	
+a_verifier	autres.txt:6	ke eo ihany fa andrendregna ny hitsaka sy ny ketsa e	kay eo ihany fa varimbariana ny hitsaka sy ny ketsa e	
+a_verifier	autres.txt:7	ke ve roa, ka izao mignaia?	izany ve, ka izao mankaiza?	
+a_verifier	autres.txt:8	zao tarognina e, hijaha ny rano amin’ny tanimbary ato zao ndraika fa anò vitàsoa ny andro aby	izao resahina izao, hijery ny rano amin’ny tanimbary ato izao indray fa mba ho vita soa ny andro rehetra	
