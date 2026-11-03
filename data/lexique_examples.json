@@ -47,6 +47,18 @@
     "direction": "Betsileo->Malagasy",
     "ref": "LEX swadesh:izy ireo"
   },
+    {
+    "source": "translate Malagasy to Betsileo: izy",
+    "target": "i",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX swadesh:izy ireo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: i",
+    "target": "izy",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX swadesh:izy"
+  },
   {
     "source": "translate Malagasy to Betsileo: eto",
     "target": "eto",
@@ -215,18 +227,7 @@
     "direction": "Betsileo->Malagasy",
     "ref": "LEX swadesh:dimy"
   },
-  {
-    "source": "translate Malagasy to Betsileo: lava",
-    "target": "lava",
-    "direction": "Malagasy->Betsileo",
-    "ref": "LEX swadesh:lava"
-  },
-  {
-    "source": "translate Betsileo to Malagasy: lava",
-    "target": "lava",
-    "direction": "Betsileo->Malagasy",
-    "ref": "LEX swadesh:lava"
-  },
+
   {
     "source": "translate Malagasy to Betsileo: malalaka",
     "target": "malalaka",
@@ -2040,18 +2041,6 @@
     "ref": "LEX data.txt:manome"
   },
   {
-    "source": "translate Malagasy to Betsileo: mikoriana",
-    "target": "mikoria",
-    "direction": "Malagasy->Betsileo",
-    "ref": "LEX data.txt:mikoriana"
-  },
-  {
-    "source": "translate Betsileo to Malagasy: mikoria",
-    "target": "mikoriana",
-    "direction": "Betsileo->Malagasy",
-    "ref": "LEX data.txt:mikoriana"
-  },
-  {
     "source": "translate Malagasy to Betsileo: mitsinkafona",
     "target": "mitsingafo",
     "direction": "Malagasy->Betsileo",
@@ -2074,5 +2063,53 @@
     "target": "orona",
     "direction": "Betsileo->Malagasy",
     "ref": "LEX data.txt:orona"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: mangahazo",
+    "target": "kajaha",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX data.txt:mangahazo"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: kajaha",
+    "target": "mangahazo",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX data.txt:mangahazo"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: miolakolaka",
+    "target": "mamolakolaka",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX data.txt:miolakolaka"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: mamolakolaka",
+    "target": "miolakolaka",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX data.txt:miolakolaka"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: ohatra",
+    "target": "ohatsa",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX data.txt:ohatra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: ohatsa",
+    "target": "ohatra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX data.txt:ohatra"
+  },
+  {
+    "source": "translate Malagasy to Betsileo: zavatra",
+    "target": "raha",
+    "direction": "Malagasy->Betsileo",
+    "ref": "LEX data.txt:zavatra"
+  },
+  {
+    "source": "translate Betsileo to Malagasy: raha",
+    "target": "zavatra",
+    "direction": "Betsileo->Malagasy",
+    "ref": "LEX data.txt:zavatra"
   }
 ]
