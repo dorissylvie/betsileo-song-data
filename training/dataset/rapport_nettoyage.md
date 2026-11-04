@@ -4,13 +4,13 @@
 
 | Partie | Lignes | Versets / mots |
 |---|---|---|
-| train bible | 8385 | 4194 |
+| train bible | 8215 | 4109 |
 | train lexique | 296 | 148 |
-| train segments | 4301 | 903 |
+| train segments | 4201 | 884 |
 | train chansons | 394 | 197 |
-| validation bible | 74 | 37 |
+| validation bible | 156 | 78 |
 | validation chansons | 48 | 24 |
-| test bible | 534 | 267 |
+| test bible | 442 | 221 |
 | test chansons | 66 | 33 |
 | test lexique | 52 | 26 |
 
@@ -20,24 +20,24 @@
 |---|---|---|
 | test | chanson | 2 |
 | test | mal aligne | 8 |
-| test | manuel | 96 |
-| test | religieux | 972 |
+| test | manuel | 100 |
+| test | religieux | 978 |
 | train | chanson | 11 |
 | train | doublon | 2 |
 | train | fuite | 8 |
 | train | mal aligne | 96 |
-| train | manuel | 4 |
-| train | paraphrase trop libre | 17 |
-| train | religieux | 84 |
+| train | manuel | 20 |
+| train | paraphrase trop libre | 15 |
+| train | religieux | 240 |
 | validation | chanson | 7 |
 
 ### Termes religieux trouves (test)
 
-jesoa (612), jesosy (414), andriamagnit (154), andriamanitr (138), kristy (102), mpisorogn (46), mpisoron (44), reference biblique (42), petera (42), tempoly (42), filazantsara (32), demonia (30), sinagoga (26), pilato (26), batisa (24), sabata (20), masina (18), fanahy (18), tompo (16), fitsanganana amin'ny maty (12), zanak'andriama (10), satana (10), fanahy masina (10), andrea (8), kaisara (8), soratra masina (8), soratsa masina (8), fagnahy (8), famonjena (8), iskariota (8)
+jesoa (612), jesosy (414), andriamagnit (154), andriamanitr (138), kristy (102), tompo (le seigneur) (54), mpisorogn (46), mpisoron (44), reference biblique (42), petera (42), tempoly (42), filazantsara (32), demonia (30), sinagoga (26), pilato (26), batisa (24), sabata (20), masina (18), fanahy (18), tompo (16), fitsanganana amin'ny maty (12), zanak'andriama (10), satana (10), fanahy masina (10), andrea (8), kaisara (8), soratra masina (8), soratsa masina (8), fagnahy (8), famonjena (8)
 
 ### Termes religieux trouves (train)
 
-fitsanganan'ny maty (24), nitsangana tamin'ny maty (14), fitsanganana amin'ny maty (12), famonjena (10), mpamonjy (8), hitsangagna amin'ny maty (6), nitsanganany tamin'ny maty (4), natsangana tamin'ny maty (4), nitsangagna tamin'ny maty (4), jehovah (4), hitsangana amin'ny maty (4), natsangagna tamin'ny maty (2), azy ô (2), mesia (2), natsangany tamin'ny maty (2), tafatsangana amin'ny maty (2), hitsanganan'ny maty (2), hitsanganany amin'ny maty (2)
+tompo (le seigneur) (100), tompontsika (le seigneur) (49), fitsanganan'ny maty (24), nitsangana tamin'ny maty (14), fitsanganana amin'ny maty (12), famonjena (10), mpamonjy (8), hitsangagna amin'ny maty (6), nitsanganany tamin'ny maty (4), natsangana tamin'ny maty (4), nitsangagna tamin'ny maty (4), jehovah (4), hitsangana amin'ny maty (4), natsangagna tamin'ny maty (2), azy ô (2), mesia (2), tompotsika (le seigneur) (2), natsangany tamin'ny maty (2), tafatsangana amin'ny maty (2), hitsanganan'ny maty (2), hitsanganany amin'ny maty (2)
 
 ## Validation : versets retires ou modifies
 
@@ -67,8 +67,13 @@ fitsanganan'ny maty (24), nitsangana tamin'ny maty (14), fitsanganana amin'ny ma
 
 Mots religieux devenus courants, gardes comme dans le train (decision de
 `bible/remplacements_proposes.md`) : fiangonana, vavaka / mivavaka,
-fivavahana, tompo (minuscule), lanitra (le ciel), Dada, sampy, fahagagana,
-mpanoradalana. A retirer en les ajoutant a `HARD_PATTERNS` si besoin.
+fivavahana, lanitra (le ciel), Dada, sampy, fahagagana, mpanoradalana.
+A retirer en les ajoutant a `HARD_PATTERNS` si besoin.
+
+« tompo » (le Seigneur) : « ao amin'ny tompo » supprime, « hoy ny tompo » -> « hoy izy »,
+« Tompo ô » adresse a quelqu'un -> « Tompoko ô » ; tout autre « tompo » seul ou
+« tompontsika » fait retirer le verset. Restent : tompoko, tompony, tompon'ny...,
+« manompo tompo roa » (deux maitres).
 
 ## Chansons
 

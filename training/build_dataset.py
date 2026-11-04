@@ -72,6 +72,9 @@ BTS2MG = "Betsileo->Malagasy"
 PREFIX = {MG2BTS: "translate Malagasy to Betsileo: ",
           BTS2MG: "translate Betsileo to Malagasy: "}
 SEED = 42
+# Livres du fichier test deplaces en validation (validation de 37 versets trop
+# petite pour regler l'arret anticipe et les garde-fous). Le test garde MRK.
+TEST_TO_VALIDATION_BOOKS = {"PHP", "JUD"}
 LEXIQUE_TEST_RATIO = 0.15
 
 # Une paire est mal alignee si une langue fait plus du double de l'autre
@@ -93,6 +96,13 @@ MANUAL_REMOVE = {
     "JHN 8:54": "Dieu remplace par « izyreo » : phrase cassee et religieuse",
     "HEB 10:7": "citation de psaume, Dieu remplace par « azy ô »",
 }
+for _ref in ("ACT 1:24", "ACT 4:29", "ACT 7:59", "ACT 7:60", "REV 15:4", "ROM 11:3",
+             "ACT 26:15", "HEB 1:10"):
+    MANUAL_REMOVE[_ref] = "priere au Seigneur (« tompo ô »)"
+# « tompo » seul ou « tompontsika » restant apres les remplacements = le
+# Seigneur -> verset retire. « manompo tompo roa » (deux maitres) reste ;
+# tompoko, tompony, tompon'ny... ne sont pas concernes.
+TOMPO_RE = re.compile(r"(?<![\w'-])tompo(?:ntsika|tsika)?(?![\w'-])(?! roa)", re.IGNORECASE)
 _TEST_REVIEW = {
     "exorcisme (« aretina » = esprit impur qui parle ou obeit)":
         "MRK 1:26, MRK 1:27, MRK 3:30, MRK 5:12, MRK 9:17, MRK 9:18, MRK 9:22, MRK 9:26",
@@ -112,6 +122,8 @@ _TEST_REVIEW = {
     "ange au tombeau / signes miraculeux des croyants":
         "MRK 16:5, MRK 16:18",
 }
+_TEST_REVIEW["mot arameen glose (« Efata, izany hoe: Maladia! », « Boanerjesy »)"] = \
+    "MRK 7:34, MRK 3:17"
 for _reason, _refs in _TEST_REVIEW.items():
     for _ref in _refs.split(", "):
         MANUAL_REMOVE[_ref] = "relecture : " + _reason
@@ -327,6 +339,12 @@ REPLACEMENTS: list[tuple[str, str | None, str | None]] = [
     ("Samaritana", "vahiny", "vahiny"),
     ("Grika", "vahiny", "vahiny"),
     ("Galiliana", "avy any Lalangina", "avy agny Lalangina"),
+    # « tompo » = le Seigneur : tournures qu'on peut neutraliser. Le reste des
+    # « tompo » seuls / « tompontsika » fait retirer le verset (TOMPO_RE).
+    ("ao amin'ny tompo", "", ""), ("ao amin'izy tompo", "", ""), ("ao amin'iy tompo", "", ""),
+    ("tao aminy tompontsika", "", ""), ("ao aminy tompontsika", "", ""),
+    ("hoy ny tompo", "hoy izy", "hoy iy"),
+    ("tompo ô", "tompoko ô", "tompoko ô"), ("ry tompo", "ry tompoko", "ry tompoko"),
     # noms bibliques -> noms malgaches (memes choix que pour le train)
     ("Paoly", "Fidy", "Fidy"), ("Saoly", "Fidy", "Fidy"),
     ("Davida", "Ravelo", "Ravelo"), ("Galilia", "Lalangina", "Lalangina"),
@@ -462,7 +480,8 @@ def apply_replacements(text: str, lang: str) -> str:
         # officiel. -> « azy », « teniny ».
         text = _ANAZY_RE.sub("azy", text)
         text = _GENITIVE_AZY_RE.sub(lambda m: m.group(1) + "y", text)
-    return re.sub(r"\s+", " ", text).strip()
+    text = re.sub(r"\s+", " ", text)
+    return re.sub(r"\s+([,.;:!?])", r"\1", text).strip()   # apres une suppression
 
 
 def hard_terms(text: str) -> list[str]:
@@ -684,6 +703,9 @@ def build(args) -> None:
             # Verification aussi apres remplacement : « natsangan'azy tamin'ny maty »
             # ne devient detectable qu'une fois corrige en « natsangany tamin'ny maty ».
             hard += hard_terms(t2)
+            m = TOMPO_RE.search(t2)
+            if m:
+                hard.append(m.group(0) + " (le Seigneur)")
             out[lang] = t2
             # On ne journalise que les vrais changements de mots, pas la
             # normalisation (apostrophes, espaces) qui touche presque tout.
@@ -718,6 +740,11 @@ def build(args) -> None:
 
     # ---- bible ----
     bible = {s: clean_split(s, load_rows(SOURCES[s])) for s in ("train", "validation", "test")}
+    # Validation agrandie : des livres entiers du test y passent (jamais un livre
+    # a cheval sur deux splits).
+    moved = [r for r in bible["test"] if r["ref"].split(" ")[0] in TEST_TO_VALIDATION_BOOKS]
+    bible["test"] = [r for r in bible["test"] if r["ref"].split(" ")[0] not in TEST_TO_VALIDATION_BOOKS]
+    bible["validation"] += moved
     raw_counts = {s: len(load_rows(SOURCES[s])) for s in ("train", "validation", "test")}
 
     # ---- train : paraphrases trop libres ----
@@ -827,11 +854,14 @@ def build(args) -> None:
         rnd.shuffle(splits[s])
 
     # ---- ecriture ----
+    # 4 champs seulement : le reste se deduit (langues <- direction, texte sans
+    # prefixe <- source, origine <- ref : « LEX ... », « ....json:N » ou verset).
     os.makedirs(OUT_DIR, exist_ok=True)
     for s, rows in splits.items():
         with open(os.path.join(OUT_DIR, f"{s}.jsonl"), "w", encoding="utf-8") as f:
             for row in rows:
-                f.write(json.dumps(row, ensure_ascii=False) + "\n")
+                slim = {k: row[k] for k in ("source", "target", "direction", "ref")}
+                f.write(json.dumps(slim, ensure_ascii=False) + "\n")
 
     # Les versets contiennent des guillemets : csv les echappe pour qu'Excel,
     # LibreOffice ou pandas relisent bien une ligne par verset.
@@ -936,8 +966,12 @@ def write_report(splits, stats, removed, modified) -> None:
     lines += ["", "## Garde volontairement", "",
               "Mots religieux devenus courants, gardes comme dans le train (decision de",
               "`bible/remplacements_proposes.md`) : fiangonana, vavaka / mivavaka,",
-              "fivavahana, tompo (minuscule), lanitra (le ciel), Dada, sampy, fahagagana,",
-              "mpanoradalana. A retirer en les ajoutant a `HARD_PATTERNS` si besoin."]
+              "fivavahana, lanitra (le ciel), Dada, sampy, fahagagana, mpanoradalana.",
+              "A retirer en les ajoutant a `HARD_PATTERNS` si besoin.", "",
+              "« tompo » (le Seigneur) : « ao amin'ny tompo » supprime, « hoy ny tompo » -> « hoy izy »,",
+              "« Tompo ô » adresse a quelqu'un -> « Tompoko ô » ; tout autre « tompo » seul ou",
+              "« tompontsika » fait retirer le verset. Restent : tompoko, tompony, tompon'ny...,",
+              "« manompo tompo roa » (deux maitres)."]
 
     songs = stats["chansons"]
     lines += ["", "## Chansons", "",
@@ -1004,21 +1038,17 @@ Construit par `training/build_dataset.py` (depot betsileo-song-data).
 
 - `source` : entree avec le prefixe T5 (`translate Malagasy to Betsileo: ...`)
 - `target` : traduction attendue
-- `src_text` : entree sans prefixe ; `src_lang` / `tgt_lang` : `mg` ou `bts`
 - `direction` : `Malagasy->Betsileo` ou `Betsileo->Malagasy`
 - `ref` : verset biblique (`MRK 1:31`), entree du lexique (`LEX ...`) ou vers
-  de chanson (`Majeur 7/galeoka.json:6`)
-- `origin` : `bible`, `lexique`, `chanson` ou `segment` (proposition courte
-  decoupee d'un verset du train, train uniquement)
-- `traducteur` : `humain`, ou `claude` pour les vers de chansons traduits par
-  Claude et pas encore relus (train uniquement)
+  de chanson (`Majeur 7/galeoka.json:6`, `autres.txt:3`). Les segments courts
+  du train portent la ref du verset dont ils sont tires.
 
 ## Decoupage
 
 - train : livres du Nouveau Testament hors test/validation + lexique
   (85 %) + segments courts + chansons hors validation/test.
-- validation : TIT, PHM, 2JN, 3JN + chansons {', '.join(sorted(CHANSONS_VALIDATION))}.
-- test : MRK, PHP, JUD + chansons {', '.join(sorted(CHANSONS_TEST))}
+- validation : TIT, PHM, 2JN, 3JN, PHP, JUD + chansons {', '.join(sorted(CHANSONS_VALIDATION))}.
+- test : MRK + chansons {', '.join(sorted(CHANSONS_TEST))}
   + 15 % du lexique (`origin = lexique`, a evaluer a part : precision mot a mot).
 
 Les chansons sont reparties par chanson ; en validation et test, seules les
