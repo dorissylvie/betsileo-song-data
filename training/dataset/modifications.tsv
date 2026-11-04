@@ -477,9 +477,103 @@ train	2PE 1:4	mg	Izany no nanomezana antsika ireo teny fikasana sady sarobidy no
 train	1CO 7:19	mg	Tsinontsinona ny famorana ary tsinontsinona ny tsy famorana; fa ny mitandrina ny didin'azy no izy.	Tsinontsinona ny famorana ary tsinontsinona ny tsy famorana; fa ny mitandrina ny didiny no izy.
 train	2PE 1:8	mg	Fa raha anananareo izany zavatra izany sady anananareo betsaka dia tsy avelan'izany ho malaina na tsy hahavokatra ianareo amin'ny fahalalana tsara an'izy Tompontsika.	Fa raha anananareo izany zavatra izany sady anananareo betsaka dia tsy avelan'izany ho malaina na tsy hahavokatra ianareo amin'ny fahalalana tsara an'izy tompontsika.
 train	ROM 15:6	mg	mba ho saina iray sy vava iray no hiarahanareo mankalaza an'azy rain'izy tompontsika!	mba ho saina iray sy vava iray no hiarahanareo mankalaza azy rain'izy tompontsika!
+train	Majeur 7/Ataovy serieux.json:1	bts	ho soroatako ho ami ndroky ny tragno eh	ho soroatako ho ami ndroky ny tragno
+train	Majeur 7/Ataovy serieux.json:3	bts	ho faritako ho androky ny tany eh	ho faritako ho androky ny tany
+train	Majeur 7/Ataovy serieux.json:7	bts	ho soroatako am indroky ny trano eh	ho soroatako am indroky ny trano
+train	Majeur 7/Ataovy serieux.json:12	bts	igny resako igny eh	igny resako igny
+train	Majeur 7/Ataovy serieux.json:13	bts	ny magneky tsa mba mora e	ny magneky tsa mba mora
+train	Majeur 7/Ataovy serieux.json:15	bts	mamitake e madenga am njanakona	mamitake madenga am njanakona
+train	Majeur 7/Ataovy serieux.json:19	bts	bala rora e manao kivandivandy	bala rora manao kivandivandy
+train	Majeur 7/Ataovy serieux.json:20	bts	vidiko ze tianao e	vidiko ze tianao
+train	Majeur 7/Ataovy serieux.json:21	bts	omeko ze ilainao eh	omeko ze ilainao
+train	Majeur 7/Ataovy serieux.json:22	bts	lazao ze tadiavina e	lazao ze tadiavina
+train	Majeur 7/Ataovy serieux.json:23	bts	hiadagna soa agnao eh	hiadagna soa agnao
+train	Majeur 7/Ataovy serieux.json:24	bts	halaiko vady agnao eh	halaiko vady agnao
 train	Majeur 7/Ataovy serieux.json:25	mg	hidivianako akanjo vaovao	hividianako akanjo vaovao
-train	tsivahiny/Asabotsy mifankahita.json:18	mg	koa mandihiza fa izaho tsy mila koa	koa mandehana fa izaho tsy mila koa
-train	tsivahiny/tsiahyMisareba.json:9	mg	izahay manina anareo a lasa any fianarantsoa	izahay manina anareo a lasa any am-pianarana
+train	Majeur 7/Ataovy serieux.json:25	bts	vidianako akanjo vao eh	vidianako akanjo vao
+train	Majeur 7/Ataovy serieux.json:27	bts	ny fitea tsa atao foagna eh	ny fitea tsa atao foagna
+train	Majeur 7/Ataovy serieux.json:29	bts	manao vola akazahoana eh	manao vola akazahoana
+train	oladad/5 tsindrina 5.json:13	mg	alefaso milamina, dia ataovy tony a	alefaso milamina, dia ataovy tony
+train	oladad/5 tsindrina 5.json:13	bts	alefaso milamina, de ataovy de calme a	alefaso milamina, de ataovy de calme
+train	oladad/5 tsindrina 5.json:21	mg	tsy misy manakatra, midina ambany e	tsy misy manakatra, midina ambany
+train	oladad/5 tsindrina 5.json:21	bts	tsisy manakatra, midina ambany e	tsisy manakatra, midina ambany
+train	oladad/5 tsindrina 5.json:22	mg	eo isika androany e	eo isika androany
+train	oladad/5 tsindrina 5.json:22	bts	eo atsika androany e	eo atsika androany
+train	oladad/agnao.json:2	mg	manina anao aho e! manina anao aho e!	manina anao aho! manina anao aho!
+train	oladad/agnao.json:2	bts	manigna agnao aho e! magnina an-droky aho e!	manigna agnao aho! magnina an-droky aho!
+train	oladad/agnao.json:5	mg	manina anao aho e! manina anao aho e!	manina anao aho! manina anao aho!
+train	oladad/agnao.json:5	bts	manigna agnao aho e! manigna an-droky aho e!	manigna agnao aho! manigna an-droky aho!
+train	oladad/agnao.json:7	mg	ny adiady nandeha, nahatonga anao ho lasa e!	ny adiady nandeha, nahatonga anao ho lasa!
+train	oladad/agnao.json:7	bts	ny adiady nandeha, nahatonga agnao ho roso e!	ny adiady nandeha, nahatonga agnao ho roso!
+train	oladad/agnao.json:10	mg	ie! aiza kay no ahitako anao	aiza kay no ahitako anao
+train	oladad/agnao.json:10	bts	ié! aia ko ro ahitako agnao	aia ko ro ahitako agnao
+train	oladad/agnao.json:12	mg	iza kay ho ahy no asoloko anao e!	iza kay ho ahy no asoloko anao!
+train	oladad/agnao.json:12	bts	ia ko ho'aho ro asoloko agnao e!	ia ko ho'aho ro asoloko agnao!
+train	oladad/agnao.json:26	mg	ka mba miangavy aho! miverena ianao azafady e!	ka mba miangavy aho! miverena ianao azafady!
+train	oladad/agnao.json:26	bts	eko mba miangavy aho! mipodiagna agnao azafady e!	eko mba miangavy aho! mipodiagna agnao azafady!
+train	oladad/agnao.json:27	mg	sasatra miandry aho! mitalaho aho mba miangavy ie!	sasatra miandry aho! mitalaho aho mba miangavy!
+train	oladad/agnao.json:27	bts	sasa miandry aho! mitalaho aho mba miangavy iei!	sasa miandry aho! mitalaho aho mba miangavy!
+train	oladad/agnao.json:32	mg	tsy hitako izay hatao e!	tsy hitako izay hatao!
+train	oladad/agnao.json:32	bts	tsa hitako ro hatao e!	tsa hitako ro hatao!
+train	oladad/agnao.json:36	mg	iza kay no asoloko anao eee!	iza kay no asoloko anao!
+train	oladad/agnao.json:36	bts	ia ko hoa ro asoloko agnao eee!	ia ko hoa ro asoloko agnao!
+train	oladad/mlaolao.json:0	mg	hifalifaly e isika androany	hifalifaly isika androany
+train	oladad/mlaolao.json:0	bts	hifalifaly e atsika androany	hifalifaly atsika androany
+train	oladad/sesily.json:9	mg	io tsy mba azo atao be loatra eeh	io tsy mba azo atao be loatra
+train	oladad/sesily.json:9	bts	io tsa mba hay atao be loatsa eeh	io tsa mba hay atao be loatsa
+train	oladad/ziva.json:40	mg	tsy hitomany aho na dia tiako aza ianao eh	tsy hitomany aho na dia tiako aza ianao
+train	oladad/ziva.json:40	bts	tsa hitomany aho na tiako aza agnao eh	tsa hitomany aho na tiako aza agnao
+train	oladad/ziva.json:41	mg	tsy hamono tena aho na dia tsy foiko aza ianao eh	tsy hamono tena aho na dia tsy foiko aza ianao
+train	oladad/ziva.json:41	bts	tsa hamono tena aho na tsa foiko aza agnao eh	tsa hamono tena aho na tsa foiko aza agnao
+train	oladad/ziva.json:44	bts	ny lasantsika ro tadidio hann	ny lasantsika ro tadidio
+train	oladad/ziva.json:45	mg	tsy hanary lamba aho na dia tiako aza ianao eh	tsy hanary lamba aho na dia tiako aza ianao
+train	oladad/ziva.json:45	bts	tsa hanary lamba aho na tiako aza agnao eh	tsa hanary lamba aho na tiako aza agnao
+train	oladad/ziva.json:46	mg	tsy hanozona anao aho fa hitso-drano anao eh	tsy hanozona anao aho fa hitso-drano anao
+train	oladad/ziva.json:46	bts	tsa hagnozona anao aho fa hitsodrano agnao eh	tsa hagnozona anao aho fa hitsodrano agnao
+train	tsivahiny/Asabotsy mifankahita.json:2	mg	ka izahay izao e! hitantara ny fahiny	ka izahay izao! hitantara ny fahiny
+train	tsivahiny/Asabotsy mifankahita.json:2	bts	ka agnay izao e! hitatara ny faha-ela	ka agnay izao! hitatara ny faha-ela
+train	tsivahiny/Asabotsy mifankahita.json:19	mg	eh! veloma e! asabotsy mifankahita	veloma! asabotsy mifankahita
+train	tsivahiny/Asabotsy mifankahita.json:19	bts	eh! veloma e! asabotsy mifakahita	veloma! asabotsy mifakahita
+train	tsivahiny/Mihinana soa.json:0	mg	anana maitso mivelatra e! no atao anamamy	anana maitso mivelatra! no atao anamamy
+train	tsivahiny/Mihinana soa.json:0	bts	traka maitso mipelatsa e! ro atao anamamy	traka maitso mipelatsa! ro atao anamamy
+train	tsivahiny/Mihinana soa.json:2	mg	e! mihinana tsara an!	mihinana tsara!
+train	tsivahiny/Mihinana soa.json:2	bts	e! mihinana soa an!	mihinana soa!
+train	tsivahiny/Mihinana soa.json:3	mg	mihinana tsara tsy ho kenda o!	mihinana tsara tsy ho kenda!
+train	tsivahiny/Mihinana soa.json:3	bts	mihinana soa tsa ho kenda o!	mihinana soa tsa ho kenda!
+train	tsivahiny/Mihinana soa.json:5	mg	fihinana manta koa e! izao ny salady	fihinana manta koa! izao ny salady
+train	tsivahiny/Mihinana soa.json:5	bts	fihina-mata koa e! izao ny salady	fihina-mata koa! izao ny salady
+train	tsivahiny/Rapagnarakandro.json:1	mg	iza kay no namanao mitoetra eh!	iza kay no namanao mitoetra!
+train	tsivahiny/Rapagnarakandro.json:1	bts	ia kay ro namanao mitoetsa eh!	ia kay ro namanao mitoetsa!
+train	tsivahiny/Rapagnarakandro.json:2	mg	ny omby ambenanao any avy am-boly an!	ny omby ambenanao any avy am-boly!
+train	tsivahiny/Rapagnarakandro.json:2	bts	ny aombe ambenanao any avy am-boly an!	ny aombe ambenanao any avy am-boly!
+train	tsivahiny/tsahavelako.json:2	mg	tsy hiala amin'ny zavatra tiako, tsy havelako an!	tsy hiala amin'ny zavatra tiako, tsy havelako!
+train	tsivahiny/tsahavelako.json:2	bts	tsa hivela amin'ny raha tiako, tsa havelako an!	tsa hivela amin'ny raha tiako, tsa havelako!
+train	tsivahiny/tsahavelako.json:3	mg	ny mpiray tampo no iray e!	ny mpiray tampo no iray!
+train	tsivahiny/tsahavelako.json:3	bts	ny mpiray tampo ro iraika e!	ny mpiray tampo ro iraika!
+train	tsivahiny/tsiahyMisareba.json:14	mg	tsy handry ve fa hody aminay a; tsy handry ve	tsy handry ve fa hody aminay
+train	tsivahiny/tsiahyMisareba.json:14	bts	tsa hoandry ve fa hody aminay a	tsa hoandry ve fa hody aminay
+train	tsivahiny/tsiahyMisareba.json:35	mg	ny fitiavako anao tsy mba kely ho ahy fa zavatra mamy toy ny tantely a!	ny fitiavako anao tsy mba kely ho ahy fa zavatra mamy toy ny tantely!
+train	tsivahiny/tsiahyMisareba.json:35	bts	fitiavako an-droky tsa mba kely ho'aho fa raha mamy toy ny tately a!	fitiavako an-droky tsa mba kely ho'aho fa raha mamy toy ny tately!
+train	tsivahiny/tsiahyMisareba.json:38	mg	e aiza kay ny tany tsy hahitako anao an	aiza kay ny tany tsy hahitako anao
+train	tsivahiny/tsiahyMisareba.json:38	bts	e aia ke ny tany tsa hahitako an-droky an	aia ke ny tany tsa hahitako an-droky
+train	tsivahiny/tsiahyMisareba.json:41	mg	na handeha fiara na handeha fiaramanidina e	na handeha fiara na handeha fiaramanidina
+train	tsivahiny/tsiahyMisareba.json:41	bts	na handeha tômôbila na handeha rôpilanina e	na handeha tômôbila na handeha rôpilanina
+train	tsivahiny/zipety.json:10	mg	izay! hainareo mihitsy ny manao azy an!	izay! hainareo mihitsy ny manao azy!
+train	tsivahiny/zipety.json:10	bts	zay! hainareo mihintsy ny manao azy an!	zay! hainareo mihintsy ny manao azy!
+train	tsivahiny/zipety.json:14	mg	zazavavy tiako, mandalo any izay an!	zazavavy tiako, mandalo any izay!
+train	tsivahiny/zipety.json:14	bts	kilonga apela tiako, mandalo an' any izay an!	kilonga apela tiako, mandalo an' any izay!
+train	tsivahiny/zipety.json:20	mg	samy manao izay mahafalifaly ny fony, ny olona rehetra, oh!	samy manao izay mahafalifaly ny fony, ny olona rehetra!
+train	tsivahiny/zipety.json:20	bts	samy manao 'zay maha-falifaly ny fony, ny olo-aby, oh!	samy manao 'zay maha-falifaly ny fony, ny olo-aby!
+train	autres.txt:0	mg	manao ahoana daholo e!	manao ahoana daholo!
+train	autres.txt:0	bts	akory aby e!	akory aby!
+train	oladad/5 tsindrina 5.json:40	mg	tsara fianatra no mahavokatra lehiretsy a	tsara fianatra no mahavokatra lehiretsy
+train	oladad/5 tsindrina 5.json:40	bts	soa fianatsa ro mahavokatsa liaka aaaa	soa fianatsa ro mahavokatsa liaka
+train	oladad/agnao.json:24	mg	nivezivezy aho, ary mba nanova hafa e! nefa tsy nahita aho! ny foko no naratra!	nivezivezy aho, ary mba nanova hafa! nefa tsy nahita aho! ny foko no naratra!
+train	oladad/agnao.json:24	bts	nivoendrivoendry aho, sy mba nanova hafa e! n tsa nahita aho! ny foko ro naratse!	nivoendrivoendry aho, sy mba nanova hafa! n tsa nahita aho! ny foko ro naratse!
+train	tsivahiny/tsiahyMisareba.json:30	mg	lanin'ny akoho ny vary an!	lanin'ny akoho ny vary!
+train	tsivahiny/tsiahyMisareba.json:30	bts	bozy e lanin'ny akoho ny vary an!	bozy lanin'ny akoho ny vary!
+train	tsivahiny/tsiahyMisareba.json:42	mg	avonavona tsy ho lefy mihitsy e	avonavona tsy ho lefy mihitsy
+train	tsivahiny/tsiahyMisareba.json:42	bts	avognavogna tsa ho lefy tsendry e	avognavogna tsa ho lefy tsendry
 validation	2JN 1:1	bts	Aho lohologna ro mamangy an'Andriambavy voafidin'Andriamagnitsa sy ny zanany amin'ny alalan'itoy taratasy itoy, izay tiàko amin'ny fahamarinana, eko tsa aho irery, fa izay rehetra mahalala ny marina koa	Aho lohologna ro mamangy an'Andriambavy voafidy sy ny zanany amin'ny alalan'itoy taratasy itoy, izay tiàko amin'ny fahamarinana, eko tsa aho irery, fa izay rehetra mahalala ny marina koa
 validation	PHM 1:15	mg	Izany angamba no nialany vetivety teo aminao mba hanananao azy mandrakizay,	Izany angamba no nialany vetivety teo aminao mba hanananao azy mandrakariva,
 validation	2JN 1:2	mg	noho ny fahamarinana izay mitoetra ato anatintsika sady ho ato amintsika mandrakizay:	noho ny fahamarinana izay mitoetra ato anatintsika sady ho ato amintsika mandrakariva:
@@ -489,6 +583,11 @@ validation	2JN 1:2	mg	noho ny fahamarinana izay mitoetra ato anatintsika sady ho
 validation	2JN 1:2	bts	noho ny fahamarinana izay mitoatsa ato agnatintsika sady ho ato amintsika mandrakizay.	noho ny fahamarinana izay mitoatsa ato agnatintsika sady ho ato amintsika mandrakariva.
 validation	2JN 1:1	bts	Aho lohologna ro mamangy an'Andriambavy voafidin'Andriamagnitsa sy ny zanany amin'ny alalan'itoy taratasy itoy, izay tiàko amin'ny fahamarinana, eko tsa aho irery, fa izay rehetra mahalala ny marina koa	Aho lohologna ro mamangy an'Andriambavy voafidy sy ny zanany amin'ny alalan'itoy taratasy itoy, izay tiàko amin'ny fahamarinana, eko tsa aho irery, fa izay rehetra mahalala ny marina koa
 validation	Majeur 7/galeoka.json:1	mg	sady manondro no manontany hoa aiza no tsara	sady manondro no manontany hoe aiza no tsara
+validation	Majeur 7/galeoka.json:6	bts	aho e te hisotro galeoka e	aho te hisotro galeoka
+validation	Majeur 7/galeoka.json:7	bts	io e ro ampy sady mba takatakatsy ny vola	io ro ampy sady mba takatakatsy ny vola
+validation	Majeur 7/galeoka.json:8	bts	andao e lehe hisotro galeoka e	andao lehe hisotro galeoka
+validation	Majeur 7/galeoka.json:17	bts	tandremo e lehe hisotro galeoka e	tandremo lehe hisotro galeoka
+validation	Majeur 7/galeoka.json:19	bts	agnao e ja misotro galeoka e	agnao ja misotro galeoka
 validation	tsivahiny/velo-po.json:7	mg	salama aby ve tsika ao	salama daholo ve isika ao
 test	MRK 14:71	mg	Dia niozona sy nianiana izy hoe: Tsy fantatro izany Lehilahy lazainareo izany.	Dia niozona sy nianiana izy hoe: Tsy fantatro izany lehilahy lazainareo izany.
 test	PHP 2:24	mg	Nefa matoky ao amin'ny Tompo aho fa ny tenako dia mbola ho avy haingana koa.	Nefa matoky ao amin'ny tompo aho fa ny tenako dia mbola ho avy haingana koa.
@@ -906,4 +1005,11 @@ test	MRK 11:32	bts	Nefa lehe tarognintsika hoe 'Ahatamin'ny ona,' dia akory? Nat
 test	MRK 6:28	mg	Dia noentiny teo ambony lovia ny lohan'i Jaona ka nomeny an-dRazazavavy; ary Razazavavy kosa dia nanome izany ny reniny.	Dia noentiny teo ambony lovia ny lohan'i Lita ka nomeny an-dRazazavavy; ary Razazavavy kosa dia nanome izany ny reniny.
 test	MRK 9:32	mg	Tsy azon'ireo anefa izany teny izany sady natahotra ny hanontany Azy izy.	Tsy azon'ireo anefa izany teny izany sady natahotra ny hanontany azy izy.
 test	MRK 9:32	bts	Fa tsa nahazo an'izay teny izay ireo nefa natahotsa ny hagnontany Azy.	Fa tsa nahazo an'izay teny izay ireo nefa natahotsa ny hagnontany azy.
+test	Majeur 7/Tagnitagny madigna.json:3	bts	manigna azy anie aho e	manigna azy anie aho
+test	Majeur 7/Tagnitagny madigna.json:7	bts	agny an-tagny lavitsa agny e	agny an-tagny lavitsa agny
+test	Majeur 7/Tagnitagny madigna.json:15	bts	lavitsa dia lavitsa ro misy azy zay e	lavitsa dia lavitsa ro misy azy zay
 test	Majeur 7/Tagnitagny madigna.json:16	mg	ny sentosntonao izao no mahagaga	ny sentosentonao izao no mahagaga
+test	Majeur 7/Tagnitagny madigna.json:17	bts	ino ke ro nahakivy e	ino ke ro nahakivy
+test	ventsonFianar/tsofyrano.json:0	bts	reo e ro nagnabe sy nagnolokolo	reo ro nagnabe sy nagnolokolo
+test	ventsonFianar/tsofyrano.json:10	mg	izao re no lova natolony ho anay e!	izao re no lova natolony ho anay!
+test	ventsonFianar/tsofyrano.json:10	bts	izao è ro lova natolony ho anay e!	izao ro lova natolony ho anay!

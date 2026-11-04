@@ -5,9 +5,9 @@
 | Partie | Lignes | Versets / mots |
 |---|---|---|
 | train bible | 8385 | 4194 |
-| train lexique | 292 | 146 |
+| train lexique | 296 | 148 |
 | train segments | 4301 | 903 |
-| train chansons | 416 | 208 |
+| train chansons | 394 | 197 |
 | validation bible | 74 | 37 |
 | validation chansons | 48 | 24 |
 | test bible | 534 | 267 |
@@ -22,6 +22,7 @@
 | test | mal aligne | 8 |
 | test | manuel | 96 |
 | test | religieux | 972 |
+| train | chanson | 11 |
 | train | doublon | 2 |
 | train | fuite | 8 |
 | train | mal aligne | 96 |
@@ -52,6 +53,11 @@ fitsanganan'ny maty (24), nitsangana tamin'ny maty (14), fitsanganana amin'ny ma
 - **2JN 1:2** (mg) : `noho ny fahamarinana izay mitoetra ato anatintsika sady ho ato amintsika mandrakizay:` -> `noho ny fahamarinana izay mitoetra ato anatintsika sady ho ato amintsika mandrakariva:`
 - **2JN 1:2** (bts) : `noho ny fahamarinana izay mitoatsa ato agnatintsika sady ho ato amintsika mandrakizay.` -> `noho ny fahamarinana izay mitoatsa ato agnatintsika sady ho ato amintsika mandrakariva.`
 - **Majeur 7/galeoka.json:1** (mg) : `sady manondro no manontany hoa aiza no tsara` -> `sady manondro no manontany hoe aiza no tsara`
+- **Majeur 7/galeoka.json:6** (bts) : `aho e te hisotro galeoka e` -> `aho te hisotro galeoka`
+- **Majeur 7/galeoka.json:7** (bts) : `io e ro ampy sady mba takatakatsy ny vola` -> `io ro ampy sady mba takatakatsy ny vola`
+- **Majeur 7/galeoka.json:8** (bts) : `andao e lehe hisotro galeoka e` -> `andao lehe hisotro galeoka`
+- **Majeur 7/galeoka.json:17** (bts) : `tandremo e lehe hisotro galeoka e` -> `tandremo lehe hisotro galeoka`
+- **Majeur 7/galeoka.json:19** (bts) : `agnao e ja misotro galeoka e` -> `agnao ja misotro galeoka`
 - **tsivahiny/velo-po.json:7** (mg) : `salama aby ve tsika ao` -> `salama daholo ve isika ao`
 
 ## Test : versets retires apres relecture
@@ -73,19 +79,19 @@ et sont listees dans `chansons_claude_a_relire.tsv`.
 
 | Split | Chanson | Paires | dont traduites par Claude |
 |---|---|---|---|
-| train | 5 tsindrina 5 | 16 | 14 |
-| train | Asabotsy mifankahita | 16 | 16 |
+| train | 5 tsindrina 5 | 16 | 0 |
+| train | Asabotsy mifankahita | 15 | 0 |
 | train | Ataovy serieux | 27 | 0 |
-| train | Mihinana soa | 10 | 10 |
-| train | Rapagnarakandro | 10 | 10 |
-| train | agnao | 24 | 21 |
-| train | autres | 6 | 6 |
-| train | mlaolao | 10 | 10 |
-| train | sesily | 19 | 18 |
-| train | tsahavelako | 12 | 12 |
-| train | tsiahyMisareba | 18 | 13 |
-| train | zipety | 10 | 10 |
-| train | ziva | 30 | 29 |
+| train | Mihinana soa | 9 | 0 |
+| train | Rapagnarakandro | 8 | 0 |
+| train | agnao | 23 | 0 |
+| train | autres | 6 | 0 |
+| train | mlaolao | 10 | 0 |
+| train | sesily | 18 | 0 |
+| train | tsahavelako | 11 | 0 |
+| train | tsiahyMisareba | 17 | 0 |
+| train | zipety | 9 | 0 |
+| train | ziva | 28 | 0 |
 | validation | galeoka | 16 | 0 |
 | validation | velo-po | 8 | 0 |
 | test | Tagnitagny madigna | 20 | 0 |
@@ -108,16 +114,8 @@ Ce fichier a perdu sa ligne d'en-tete (`raison ref bts mlg valide`) : `build_cor
 - tsivahiny/tsiahyMisareba.json:42 : `avognavogna tsa ho lefy tsendry e` -> `avonavona tsy ho lefy mihitsy e`
 - tsivahiny/tsiahyMisareba.json:60 : `ny fitiavako an-drika ro mahafaty fa mandihana fa tsa mila koa` -> `ny fitiavako anao no mahafaty fa mandehena fa tsy mila koa`
 
-### Traductions de Claude douteuses (gardees en train, a relire)
+### Traductions de Claude : 158 relues par toi (`training/chansons_relues.tsv`), 0 pas encore relues
 
-- oladad/agnao.json:1 : « le » rendu par « satria » : a confirmer
-- oladad/ziva.json:15 : « na dia akory aza » : tournure douteuse
-- tsivahiny/Asabotsy mifankahita.json:37 : « aba » laisse tel quel (daholo ? dada ?)
-- tsivahiny/tsiahyMisareba.json:35 : « aba » laisse tel quel
-- tsivahiny/tsahavelako.json:8 : « raha » rendu par « zavatra » ; peut-etre « raha » (si)
-- tsivahiny/zipety.json:6 : « bokaka » rendu par « zazavavy » : a confirmer
-- tsivahiny/Mihinana soa.json:11 : « ravin-mangahazo » : forme a verifier
-- autres.txt:4 : « raha tsa ho afake » rendu par « no zavatra tsy afaka »
 
 ### Tes traductions : points a verifier (laisses tels quels)
 

@@ -23,7 +23,7 @@ Construit par `training/build_dataset.py` (depot betsileo-song-data).
 
 | Split | Lignes |
 |---|---|
-| train | 13394 |
+| train | 13376 |
 | validation | 122 |
 | test | 652 |
 

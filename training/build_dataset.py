@@ -131,6 +131,8 @@ MANUAL_FIXES = [
     ("Majeur 7/Tagnitagny madigna.json:16", "mg", "sentosntonao", "sentosentonao"),
     ("Majeur 7/galeoka.json:1", "mg", "manontany hoa", "manontany hoe"),
     ("tsivahiny/velo-po.json:7", "mg", "salama aby ve tsika ao", "salama daholo ve isika ao"),
+    # Ta relecture a coupe « ; tsa hoandry ve » cote betsileo : meme coupe cote malgache.
+    ("tsivahiny/tsiahyMisareba.json:14", "mg", "aminay a; tsy handry ve", "aminay a"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -142,6 +144,28 @@ CHANSONS_DIR = os.path.join(ROOT, "corpus_chansons")
 # celles de Claude (traductions_claude.tsv) n'ont jamais ete relues.
 CHANSONS_VALIDATION = {"galeoka", "velo-po"}
 CHANSONS_TEST = {"Tagnitagny madigna", "tsofyrano"}
+# Ta relecture des traductions de Claude (copie de chansons_claude_a_relire.tsv
+# que tu as corrigee). Ligne presente = textes repris tels quels ; ligne
+# supprimee = vers retire du corpus. Si le fichier n'existe pas, les
+# traductions de Claude sont gardees telles quelles en train.
+CHANSONS_RELUES = os.path.join(ROOT, "training", "chansons_relues.tsv")
+# Interjections chantees retirees des deux cotes (« a », « an! », « oh », « e! »...).
+INTERJECTION_RE = re.compile(
+    r"(?<![\w'-])(?:a|an|ann|annh|hann|aaa|aaaa|o|oh|ohh|e|è|eh|ee|eee|eeh|ie|ié|iei|he)(?![\w'-])",
+    re.IGNORECASE)
+
+
+def strip_interjections(t: str) -> str:
+    t = INTERJECTION_RE.sub(" ", t)
+    t = re.sub(r"\s+", " ", t)
+    t = re.sub(r"\s+([,.;:!?])", r"\1", t)
+    # « ! ! » ou « , ! » laisses par un mot retire : on garde ! ou ? s'il y en a un
+    t = re.sub(r"[,.;:!?](?:\s*[,.;:!?])+",
+               lambda m: next((c for c in m.group() if c in "!?"), m.group()[0]), t)
+    t = re.sub(r"^[\s,.;:!?]+", "", t)
+    return re.sub(r"[\s,;:]+$", "", t).strip()
+
+
 # Pas de filtre « quasi identique » : une paire qui ne differe que par
 # tsa/tsy, ro/no ou agnao/anao est justement un bon exemple minimal.
 # Traductions de Claude gardees en train mais douteuses : a relire.
@@ -580,12 +604,24 @@ def load_chansons(removed: list, imported: list) -> tuple[dict[str, list[dict]],
     pairs = json.load(open(path, encoding="utf-8"))
     extra = pending_song_corrections(bcc, pairs)
     imported.extend(extra)
+    reviewed = None
+    if os.path.exists(CHANSONS_RELUES):
+        reviewed = {r["ref"].strip(): r for r in csv.DictReader(
+            open(CHANSONS_RELUES, encoding="utf-8", newline=""), delimiter="\t") if r.get("ref")}
     seen = {s: set() for s in out}
     for p in pairs + extra:
         ref, song = p["ref"], p["chanson"]
         split = ("test" if song in CHANSONS_TEST else
                  "validation" if song in CHANSONS_VALIDATION else "train")
         human = p["traducteur"] == "utilisateur"
+        label = "humain" if human else "claude"
+        if not human and reviewed is not None and split == "train":
+            r = reviewed.get(ref)
+            if r is None:
+                removed.append((split, ref, "chanson : retiree a ta relecture", p["mlg"], p["bts"]))
+                continue
+            p = {**p, "bts": r["betsileo"], "mlg": r["malagasy_claude"]}
+            label = "claude_relu"
         texts, mods, hard = {}, [], []
         for lang, field in (("mg", "mlg"), ("bts", "bts")):
             t = normalize(p[field], lang, bible=False)[0]
@@ -594,12 +630,16 @@ def load_chansons(removed: list, imported: list) -> tuple[dict[str, list[dict]],
             for fref, flang, old, new in MANUAL_FIXES:
                 if fref == ref and flang == lang and old in t:
                     t = t.replace(old, new)
+            t = strip_interjections(t)
             if t != before:
                 mods.append((split, ref, lang, before, t))
             hard += hard_terms(t)
             texts[lang] = t
         mg, bts = texts["mg"], texts["bts"]
-        if split != "train" and not human:
+        if not re.search(r"\w", mg) or not re.search(r"\w", bts):
+            removed.append((split, ref, "chanson : vide apres retrait des interjections", mg, bts))
+            continue
+        if split != "train" and label == "claude":
             removed.append((split, ref, "chanson : traduction de Claude non relue, "
                             "exclue de validation/test", mg, bts))
             continue
@@ -612,7 +652,7 @@ def load_chansons(removed: list, imported: list) -> tuple[dict[str, list[dict]],
             continue
         seen[split].add(k)
         out[split].append({"ref": ref, "mg": mg, "bts": bts, "chanson": song,
-                           "traducteur": "humain" if human else "claude", "_mods": mods})
+                           "traducteur": label, "_mods": mods})
     return out, len(pairs) + len(extra)
 
 
@@ -916,8 +956,11 @@ def write_report(splits, stats, removed, modified) -> None:
                   "Ce fichier a perdu sa ligne d'en-tete (`raison ref bts mlg valide`) : "
                   "`build_corpus_chansons.py` ne lisait plus tes corrections. Elles sont reprises ici :", ""]
         lines += [f"- {p['ref']} : `{p['bts']}` -> `{p['mlg']}`" for p in stats["imported"]]
-    lines += ["", "### Traductions de Claude douteuses (gardees en train, a relire)", ""]
-    lines += [f"- {ref} : {note}" for ref, note in CHANSON_DOUTES.items()]
+    unreviewed = {p["ref"] for p in songs["train"] if p["traducteur"] == "claude"}
+    n_relu = sum(1 for p in songs["train"] if p["traducteur"] == "claude_relu")
+    lines += ["", f"### Traductions de Claude : {n_relu} relues par toi "
+              f"(`training/chansons_relues.tsv`), {len(unreviewed)} pas encore relues", ""]
+    lines += [f"- {ref} : {note}" for ref, note in CHANSON_DOUTES.items() if ref in unreviewed]
     lines += ["", "### Tes traductions : points a verifier (laisses tels quels)", ""]
     lines += [f"- {ref} : {note}" for ref, note in CHANSON_A_VERIFIER.items()]
     lines += ["", "Les corrections appliquees (erreurs nettes de Claude, fautes de frappe) sont dans",

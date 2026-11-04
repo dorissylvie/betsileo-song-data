@@ -1276,6 +1276,16 @@ train	JAS 1:20	paraphrase trop libre (similarite 0.24)	fa ny fahatezeran'ny olon
 train	JAS 1:20	paraphrase trop libre (similarite 0.24)	fa ny fahatezeran'ny olona dia tsy ahefana ny fahamarinana araka any.	satria tsa ahafahana magnatanteraka izay marina eo agnatrehan'azy ny fahadikisan'ny olo.
 train	LUK 5:38	paraphrase trop libre (similarite 0.23)	fa ny divay vaovao dia tsy maintsy hatao ao anaty siny hoditra vaovao.	Tsy maintsy siny hoditsa vaovao ro asiana ny divay vao.
 train	LUK 5:38	paraphrase trop libre (similarite 0.23)	fa ny divay vaovao dia tsy maintsy hatao ao anaty siny hoditra vaovao.	Tsy maintsy siny hoditsa vaovao ro asiana ny divay vao.
+train	oladad/agnao.json:28	chanson : retiree a ta relecture	ianao tiako ô! fa ianao no tiako ô!	agñao tiako ô! f’agñao ro tiako ô!
+train	oladad/sesily.json:13	chanson : retiree a ta relecture	mangina ianao aza mitomany	mangina anao ’za mitomany
+train	oladad/ziva.json:27	chanson : retiree a ta relecture	sanatria anie izany	sagnatria any izany
+train	oladad/ziva.json:30	chanson : retiree a ta relecture	sanatria anie izay	sagnatria any izay
+train	tsivahiny/Asabotsy mifankahita.json:44	chanson : retiree a ta relecture	misy trosa ao amin-drasitera	misy kiridy ao amin-drasitera
+train	tsivahiny/Mihinana soa.json:4	chanson : retiree a ta relecture	ny vola raha tsy ho lany e!	ny vola raha tsa ho lany e!
+train	tsivahiny/Rapagnarakandro.json:6	chanson : retiree a ta relecture	tsy misy, fa ny kitily sy ny siriotra	tsa misy, fa ny kitily sy ny siriotsa
+train	tsivahiny/Rapagnarakandro.json:11	chanson : retiree a ta relecture	manao inona kay rapanarakandro	manaino kay raparakandro
+train	tsivahiny/tsahavelako.json:0	chanson : retiree a ta relecture	tsy havelako, handeha, tsy havelako	tsa havelako le, handeha, tsa havelako
+train	tsivahiny/tsiahyMisareba.json:48	chanson : retiree a ta relecture	mararirary any an-damosiny any a an	marariray an-damosiny agny a an
 validation	tsivahiny/velo-po.json:3	chanson : traduction de Claude non relue, exclue de validation/test	sahirana ny tantsaha	sahiragna ny tatsaha
 validation	tsivahiny/velo-po.json:6	chanson : traduction de Claude non relue, exclue de validation/test	inona angaha no mahatonga an'io	ino angaha ro mahatonga an'io
 validation	tsivahiny/velo-po.json:10	chanson : traduction de Claude non relue, exclue de validation/test	tsy mahavoky ny mpianakavy	tsa mahavoky ny mpianakavy
@@ -1283,8 +1293,9 @@ validation	tsivahiny/velo-po.json:12	chanson : traduction de Claude non relue, e
 validation	tsivahiny/velo-po.json:13	chanson : traduction de Claude non relue, exclue de validation/test	rehefa tonga ny fahavaratra	rehefa avy ny havarata
 validation	tsivahiny/velo-po.json:15	chanson : traduction de Claude non relue, exclue de validation/test	ny hanina ho hanina koa tsy hisy	ny hanina ho hanina koa tsa hisy
 validation	tsivahiny/velo-po.json:17	chanson : traduction de Claude non relue, exclue de validation/test	sarotra ny fiainana	sarotsa ny fiaignana
+train	tsivahiny/zipety.json:6	chanson : retiree a ta relecture	fa manja koa ny zazavavy raha mba misy ny zipety	fa manja koa ny bokaka raha mba misy ny zipety
 test	ventsonFianar/tsofyrano.json:12	chanson : traduction de Claude non relue, exclue de validation/test	mbola maimaika i baba, efa any an-tamboho	vana maimaigna i baba, efa agn'an-tamboho
-test	ventsonFianar/tsofyrano.json:14	chanson : traduction de Claude non relue, exclue de validation/test	tsy nisy dika laza fa vita tsara izay e!	tsa nisy dika laza fa vita soa izay e!
+test	ventsonFianar/tsofyrano.json:14	chanson : traduction de Claude non relue, exclue de validation/test	tsy nisy dika laza fa vita tsara izay!	tsa nisy dika laza fa vita soa izay!
 train	MAT 19:30	fuite : phrase presente en validation/test	Nefa maro izay voalohany no ho farany ary izay farany no ho voalohany.	Nefa be amin'ireo voalohany ro ho farany eko be amin'ireo farany ro ho voalohany.
 train	MAT 11:15	fuite : phrase presente en validation/test	Izay manan-tsofina hoenti-mihaino, aoka izy hihaino.	Izay manan-tsofigna hihainoana, dia mihainoa!
 train	MAT 24:18	fuite : phrase presente en validation/test	ary izay any an-tsaha dia aoka tsy hiverina haka ny akanjony.	izay agny an-tsaha, aza mipody koa hangala lamba.

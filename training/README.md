@@ -16,10 +16,11 @@ Regroupe les sources sans les modifier :
 | `bible/test-00000-of-00001.json` | test |
 | `corpus_chansons/corpus_chansons.json` | par chanson : validation = galeoka, velo-po ; test = Tagnitagny madigna, tsofyrano ; le reste en train |
 
-Les chansons de validation et de test ne gardent que tes traductions. Les vers traduits par Claude
-(`corpus_chansons/traductions_claude.tsv`, jamais relus) ne vont qu'en train ; ils sont listés dans
-`chansons_claude_a_relire.tsv`. Pour les corriger, modifie la colonne `mlg` de `traductions_claude.tsv`
-puis relance `corpus_chansons/build_corpus_chansons.py` et ce script.
+Les chansons de validation et de test ne gardent que tes traductions. Les vers traduits par Claude ne
+vont qu'en train, avec ta relecture : **`training/chansons_relues.tsv`** fait foi (textes repris tels
+quels, ligne supprimée = vers retiré). C'est ce fichier qu'il faut modifier, pas
+`dataset/chansons_claude_a_relire.tsv`, qui est réécrit à chaque lancement et ne liste plus que les vers
+pas encore relus. Les interjections chantées (« a », « an! », « oh », « e! »...) sont retirées des deux côtés.
 
 Sorties dans `training/dataset/` :
 
