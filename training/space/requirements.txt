@@ -1,0 +1,5 @@
+# gradio et spaces sont installes par le Space lui-meme (version = sdk_version du README) : ne pas les ajouter.
+# torch : une version acceptee par ZeroGPU (2.13.0, 2.12.1, 2.11.0, ...), version CUDA de PyPI.
+torch==2.12.1
+transformers==5.13.0
+sentencepiece==0.2.1
